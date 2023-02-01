@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<bidi:Schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bidi="http://schemas.microsoft.com/windows/2005/03/printing/bidi" xsi:schemaLocation="http://schemas.microsoft.com/windows/2005/03/printing/bidi tcpbidi.xsd">
+  <!-- Version 3.30 -->
+  <Property name="Printer">
+    <!--Omitting the queries for Duplexer, Memory and HardDisk as they are included implicitly in in-OS xml-->
+    <!--Queries for Status-->
+    <Property name="Status">
+      <IndexedProperty name="Summary">
+        <Converter name="StateReason" deviceIndex="true" oid="1.3.6.1.2.1.25.3.5.1.2.1" useFirstIndex="true" drvPrinterEvent="true">
+          <Conversion mibValue="08" bidiValue="DoorOpen" />
+          <Conversion mibValue="0B" bidiValue="DoorOpen" />
+          <!--DoorOpen,DoorOpen+CatridgeMissing,DoorOpen+PrinterPaused-->
+          <Conversion mibValue="CB" bidiValue="DoorOpen" />
+          <!--DoorOpen+OutofPaper-->
+          <Conversion mibValue="48" bidiValue="DoorOpen" />
+          <!--DoorOpen+OutofPaper_Orion/Nebula-->
+          <Conversion mibValue="0F" bidiValue="DoorOpen" />
+          <!--DoorOpen+PaperJam-->
+          <Conversion mibValue="0C" bidiValue="DoorOpen" />
+          <!--DoorOpen+PaperJam_Orion/Nebula-->
+          <Conversion mibValue="8B" bidiValue="OutputAreaFull" />
+          <!--DoorOpen+OutputbinFull-->
+          <Conversion mibValue="40" bidiValue="MediaEmpty" />
+          <!--OutOfPaper-->
+          <Conversion mibValue="C3" bidiValue="MediaEmpty" />
+          <Conversion mibValue="01" bidiValue="cartridgeMissing" />
+          <Conversion mibValue="10" bidiValue="cartridgeMissing" />
+          <Conversion mibValue="12" bidiValue="cartridgeMissing" />
+          <Conversion mibValue="D3" bidiValue="cartridgeMissing" />
+          <!--OutOfPaper+CatridgeMissing-->
+          <Conversion mibValue="13" bidiValue="cartridgeMissing" />
+          <!--CatridgeMissing, CatridgeMissing+PaperJam, CatridgeMissing+PrinterPaused-->
+          <Conversion mibValue="04" bidiValue="MediaJam" />
+          <Conversion mibValue="07" bidiValue="MediaJam" />
+          <!--PaperJam,PaperJam+PrinterPaused-->
+          <Conversion mibValue="81" bidiValue="OutputAreaFull" />
+          <Conversion mibValue="93" bidiValue="OutputAreaFull" />
+          <!--CatridgeMissing+OutputBinFull-->
+          <Conversion mibValue="03" bidiValue="paused" />
+          <Conversion mibValue="83" bidiValue="paused" />
+          <!--OutOfPaper+PrinterPaused-->
+          <Conversion mibValue="33" bidiValue="paused" />
+          <!--PrinterPaused-->
+          <!--Toner is low-->
+          <Conversion mibValue="20" bidiValue="LowToner" />
+          <Conversion mibValue="21" bidiValue="LowToner" />
+          <Conversion mibValue="22" bidiValue="LowToner" />
+          <Conversion mibValue="23" bidiValue="LowToner" />
+        </Converter>
+      </IndexedProperty>
+    </Property>
+    <Property name="Configuration">
+      <!-- PCv0.5 Query -->
+      <!-- PCv0.6 Query -->
+      <!-- PCv0.5 Query -->
+      <!-- PCv0.6 Query -->
+      <!-- <Property  name="Mopier">
+				<Converter name="Installed"  oid="1.3.6.1.4.1.11.2.3.9.4.2.1.1.2.42" deviceIndex="false" drvPrinterEvent="true">
+					<Conversion mibValue="1" bidiValue="true"/>
+					<Conversion mibValue="0" bidiValue="false"/>
+					<Conversion mibValue="default" bidiValue="false"/>
+				</Converter>
+			</Property> -->
+      <!-- PCv0.6 Query: Using Job Storage Available OID since the BiDi XML is unable to process the resposne for Device Collation OID -->
+      <!--Queries for PC Version -->
+      <Property name="PrintContract">
+        <Converter name="VersionMajor" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.4.1.1.41" deviceIndex="false" useFirstIndex="false" drvPrinterEvent="true">
+          <Conversion mibValue="0" bidiValue="0" />
+          <Conversion mibValue="1" bidiValue="1" />
+          <Conversion mibValue="2" bidiValue="2" />
+          <Conversion mibValue="3" bidiValue="3" />
+          <Conversion mibValue="4" bidiValue="4" />
+          <Conversion mibValue="5" bidiValue="5" />
+          <Conversion mibValue="6" bidiValue="6" />
+          <Conversion mibValue="7" bidiValue="7" />
+          <Conversion mibValue="8" bidiValue="8" />
+          <Conversion mibValue="9" bidiValue="9" />
+        </Converter>
+        <Converter name="VersionMinor" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.4.1.1.42" deviceIndex="false" useFirstIndex="false" drvPrinterEvent="true">
+          <Conversion mibValue="0" bidiValue="0" />
+          <Conversion mibValue="1" bidiValue="1" />
+          <Conversion mibValue="2" bidiValue="2" />
+          <Conversion mibValue="3" bidiValue="3" />
+          <Conversion mibValue="4" bidiValue="4" />
+          <Conversion mibValue="5" bidiValue="5" />
+          <Conversion mibValue="6" bidiValue="6" />
+          <Conversion mibValue="7" bidiValue="7" />
+          <Conversion mibValue="8" bidiValue="8" />
+          <Conversion mibValue="9" bidiValue="9" />
+          <Conversion mibValue="71" bidiValue="71" />
+          <Conversion mibValue="72" bidiValue="72" />
+        </Converter>
+      </Property>
+      <!-- Overwriting Memory, HardDisk and DuplexUnit OID from tcpbidi.xml by increasing refreshinsterval to 24hrs,
+           so that the device will not request these OIDs. As a result driver will not wakeup the system every 10 minutes interval -->
+      <Property name="Memory">
+        <Value name="Size" oid="1.3.6.1.2.1.25.2.2" type="BIDI_INT" drvPrinterEvent="true" refreshInterval="86400" />
+      </Property>
+      <Property name="HardDisk">
+        <Installed name="Installed" oid="1.3.6.1.2.1.25.2.3.1.2" deviceIndex="false" drvPrinterEvent="true" refreshInterval="86400">
+          <Lookup value="1.3.6.1.2.1.25.2.1.4" />
+        </Installed>
+      </Property>
+      <Property name="DuplexUnit">
+        <Installed name="Installed" oid="1.3.6.1.2.1.43.13.4.1.9" deviceIndex="true" refreshInterval="86400" drvPrinterEvent="true">
+          <Lookup value="3" />
+          <Lookup value="4" />
+        </Installed>
+      </Property>
+      <Property name="DeviceDefaultDuplexStandard">
+        <Converter name="DefaultDuplexStandard" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.4.1.1.43" deviceIndex="false" useFirstIndex="false" drvPrinterEvent="true">
+          <Conversion mibValue="1" bidiValue="false" />
+          <Conversion mibValue="2" bidiValue="true" />
+        </Converter>
+      </Property>
+    </Property>
+    <Property name="Capabilities">
+      <!--Queries for Tab Printing -->
+      <!--Queries for Edge to Edge -->
+      <Property name="PrintQuality">
+        <!-- PCv0.5 -->
+        <!-- PCv1.0 -->
+        <Property name="StandardType1">
+          <Converter name="Supported" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.1.1" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1" bidiValue="True" />
+            <Conversion mibValue="2" bidiValue="True" />
+            <Conversion mibValue="3" bidiValue="True" />
+            <Conversion mibValue="4" bidiValue="True" />
+          </Converter>
+          <Converter name="Name" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.1.1" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1" bidiValue="Draft" />
+            <Conversion mibValue="2" bidiValue="Draft" />
+            <Conversion mibValue="3" bidiValue="Draft" />
+            <Conversion mibValue="4" bidiValue="Draft" />
+          </Converter>
+          <Converter name="OptimalResolution" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.1.1" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1" bidiValue="150" />
+            <Conversion mibValue="2" bidiValue="300" />
+            <Conversion mibValue="3" bidiValue="600" />
+            <Conversion mibValue="4" bidiValue="1200" />
+          </Converter>
+          <Converter name="ImageTechnology" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.1.2" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="2000" bidiValue="2000" />
+            <Conversion mibValue="2001" bidiValue="2001" />
+            <Conversion mibValue="2002" bidiValue="2002" />
+            <Conversion mibValue="2003" bidiValue="2003" />
+            <Conversion mibValue="2004" bidiValue="2004" />
+            <Conversion mibValue="2005" bidiValue="2005" />
+            <Conversion mibValue="4000" bidiValue="4000" />
+            <Conversion mibValue="4005" bidiValue="4005" />
+            <Conversion mibValue="4010" bidiValue="4010" />
+            <Conversion mibValue="4015" bidiValue="4015" />
+            <Conversion mibValue="4020" bidiValue="4020" />
+            <Conversion mibValue="4030" bidiValue="4030" />
+            <Conversion mibValue="4040" bidiValue="4040" />
+            <Conversion mibValue="4050" bidiValue="4050" />
+            <Conversion mibValue="4060" bidiValue="4060" />
+            <Conversion mibValue="4070" bidiValue="4070" />
+            <Conversion mibValue="4080" bidiValue="4080" />
+            <Conversion mibValue="4090" bidiValue="4090" />
+            <Conversion mibValue="5000" bidiValue="5000" />
+            <Conversion mibValue="3" bidiValue="3" />
+            <Conversion mibValue="4" bidiValue="4" />
+            <Conversion mibValue="5" bidiValue="5" />
+            <Conversion mibValue="10" bidiValue="10" />
+            <Conversion mibValue="11" bidiValue="11" />
+            <Conversion mibValue="21" bidiValue="21" />
+            <Conversion mibValue="22" bidiValue="22" />
+          </Converter>
+          <Converter name="DisplayTag" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.1.3" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1000" bidiValue="1000" />
+            <Conversion mibValue="1002" bidiValue="1002" />
+            <Conversion mibValue="1003" bidiValue="1003" />
+            <Conversion mibValue="1004" bidiValue="1004" />
+            <Conversion mibValue="1005" bidiValue="1005" />
+            <Conversion mibValue="3000" bidiValue="3000" />
+            <Conversion mibValue="3001" bidiValue="3001" />
+            <Conversion mibValue="3002" bidiValue="3002" />
+            <Conversion mibValue="3003" bidiValue="3003" />
+            <Conversion mibValue="3020" bidiValue="3020" />
+            <Conversion mibValue="3030" bidiValue="3030" />
+            <Conversion mibValue="3040" bidiValue="3040" />
+            <Conversion mibValue="3050" bidiValue="3050" />
+            <Conversion mibValue="3060" bidiValue="3060" />
+            <Conversion mibValue="3070" bidiValue="3070" />
+            <Conversion mibValue="3080" bidiValue="3080" />
+            <Conversion mibValue="3" bidiValue="3" />
+            <Conversion mibValue="4" bidiValue="4" />
+            <Conversion mibValue="5" bidiValue="5" />
+            <Conversion mibValue="10" bidiValue="10" />
+            <Conversion mibValue="11" bidiValue="11" />
+            <Conversion mibValue="21" bidiValue="21" />
+            <Conversion mibValue="22" bidiValue="22" />
+          </Converter>
+          <Converter name="PQMode" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.1.4" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1" bidiValue="1" />
+            <Conversion mibValue="2" bidiValue="2" />
+            <Conversion mibValue="3" bidiValue="3" />
+            <Conversion mibValue="4" bidiValue="4" />
+            <Conversion mibValue="5" bidiValue="5" />
+            <Conversion mibValue="6" bidiValue="6" />
+            <Conversion mibValue="7" bidiValue="7" />
+          </Converter>
+        </Property>
+        <Property name="StandardType2">
+          <Converter name="Supported" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.2.1" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1" bidiValue="True" />
+            <Conversion mibValue="2" bidiValue="True" />
+            <Conversion mibValue="3" bidiValue="True" />
+            <Conversion mibValue="4" bidiValue="True" />
+          </Converter>
+          <Converter name="Name" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.2.1" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1" bidiValue="Normal" />
+            <Conversion mibValue="2" bidiValue="Normal" />
+            <Conversion mibValue="3" bidiValue="Normal" />
+            <Conversion mibValue="4" bidiValue="Normal" />
+          </Converter>
+          <Converter name="OptimalResolution" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.2.1" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1" bidiValue="150" />
+            <Conversion mibValue="2" bidiValue="300" />
+            <Conversion mibValue="3" bidiValue="600" />
+            <Conversion mibValue="4" bidiValue="1200" />
+          </Converter>
+          <Converter name="ImageTechnology" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.2.2" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="2000" bidiValue="2000" />
+            <Conversion mibValue="2001" bidiValue="2001" />
+            <Conversion mibValue="2002" bidiValue="2002" />
+            <Conversion mibValue="2003" bidiValue="2003" />
+            <Conversion mibValue="2004" bidiValue="2004" />
+            <Conversion mibValue="2005" bidiValue="2005" />
+            <Conversion mibValue="4000" bidiValue="4000" />
+            <Conversion mibValue="4005" bidiValue="4005" />
+            <Conversion mibValue="4010" bidiValue="4010" />
+            <Conversion mibValue="4015" bidiValue="4015" />
+            <Conversion mibValue="4020" bidiValue="4020" />
+            <Conversion mibValue="4030" bidiValue="4030" />
+            <Conversion mibValue="4040" bidiValue="4040" />
+            <Conversion mibValue="4050" bidiValue="4050" />
+            <Conversion mibValue="4060" bidiValue="4060" />
+            <Conversion mibValue="4070" bidiValue="4070" />
+            <Conversion mibValue="4080" bidiValue="4080" />
+            <Conversion mibValue="4090" bidiValue="4090" />
+            <Conversion mibValue="5000" bidiValue="5000" />
+            <Conversion mibValue="3" bidiValue="3" />
+            <Conversion mibValue="4" bidiValue="4" />
+            <Conversion mibValue="5" bidiValue="5" />
+            <Conversion mibValue="10" bidiValue="10" />
+            <Conversion mibValue="11" bidiValue="11" />
+            <Conversion mibValue="21" bidiValue="21" />
+            <Conversion mibValue="22" bidiValue="22" />
+          </Converter>
+          <Converter name="DisplayTag" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.2.3" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1000" bidiValue="1000" />
+            <Conversion mibValue="1002" bidiValue="1002" />
+            <Conversion mibValue="1003" bidiValue="1003" />
+            <Conversion mibValue="1004" bidiValue="1004" />
+            <Conversion mibValue="1005" bidiValue="1005" />
+            <Conversion mibValue="3000" bidiValue="3000" />
+            <Conversion mibValue="3001" bidiValue="3001" />
+            <Conversion mibValue="3002" bidiValue="3002" />
+            <Conversion mibValue="3003" bidiValue="3003" />
+            <Conversion mibValue="3020" bidiValue="3020" />
+            <Conversion mibValue="3030" bidiValue="3030" />
+            <Conversion mibValue="3040" bidiValue="3040" />
+            <Conversion mibValue="3050" bidiValue="3050" />
+            <Conversion mibValue="3060" bidiValue="3060" />
+            <Conversion mibValue="3070" bidiValue="3070" />
+            <Conversion mibValue="3080" bidiValue="3080" />
+            <Conversion mibValue="3" bidiValue="3" />
+            <Conversion mibValue="4" bidiValue="4" />
+            <Conversion mibValue="5" bidiValue="5" />
+            <Conversion mibValue="10" bidiValue="10" />
+            <Conversion mibValue="11" bidiValue="11" />
+            <Conversion mibValue="21" bidiValue="21" />
+            <Conversion mibValue="22" bidiValue="22" />
+          </Converter>
+          <Converter name="PQMode" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.2.4" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1" bidiValue="1" />
+            <Conversion mibValue="2" bidiValue="2" />
+            <Conversion mibValue="3" bidiValue="3" />
+            <Conversion mibValue="4" bidiValue="4" />
+            <Conversion mibValue="5" bidiValue="5" />
+            <Conversion mibValue="6" bidiValue="6" />
+            <Conversion mibValue="7" bidiValue="7" />
+          </Converter>
+        </Property>
+        <Property name="StandardType3">
+          <Converter name="Supported" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.3.1" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1" bidiValue="True" />
+            <Conversion mibValue="2" bidiValue="True" />
+            <Conversion mibValue="3" bidiValue="True" />
+            <Conversion mibValue="4" bidiValue="True" />
+          </Converter>
+          <Converter name="Name" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.3.1" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1" bidiValue="Best" />
+            <Conversion mibValue="2" bidiValue="Best" />
+            <Conversion mibValue="3" bidiValue="Best" />
+            <Conversion mibValue="4" bidiValue="Best" />
+          </Converter>
+          <Converter name="OptimalResolution" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.3.1" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1" bidiValue="150" />
+            <Conversion mibValue="2" bidiValue="300" />
+            <Conversion mibValue="3" bidiValue="600" />
+            <Conversion mibValue="4" bidiValue="1200" />
+          </Converter>
+          <Converter name="ImageTechnology" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.3.2" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="2000" bidiValue="2000" />
+            <Conversion mibValue="2001" bidiValue="2001" />
+            <Conversion mibValue="2002" bidiValue="2002" />
+            <Conversion mibValue="2003" bidiValue="2003" />
+            <Conversion mibValue="2004" bidiValue="2004" />
+            <Conversion mibValue="2005" bidiValue="2005" />
+            <Conversion mibValue="4000" bidiValue="4000" />
+            <Conversion mibValue="4005" bidiValue="4005" />
+            <Conversion mibValue="4010" bidiValue="4010" />
+            <Conversion mibValue="4015" bidiValue="4015" />
+            <Conversion mibValue="4020" bidiValue="4020" />
+            <Conversion mibValue="4030" bidiValue="4030" />
+            <Conversion mibValue="4040" bidiValue="4040" />
+            <Conversion mibValue="4050" bidiValue="4050" />
+            <Conversion mibValue="4060" bidiValue="4060" />
+            <Conversion mibValue="4070" bidiValue="4070" />
+            <Conversion mibValue="4080" bidiValue="4080" />
+            <Conversion mibValue="4090" bidiValue="4090" />
+            <Conversion mibValue="5000" bidiValue="5000" />
+            <Conversion mibValue="3" bidiValue="3" />
+            <Conversion mibValue="4" bidiValue="4" />
+            <Conversion mibValue="5" bidiValue="5" />
+            <Conversion mibValue="10" bidiValue="10" />
+            <Conversion mibValue="11" bidiValue="11" />
+            <Conversion mibValue="21" bidiValue="21" />
+            <Conversion mibValue="22" bidiValue="22" />
+          </Converter>
+          <Converter name="DisplayTag" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.3.3" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1000" bidiValue="1000" />
+            <Conversion mibValue="1002" bidiValue="1002" />
+            <Conversion mibValue="1003" bidiValue="1003" />
+            <Conversion mibValue="1004" bidiValue="1004" />
+            <Conversion mibValue="1005" bidiValue="1005" />
+            <Conversion mibValue="3000" bidiValue="3000" />
+            <Conversion mibValue="3001" bidiValue="3001" />
+            <Conversion mibValue="3002" bidiValue="3002" />
+            <Conversion mibValue="3003" bidiValue="3003" />
+            <Conversion mibValue="3020" bidiValue="3020" />
+            <Conversion mibValue="3030" bidiValue="3030" />
+            <Conversion mibValue="3040" bidiValue="3040" />
+            <Conversion mibValue="3050" bidiValue="3050" />
+            <Conversion mibValue="3060" bidiValue="3060" />
+            <Conversion mibValue="3070" bidiValue="3070" />
+            <Conversion mibValue="3080" bidiValue="3080" />
+            <Conversion mibValue="3" bidiValue="3" />
+            <Conversion mibValue="4" bidiValue="4" />
+            <Conversion mibValue="5" bidiValue="5" />
+            <Conversion mibValue="10" bidiValue="10" />
+            <Conversion mibValue="11" bidiValue="11" />
+            <Conversion mibValue="21" bidiValue="21" />
+            <Conversion mibValue="22" bidiValue="22" />
+          </Converter>
+          <Converter name="PQMode" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.3.4" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1" bidiValue="1" />
+            <Conversion mibValue="2" bidiValue="2" />
+            <Conversion mibValue="3" bidiValue="3" />
+            <Conversion mibValue="4" bidiValue="4" />
+            <Conversion mibValue="5" bidiValue="5" />
+            <Conversion mibValue="6" bidiValue="6" />
+            <Conversion mibValue="7" bidiValue="7" />
+          </Converter>
+        </Property>
+        <Property name="StandardType4">
+          <Converter name="Supported" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.4.1" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1" bidiValue="True" />
+            <Conversion mibValue="2" bidiValue="True" />
+            <Conversion mibValue="3" bidiValue="True" />
+            <Conversion mibValue="4" bidiValue="True" />
+          </Converter>
+          <Converter name="Name" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.4.1" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1" bidiValue="Max" />
+            <Conversion mibValue="2" bidiValue="Max" />
+            <Conversion mibValue="3" bidiValue="Max" />
+            <Conversion mibValue="4" bidiValue="Max" />
+          </Converter>
+          <Converter name="OptimalResolution" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.4.1" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1" bidiValue="150" />
+            <Conversion mibValue="2" bidiValue="300" />
+            <Conversion mibValue="3" bidiValue="600" />
+            <Conversion mibValue="4" bidiValue="1200" />
+          </Converter>
+          <Converter name="ImageTechnology" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.4.2" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="2000" bidiValue="2000" />
+            <Conversion mibValue="2001" bidiValue="2001" />
+            <Conversion mibValue="2002" bidiValue="2002" />
+            <Conversion mibValue="2003" bidiValue="2003" />
+            <Conversion mibValue="2004" bidiValue="2004" />
+            <Conversion mibValue="2005" bidiValue="2005" />
+            <Conversion mibValue="4000" bidiValue="4000" />
+            <Conversion mibValue="4005" bidiValue="4005" />
+            <Conversion mibValue="4010" bidiValue="4010" />
+            <Conversion mibValue="4015" bidiValue="4015" />
+            <Conversion mibValue="4020" bidiValue="4020" />
+            <Conversion mibValue="4030" bidiValue="4030" />
+            <Conversion mibValue="4040" bidiValue="4040" />
+            <Conversion mibValue="4050" bidiValue="4050" />
+            <Conversion mibValue="4060" bidiValue="4060" />
+            <Conversion mibValue="4070" bidiValue="4070" />
+            <Conversion mibValue="4080" bidiValue="4080" />
+            <Conversion mibValue="4090" bidiValue="4090" />
+            <Conversion mibValue="5000" bidiValue="5000" />
+            <Conversion mibValue="3" bidiValue="3" />
+            <Conversion mibValue="4" bidiValue="4" />
+            <Conversion mibValue="5" bidiValue="5" />
+            <Conversion mibValue="10" bidiValue="10" />
+            <Conversion mibValue="11" bidiValue="11" />
+            <Conversion mibValue="21" bidiValue="21" />
+            <Conversion mibValue="22" bidiValue="22" />
+          </Converter>
+          <Converter name="DisplayTag" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.4.3" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1000" bidiValue="1000" />
+            <Conversion mibValue="1002" bidiValue="1002" />
+            <Conversion mibValue="1003" bidiValue="1003" />
+            <Conversion mibValue="1004" bidiValue="1004" />
+            <Conversion mibValue="1005" bidiValue="1005" />
+            <Conversion mibValue="3000" bidiValue="3000" />
+            <Conversion mibValue="3001" bidiValue="3001" />
+            <Conversion mibValue="3002" bidiValue="3002" />
+            <Conversion mibValue="3003" bidiValue="3003" />
+            <Conversion mibValue="3020" bidiValue="3020" />
+            <Conversion mibValue="3030" bidiValue="3030" />
+            <Conversion mibValue="3040" bidiValue="3040" />
+            <Conversion mibValue="3050" bidiValue="3050" />
+            <Conversion mibValue="3060" bidiValue="3060" />
+            <Conversion mibValue="3070" bidiValue="3070" />
+            <Conversion mibValue="3080" bidiValue="3080" />
+            <Conversion mibValue="3" bidiValue="3" />
+            <Conversion mibValue="4" bidiValue="4" />
+            <Conversion mibValue="5" bidiValue="5" />
+            <Conversion mibValue="10" bidiValue="10" />
+            <Conversion mibValue="11" bidiValue="11" />
+            <Conversion mibValue="21" bidiValue="21" />
+            <Conversion mibValue="22" bidiValue="22" />
+          </Converter>
+          <Converter name="PQMode" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.4.4" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1" bidiValue="1" />
+            <Conversion mibValue="2" bidiValue="2" />
+            <Conversion mibValue="3" bidiValue="3" />
+            <Conversion mibValue="4" bidiValue="4" />
+            <Conversion mibValue="5" bidiValue="5" />
+            <Conversion mibValue="6" bidiValue="6" />
+            <Conversion mibValue="7" bidiValue="7" />
+          </Converter>
+        </Property>
+        <Property name="StandardType5">
+          <Converter name="Supported" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.5.1" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1" bidiValue="True" />
+            <Conversion mibValue="2" bidiValue="True" />
+            <Conversion mibValue="3" bidiValue="True" />
+            <Conversion mibValue="4" bidiValue="True" />
+          </Converter>
+          <Converter name="Name" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.5.1" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1" bidiValue="Economode" />
+            <Conversion mibValue="2" bidiValue="Economode" />
+            <Conversion mibValue="3" bidiValue="Economode" />
+            <Conversion mibValue="4" bidiValue="Economode" />
+          </Converter>
+          <Converter name="OptimalResolution" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.5.1" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1" bidiValue="150" />
+            <Conversion mibValue="2" bidiValue="300" />
+            <Conversion mibValue="3" bidiValue="600" />
+            <Conversion mibValue="4" bidiValue="1200" />
+          </Converter>
+          <Converter name="ImageTechnology" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.5.2" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="2000" bidiValue="2000" />
+            <Conversion mibValue="2001" bidiValue="2001" />
+            <Conversion mibValue="2002" bidiValue="2002" />
+            <Conversion mibValue="2003" bidiValue="2003" />
+            <Conversion mibValue="2004" bidiValue="2004" />
+            <Conversion mibValue="2005" bidiValue="2005" />
+            <Conversion mibValue="4000" bidiValue="4000" />
+            <Conversion mibValue="4005" bidiValue="4005" />
+            <Conversion mibValue="4010" bidiValue="4010" />
+            <Conversion mibValue="4015" bidiValue="4015" />
+            <Conversion mibValue="4020" bidiValue="4020" />
+            <Conversion mibValue="4030" bidiValue="4030" />
+            <Conversion mibValue="4040" bidiValue="4040" />
+            <Conversion mibValue="4050" bidiValue="4050" />
+            <Conversion mibValue="4060" bidiValue="4060" />
+            <Conversion mibValue="4070" bidiValue="4070" />
+            <Conversion mibValue="4080" bidiValue="4080" />
+            <Conversion mibValue="4090" bidiValue="4090" />
+            <Conversion mibValue="5000" bidiValue="5000" />
+            <Conversion mibValue="3" bidiValue="3" />
+            <Conversion mibValue="4" bidiValue="4" />
+            <Conversion mibValue="5" bidiValue="5" />
+            <Conversion mibValue="10" bidiValue="10" />
+            <Conversion mibValue="11" bidiValue="11" />
+            <Conversion mibValue="21" bidiValue="21" />
+            <Conversion mibValue="22" bidiValue="22" />
+          </Converter>
+          <Converter name="DisplayTag" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.5.3" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1000" bidiValue="1000" />
+            <Conversion mibValue="1002" bidiValue="1002" />
+            <Conversion mibValue="1003" bidiValue="1003" />
+            <Conversion mibValue="1004" bidiValue="1004" />
+            <Conversion mibValue="1005" bidiValue="1005" />
+            <Conversion mibValue="3000" bidiValue="3000" />
+            <Conversion mibValue="3001" bidiValue="3001" />
+            <Conversion mibValue="3002" bidiValue="3002" />
+            <Conversion mibValue="3003" bidiValue="3003" />
+            <Conversion mibValue="3020" bidiValue="3020" />
+            <Conversion mibValue="3030" bidiValue="3030" />
+            <Conversion mibValue="3040" bidiValue="3040" />
+            <Conversion mibValue="3050" bidiValue="3050" />
+            <Conversion mibValue="3060" bidiValue="3060" />
+            <Conversion mibValue="3070" bidiValue="3070" />
+            <Conversion mibValue="3080" bidiValue="3080" />
+            <Conversion mibValue="3" bidiValue="3" />
+            <Conversion mibValue="4" bidiValue="4" />
+            <Conversion mibValue="5" bidiValue="5" />
+            <Conversion mibValue="10" bidiValue="10" />
+            <Conversion mibValue="11" bidiValue="11" />
+            <Conversion mibValue="21" bidiValue="21" />
+            <Conversion mibValue="22" bidiValue="22" />
+          </Converter>
+          <Converter name="PQMode" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.5.4" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1" bidiValue="1" />
+            <Conversion mibValue="2" bidiValue="2" />
+            <Conversion mibValue="3" bidiValue="3" />
+            <Conversion mibValue="4" bidiValue="4" />
+            <Conversion mibValue="5" bidiValue="5" />
+            <Conversion mibValue="6" bidiValue="6" />
+            <Conversion mibValue="7" bidiValue="7" />
+          </Converter>
+        </Property>
+        <Property name="CustomType1">
+          <Converter name="Supported" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.6.1" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1" bidiValue="True" />
+            <Conversion mibValue="2" bidiValue="True" />
+            <Conversion mibValue="3" bidiValue="True" />
+            <Conversion mibValue="4" bidiValue="True" />
+          </Converter>
+          <Converter name="Name" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.6.1" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1" bidiValue="Custom1" />
+            <Conversion mibValue="2" bidiValue="Custom1" />
+            <Conversion mibValue="3" bidiValue="Custom1" />
+            <Conversion mibValue="4" bidiValue="Custom1" />
+          </Converter>
+          <Converter name="OptimalResolution" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.6.1" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1" bidiValue="150" />
+            <Conversion mibValue="2" bidiValue="300" />
+            <Conversion mibValue="3" bidiValue="600" />
+            <Conversion mibValue="4" bidiValue="1200" />
+          </Converter>
+          <Converter name="ImageTechnology" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.6.2" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="2000" bidiValue="2000" />
+            <Conversion mibValue="2001" bidiValue="2001" />
+            <Conversion mibValue="2002" bidiValue="2002" />
+            <Conversion mibValue="2003" bidiValue="2003" />
+            <Conversion mibValue="2004" bidiValue="2004" />
+            <Conversion mibValue="2005" bidiValue="2005" />
+            <Conversion mibValue="4000" bidiValue="4000" />
+            <Conversion mibValue="4005" bidiValue="4005" />
+            <Conversion mibValue="4010" bidiValue="4010" />
+            <Conversion mibValue="4015" bidiValue="4015" />
+            <Conversion mibValue="4020" bidiValue="4020" />
+            <Conversion mibValue="4030" bidiValue="4030" />
+            <Conversion mibValue="4040" bidiValue="4040" />
+            <Conversion mibValue="4050" bidiValue="4050" />
+            <Conversion mibValue="4060" bidiValue="4060" />
+            <Conversion mibValue="4070" bidiValue="4070" />
+            <Conversion mibValue="4080" bidiValue="4080" />
+            <Conversion mibValue="4090" bidiValue="4090" />
+            <Conversion mibValue="5000" bidiValue="5000" />
+            <Conversion mibValue="3" bidiValue="3" />
+            <Conversion mibValue="4" bidiValue="4" />
+            <Conversion mibValue="5" bidiValue="5" />
+            <Conversion mibValue="10" bidiValue="10" />
+            <Conversion mibValue="11" bidiValue="11" />
+            <Conversion mibValue="21" bidiValue="21" />
+            <Conversion mibValue="22" bidiValue="22" />
+          </Converter>
+          <Converter name="DisplayTag" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.6.3" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1000" bidiValue="1000" />
+            <Conversion mibValue="1002" bidiValue="1002" />
+            <Conversion mibValue="1003" bidiValue="1003" />
+            <Conversion mibValue="1004" bidiValue="1004" />
+            <Conversion mibValue="1005" bidiValue="1005" />
+            <Conversion mibValue="3000" bidiValue="3000" />
+            <Conversion mibValue="3001" bidiValue="3001" />
+            <Conversion mibValue="3002" bidiValue="3002" />
+            <Conversion mibValue="3003" bidiValue="3003" />
+            <Conversion mibValue="3020" bidiValue="3020" />
+            <Conversion mibValue="3030" bidiValue="3030" />
+            <Conversion mibValue="3040" bidiValue="3040" />
+            <Conversion mibValue="3050" bidiValue="3050" />
+            <Conversion mibValue="3060" bidiValue="3060" />
+            <Conversion mibValue="3070" bidiValue="3070" />
+            <Conversion mibValue="3080" bidiValue="3080" />
+            <Conversion mibValue="3" bidiValue="3" />
+            <Conversion mibValue="4" bidiValue="4" />
+            <Conversion mibValue="5" bidiValue="5" />
+            <Conversion mibValue="10" bidiValue="10" />
+            <Conversion mibValue="11" bidiValue="11" />
+            <Conversion mibValue="21" bidiValue="21" />
+            <Conversion mibValue="22" bidiValue="22" />
+          </Converter>
+          <Converter name="PQMode" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.6.4" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1" bidiValue="1" />
+            <Conversion mibValue="2" bidiValue="2" />
+            <Conversion mibValue="3" bidiValue="3" />
+            <Conversion mibValue="4" bidiValue="4" />
+            <Conversion mibValue="5" bidiValue="5" />
+            <Conversion mibValue="6" bidiValue="6" />
+            <Conversion mibValue="7" bidiValue="7" />
+          </Converter>
+        </Property>
+        <Property name="CustomType2">
+          <Converter name="Supported" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.7.1" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1" bidiValue="True" />
+            <Conversion mibValue="2" bidiValue="True" />
+            <Conversion mibValue="3" bidiValue="True" />
+            <Conversion mibValue="4" bidiValue="True" />
+          </Converter>
+          <Converter name="Name" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.7.1" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1" bidiValue="Custom2" />
+            <Conversion mibValue="2" bidiValue="Custom2" />
+            <Conversion mibValue="3" bidiValue="Custom2" />
+            <Conversion mibValue="4" bidiValue="Custom2" />
+          </Converter>
+          <Converter name="OptimalResolution" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.7.1" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1" bidiValue="150" />
+            <Conversion mibValue="2" bidiValue="300" />
+            <Conversion mibValue="3" bidiValue="600" />
+            <Conversion mibValue="4" bidiValue="1200" />
+          </Converter>
+          <Converter name="ImageTechnology" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.7.2" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="2000" bidiValue="2000" />
+            <Conversion mibValue="2001" bidiValue="2001" />
+            <Conversion mibValue="2002" bidiValue="2002" />
+            <Conversion mibValue="2003" bidiValue="2003" />
+            <Conversion mibValue="2004" bidiValue="2004" />
+            <Conversion mibValue="2005" bidiValue="2005" />
+            <Conversion mibValue="4000" bidiValue="4000" />
+            <Conversion mibValue="4005" bidiValue="4005" />
+            <Conversion mibValue="4010" bidiValue="4010" />
+            <Conversion mibValue="4015" bidiValue="4015" />
+            <Conversion mibValue="4020" bidiValue="4020" />
+            <Conversion mibValue="4030" bidiValue="4030" />
+            <Conversion mibValue="4040" bidiValue="4040" />
+            <Conversion mibValue="4050" bidiValue="4050" />
+            <Conversion mibValue="4060" bidiValue="4060" />
+            <Conversion mibValue="4070" bidiValue="4070" />
+            <Conversion mibValue="4080" bidiValue="4080" />
+            <Conversion mibValue="4090" bidiValue="4090" />
+            <Conversion mibValue="5000" bidiValue="5000" />
+            <Conversion mibValue="3" bidiValue="3" />
+            <Conversion mibValue="4" bidiValue="4" />
+            <Conversion mibValue="5" bidiValue="5" />
+            <Conversion mibValue="10" bidiValue="10" />
+            <Conversion mibValue="11" bidiValue="11" />
+            <Conversion mibValue="21" bidiValue="21" />
+            <Conversion mibValue="22" bidiValue="22" />
+          </Converter>
+          <Converter name="DisplayTag" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.7.3" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1000" bidiValue="1000" />
+            <Conversion mibValue="1002" bidiValue="1002" />
+            <Conversion mibValue="1003" bidiValue="1003" />
+            <Conversion mibValue="1004" bidiValue="1004" />
+            <Conversion mibValue="1005" bidiValue="1005" />
+            <Conversion mibValue="3000" bidiValue="3000" />
+            <Conversion mibValue="3001" bidiValue="3001" />
+            <Conversion mibValue="3002" bidiValue="3002" />
+            <Conversion mibValue="3003" bidiValue="3003" />
+            <Conversion mibValue="3020" bidiValue="3020" />
+            <Conversion mibValue="3030" bidiValue="3030" />
+            <Conversion mibValue="3040" bidiValue="3040" />
+            <Conversion mibValue="3050" bidiValue="3050" />
+            <Conversion mibValue="3060" bidiValue="3060" />
+            <Conversion mibValue="3070" bidiValue="3070" />
+            <Conversion mibValue="3080" bidiValue="3080" />
+            <Conversion mibValue="3" bidiValue="3" />
+            <Conversion mibValue="4" bidiValue="4" />
+            <Conversion mibValue="5" bidiValue="5" />
+            <Conversion mibValue="10" bidiValue="10" />
+            <Conversion mibValue="11" bidiValue="11" />
+            <Conversion mibValue="21" bidiValue="21" />
+            <Conversion mibValue="22" bidiValue="22" />
+          </Converter>
+          <Converter name="PQMode" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.7.4" deviceIndex="false" drvPrinterEvent="true">
+            <Conversion mibValue="1" bidiValue="1" />
+            <Conversion mibValue="2" bidiValue="2" />
+            <Conversion mibValue="3" bidiValue="3" />
+            <Conversion mibValue="4" bidiValue="4" />
+            <Conversion mibValue="5" bidiValue="5" />
+            <Conversion mibValue="6" bidiValue="6" />
+            <Conversion mibValue="7" bidiValue="7" />
+          </Converter>
+        </Property>
+      </Property>
+    </Property>
+    <!--Queries for InputBins and EnvelopeFeeder-->
+    <Property name="Layout">
+      <Property name="InputBins">
+        <!-- Query for Input source support -->
+        <IndexedProperty name="Tray">
+          <Converter name="Installed" oid="1.3.6.1.2.1.43.8.2.1.2" deviceIndex="true" useFirstIndex="true" drvPrinterEvent="true">
+            <Conversion mibValue="2" bidiValue="True" />
+            <Conversion mibValue="3" bidiValue="True" />
+            <Conversion mibValue="4" bidiValue="True" />
+            <Conversion mibValue="5" bidiValue="True" />
+            <Conversion mibValue="6" bidiValue="True" />
+            <Conversion mibValue="7" bidiValue="True" />
+            <Conversion mibValue="8" bidiValue="True" />
+            <Conversion mibValue="9" bidiValue="True" />
+            <Conversion mibValue="10" bidiValue="True" />
+            <Conversion mibValue="11" bidiValue="True" />
+            <Conversion mibValue="12" bidiValue="True" />
+            <Conversion mibValue="13" bidiValue="True" />
+            <Conversion mibValue="14" bidiValue="True" />
+            <Conversion mibValue="15" bidiValue="True" />
+          </Converter>
+        </IndexedProperty>
+        <!-- PC Queries for Input Source support  -->
+        <!-- <IndexedProperty name="Tray">
+					<Converter name="Installed" oid="1.3.6.1.2.1.43.8.2.1.18" deviceIndex="true" useFirstIndex="true" drvPrinterEvent="true">
+						<Conversion mibValue="Tray 1" bidiValue="True"/>
+						<Conversion mibValue="Tray 2" bidiValue="True"/>
+						<Conversion mibValue="Tray 3" bidiValue="True"/>
+						<Conversion mibValue="Envelope Feeder" bidiValue="True"/>
+						<Conversion mibValue="Tray 4" bidiValue="True"/>
+						<Conversion mibValue="Tray 5" bidiValue="True"/>
+						<Conversion mibValue="Tray 6" bidiValue="True" />
+						<Conversion mibValue="Tray 7" bidiValue="True" />
+						<Conversion mibValue="Tray 8" bidiValue="True" />
+						<Conversion mibValue="Tray 9" bidiValue="True" />
+						<Conversion mibValue="Tray 10" bidiValue="True" />
+						<Conversion mibValue="Tray 11" bidiValue="True" />
+						<Conversion mibValue="Tray 12" bidiValue="True" />
+						<Conversion mibValue="Tray 13" bidiValue="True" />
+						<Conversion mibValue="Tray 14" bidiValue="True" />
+					</Converter>
+				</IndexedProperty> -->
+      </Property>
+    </Property>
+  </Property>
+</bidi:Schema>

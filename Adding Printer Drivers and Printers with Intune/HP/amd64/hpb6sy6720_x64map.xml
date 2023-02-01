@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Properties xmlns="http://schemas.microsoft.com/windows/2011/08/printing/devmodemap">
+  <Property Name="bArray">
+    <ByteArray Size="128"></ByteArray>
+  </Property>
+
+  <!-- Zoom 25-400 percent, default is 100 -->
+  <Property Name="Zoom">
+    <Int32>100</Int32>
+  </Property>
+
+  <!-- Page Poster, 1-5 -->
+  <Property Name="Poster">
+    <Int32>1</Int32>
+  </Property>
+
+
+  <!-- NUpBorderWidth 0 - 25000 microns -->
+  <Property Name="NUpBorderWidth">
+    <Int32>0</Int32>
+  </Property>
+
+  <!-- NUpBorderLength 0 - 25000 microns -->
+  <Property Name="NUpBorderLength">
+    <Int32>0</Int32>
+  </Property>
+
+  <!-- NUpBorderDashLength 0 - 25000 microns -->
+  <Property Name="NUpBorderDashLength">
+    <Int32>0</Int32>
+  </Property>
+
+
+  <!-- Front cover media size -->
+  <Property Name="FrontCoverMediaSize">
+    <String Length="63">ns0000:UsePageMediaSize</String>
+  </Property>
+
+  <Property Name="FrontCoverMediaSizeWidth">
+    <Int32>0</Int32>
+  </Property>
+
+  <Property Name="FrontCoverMediaSizeHeight">
+    <Int32>0</Int32>
+  </Property>
+
+  <!-- Front cover media type -->
+  <Property Name="FrontCoverMediaType">
+    <String Length="63">psk:Plain</String>
+  </Property>
+
+  <!-- Front cover input bin -->
+  <Property Name="FrontCoverInputBin">
+    <String Length="63">psk:AutoSelect</String>
+  </Property>
+
+  <!-- Back cover media size -->
+  <Property Name="BackCoverMediaSize">
+    <String Length="63">ns0000:UsePageMediaSize</String>
+  </Property>
+
+  <Property Name="BackCoverMediaSizeWidth">
+    <Int32>0</Int32>
+  </Property>
+
+  <Property Name="BackCoverMediaSizeHeight">
+    <Int32>0</Int32>
+  </Property>
+  <!-- Back cover media type -->
+  <Property Name="BackCoverMediaType">
+    <String Length="63">psk:Plain</String>
+  </Property>
+
+  <!-- Back cover input bin -->
+  <Property Name="BackCoverInputBin">
+    <String Length="63">psk:AutoSelect</String>
+  </Property>
+
+
+  <!-- Interleaves media size -->
+  <Property Name="InterleavesMediaSize">
+    <String Length="63">ns0000:UsePageMediaSize</String>
+  </Property>
+
+  <Property Name="InterleavesMediaSizeWidth">
+    <Int32>0</Int32>
+  </Property>
+
+  <Property Name="InterleavesMediaSizeHeight">
+    <Int32>0</Int32>
+  </Property>
+
+  <!-- Interleaves media type -->
+  <Property Name="InterleavesMediaType">
+    <String Length="63">psk:Plain</String>
+  </Property>
+
+  <!-- Interleaves input bin -->
+  <Property Name="InterleavesInputBin">
+    <String Length="63">psk:AutoSelect</String>
+  </Property>
+
+  <!-- InsertPages media size -->
+  <Property Name="InsertEmptyPagesMediaSize">
+    <String Length="63">ns0000:UsePageMediaSize</String>
+  </Property>
+
+  <Property Name="InsertEmptyPagesMediaSizeWidth">
+    <Int32>0</Int32>
+  </Property>
+
+  <Property Name="InsertEmptyPagesMediaSizeHeight">
+    <Int32>0</Int32>
+  </Property>
+
+  <!-- InsertPages media type -->
+  <Property Name="InsertEmptyPagesMediaType">
+    <String Length="63">psk:AutoSelect</String>
+  </Property>
+
+  <!-- InsertPages input bin -->
+  <Property Name="InsertEmptyPagesInputBin">
+    <String Length="63">psk:AutoSelect</String>
+  </Property>
+
+  <!-- InsertPages Exception Usage -->
+  <Property Name="InsertEmptyPagesExceptionUsage">
+    <String Length="63">ns0000:SpecifiedPages</String>
+  </Property>
+  
+  <!-- InsertPages Pages List -->
+  <Property Name="InsertEmptyPagesList">
+    <String Length="128"></String>
+  </Property>
+
+  <!-- InsertPages Print media size -->
+  <Property Name="InsertPrintPagesMediaSize">
+    <String Length="63">ns0000:UsePageMediaSize</String>
+  </Property>
+
+  <Property Name="InsertPrintPagesMediaSizeWidth">
+    <Int32>0</Int32>
+  </Property>
+
+  <Property Name="InsertPrintPagesMediaSizeHeight">
+    <Int32>0</Int32>
+  </Property>
+
+  <!-- InsertPages Print media type -->
+  <Property Name="InsertPrintPagesMediaType">
+    <String Length="63">psk:AutoSelect</String>
+  </Property>
+
+  <!-- InsertPages Print input bin -->
+  <Property Name="InsertPrintPagesInputBin">
+    <String Length="63">psk:AutoSelect</String>
+  </Property>
+
+  <!-- InsertPages Print Exception Usage -->
+  <Property Name="InsertPrintPagesExceptionUsage">
+    <String Length="63">ns0000:SpecifiedPages</String>
+  </Property>
+
+  <!-- InsertPages Print Pages List -->
+  <Property Name="InsertPrintPagesList">
+    <String Length="128"></String>
+  </Property>
+  
+  <!-- print on target media size -->
+  <Property Name="TargetMediaSize">
+    <String Length="128"></String>
+  </Property>
+  
+  <Property Name="TargetMediaSizeWidth">
+    <Int32>0</Int32>
+  </Property>
+  
+  <Property Name="TargetMediaSizeHeight">
+    <Int32>0</Int32>
+  </Property>
+
+  <!-- Binding gutter, for psk:DocumentBindingGutter, 1-25000 -->
+  <Property Name="BindingGutter">
+    <Int32>0</Int32>
+  </Property>
+
+  <!-- Binding signature pages, for mti:DocumentBookletSignaturePages -->
+  <Property Name="SignaturePages">
+    <Int32>0</Int32>
+  </Property>
+
+  <!-- Page watermarks -->
+  <Property Name="PageWatermarkNameH">
+    <String Length="256"></String>
+  </Property>
+
+  <Property Name="PageWatermarkPlacementOffsetWidth">
+    <Int32>0</Int32>
+  </Property>
+
+  <Property Name="PageWatermarkPlacementOffsetHeight">
+    <Int32>0</Int32>
+  </Property>
+
+  <Property Name="PageWatermarkTransparency">
+    <Int32>50</Int32>
+  </Property>
+
+  <!-- Page Watermark Text -->
+  <Property Name="PageWatermarkTextTextH">
+    <String Length="256">0061</String>
+  </Property>
+
+
+  <Property Name="PageWatermarkTextFontSize">
+    <Int32>72</Int32>
+  </Property>
+
+  <Property Name="PageWatermarkTextAngle">
+    <Int32>0</Int32>
+  </Property>
+
+  <Property Name="PageWatermarkTextColor">
+    <String Length="9">FFFF0000</String>
+  </Property>
+
+  <Property Name="PageWatermarkTextFontH">
+    <String Length="128">0061</String>
+  </Property>
+
+  <Property Name="PageWatermarkTextOutline">
+    <Int32>0</Int32>
+  </Property>
+
+  <Property Name="PageWatermarkTextBold">
+    <Int32>0</Int32>
+  </Property>
+
+  <Property Name="PageWatermarkTextItalic">
+    <Int32>0</Int32>
+  </Property>
+
+  <Property Name="PageWatermarkTextRightToLeft">
+    <Int32>0</Int32>
+  </Property>
+
+  <!-- Page Watermark Image -->
+  <Property Name="PageWatermarkImageFileH">
+    <String Length="1048">0041</String>
+  </Property>
+
+  <Property Name="PageWatermarkImageScaleWidth">
+    <Int32>100</Int32>
+  </Property>
+
+  <Property Name="PageWatermarkImageScaleHeight">
+    <Int32>100</Int32>
+  </Property>
+  
+  <!-- custom job name -->
+  <Property Name="JobName">
+    <String Length="64"></String>
+  </Property>
+  
+  <!-- custom user name -->
+  <Property Name="UserName">
+    <String Length="64"></String>
+  </Property>
+  
+  <!-- PIN for job-->
+  <Property Name="PIN">
+    <String Length="13"></String>
+  </Property>
+
+  <!-- PIN for job-->
+  <Property Name="Password">
+    <String Length="128"></String>
+  </Property>
+  
+  <!-- Shortcut Name -->
+  <Property Name="ShortcutName">
+    <String Length="32"></String>
+  </Property>
+  
+  <!-- Manual/Automatic -->
+  <Property Name="DuplexMode">
+    <String Length="16">Manual</String>
+  </Property>
+</Properties>
+

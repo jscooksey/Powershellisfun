@@ -1,7 +1,8 @@
 $printers = @(
-    'Contoso-General'
-    'Contoso-HP'
-    'Contoso-MFP'
+    'Taree Printer'
+    'Newcastle MFP'
+    'Muswellbrook Printer'
+    'Central Coast MFP'
 )
 
 #Check every printer if it's installed

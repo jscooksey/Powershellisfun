@@ -1,0 +1,2161 @@
+
+*%=================================================================*%
+*%             HP Development Company, L.P.                 *%
+*%                    All rights reserved.                         *%
+*%                                                                 *%
+*%                 Bidi Autoconfiguration File                     *%
+*%   Generated from a UPDF specification using the UPDF Tool.      *%
+*%=================================================================*%
+
+*%=================================================================*%
+*%     OptionalTray3
+*%=================================================================*%
+
+*Feature: OptionalTray3 {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: OptionalTray3 {
+        *QueryString: "\Printer.Layout.InputBins.Tray003:Installed"
+    } 
+
+    *BidiResponse: OptionalTray3 {
+        *ResponseType: BIDI_BOOL
+        *ResponseData: ENUM_OPTION (OptionalTray3)
+    }
+    *Option: NotInstalled {
+        *BidiValue: BOOL(FALSE)
+    }
+    *Option: Installed {
+        *BidiValue: BOOL(TRUE)
+    }
+
+}
+
+*%=================================================================*%
+*%     DuplexUnit
+*%=================================================================*%
+
+*Feature: DuplexUnit {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: DuplexUnit {
+        *QueryString: "\Printer.Configuration.DuplexUnit:Installed"
+    } 
+
+    *BidiResponse: DuplexUnit {
+        *ResponseType: BIDI_BOOL
+        *ResponseData: ENUM_OPTION (DuplexUnit)
+    }
+    *Option: NotInstalled {
+        *BidiValue: BOOL(FALSE)
+    }
+    *Option: Installed {
+        *BidiValue: BOOL(TRUE)
+    }
+
+}
+
+*%=================================================================*%
+*%     PC_PrintContractVersionMajor
+*%=================================================================*%
+
+*Feature: PC_PrintContractVersionMajor {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: PC_PrintContractVersionMajor {
+        *QueryString: "\Printer.Configuration.PrintContract:VersionMajor"
+    } 
+
+    *BidiResponse: PC_PrintContractVersionMajor {
+        *ResponseType: BIDI_INT
+        *ResponseData: ENUM_OPTION (PC_PrintContractVersionMajor)
+    }
+	
+	*Option: 0 {
+		*BidiValue: INT(0)
+    }
+	
+	*Option: 1 {
+		*BidiValue: INT(1)
+    }
+	
+	*Option: 2 {
+		*BidiValue: INT(2)
+    }
+	
+	*Option: 3 {
+		*BidiValue: INT(3)
+    }
+	
+	*Option: 4 {
+		*BidiValue: INT(4)
+    }
+	
+	*Option: 5 {
+		*BidiValue: INT(5)
+    }
+	
+	*Option: 6 {
+		*BidiValue: INT(6)
+    }
+	
+	*Option: 7 {
+		*BidiValue: INT(7)
+    }
+	
+	*Option: 8 {
+		*BidiValue: INT(8)
+    }
+	
+	*Option: 9 {
+		*BidiValue: INT(9)
+    }
+	
+}
+
+*%=================================================================*%
+*%     PC_PrintContractVersionMajor0
+*%=================================================================*%
+
+*Feature: PC_PrintContractVersionMajor0 {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: PC_PrintContractVersionMajor0 {
+        *QueryString: "\Printer.Configuration.PrintContract:VersionMajor"
+    } 
+
+    *BidiResponse: PC_PrintContractVersionMajor0 {
+        *ResponseType: BIDI_INT
+        *ResponseData: ENUM_OPTION (PC_PrintContractVersionMajor0)
+    }
+	
+	*Option: 0 {
+		*BidiValue: INT(0)
+    }
+	
+	*Option: 1 {
+		*BidiValue: INT(1)
+    }
+	
+	*Option: 2 {
+		*BidiValue: INT(2)
+    }
+	
+	*Option: 3 {
+		*BidiValue: INT(3)
+    }
+	
+	*Option: 4 {
+		*BidiValue: INT(4)
+    }
+	
+	*Option: 5 {
+		*BidiValue: INT(5)
+    }
+	
+	*Option: 6 {
+		*BidiValue: INT(6)
+    }
+	
+	*Option: 7 {
+		*BidiValue: INT(7)
+    }
+	
+	*Option: 8 {
+		*BidiValue: INT(8)
+    }
+	
+	*Option: 9 {
+		*BidiValue: INT(9)
+    }
+	
+}
+
+*%=================================================================*%
+*%     PC_PrintContractVersionMajor1
+*%=================================================================*%
+
+*Feature: PC_PrintContractVersionMajor1 {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: PC_PrintContractVersionMajor1 {
+        *QueryString: "\Printer.Configuration.PrintContract:VersionMajor"
+    } 
+
+    *BidiResponse: PC_PrintContractVersionMajor1 {
+        *ResponseType: BIDI_INT
+        *ResponseData: ENUM_OPTION (PC_PrintContractVersionMajor1)
+    }
+	
+	*Option: 0 {
+		*BidiValue: INT(0)
+    }
+	
+	*Option: 1 {
+		*BidiValue: INT(1)
+    }
+	
+	*Option: 2 {
+		*BidiValue: INT(2)
+    }
+	
+	*Option: 3 {
+		*BidiValue: INT(3)
+    }
+	
+	*Option: 4 {
+		*BidiValue: INT(4)
+    }
+	
+	*Option: 5 {
+		*BidiValue: INT(5)
+    }
+	
+	*Option: 6 {
+		*BidiValue: INT(6)
+    }
+	
+	*Option: 7 {
+		*BidiValue: INT(7)
+    }
+	
+	*Option: 8 {
+		*BidiValue: INT(8)
+    }
+	
+	*Option: 9 {
+		*BidiValue: INT(9)
+    }
+	
+}
+
+*%=================================================================*%
+*%     PC_PrintContractVersionMajor2
+*%=================================================================*%
+
+*Feature: PC_PrintContractVersionMajor2 {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: PC_PrintContractVersionMajor2 {
+        *QueryString: "\Printer.Configuration.PrintContract:VersionMajor"
+    } 
+
+    *BidiResponse: PC_PrintContractVersionMajor2 {
+        *ResponseType: BIDI_INT
+        *ResponseData: ENUM_OPTION (PC_PrintContractVersionMajor2)
+    }
+	
+	*Option: 0 {
+		*BidiValue: INT(0)
+    }
+	
+	*Option: 1 {
+		*BidiValue: INT(1)
+    }
+	
+	*Option: 2 {
+		*BidiValue: INT(2)
+    }
+	
+	*Option: 3 {
+		*BidiValue: INT(3)
+    }
+	
+	*Option: 4 {
+		*BidiValue: INT(4)
+    }
+	
+	*Option: 5 {
+		*BidiValue: INT(5)
+    }
+	
+	*Option: 6 {
+		*BidiValue: INT(6)
+    }
+	
+	*Option: 7 {
+		*BidiValue: INT(7)
+    }
+	
+	*Option: 8 {
+		*BidiValue: INT(8)
+    }
+	
+	*Option: 9 {
+		*BidiValue: INT(9)
+    }
+	
+}
+
+*%=================================================================*%
+*%     PC_PrintContractVersionMajor3
+*%=================================================================*%
+
+*Feature: PC_PrintContractVersionMajor3 {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: PC_PrintContractVersionMajor3 {
+        *QueryString: "\Printer.Configuration.PrintContract:VersionMajor"
+    } 
+
+    *BidiResponse: PC_PrintContractVersionMajor3 {
+        *ResponseType: BIDI_INT
+        *ResponseData: ENUM_OPTION (PC_PrintContractVersionMajor3)
+    }
+	
+	*Option: 0 {
+		*BidiValue: INT(0)
+    }
+	
+	*Option: 1 {
+		*BidiValue: INT(1)
+    }
+	
+	*Option: 2 {
+		*BidiValue: INT(2)
+    }
+	
+	*Option: 3 {
+		*BidiValue: INT(3)
+    }
+	
+	*Option: 4 {
+		*BidiValue: INT(4)
+    }
+	
+	*Option: 5 {
+		*BidiValue: INT(5)
+    }
+	
+	*Option: 6 {
+		*BidiValue: INT(6)
+    }
+	
+	*Option: 7 {
+		*BidiValue: INT(7)
+    }
+	
+	*Option: 8 {
+		*BidiValue: INT(8)
+    }
+	
+	*Option: 9 {
+		*BidiValue: INT(9)
+    }
+	
+}
+
+*%=================================================================*%
+*%     PC_PrintContractVersionMajor4
+*%=================================================================*%
+
+*Feature: PC_PrintContractVersionMajor4 {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: PC_PrintContractVersionMajor4 {
+        *QueryString: "\Printer.Configuration.PrintContract:VersionMajor"
+    } 
+
+    *BidiResponse: PC_PrintContractVersionMajor4 {
+        *ResponseType: BIDI_INT
+        *ResponseData: ENUM_OPTION (PC_PrintContractVersionMajor4)
+    }
+	
+	*Option: 0 {
+		*BidiValue: INT(0)
+    }
+	
+	*Option: 1 {
+		*BidiValue: INT(1)
+    }
+	
+	*Option: 2 {
+		*BidiValue: INT(2)
+    }
+	
+	*Option: 3 {
+		*BidiValue: INT(3)
+    }
+	
+	*Option: 4 {
+		*BidiValue: INT(4)
+    }
+	
+	*Option: 5 {
+		*BidiValue: INT(5)
+    }
+	
+	*Option: 6 {
+		*BidiValue: INT(6)
+    }
+	
+	*Option: 7 {
+		*BidiValue: INT(7)
+    }
+	
+	*Option: 8 {
+		*BidiValue: INT(8)
+    }
+	
+	*Option: 9 {
+		*BidiValue: INT(9)
+    }
+	
+}
+
+*%=================================================================*%
+*%     PC_PrintContractVersionMajor5
+*%=================================================================*%
+
+*Feature: PC_PrintContractVersionMajor5 {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: PC_PrintContractVersionMajor5 {
+        *QueryString: "\Printer.Configuration.PrintContract:VersionMajor"
+    } 
+
+    *BidiResponse: PC_PrintContractVersionMajor5 {
+        *ResponseType: BIDI_INT
+        *ResponseData: ENUM_OPTION (PC_PrintContractVersionMajor5)
+    }
+	
+	*Option: 0 {
+		*BidiValue: INT(0)
+    }
+	
+	*Option: 1 {
+		*BidiValue: INT(1)
+    }
+	
+	*Option: 2 {
+		*BidiValue: INT(2)
+    }
+	
+	*Option: 3 {
+		*BidiValue: INT(3)
+    }
+	
+	*Option: 4 {
+		*BidiValue: INT(4)
+    }
+	
+	*Option: 5 {
+		*BidiValue: INT(5)
+    }
+	
+	*Option: 6 {
+		*BidiValue: INT(6)
+    }
+	
+	*Option: 7 {
+		*BidiValue: INT(7)
+    }
+	
+	*Option: 8 {
+		*BidiValue: INT(8)
+    }
+	
+	*Option: 9 {
+		*BidiValue: INT(9)
+    }
+	
+}
+
+*%=================================================================*%
+*%     PC_PrintContractVersionMajor6
+*%=================================================================*%
+
+*Feature: PC_PrintContractVersionMajor6 {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: PC_PrintContractVersionMajor6 {
+        *QueryString: "\Printer.Configuration.PrintContract:VersionMajor"
+    } 
+
+    *BidiResponse: PC_PrintContractVersionMajor6 {
+        *ResponseType: BIDI_INT
+        *ResponseData: ENUM_OPTION (PC_PrintContractVersionMajor6)
+    }
+	
+	*Option: 0 {
+		*BidiValue: INT(0)
+    }
+	
+	*Option: 1 {
+		*BidiValue: INT(1)
+    }
+	
+	*Option: 2 {
+		*BidiValue: INT(2)
+    }
+	
+	*Option: 3 {
+		*BidiValue: INT(3)
+    }
+	
+	*Option: 4 {
+		*BidiValue: INT(4)
+    }
+	
+	*Option: 5 {
+		*BidiValue: INT(5)
+    }
+	
+	*Option: 6 {
+		*BidiValue: INT(6)
+    }
+	
+	*Option: 7 {
+		*BidiValue: INT(7)
+    }
+	
+	*Option: 8 {
+		*BidiValue: INT(8)
+    }
+	
+	*Option: 9 {
+		*BidiValue: INT(9)
+    }
+	
+}
+
+*%=================================================================*%
+*%     PC_PrintContractVersionMajor7
+*%=================================================================*%
+
+*Feature: PC_PrintContractVersionMajor7 {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: PC_PrintContractVersionMajor7 {
+        *QueryString: "\Printer.Configuration.PrintContract:VersionMajor"
+    } 
+
+    *BidiResponse: PC_PrintContractVersionMajor7 {
+        *ResponseType: BIDI_INT
+        *ResponseData: ENUM_OPTION (PC_PrintContractVersionMajor7)
+    }
+	
+	*Option: 0 {
+		*BidiValue: INT(0)
+    }
+	
+	*Option: 1 {
+		*BidiValue: INT(1)
+    }
+	
+	*Option: 2 {
+		*BidiValue: INT(2)
+    }
+	
+	*Option: 3 {
+		*BidiValue: INT(3)
+    }
+	
+	*Option: 4 {
+		*BidiValue: INT(4)
+    }
+	
+	*Option: 5 {
+		*BidiValue: INT(5)
+    }
+	
+	*Option: 6 {
+		*BidiValue: INT(6)
+    }
+	
+	*Option: 7 {
+		*BidiValue: INT(7)
+    }
+	
+	*Option: 8 {
+		*BidiValue: INT(8)
+    }
+	
+	*Option: 9 {
+		*BidiValue: INT(9)
+    }
+	
+}
+
+*%=================================================================*%
+*%     PC_PrintContractVersionMajor8
+*%=================================================================*%
+
+*Feature: PC_PrintContractVersionMajor8 {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: PC_PrintContractVersionMajor8 {
+        *QueryString: "\Printer.Configuration.PrintContract:VersionMajor"
+    } 
+
+    *BidiResponse: PC_PrintContractVersionMajor8 {
+        *ResponseType: BIDI_INT
+        *ResponseData: ENUM_OPTION (PC_PrintContractVersionMajor8)
+    }
+	
+	*Option: 0 {
+		*BidiValue: INT(0)
+    }
+	
+	*Option: 1 {
+		*BidiValue: INT(1)
+    }
+	
+	*Option: 2 {
+		*BidiValue: INT(2)
+    }
+	
+	*Option: 3 {
+		*BidiValue: INT(3)
+    }
+	
+	*Option: 4 {
+		*BidiValue: INT(4)
+    }
+	
+	*Option: 5 {
+		*BidiValue: INT(5)
+    }
+	
+	*Option: 6 {
+		*BidiValue: INT(6)
+    }
+	
+	*Option: 7 {
+		*BidiValue: INT(7)
+    }
+	
+	*Option: 8 {
+		*BidiValue: INT(8)
+    }
+	
+	*Option: 9 {
+		*BidiValue: INT(9)
+    }
+	
+}
+
+*%=================================================================*%
+*%     PC_PrintContractVersionMajor9
+*%=================================================================*%
+
+*Feature: PC_PrintContractVersionMajor9 {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: PC_PrintContractVersionMajor9 {
+        *QueryString: "\Printer.Configuration.PrintContract:VersionMajor"
+    } 
+
+    *BidiResponse: PC_PrintContractVersionMajor9 {
+        *ResponseType: BIDI_INT
+        *ResponseData: ENUM_OPTION (PC_PrintContractVersionMajor9)
+    }
+	
+	*Option: 0 {
+		*BidiValue: INT(0)
+    }
+	
+	*Option: 1 {
+		*BidiValue: INT(1)
+    }
+	
+	*Option: 2 {
+		*BidiValue: INT(2)
+    }
+	
+	*Option: 3 {
+		*BidiValue: INT(3)
+    }
+	
+	*Option: 4 {
+		*BidiValue: INT(4)
+    }
+	
+	*Option: 5 {
+		*BidiValue: INT(5)
+    }
+	
+	*Option: 6 {
+		*BidiValue: INT(6)
+    }
+	
+	*Option: 7 {
+		*BidiValue: INT(7)
+    }
+	
+	*Option: 8 {
+		*BidiValue: INT(8)
+    }
+	
+	*Option: 9 {
+		*BidiValue: INT(9)
+    }
+	
+}
+
+*%=================================================================*%
+*%     PC_PrintContractVersionMinor
+*%=================================================================*%
+
+*Feature: PC_PrintContractVersionMinor {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: PC_PrintContractVersionMinor {
+        *QueryString: "\Printer.Configuration.PrintContract:VersionMinor"
+    } 
+
+    *BidiResponse: PC_PrintContractVersionMinor {
+        *ResponseType: BIDI_INT
+        *ResponseData: ENUM_OPTION (PC_PrintContractVersionMinor)
+    }
+	
+	*Option: 0 {
+		*BidiValue: INT(0)
+    }
+	
+	*Option: 1 {
+		*BidiValue: INT(1)
+    }
+	
+	*Option: 2 {
+		*BidiValue: INT(2)
+    }
+	
+	*Option: 3 {
+		*BidiValue: INT(3)
+    }
+	
+	*Option: 4 {
+		*BidiValue: INT(4)
+    }
+	
+	*Option: 5 {
+		*BidiValue: INT(5)
+    }
+	
+	*Option: 6 {
+		*BidiValue: INT(6)
+    }
+	
+	*Option: 7 {
+		*BidiValue: INT(7)
+    }
+	
+	*Option: 8 {
+		*BidiValue: INT(8)
+    }
+	
+	*Option: 9 {
+		*BidiValue: INT(9)
+    }
+	
+	*Option: 72 {
+		*BidiValue: INT(72)
+    }
+	
+}
+
+*%=================================================================*%
+*%     PC_PrintContractVersionMinor0
+*%=================================================================*%
+
+*Feature: PC_PrintContractVersionMinor0 {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: PC_PrintContractVersionMinor0 {
+        *QueryString: "\Printer.Configuration.PrintContract:VersionMinor"
+    } 
+
+    *BidiResponse: PC_PrintContractVersionMinor0 {
+        *ResponseType: BIDI_INT
+        *ResponseData: ENUM_OPTION (PC_PrintContractVersionMinor0)
+    }
+	
+	*Option: 0 {
+		*BidiValue: INT(0)
+    }
+	
+	*Option: 1 {
+		*BidiValue: INT(1)
+    }
+	
+	*Option: 2 {
+		*BidiValue: INT(2)
+    }
+	
+	*Option: 3 {
+		*BidiValue: INT(3)
+    }
+	
+	*Option: 4 {
+		*BidiValue: INT(4)
+    }
+	
+	*Option: 5 {
+		*BidiValue: INT(5)
+    }
+	
+	*Option: 6 {
+		*BidiValue: INT(6)
+    }
+	
+	*Option: 7 {
+		*BidiValue: INT(7)
+    }
+	
+	*Option: 8 {
+		*BidiValue: INT(8)
+    }
+	
+	*Option: 9 {
+		*BidiValue: INT(9)
+    }
+	
+	*Option: 72 {
+		*BidiValue: INT(72)
+    }
+	
+}
+
+*%=================================================================*%
+*%     PC_PrintContractVersionMinor1
+*%=================================================================*%
+
+*Feature: PC_PrintContractVersionMinor1 {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: PC_PrintContractVersionMinor1 {
+        *QueryString: "\Printer.Configuration.PrintContract:VersionMinor"
+    } 
+
+    *BidiResponse: PC_PrintContractVersionMinor1 {
+        *ResponseType: BIDI_INT
+        *ResponseData: ENUM_OPTION (PC_PrintContractVersionMinor1)
+    }
+	
+	*Option: 0 {
+		*BidiValue: INT(0)
+    }
+	
+	*Option: 1 {
+		*BidiValue: INT(1)
+    }
+	
+	*Option: 2 {
+		*BidiValue: INT(2)
+    }
+	
+	*Option: 3 {
+		*BidiValue: INT(3)
+    }
+	
+	*Option: 4 {
+		*BidiValue: INT(4)
+    }
+	
+	*Option: 5 {
+		*BidiValue: INT(5)
+    }
+	
+	*Option: 6 {
+		*BidiValue: INT(6)
+    }
+	
+	*Option: 7 {
+		*BidiValue: INT(7)
+    }
+	
+	*Option: 8 {
+		*BidiValue: INT(8)
+    }
+	
+	*Option: 9 {
+		*BidiValue: INT(9)
+    }
+	
+	*Option: 72 {
+		*BidiValue: INT(72)
+    }
+	
+}
+
+*%=================================================================*%
+*%     PC_PrintContractVersionMinor2
+*%=================================================================*%
+
+*Feature: PC_PrintContractVersionMinor2 {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: PC_PrintContractVersionMinor2 {
+        *QueryString: "\Printer.Configuration.PrintContract:VersionMinor"
+    } 
+
+    *BidiResponse: PC_PrintContractVersionMinor2 {
+        *ResponseType: BIDI_INT
+        *ResponseData: ENUM_OPTION (PC_PrintContractVersionMinor2)
+    }
+	
+	*Option: 0 {
+		*BidiValue: INT(0)
+    }
+	
+	*Option: 1 {
+		*BidiValue: INT(1)
+    }
+	
+	*Option: 2 {
+		*BidiValue: INT(2)
+    }
+	
+	*Option: 3 {
+		*BidiValue: INT(3)
+    }
+	
+	*Option: 4 {
+		*BidiValue: INT(4)
+    }
+	
+	*Option: 5 {
+		*BidiValue: INT(5)
+    }
+	
+	*Option: 6 {
+		*BidiValue: INT(6)
+    }
+	
+	*Option: 7 {
+		*BidiValue: INT(7)
+    }
+	
+	*Option: 8 {
+		*BidiValue: INT(8)
+    }
+	
+	*Option: 9 {
+		*BidiValue: INT(9)
+    }
+	
+	*Option: 72 {
+		*BidiValue: INT(72)
+    }
+	
+}
+
+*%=================================================================*%
+*%     PC_PrintContractVersionMinor3
+*%=================================================================*%
+
+*Feature: PC_PrintContractVersionMinor3 {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: PC_PrintContractVersionMinor3 {
+        *QueryString: "\Printer.Configuration.PrintContract:VersionMinor"
+    } 
+
+    *BidiResponse: PC_PrintContractVersionMinor3 {
+        *ResponseType: BIDI_INT
+        *ResponseData: ENUM_OPTION (PC_PrintContractVersionMinor3)
+    }
+	
+	*Option: 0 {
+		*BidiValue: INT(0)
+    }
+	
+	*Option: 1 {
+		*BidiValue: INT(1)
+    }
+	
+	*Option: 2 {
+		*BidiValue: INT(2)
+    }
+	
+	*Option: 3 {
+		*BidiValue: INT(3)
+    }
+	
+	*Option: 4 {
+		*BidiValue: INT(4)
+    }
+	
+	*Option: 5 {
+		*BidiValue: INT(5)
+    }
+	
+	*Option: 6 {
+		*BidiValue: INT(6)
+    }
+	
+	*Option: 7 {
+		*BidiValue: INT(7)
+    }
+	
+	*Option: 8 {
+		*BidiValue: INT(8)
+    }
+	
+	*Option: 9 {
+		*BidiValue: INT(9)
+    }
+	
+	*Option: 72 {
+		*BidiValue: INT(72)
+    }
+	
+}
+
+*%=================================================================*%
+*%     PC_PrintContractVersionMinor4
+*%=================================================================*%
+
+*Feature: PC_PrintContractVersionMinor4 {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: PC_PrintContractVersionMinor4 {
+        *QueryString: "\Printer.Configuration.PrintContract:VersionMinor"
+    } 
+
+    *BidiResponse: PC_PrintContractVersionMinor4 {
+        *ResponseType: BIDI_INT
+        *ResponseData: ENUM_OPTION (PC_PrintContractVersionMinor4)
+    }
+	
+	*Option: 0 {
+		*BidiValue: INT(0)
+    }
+	
+	*Option: 1 {
+		*BidiValue: INT(1)
+    }
+	
+	*Option: 2 {
+		*BidiValue: INT(2)
+    }
+	
+	*Option: 3 {
+		*BidiValue: INT(3)
+    }
+	
+	*Option: 4 {
+		*BidiValue: INT(4)
+    }
+	
+	*Option: 5 {
+		*BidiValue: INT(5)
+    }
+	
+	*Option: 6 {
+		*BidiValue: INT(6)
+    }
+	
+	*Option: 7 {
+		*BidiValue: INT(7)
+    }
+	
+	*Option: 8 {
+		*BidiValue: INT(8)
+    }
+	
+	*Option: 9 {
+		*BidiValue: INT(9)
+    }
+	
+	*Option: 72 {
+		*BidiValue: INT(72)
+    }
+	
+}
+
+*%=================================================================*%
+*%     PC_PrintContractVersionMinor5
+*%=================================================================*%
+
+*Feature: PC_PrintContractVersionMinor5 {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: PC_PrintContractVersionMinor5 {
+        *QueryString: "\Printer.Configuration.PrintContract:VersionMinor"
+    } 
+
+    *BidiResponse: PC_PrintContractVersionMinor5 {
+        *ResponseType: BIDI_INT
+        *ResponseData: ENUM_OPTION (PC_PrintContractVersionMinor5)
+    }
+	
+	*Option: 0 {
+		*BidiValue: INT(0)
+    }
+	
+	*Option: 1 {
+		*BidiValue: INT(1)
+    }
+	
+	*Option: 2 {
+		*BidiValue: INT(2)
+    }
+	
+	*Option: 3 {
+		*BidiValue: INT(3)
+    }
+	
+	*Option: 4 {
+		*BidiValue: INT(4)
+    }
+	
+	*Option: 5 {
+		*BidiValue: INT(5)
+    }
+	
+	*Option: 6 {
+		*BidiValue: INT(6)
+    }
+	
+	*Option: 7 {
+		*BidiValue: INT(7)
+    }
+	
+	*Option: 8 {
+		*BidiValue: INT(8)
+    }
+	
+	*Option: 9 {
+		*BidiValue: INT(9)
+    }
+	
+	*Option: 72 {
+		*BidiValue: INT(72)
+    }
+	
+}
+
+*%=================================================================*%
+*%     PC_PrintContractVersionMinor6
+*%=================================================================*%
+
+*Feature: PC_PrintContractVersionMinor6 {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: PC_PrintContractVersionMinor6 {
+        *QueryString: "\Printer.Configuration.PrintContract:VersionMinor"
+    } 
+
+    *BidiResponse: PC_PrintContractVersionMinor6 {
+        *ResponseType: BIDI_INT
+        *ResponseData: ENUM_OPTION (PC_PrintContractVersionMinor6)
+    }
+	
+	*Option: 0 {
+		*BidiValue: INT(0)
+    }
+	
+	*Option: 1 {
+		*BidiValue: INT(1)
+    }
+	
+	*Option: 2 {
+		*BidiValue: INT(2)
+    }
+	
+	*Option: 3 {
+		*BidiValue: INT(3)
+    }
+	
+	*Option: 4 {
+		*BidiValue: INT(4)
+    }
+	
+	*Option: 5 {
+		*BidiValue: INT(5)
+    }
+	
+	*Option: 6 {
+		*BidiValue: INT(6)
+    }
+	
+	*Option: 7 {
+		*BidiValue: INT(7)
+    }
+	
+	*Option: 8 {
+		*BidiValue: INT(8)
+    }
+	
+	*Option: 9 {
+		*BidiValue: INT(9)
+    }
+	
+	*Option: 72 {
+		*BidiValue: INT(72)
+    }
+	
+}
+
+*%=================================================================*%
+*%     PC_PrintContractVersionMinor7
+*%=================================================================*%
+
+*Feature: PC_PrintContractVersionMinor7 {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: PC_PrintContractVersionMinor7 {
+        *QueryString: "\Printer.Configuration.PrintContract:VersionMinor"
+    } 
+
+    *BidiResponse: PC_PrintContractVersionMinor7 {
+        *ResponseType: BIDI_INT
+        *ResponseData: ENUM_OPTION (PC_PrintContractVersionMinor7)
+    }
+	
+	*Option: 0 {
+		*BidiValue: INT(0)
+    }
+	
+	*Option: 1 {
+		*BidiValue: INT(1)
+    }
+	
+	*Option: 2 {
+		*BidiValue: INT(2)
+    }
+	
+	*Option: 3 {
+		*BidiValue: INT(3)
+    }
+	
+	*Option: 4 {
+		*BidiValue: INT(4)
+    }
+	
+	*Option: 5 {
+		*BidiValue: INT(5)
+    }
+	
+	*Option: 6 {
+		*BidiValue: INT(6)
+    }
+	
+	*Option: 7 {
+		*BidiValue: INT(7)
+    }
+	
+	*Option: 8 {
+		*BidiValue: INT(8)
+    }
+	
+	*Option: 9 {
+		*BidiValue: INT(9)
+    }
+	
+	*Option: 72 {
+		*BidiValue: INT(72)
+    }
+	
+}
+
+*%=================================================================*%
+*%     PC_PrintContractVersionMinor8
+*%=================================================================*%
+
+*Feature: PC_PrintContractVersionMinor8 {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: PC_PrintContractVersionMinor8 {
+        *QueryString: "\Printer.Configuration.PrintContract:VersionMinor"
+    } 
+
+    *BidiResponse: PC_PrintContractVersionMinor8 {
+        *ResponseType: BIDI_INT
+        *ResponseData: ENUM_OPTION (PC_PrintContractVersionMinor8)
+    }
+	
+	*Option: 0 {
+		*BidiValue: INT(0)
+    }
+	
+	*Option: 1 {
+		*BidiValue: INT(1)
+    }
+	
+	*Option: 2 {
+		*BidiValue: INT(2)
+    }
+	
+	*Option: 3 {
+		*BidiValue: INT(3)
+    }
+	
+	*Option: 4 {
+		*BidiValue: INT(4)
+    }
+	
+	*Option: 5 {
+		*BidiValue: INT(5)
+    }
+	
+	*Option: 6 {
+		*BidiValue: INT(6)
+    }
+	
+	*Option: 7 {
+		*BidiValue: INT(7)
+    }
+	
+	*Option: 8 {
+		*BidiValue: INT(8)
+    }
+	
+	*Option: 9 {
+		*BidiValue: INT(9)
+    }
+	
+	*Option: 72 {
+		*BidiValue: INT(72)
+    }
+	
+}
+
+*%=================================================================*%
+*%     PC_PrintContractVersionMinor9
+*%=================================================================*%
+
+*Feature: PC_PrintContractVersionMinor9 {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: PC_PrintContractVersionMinor9 {
+        *QueryString: "\Printer.Configuration.PrintContract:VersionMinor"
+    } 
+
+    *BidiResponse: PC_PrintContractVersionMinor9 {
+        *ResponseType: BIDI_INT
+        *ResponseData: ENUM_OPTION (PC_PrintContractVersionMinor9)
+    }
+	
+	*Option: 0 {
+		*BidiValue: INT(0)
+    }
+	
+	*Option: 1 {
+		*BidiValue: INT(1)
+    }
+	
+	*Option: 2 {
+		*BidiValue: INT(2)
+    }
+	
+	*Option: 3 {
+		*BidiValue: INT(3)
+    }
+	
+	*Option: 4 {
+		*BidiValue: INT(4)
+    }
+	
+	*Option: 5 {
+		*BidiValue: INT(5)
+    }
+	
+	*Option: 6 {
+		*BidiValue: INT(6)
+    }
+	
+	*Option: 7 {
+		*BidiValue: INT(7)
+    }
+	
+	*Option: 8 {
+		*BidiValue: INT(8)
+    }
+	
+	*Option: 9 {
+		*BidiValue: INT(9)
+    }
+	
+	*Option: 72 {
+		*BidiValue: INT(72)
+    }
+	
+}
+
+*%=================================================================*%
+*%     PC_PrintContractVersionMinor72
+*%=================================================================*%
+
+*Feature: PC_PrintContractVersionMinor72 {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: PC_PrintContractVersionMinor72 {
+        *QueryString: "\Printer.Configuration.PrintContract:VersionMinor"
+    } 
+
+    *BidiResponse: PC_PrintContractVersionMinor72 {
+        *ResponseType: BIDI_INT
+        *ResponseData: ENUM_OPTION (PC_PrintContractVersionMinor72)
+    }
+	
+	*Option: 0 {
+		*BidiValue: INT(0)
+    }
+	
+	*Option: 1 {
+		*BidiValue: INT(1)
+    }
+	
+	*Option: 2 {
+		*BidiValue: INT(2)
+    }
+	
+	*Option: 3 {
+		*BidiValue: INT(3)
+    }
+	
+	*Option: 4 {
+		*BidiValue: INT(4)
+    }
+	
+	*Option: 5 {
+		*BidiValue: INT(5)
+    }
+	
+	*Option: 6 {
+		*BidiValue: INT(6)
+    }
+	
+	*Option: 7 {
+		*BidiValue: INT(7)
+    }
+	
+	*Option: 8 {
+		*BidiValue: INT(8)
+    }
+	
+	*Option: 9 {
+		*BidiValue: INT(9)
+    }
+	
+	*Option: 72 {
+		*BidiValue: INT(72)
+    }
+	
+}
+
+*%=================================================================*%
+*%     PC_DefaultDuplexStandard
+*%=================================================================*%
+
+*Feature: PC_DefaultDuplexStandard {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: PC_DefaultDuplexStandard {
+        *QueryString: "\Printer.Configuration.DeviceDefaultDuplexStandard:DefaultDuplexStandard"
+    } 
+
+    *BidiResponse: PC_DefaultDuplexStandard {
+        *ResponseType: BIDI_BOOL
+        *ResponseData: ENUM_OPTION (PC_DefaultDuplexStandard)
+    }
+    *Option: DefaultDuplexOff {
+        *BidiValue: BOOL(FALSE)
+    }
+    *Option: DefaultDuplexOn {
+        *BidiValue: BOOL(TRUE)
+    }
+
+}
+
+*%=================================================================*%
+*%     EconomodeHintTag
+*%=================================================================*%
+*Feature: EconomodeHintTag {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: EconomodeHintTag {
+        *QueryString: "\Printer.Capabilities.PrintQuality.StandardType1:ImageTechnology"
+    }
+    *BidiResponse: EconomodeHintTag {
+    
+        *ResponseType: BIDI_STRING
+        *ResponseData: ENUM_OPTION (EconomodeHintTag)
+    }
+    
+    *Option: HintTag2000 {
+	
+        *BidiValue: STRING("2000")
+    }
+
+    *Option: HintTag2001 {
+	
+        *BidiValue: STRING("2001")
+    }
+
+    *Option: HintTag2002 {
+	
+        *BidiValue: STRING("2002")
+    }
+
+    *Option: HintTag2003 {
+	
+        *BidiValue: STRING("2003")
+    }
+
+    *Option: HintTag2004 {
+	
+        *BidiValue: STRING("2004")
+    }
+
+    *Option: HintTag2005 {
+	
+        *BidiValue: STRING("2005")
+    }
+
+    *Option: HintTag4000 {
+	
+        *BidiValue: STRING("4000")
+    }
+
+    *Option: HintTag4005 {
+	
+        *BidiValue: STRING("4005")
+    }
+
+    *Option: HintTag4010 {
+	
+        *BidiValue: STRING("4010")
+    }
+
+    *Option: HintTag4015 {
+	
+        *BidiValue: STRING("4015")
+    }
+
+}
+
+*%=================================================================*%
+*%     DraftHintTag
+*%=================================================================*%
+*Feature: DraftHintTag {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: DraftHintTag {
+        *QueryString: "\Printer.Capabilities.PrintQuality.StandardType2:ImageTechnology"
+    }
+    *BidiResponse: DraftHintTag {
+    
+        *ResponseType: BIDI_STRING
+        *ResponseData: ENUM_OPTION (DraftHintTag)
+    }
+    
+    *Option: HintTag2000 {
+	
+        *BidiValue: STRING("2000")
+    }
+
+    *Option: HintTag2001 {
+	
+        *BidiValue: STRING("2001")
+    }
+
+    *Option: HintTag2002 {
+	
+        *BidiValue: STRING("2002")
+    }
+
+    *Option: HintTag2003 {
+	
+        *BidiValue: STRING("2003")
+    }
+
+    *Option: HintTag2004 {
+	
+        *BidiValue: STRING("2004")
+    }
+
+    *Option: HintTag2005 {
+	
+        *BidiValue: STRING("2005")
+    }
+
+    *Option: HintTag4000 {
+	
+        *BidiValue: STRING("4000")
+    }
+
+    *Option: HintTag4005 {
+	
+        *BidiValue: STRING("4005")
+    }
+
+    *Option: HintTag4010 {
+	
+        *BidiValue: STRING("4010")
+    }
+
+    *Option: HintTag4015 {
+	
+        *BidiValue: STRING("4015")
+    }
+
+}
+
+*%=================================================================*%
+*%     NormalHintTag
+*%=================================================================*%
+*Feature: NormalHintTag {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: NormalHintTag {
+        *QueryString: "\Printer.Capabilities.PrintQuality.StandardType3:ImageTechnology"
+    }
+    *BidiResponse: NormalHintTag {
+    
+        *ResponseType: BIDI_STRING
+        *ResponseData: ENUM_OPTION (NormalHintTag)
+    }
+    
+    *Option: HintTag2000 {
+	
+        *BidiValue: STRING("2000")
+    }
+
+    *Option: HintTag2001 {
+	
+        *BidiValue: STRING("2001")
+    }
+
+    *Option: HintTag2002 {
+	
+        *BidiValue: STRING("2002")
+    }
+
+    *Option: HintTag2003 {
+	
+        *BidiValue: STRING("2003")
+    }
+
+    *Option: HintTag2004 {
+	
+        *BidiValue: STRING("2004")
+    }
+
+    *Option: HintTag2005 {
+	
+        *BidiValue: STRING("2005")
+    }
+
+    *Option: HintTag4000 {
+	
+        *BidiValue: STRING("4000")
+    }
+
+    *Option: HintTag4005 {
+	
+        *BidiValue: STRING("4005")
+    }
+
+    *Option: HintTag4010 {
+	
+        *BidiValue: STRING("4010")
+    }
+
+    *Option: HintTag4015 {
+	
+        *BidiValue: STRING("4015")
+    }
+
+}
+
+*%=================================================================*%
+*%     BestHintTag
+*%=================================================================*%
+*Feature: BestHintTag {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: BestHintTag {
+        *QueryString: "\Printer.Capabilities.PrintQuality.StandardType4:ImageTechnology"
+    }
+    *BidiResponse: BestHintTag {
+    
+        *ResponseType: BIDI_STRING
+        *ResponseData: ENUM_OPTION (BestHintTag)
+    }
+    
+    *Option: HintTag2000 {
+	
+        *BidiValue: STRING("2000")
+    }
+
+    *Option: HintTag2001 {
+	
+        *BidiValue: STRING("2001")
+    }
+
+    *Option: HintTag2002 {
+	
+        *BidiValue: STRING("2002")
+    }
+
+    *Option: HintTag2003 {
+	
+        *BidiValue: STRING("2003")
+    }
+
+    *Option: HintTag2004 {
+	
+        *BidiValue: STRING("2004")
+    }
+
+    *Option: HintTag2005 {
+	
+        *BidiValue: STRING("2005")
+    }
+
+    *Option: HintTag4000 {
+	
+        *BidiValue: STRING("4000")
+    }
+
+    *Option: HintTag4005 {
+	
+        *BidiValue: STRING("4005")
+    }
+
+    *Option: HintTag4010 {
+	
+        *BidiValue: STRING("4010")
+    }
+
+    *Option: HintTag4015 {
+	
+        *BidiValue: STRING("4015")
+    }
+
+}
+
+*%=================================================================*%
+*%     MaxHintTag
+*%=================================================================*%
+*Feature: MaxHintTag {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: MaxHintTag {
+        *QueryString: "\Printer.Capabilities.PrintQuality.StandardType5:ImageTechnology"
+    }
+    *BidiResponse: MaxHintTag {
+    
+        *ResponseType: BIDI_STRING
+        *ResponseData: ENUM_OPTION (MaxHintTag)
+    }
+    
+    *Option: HintTag2000 {
+	
+        *BidiValue: STRING("2000")
+    }
+
+    *Option: HintTag2001 {
+	
+        *BidiValue: STRING("2001")
+    }
+
+    *Option: HintTag2002 {
+	
+        *BidiValue: STRING("2002")
+    }
+
+    *Option: HintTag2003 {
+	
+        *BidiValue: STRING("2003")
+    }
+
+    *Option: HintTag2004 {
+	
+        *BidiValue: STRING("2004")
+    }
+
+    *Option: HintTag2005 {
+	
+        *BidiValue: STRING("2005")
+    }
+
+    *Option: HintTag4000 {
+	
+        *BidiValue: STRING("4000")
+    }
+
+    *Option: HintTag4005 {
+	
+        *BidiValue: STRING("4005")
+    }
+
+    *Option: HintTag4010 {
+	
+        *BidiValue: STRING("4010")
+    }
+
+    *Option: HintTag4015 {
+	
+        *BidiValue: STRING("4015")
+    }
+
+}
+
+*%=================================================================*%
+*%     EconomodePQMode
+*%=================================================================*%
+*Feature: EconomodePQMode {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: EconomodePQMode {
+        *QueryString: "\Printer.Capabilities.PrintQuality.StandardType1:PQMode"
+    }
+    *BidiResponse: EconomodePQMode {
+    
+        *ResponseType: BIDI_STRING
+        *ResponseData: ENUM_OPTION (EconomodePQMode)
+    }
+    
+    *Option: PQMode1 {
+	
+        *BidiValue: STRING("1")
+    }
+
+    *Option: PQMode2 {
+	
+        *BidiValue: STRING("2")
+    }
+
+    *Option: PQMode3 {
+	
+        *BidiValue: STRING("3")
+    }
+
+    *Option: PQMode4 {
+	
+        *BidiValue: STRING("4")
+    }
+
+    *Option: PQMode5 {
+	
+        *BidiValue: STRING("5")
+    }
+
+    *Option: PQMode6 {
+	
+        *BidiValue: STRING("6")
+    }
+
+    *Option: PQMode7 {
+	
+        *BidiValue: STRING("7")
+    }
+
+}
+
+*%=================================================================*%
+*%     DraftPQMode
+*%=================================================================*%
+*Feature: DraftPQMode {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: DraftPQMode {
+        *QueryString: "\Printer.Capabilities.PrintQuality.StandardType2:PQMode"
+    }
+    *BidiResponse: DraftPQMode {
+    
+        *ResponseType: BIDI_STRING
+        *ResponseData: ENUM_OPTION (DraftPQMode)
+    }
+    
+    *Option: PQMode1 {
+	
+        *BidiValue: STRING("1")
+    }
+
+    *Option: PQMode2 {
+	
+        *BidiValue: STRING("2")
+    }
+
+    *Option: PQMode3 {
+	
+        *BidiValue: STRING("3")
+    }
+
+    *Option: PQMode4 {
+	
+        *BidiValue: STRING("4")
+    }
+
+    *Option: PQMode5 {
+	
+        *BidiValue: STRING("5")
+    }
+
+    *Option: PQMode6 {
+	
+        *BidiValue: STRING("6")
+    }
+
+    *Option: PQMode7 {
+	
+        *BidiValue: STRING("7")
+    }
+
+}
+
+*%=================================================================*%
+*%     NormalPQMode
+*%=================================================================*%
+*Feature: NormalPQMode {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: NormalPQMode {
+        *QueryString: "\Printer.Capabilities.PrintQuality.StandardType3:PQMode"
+    }
+    *BidiResponse: NormalPQMode {
+    
+        *ResponseType: BIDI_STRING
+        *ResponseData: ENUM_OPTION (NormalPQMode)
+    }
+    
+    *Option: PQMode1 {
+	
+        *BidiValue: STRING("1")
+    }
+
+    *Option: PQMode2 {
+	
+        *BidiValue: STRING("2")
+    }
+
+    *Option: PQMode3 {
+	
+        *BidiValue: STRING("3")
+    }
+
+    *Option: PQMode4 {
+	
+        *BidiValue: STRING("4")
+    }
+
+    *Option: PQMode5 {
+	
+        *BidiValue: STRING("5")
+    }
+
+    *Option: PQMode6 {
+	
+        *BidiValue: STRING("6")
+    }
+
+    *Option: PQMode7 {
+	
+        *BidiValue: STRING("7")
+    }
+
+}
+
+*%=================================================================*%
+*%     BestPQMode
+*%=================================================================*%
+*Feature: BestPQMode {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: BestPQMode {
+        *QueryString: "\Printer.Capabilities.PrintQuality.StandardType4:PQMode"
+    }
+    *BidiResponse: BestPQMode {
+    
+        *ResponseType: BIDI_STRING
+        *ResponseData: ENUM_OPTION (BestPQMode)
+    }
+    
+    *Option: PQMode1 {
+	
+        *BidiValue: STRING("1")
+    }
+
+    *Option: PQMode2 {
+	
+        *BidiValue: STRING("2")
+    }
+
+    *Option: PQMode3 {
+	
+        *BidiValue: STRING("3")
+    }
+
+    *Option: PQMode4 {
+	
+        *BidiValue: STRING("4")
+    }
+
+    *Option: PQMode5 {
+	
+        *BidiValue: STRING("5")
+    }
+
+    *Option: PQMode6 {
+	
+        *BidiValue: STRING("6")
+    }
+
+    *Option: PQMode7 {
+	
+        *BidiValue: STRING("7")
+    }
+
+}
+
+*%=================================================================*%
+*%     MaxPQMode
+*%=================================================================*%
+*Feature: MaxPQMode {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: MaxPQMode {
+        *QueryString: "\Printer.Capabilities.PrintQuality.StandardType5:PQMode"
+    }
+    *BidiResponse: MaxPQMode {
+    
+        *ResponseType: BIDI_STRING
+        *ResponseData: ENUM_OPTION (MaxPQMode)
+    }
+    
+    *Option: PQMode1 {
+	
+        *BidiValue: STRING("1")
+    }
+
+    *Option: PQMode2 {
+	
+        *BidiValue: STRING("2")
+    }
+
+    *Option: PQMode3 {
+	
+        *BidiValue: STRING("3")
+    }
+
+    *Option: PQMode4 {
+	
+        *BidiValue: STRING("4")
+    }
+
+    *Option: PQMode5 {
+	
+        *BidiValue: STRING("5")
+    }
+
+    *Option: PQMode6 {
+	
+        *BidiValue: STRING("6")
+    }
+
+    *Option: PQMode7 {
+	
+        *BidiValue: STRING("7")
+    }
+
+}
+
+*%=================================================================*%
+*%     Custom1PQMode
+*%=================================================================*%
+*Feature: Custom1PQMode {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: Custom1PQMode {
+        *QueryString: "\Printer.Capabilities.PrintQuality.CustomType1:PQMode"
+    }
+    *BidiResponse: Custom1PQMode {
+    
+        *ResponseType: BIDI_STRING
+        *ResponseData: ENUM_OPTION (Custom1PQMode)
+    }
+    
+    *Option: PQMode1 {
+	
+        *BidiValue: STRING("1")
+    }
+
+    *Option: PQMode2 {
+	
+        *BidiValue: STRING("2")
+    }
+
+    *Option: PQMode3 {
+	
+        *BidiValue: STRING("3")
+    }
+
+    *Option: PQMode4 {
+	
+        *BidiValue: STRING("4")
+    }
+
+    *Option: PQMode5 {
+	
+        *BidiValue: STRING("5")
+    }
+
+    *Option: PQMode6 {
+	
+        *BidiValue: STRING("6")
+    }
+
+    *Option: PQMode7 {
+	
+        *BidiValue: STRING("7")
+    }
+
+}
+
+*%=================================================================*%
+*%     Custom2PQMode
+*%=================================================================*%
+*Feature: Custom2PQMode {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: Custom2PQMode {
+        *QueryString: "\Printer.Capabilities.PrintQuality.CustomType2:PQMode"
+    }
+    *BidiResponse: Custom2PQMode {
+    
+        *ResponseType: BIDI_STRING
+        *ResponseData: ENUM_OPTION (Custom2PQMode)
+    }
+    
+    *Option: PQMode1 {
+	
+        *BidiValue: STRING("1")
+    }
+
+    *Option: PQMode2 {
+	
+        *BidiValue: STRING("2")
+    }
+
+    *Option: PQMode3 {
+	
+        *BidiValue: STRING("3")
+    }
+
+    *Option: PQMode4 {
+	
+        *BidiValue: STRING("4")
+    }
+
+    *Option: PQMode5 {
+	
+        *BidiValue: STRING("5")
+    }
+
+    *Option: PQMode6 {
+	
+        *BidiValue: STRING("6")
+    }
+
+    *Option: PQMode7 {
+	
+        *BidiValue: STRING("7")
+    }
+
+}

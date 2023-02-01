@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<bidi:Schema xmlns:bidi="http://schemas.microsoft.com/windows/2010/09/printing/usbbidi">
+  <!--Version 3.29-->
+  <Property name="Printer">
+    <Property name="Configuration">
+      <Property name="DuplexUnit">
+        <Value name="Installed" accessType="Get" type="BIDI_BOOL" queryKey="\Printer.Configuration.DuplexUnit:Installed;MultiStrCompBool;GetSimplePrinterAttributes;sides-supported;two-sided-long-edge;two-sided-short-edge" drvPrinterEvent="true" />
+      </Property>
+      <Property name="DeviceDefaultDuplexStandard">
+        <Value name="DefaultDuplexStandard" accessType="Get" type="BIDI_BOOL" queryKey="\Printer.Configuration.DeviceDefaultDuplexStandard:DefaultDuplexStandard;StrCompBool;GetSimplePrinterAttributes;hp-default-duplex-standard;01" drvPrinterEvent="true" />
+      </Property>
+      <Property name="PrintContract">
+        <Value name="VersionMajor" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Configuration.PrintContract:VersionMajor;GetAttributeString;GetSimplePrinterAttributes;hp-pc-version-major" drvPrinterEvent="true" />
+        <Value name="VersionMinor" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Configuration.PrintContract:VersionMinor;GetAttributeString;GetSimplePrinterAttributes;hp-pc-version-minor" drvPrinterEvent="true" />
+      </Property>
+    </Property>
+    <!-- Query for Status-->
+    <Property name="Status">
+      <Property name="Summary">
+        <Value name="StateReason" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Status.Summary:StateReason;GetAttributeString;GetSimplePrinterAttributes;printer-state-reasons" drvPrinterEvent="true" />
+      </Property>
+    </Property>
+    <!-- PCv1.0 DeviceInfo ModelName,PPM,PDL -->
+    <!-- PCv1.0 Capabilities JAQS,MediaType,PrintQuality-->
+    <Property name="Capabilities">
+      <!-- Query for Image Enhancement-->
+      <!-- Query for Edge to Edge Support-->
+      <!-- Query for Edge to Edge Support-->
+      <Property name="PrintQuality">
+        <!-- PCv0.5 -->
+        <!-- PCv1.0 -->
+        <Property name="StandardType1">
+          <Value name="Supported" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.StandardType1:Supported;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;1;type;3=true,4=true,5=true,10=true,11=true;string" drvPrinterEvent="true" />
+          <Value name="Name" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.StandardType1:Name;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;1;type;3=Draft,4=Normal,5=High,10=Max,11=Economode;string" drvPrinterEvent="true" />
+          <Value name="OptimalResolution" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.StandardType1:OptimalResolution;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;1;optimal-resolution;150=150,300=300,600=600,1200=1200;string" drvPrinterEvent="true" />
+          <Value name="ImageTechnology" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.StandardType1:ImageTechnology;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;1;imaging-technology;2000=2000,2001=2001,2002=2002,2003=2003,2004=2004,2005=2005,4000=4000,4005=4005,4010=4010,4015=4015,4020=4020,4030=4030,4040=4040,4050=4050,4060=4060,4070=4070,4080=4080,4090=4090,5000=5000,3=3,4=4,5=5,10=10,11=11;string" drvPrinterEvent="true" />
+          <Value name="DisplayTag" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.StandardType1:DisplayTag;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;1;display-string;1000=1000,1002=1002,1003=1003,1004=1004,1005=1005,3000=3000,3001=3001,3002=3002,3003=3003,3020=3020,3030=3030,3040=3040,3050=3050,3060=3060,3070=3070,3080=3080,3=3,4=4,5=5,10=10,11=11;string" drvPrinterEvent="true" />
+          <Value name="PQMode" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.StandardType1:PQMode;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;1;pq-mode;1=1,2=2,3=3,4=4,5=5,6=6,7=7;string" drvPrinterEvent="true" />
+        </Property>
+        <Property name="StandardType2">
+          <Value name="Supported" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.StandardType2:Supported;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;2;type;3=true,4=true,5=true,10=true,11=true;string" drvPrinterEvent="true" />
+          <Value name="Name" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.StandardType2:Name;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;2;type;3=Draft,4=Normal,5=High,10=Max,11=Economode;string" drvPrinterEvent="true" />
+          <Value name="OptimalResolution" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.StandardType2:OptimalResolution;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;2;optimal-resolution;150=150,300=300,600=600,1200=1200;string" drvPrinterEvent="true" />
+          <Value name="ImageTechnology" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.StandardType2:ImageTechnology;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;2;imaging-technology;2000=2000,2001=2001,2002=2002,2003=2003,2004=2004,2005=2005,4000=4000,4005=4005,4010=4010,4015=4015,4020=4020,4030=4030,4040=4040,4050=4050,4060=4060,4070=4070,4080=4080,4090=4090,5000=5000,3=3,4=4,5=5,10=10,11=11;string" drvPrinterEvent="true" />
+          <Value name="DisplayTag" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.StandardType2:DisplayTag;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;2;display-string;1000=1000,1002=1002,1003=1003,1004=1004,1005=1005,3000=3000,3001=3001,3002=3002,3003=3003,3020=3020,3030=3030,3040=3040,3050=3050,3060=3060,3070=3070,3080=3080,3=3,4=4,5=5,10=10,11=11;string" drvPrinterEvent="true" />
+          <Value name="PQMode" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.StandardType2:PQMode;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;2;pq-mode;1=1,2=2,3=3,4=4,5=5,6=6,7=7;string" drvPrinterEvent="true" />
+        </Property>
+        <Property name="StandardType3">
+          <Value name="Supported" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.StandardType3:Supported;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;3;type;3=true,4=true,5=true,10=true,11=true;string" drvPrinterEvent="true" />
+          <Value name="Name" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.StandardType3:Name;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;3;type;3=Draft,4=Normal,5=High,10=Max,11=Economode;string" drvPrinterEvent="true" />
+          <Value name="OptimalResolution" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.StandardType3:OptimalResolution;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;3;optimal-resolution;150=150,300=300,600=600,1200=1200;string" drvPrinterEvent="true" />
+          <Value name="ImageTechnology" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.StandardType3:ImageTechnology;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;3;imaging-technology;2000=2000,2001=2001,2002=2002,2003=2003,2004=2004,2005=2005,4000=4000,4005=4005,4010=4010,4015=4015,4020=4020,4030=4030,4040=4040,4050=4050,4060=4060,4070=4070,4080=4080,4090=4090,5000=5000,3=3,4=4,5=5,10=10,11=11;string" drvPrinterEvent="true" />
+          <Value name="DisplayTag" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.StandardType3:DisplayTag;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;3;display-string;1000=1000,1002=1002,1003=1003,1004=1004,1005=1005,3000=3000,3001=3001,3002=3002,3003=3003,3020=3020,3030=3030,3040=3040,3050=3050,3060=3060,3070=3070,3080=3080,3=3,4=4,5=5,10=10,11=11;string" drvPrinterEvent="true" />
+          <Value name="PQMode" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.StandardType3:PQMode;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;3;pq-mode;1=1,2=2,3=3,4=4,5=5,6=6,7=7;string" drvPrinterEvent="true" />
+        </Property>
+        <Property name="StandardType4">
+          <Value name="Supported" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.StandardType4:Supported;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;4;type;3=true,4=true,5=true,10=true,11=true;string" drvPrinterEvent="true" />
+          <Value name="Name" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.StandardType4:Name;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;4;type;3=Draft,4=Normal,5=High,10=Max,11=Economode;string" drvPrinterEvent="true" />
+          <Value name="OptimalResolution" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.StandardType4:OptimalResolution;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;4;optimal-resolution;150=150,300=300,600=600,1200=1200;string" drvPrinterEvent="true" />
+          <Value name="ImageTechnology" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.StandardType4:ImageTechnology;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;4;imaging-technology;2000=2000,2001=2001,2002=2002,2003=2003,2004=2004,2005=2005,4000=4000,4005=4005,4010=4010,4015=4015,4020=4020,4030=4030,4040=4040,4050=4050,4060=4060,4070=4070,4080=4080,4090=4090,5000=5000,3=3,4=4,5=5,10=10,11=11;string" drvPrinterEvent="true" />
+          <Value name="DisplayTag" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.StandardType4:DisplayTag;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;4;display-string;1000=1000,1002=1002,1003=1003,1004=1004,1005=1005,3000=3000,3001=3001,3002=3002,3003=3003,3020=3020,3030=3030,3040=3040,3050=3050,3060=3060,3070=3070,3080=3080,3=3,4=4,5=5,10=10,11=11;string" drvPrinterEvent="true" />
+          <Value name="PQMode" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.StandardType4:PQMode;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;4;pq-mode;1=1,2=2,3=3,4=4,5=5,6=6,7=7;string" drvPrinterEvent="true" />
+        </Property>
+        <Property name="StandardType5">
+          <Value name="Supported" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.StandardType5:Supported;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;5;type;3=true,4=true,5=true,10=true,11=true;string" drvPrinterEvent="true" />
+          <Value name="Name" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.StandardType5:Name;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;5;type;3=Draft,4=Normal,5=High,10=Max,11=Economode;string" drvPrinterEvent="true" />
+          <Value name="OptimalResolution" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.StandardType5:OptimalResolution;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;5;optimal-resolution;150=150,300=300,600=600,1200=1200;string" drvPrinterEvent="true" />
+          <Value name="ImageTechnology" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.StandardType5:ImageTechnology;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;5;imaging-technology;2000=2000,2001=2001,2002=2002,2003=2003,2004=2004,2005=2005,4000=4000,4005=4005,4010=4010,4015=4015,4020=4020,4030=4030,4040=4040,4050=4050,4060=4060,4070=4070,4080=4080,4090=4090,5000=5000,3=3,4=4,5=5,10=10,11=11;string" drvPrinterEvent="true" />
+          <Value name="DisplayTag" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.StandardType5:DisplayTag;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;5;display-string;1000=1000,1002=1002,1003=1003,1004=1004,1005=1005,3000=3000,3001=3001,3002=3002,3003=3003,3020=3020,3030=3030,3040=3040,3050=3050,3060=3060,3070=3070,3080=3080,3=3,4=4,5=5,10=10,11=11;string" drvPrinterEvent="true" />
+          <Value name="PQMode" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.StandardType5:PQMode;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;5;pq-mode;1=1,2=2,3=3,4=4,5=5,6=6,7=7;string" drvPrinterEvent="true" />
+        </Property>
+        <!-- Custom Types -->
+        <Property name="CustomType1">
+          <Value name="Supported" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.CustomType1:Supported;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;6;type;21=true,22=true;string" drvPrinterEvent="true" />
+          <Value name="Name" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.CustomType1:Name;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;6;type;21=Custom1,22=Custom2;string" drvPrinterEvent="true" />
+          <Value name="OptimalResolution" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.CustomType1:OptimalResolution;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;6;optimal-resolution;150=150,300=300,600=600,1200=1200;string" drvPrinterEvent="true" />
+          <Value name="ImageTechnology" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.CustomType1:ImageTechnology;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;6;imaging-technology;2000=2000,2001=2001,2002=2002,2003=2003,2004=2004,2005=2005,4000=4000,4005=4005,4010=4010,4015=4015,4020=4020,4030=4030,4040=4040,4050=4050,4060=4060,4070=4070,4080=4080,4090=4090,5000=5000,3=3,4=4,5=5,10=10,11=11,21=21,22=22;string" drvPrinterEvent="true" />
+          <Value name="DisplayTag" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.CustomType1:DisplayTag;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;6;display-string;1000=1000,1002=1002,1003=1003,1004=1004,1005=1005,3000=3000,3001=3001,3002=3002,3003=3003,3020=3020,3030=3030,3040=3040,3050=3050,3060=3060,3070=3070,3080=3080,3=3,4=4,5=5,10=10,11=11,21=21,22=22;string" drvPrinterEvent="true" />
+          <Value name="PQMode" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.CustomType1:PQMode;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;6;pq-mode;1=1,2=2,3=3,4=4,5=5,6=6,7=7;string" drvPrinterEvent="true" />
+        </Property>
+        <Property name="CustomType2">
+          <Value name="Supported" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.CustomType2:Supported;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;7;type;21=true,22=true;string" drvPrinterEvent="true" />
+          <Value name="Name" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.CustomType2:Name;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;7;type;21=Custom1,22=Custom2;string" drvPrinterEvent="true" />
+          <Value name="OptimalResolution" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.CustomType2:OptimalResolution;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;7;optimal-resolution;150=150,300=300,600=600,1200=1200;string" drvPrinterEvent="true" />
+          <Value name="ImageTechnology" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.CustomType2:ImageTechnology;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;7;imaging-technology;2000=2000,2001=2001,2002=2002,2003=2003,2004=2004,2005=2005,4000=4000,4005=4005,4010=4010,4015=4015,4020=4020,4030=4030,4040=4040,4050=4050,4060=4060,4070=4070,4080=4080,4090=4090,5000=5000,3=3,4=4,5=5,10=10,11=11,21=21,22=22;string" drvPrinterEvent="true" />
+          <Value name="DisplayTag" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.CustomType2:DisplayTag;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;7;display-string;1000=1000,1002=1002,1003=1003,1004=1004,1005=1005,3000=3000,3001=3001,3002=3002,3003=3003,3020=3020,3030=3030,3040=3040,3050=3050,3060=3060,3070=3070,3080=3080,3=3,4=4,5=5,10=10,11=11,21=21,22=22;string" drvPrinterEvent="true" />
+          <Value name="PQMode" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Capabilities.PrintQuality.CustomType2:PQMode;GetCollectionAttributes;GetSimplePrinterAttributes;hp-print-quality-supported;7;pq-mode;1=1,2=2,3=3,4=4,5=5,6=6,7=7;string" drvPrinterEvent="true" />
+        </Property>
+      </Property>
+    </Property>
+    <!-- Query for InputBins-->
+    <Property name="Layout">
+      <Property name="InputBins">
+        <Property name="Tray003">
+          <Value name="Installed" accessType="Get" type="BIDI_BOOL" queryKey="\Printer.Layout.InputBins.Tray003:Installed;GetOctetStringValues2;GetSimplePrinterAttributes;printer-input-tray;Tray 3" drvPrinterEvent="true" />
+          <Value name="MediaType" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray003:MediaType;GetAttributeString;GetTrayAttributes;media-col-ready;tray-3;media-type" drvPrinterEvent="true" />
+          <Value name="MediaSize" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray003:MediaSize;GetAttributeString;GetTrayAttributes;media-col-ready;tray-3;media-size.media-size-name" drvPrinterEvent="true" />
+          <Value name="FeedDirection" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray003:FeedDirection;GetAttributeString;GetTrayAttributes;media-col-ready;tray-3;media-source-properties.media-source-feed-direction" drvPrinterEvent="true" />
+          <Value name="Capacity" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray003:Capacity;GetOctetStringValues;GetSimplePrinterAttributes;printer-input-tray;Tray 3;maxcapacity" drvPrinterEvent="true" />
+          <Value name="Level" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray003:Level;GetOctetStringValues;GetSimplePrinterAttributes;printer-input-tray;Tray 3;level" drvPrinterEvent="true" />
+        </Property>
+      </Property>
+    </Property>
+  </Property>
+</bidi:Schema>

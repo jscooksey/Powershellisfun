@@ -1,0 +1,759 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataMaps xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\..\..\src\DataModel\DataMap.xsd">
+<!--Version 2.4 -->
+
+
+<XMLDataMap Protocol="LEDM">
+		<StaticDataItem Name="Protocol">LEDM</StaticDataItem>
+  
+		<DataItem Prefix="prdcfgdyn" Name="MakeAndModel" URI="ledm:hpLedmProductConfigDyn" XPath="//dd:MakeAndModel" Transient="false" />
+		<DataItem Prefix="prdcfgdyn" Name="SerialNumber" URI="ledm:hpLedmProductConfigDyn" XPath="//dd:SerialNumber" Transient="false"/>
+		
+		<DataItem Prefix="mhdyn" Name="NumOfInputTrays" URI="ledm:hpLedmMediaHandlingDyn" XPath="//dd:NumOfInputTrays" Transient="false" LifeSpan="300" />
+		<DataItem Prefix="mhdyn" Name="Tray1_Name" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[0]/dd:InputBin" Transient="false" LifeSpan="300"/> 
+		<DataItem Prefix="mhdyn" Name="Tray1_Installed" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[0]/dd:InputBin" Transient="false" LifeSpan="300"> 
+			<Conversion Contains="Tray1" Value="Installed"/>
+			<Conversion Contains="default" Value="NotInstalled"/>
+		</DataItem>
+		<DataItem Prefix="mhdyn" Name="Tray1_MediaSize" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:InputTray[dd:InputBin='Tray1']/dd:MediaSizeName" Transient="false" LifeSpan="300"/> 
+		<DataItem Prefix="mhdyn" Name="Tray1_MediaType" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:InputTray[dd:InputBin='Tray1']/dd:MediaType" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Tray1_FeedDirection" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:InputTray[dd:InputBin='Tray1']/dd:PageOrientation" Transient="false" LifeSpan="300"/>
+		
+		<DataItem Prefix="mhdyn" Name="Tray2_Name" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[1]/dd:InputBin" Transient="false" LifeSpan="300"/> 
+		<DataItem Prefix="mhdyn" Name="Tray2_Installed" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[1]/dd:InputBin" Transient="false" LifeSpan="300"> 
+			<Conversion Contains="Tray2" Value="Installed"/>
+			<Conversion Contains="default" Value="NotInstalled"/>
+		</DataItem>
+		<DataItem Prefix="mhdyn" Name="Tray2_MediaSize" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:InputTray[dd:InputBin='Tray2']/dd:MediaSizeName" Transient="false" LifeSpan="300"/> 
+		<DataItem Prefix="mhdyn" Name="Tray2_MediaType" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:InputTray[dd:InputBin='Tray2']/dd:MediaType" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Tray2_FeedDirection" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:InputTray[dd:InputBin='Tray2']/dd:PageOrientation" Transient="false" LifeSpan="300"/>
+		
+		<DataItem Prefix="mhdyn" Name="Tray3_Name" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[2]/dd:InputBin" Transient="false" LifeSpan="300"/> 
+		<DataItem Prefix="mhdyn" Name="Tray3_Installed" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[2]/dd:InputBin" Transient="false" LifeSpan="300"> 
+			<Conversion Contains="Tray3" Value="Installed"/>
+			<Conversion Contains="default" Value="NotInstalled"/>
+		</DataItem	>
+		<DataItem Prefix="mhdyn" Name="Tray3_MediaSize" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:InputTray[dd:InputBin='Tray3']/dd:MediaSizeName" Transient="false" LifeSpan="300"/> 
+		<DataItem Prefix="mhdyn" Name="Tray3_MediaType" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:InputTray[dd:InputBin='Tray3']/dd:MediaType" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Tray3_FeedDirection" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:InputTray[dd:InputBin='Tray3']/dd:PageOrientation" Transient="false" LifeSpan="300"/>
+		
+		<DataItem Prefix="mhdyn" Name="Tray4_Name" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[3]/dd:InputBin" Transient="false" LifeSpan="300"/> 
+		<DataItem Prefix="mhdyn" Name="Tray4_Installed" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[3]/dd:InputBin" Transient="false" LifeSpan="300"> 
+			<Conversion Contains="Tray4" Value="Installed"/>
+			<Conversion Contains="default" Value="NotInstalled"/>
+		</DataItem	>
+		<DataItem Prefix="mhdyn" Name="Tray4_MediaSize" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:InputTray[dd:InputBin='Tray4']/dd:MediaSizeName" Transient="false" LifeSpan="300"/> 
+		<DataItem Prefix="mhdyn" Name="Tray4_MediaType" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:InputTray[dd:InputBin='Tray4']/dd:MediaType" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Tray4_FeedDirection" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:InputTray[dd:InputBin='Tray4']/dd:PageOrientation" Transient="false" LifeSpan="300"/>
+		
+		<DataItem Prefix="mhdyn" Name="Tray5_Name" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[4]/dd:InputBin" Transient="false" LifeSpan="300"/> 
+		<DataItem Prefix="mhdyn" Name="Tray5_Installed" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[4]/dd:InputBin" Transient="false" LifeSpan="300">
+			<Conversion Contains="Tray5" Value="Installed"/>
+			<Conversion Contains="default" Value="NotInstalled"/>
+		</DataItem	>		
+		<DataItem Prefix="mhdyn" Name="Tray5_MediaSize" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:InputTray[dd:InputBin='Tray5']/dd:MediaSizeName" Transient="false" LifeSpan="300"/> 
+		<DataItem Prefix="mhdyn" Name="Tray5_MediaType" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:InputTray[dd:InputBin='Tray5']/dd:MediaType" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Tray5_FeedDirection" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:InputTray[dd:InputBin='Tray5']/dd:PageOrientation" Transient="false" LifeSpan="300"/>
+		
+		<DataItem Prefix="mhdyn" Name="Tray6_Name" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[5]/dd:InputBin" Transient="false" LifeSpan="300"/> 
+		<DataItem Prefix="mhdyn" Name="Tray6_Installed" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[5]/dd:InputBin" Transient="false" LifeSpan="300">
+			<Conversion Contains="Tray6" Value="Installed"/>
+			<Conversion Contains="default" Value="NotInstalled"/>
+		</DataItem	>
+		<DataItem Prefix="mhdyn" Name="Tray6_MediaSize" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:InputTray[dd:InputBin='Tray6']/dd:MediaSizeName" Transient="false" LifeSpan="300"/> 
+		<DataItem Prefix="mhdyn" Name="Tray6_MediaType" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:InputTray[dd:InputBin='Tray6']/dd:MediaType" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Tray6_FeedDirection" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:InputTray[dd:InputBin='Tray6']/dd:PageOrientation" Transient="false" LifeSpan="300"/>
+		
+		<DataItem Prefix="mhdyn" Name="Tray7_Name" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[6]/dd:InputBin" Transient="false" LifeSpan="300"/> 
+		<DataItem Prefix="mhdyn" Name="Tray7_Installed" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[6]/dd:InputBin" Transient="false" LifeSpan="300"> 
+			<Conversion Contains="Tray7" Value="Installed"/>
+			<Conversion Contains="default" Value="NotInstalled"/>
+		</DataItem	>
+		<DataItem Prefix="mhdyn" Name="Tray7_MediaSize" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:InputTray[dd:InputBin='Tray7']/dd:MediaSizeName" Transient="false" LifeSpan="300"/> 
+		<DataItem Prefix="mhdyn" Name="Tray7_MediaType" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:InputTray[dd:InputBin='Tray7']/dd:MediaType" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Tray7_FeedDirection" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:InputTray[dd:InputBin='Tray7']/dd:PageOrientation" Transient="false" LifeSpan="300"/>
+		
+		<DataItem Prefix="mhdyn" Name="Tray8_Name" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[7]/dd:InputBin" Transient="false" LifeSpan="300"/> 
+		<DataItem Prefix="mhdyn" Name="Tray8_Installed" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[7]/dd:InputBin" Transient="false" LifeSpan="300"> 
+			<Conversion Contains="Tray8" Value="Installed"/>
+			<Conversion Contains="default" Value="NotInstalled"/>
+		</DataItem	><DataItem Prefix="mhdyn" Name="Tray8_MediaSize" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:InputTray[dd:InputBin='Tray8']/dd:MediaSizeName" Transient="false" LifeSpan="300"/> 
+		<DataItem Prefix="mhdyn" Name="Tray8_MediaType" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:InputTray[dd:InputBin='Tray8']/dd:MediaType" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Tray8_FeedDirection" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:InputTray[dd:InputBin='Tray8']/dd:PageOrientation" Transient="false" LifeSpan="300"/>
+		
+		<DataItem Prefix="mhdyn" Name="Tray9_Name" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[8]/dd:InputBin" Transient="false" LifeSpan="300"/> 
+		<DataItem Prefix="mhdyn" Name="Tray9_Installed" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[8]/dd:InputBin" Transient="false" LifeSpan="300"> 
+			<Conversion Contains="Tray9" Value="Installed"/>
+			<Conversion Contains="default" Value="NotInstalled"/>
+		</DataItem	>
+		<DataItem Prefix="mhdyn" Name="Tray9_MediaSize" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:InputTray[dd:InputBin='Tray9']/dd:MediaSizeName" Transient="false" LifeSpan="300"/> 
+		<DataItem Prefix="mhdyn" Name="Tray9_MediaType" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:InputTray[dd:InputBin='Tray9']/dd:MediaType" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Tray9_FeedDirection" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:InputTray[dd:InputBin='Tray9']/dd:PageOrientation" Transient="false" LifeSpan="300"/>
+		
+		<DataItem Prefix="mhdyn" Name="Tray10_Name" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[9]/dd:InputBin" Transient="false" LifeSpan="300"/> 
+		<DataItem Prefix="mhdyn" Name="Tray10_Installed" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[9]/dd:InputBin" Transient="false" LifeSpan="300"> 
+			<Conversion Contains="Tray10" Value="Installed"/>
+			<Conversion Contains="default" Value="NotInstalled"/>
+		</DataItem	>
+		<DataItem Prefix="mhdyn" Name="Tray10_MediaSize" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:InputTray[dd:InputBin='Tray10']/dd:MediaSizeName" Transient="false" LifeSpan="300"/> 
+		<DataItem Prefix="mhdyn" Name="Tray10_MediaType" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:InputTray[dd:InputBin='Tray10']/dd:MediaType" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Tray10_FeedDirection" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:InputTray[dd:InputBin='Tray10']/dd:PageOrientation" Transient="false" LifeSpan="300"/>
+		
+		<DataItem Prefix="mhdyn" Name="Envelope_Feeder_Installed" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[dd:InputBin='EnvelopeFeeder']/dd:TrayState" Transient="false" LifeSpan="300"/>
+		
+		<DataItem Prefix="mhdyn" Name="OutputBin1_Name" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:OutputBin[0]/dd:HPOutputBin" Transient="false" LifeSpan="300"/> 
+		<DataItem Prefix="mhdyn" Name="OutputBin1_Installed" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:OutputBin[0]/dd:HPOutputBin" Transient="false" LifeSpan="300"> 
+		  <Conversion Contains="OutputBin1" Value="Installed"/>
+		  <Conversion Contains="default" Value="NotInstalled"/>
+		</DataItem>
+		
+		<DataItem Prefix="mhdyn" Name="OutputBin2_Name" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:OutputBin[1]/dd:HPOutputBin" Transient="false" LifeSpan="300"/> 
+		<DataItem Prefix="mhdyn" Name="OutputBin2_Installed" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:OutputBin[dd:HPOutputBin='OutputBin2']" Transient="false" LifeSpan="300"> 
+			<Conversion Contains="OutputBin2" Value="Installed"/>
+		  <Conversion Contains="default" Value="NotInstalled"/>
+		</DataItem>
+		<DataItem Prefix="mhdyn" Name="OutputBin3_Name" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:OutputBin[2]/dd:HPOutputBin" Transient="false" LifeSpan="300"/> 
+		<DataItem Prefix="mhdyn" Name="OutputBin3_Installed" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:OutputBin[dd:HPOutputBin='OutputBin3']" Transient="false" LifeSpan="300"> 
+			<Conversion Contains="OutputBin3" Value="Installed"/>
+		  <Conversion Contains="default" Value="NotInstalled"/>
+		</DataItem>
+		<DataItem Prefix="mhdyn" Name="OutputBin4_Name" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:OutputBin[3]/dd:HPOutputBin" Transient="false" LifeSpan="300"/> 
+		<DataItem Prefix="mhdyn" Name="OutputBin4_Installed" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:OutputBin[dd:HPOutputBin='OutputBin4']" Transient="false" LifeSpan="300"> 
+			<Conversion Contains="OutputBin4" Value="Installed"/>
+		  <Conversion Contains="default" Value="NotInstalled"/>
+		</DataItem>
+		<DataItem Prefix="mhdyn" Name="OutputBin5_Name" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:OutputBin[4]/dd:HPOutputBin" Transient="false" LifeSpan="300"/> 
+		<DataItem Prefix="mhdyn" Name="OutputBin5_Installed" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:OutputBin[dd:HPOutputBin='OutputBin5']" Transient="false"> 
+			<Conversion Contains="OutputBin5" Value="Installed"/>
+		  <Conversion Contains="default" Value="NotInstalled"/>
+		</DataItem>	
+		<DataItem Prefix="mscfgdyn" Name="HolePunch_Installed" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:OutputBin [dd:MediaHandlingDeviceFunctionType='Punch']" Transient="false" LifeSpan="300" />
+		
+		<DataItem Prefix="prdcfgdyn" Name="DuplexUnit_Installed" URI="ledm:hpLedmProductConfigDyn" XPath="//dd:DuplexUnit" Transient="false" LifeSpan="300" > 
+		  <Conversion Contains="Installed" Value="Installed"/>
+		  <Conversion Contains="NotInstalled" Value="NotInstalled"/>
+		</DataItem>
+		
+		<DataItem Prefix="prdcfgdyn" Name="Memory_PS" URI="ledm:hpLedmProductConfigDyn" XPath="//dd:AvailableMemory" Transient="false" LifeSpan="300"/>  
+		<DataItem Prefix="prdcfgdyn" Name="PrinterMemory" URI="ledm:hpLedmProductConfigDyn" XPath="//dd:TotalMemory" Transient="false"/> 
+		
+		<DataItem Prefix="mscfgdyn" Name="PrinterHardDisk" URI="ledm:hpLedmMassStorageConfigDyn" XPath="//mscfgdyn:DevicesInserted [dd:DigitalStorateTypeEnum='harddisk']" Transient="false"/> 
+		<DataItem Prefix="mscfgdyn" Name="HardDisk_Capacity" URI="ledm:hpLedmMassStorageConfigDyn" XPath="//mscfgdyn:DevicesInserted [dd:DigitalStorateTypeEnum='harddisk']/Capacity" Transient="false"/>
+				
+		<DataItem Prefix="seccap" Name="PasswordType" URI="ledm:hpLedmSecurityDyn" XPath="//dd:Encoding" Transient="false" LifeSpan="300"/>
+		
+		<DataItem Prefix="prdcfgdyn" Name="Job_Storage_Installed" URI="/StoredJobs/Config" XPath="//sj:StoredJobsEnabled" Transient="false" LifeSpan="300" > 
+		  <Conversion Contains="true" Value="Installed"/>
+		  <Conversion Contains="false" Value="NotInstalled"/>
+		</DataItem>
+		
+		
+</XMLDataMap>
+
+
+
+
+<OIDDataMap>
+       <StaticDataItem Name="Protocol">OID</StaticDataItem>
+        <DataItem Prefix="cfg" Name="MakeAndModel" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.1.3.2.0"/>
+        <DataItem Name="SerialNumber" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.1.3.3.0"/>
+		
+		<DataItem Name="Tray1_Name" OID="1.3.6.1.2.1.43.8.2.1.13.1.1"/>
+		<DataItem Name="EarlyWarmup" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.1.1.101.0;1.3.6.1.4.1.11.2.3.9.4.2.1.1.1.99.0"/>
+		<DataItem Name="Tray1_Installed" OID="1.3.6.1.2.1.43.8.2.1.13.1.1">
+			<Conversion Contains="Tray 1" Value="Installed"/>
+			<Conversion Contains="default" Value="Not-Installed"/>
+		</DataItem>	
+		<DataItem Prefix="cfg" Name="Tray1_MediaSize" OID="1.3.6.1.2.1.43.8.2.1.5.1.1">
+			<Conversion Contains="116929" Value="A4"/>
+			<Conversion Contains="58267" Value="A5"/>
+			<Conversion Contains="default" Value="AnySize"/>
+		</DataItem>
+			
+		<DataItem Prefix="cfg" Name="Tray1_MediaType" OID="1.3.6.1.2.1.43.8.2.1.12.1.1"/>
+		<DataItem Prefix="cfg" Name="Tray1_Capacity" OID="1.3.6.1.2.1.43.8.2.1.9.1.1"/>
+		<DataItem Prefix="cfg" Name="Tray1_Level" OID="1.3.6.1.2.1.43.8.2.1.10.1.1">
+			<Conversion Contains="0" Value="Empty"/>
+			<Conversion Contains="1" Value="10% of capacity"/>
+			<Conversion Contains="250" Value="26%-50% of capacity"/>
+			<Conversion Contains="1000" Value="51%-75% of capacity"/>
+			<Conversion Contains="1500" Value="76%-100% of capacity"/>
+			<Conversion Contains="default" Value="Empty"/>
+		</DataItem>
+		<DataItem Prefix="cfg" Name="Tray1_FeedDirection" OID="1.3.6.1.2.1.43.8.2.1.4.1.1">
+			<Conversion Contains="116929" Value="FaceDown"/>
+			<Conversion Contains="82677" Value="FaceUp"/>
+			<Conversion Contains="default" Value="Media-NA"/>		
+		</DataItem>	
+		
+		<DataItem Name="Tray2_Name" OID="1.3.6.1.2.1.43.8.2.1.13.1.2"/>
+		<DataItem Name="Tray2_Installed" OID="1.3.6.1.2.1.43.8.2.1.13.1.2">
+			<Conversion Contains="Tray 2" Value="Installed"/>
+			<Conversion Contains="default" Value="Not-Installed"/>
+		</DataItem>	
+		<DataItem Prefix="cfg" Name="Tray2_MediaSize" OID="1.3.6.1.2.1.43.8.2.1.5.1.2">
+			<Conversion Contains="116929" Value="A4"/>
+			<Conversion Contains="58267" Value="A5"/>
+			<Conversion Contains="default" Value="AnySize"/>
+		</DataItem>
+			
+		<DataItem Prefix="cfg" Name="Tray2_MediaType" OID="1.3.6.1.2.1.43.8.2.1.12.1.2"/>
+		<DataItem Prefix="cfg" Name="Tray2_Capacity" OID="1.3.6.1.2.1.43.8.2.1.9.1.2"/>
+		<DataItem Prefix="cfg" Name="Tray2_Level" OID="1.3.6.1.2.1.43.8.2.1.10.1.2">
+			<Conversion Contains="0" Value="Empty"/>
+			<Conversion Contains="1" Value="10% of capacity"/>
+			<Conversion Contains="250" Value="26%-50% of capacity"/>
+			<Conversion Contains="1000" Value="51%-75% of capacity"/>
+			<Conversion Contains="1500" Value="76%-100% of capacity"/>
+			<Conversion Contains="default" Value="Empty"/>
+		</DataItem>
+		<DataItem Prefix="cfg" Name="Tray2_FeedDirection" OID="1.3.6.1.2.1.43.8.2.1.4.1.2">
+			<Conversion Contains="116929" Value="FaceDown"/>
+			<Conversion Contains="82677" Value="FaceUp"/>
+			<Conversion Contains="default" Value="Media-NA"/>		
+		</DataItem>	
+		
+		<DataItem Name="Tray3_Name" OID="1.3.6.1.2.1.43.8.2.1.13.1.3"/>
+		<DataItem Name="Tray3_Installed" OID="1.3.6.1.2.1.43.8.2.1.13.1.3">
+			<Conversion Contains="Tray 3" Value="Installed"/>
+			<Conversion Contains="default" Value="Not-Installed"/>
+		</DataItem>	
+		<DataItem Prefix="cfg" Name="Tray3_MediaSize" OID="1.3.6.1.2.1.43.8.2.1.5.1.3">
+			<Conversion Contains="116929" Value="A4"/>
+			<Conversion Contains="58267" Value="A5"/>
+			<Conversion Contains="default" Value="AnySize"/>
+		</DataItem>
+			
+		<DataItem Prefix="cfg" Name="Tray3_MediaType" OID="1.3.6.1.2.1.43.8.2.1.12.1.3"/>
+		<DataItem Prefix="cfg" Name="Tray3_Capacity" OID="1.3.6.1.2.1.43.8.2.1.9.1.3"/>
+		<DataItem Prefix="cfg" Name="Tray3_Level" OID="1.3.6.1.2.1.43.8.2.1.10.1.3">
+			<Conversion Contains="0" Value="Empty"/>
+			<Conversion Contains="1" Value="10% of capacity"/>
+			<Conversion Contains="250" Value="26%-50% of capacity"/>
+			<Conversion Contains="1000" Value="51%-75% of capacity"/>
+			<Conversion Contains="1500" Value="76%-100% of capacity"/>
+			<Conversion Contains="default" Value="Empty"/>
+		</DataItem>
+		<DataItem Prefix="cfg" Name="Tray3_FeedDirection" OID="1.3.6.1.2.1.43.8.2.1.4.1.3">
+			<Conversion Contains="116929" Value="FaceDown"/>
+			<Conversion Contains="82677" Value="FaceUp"/>
+			<Conversion Contains="default" Value="Media-NA"/>		
+		</DataItem>	
+		
+		<DataItem Name="Tray4_Name" OID="1.3.6.1.2.1.43.8.2.1.13.1.5"/>
+		<DataItem Name="Tray4_Installed" OID="1.3.6.1.2.1.43.8.2.1.13.1.5">
+			<Conversion Contains="Tray 4" Value="Installed"/>
+			<Conversion Contains="default" Value="Not-Installed"/>
+		</DataItem>	
+		<DataItem Prefix="cfg" Name="Tray4_MediaSize" OID="1.3.6.1.2.1.43.8.2.1.5.1.5">
+			<Conversion Contains="116929" Value="A4"/>
+			<Conversion Contains="58267" Value="A5"/>
+			<Conversion Contains="default" Value="AnySize"/>
+		</DataItem>
+			
+		<DataItem Prefix="cfg" Name="Tray4_MediaType" OID="1.3.6.1.2.1.43.8.2.1.12.1.5"/>
+		<DataItem Prefix="cfg" Name="Tray4_Capacity" OID="1.3.6.1.2.1.43.8.2.1.9.1.5"/>
+		<DataItem Prefix="cfg" Name="Tray4_Level" OID="1.3.6.1.2.1.43.8.2.1.10.1.5">
+			<Conversion Contains="0" Value="Empty"/>
+			<Conversion Contains="1" Value="10% of capacity"/>
+			<Conversion Contains="250" Value="26%-50% of capacity"/>
+			<Conversion Contains="1000" Value="51%-75% of capacity"/>
+			<Conversion Contains="1500" Value="76%-100% of capacity"/>
+			<Conversion Contains="default" Value="Empty"/>
+		</DataItem>
+		<DataItem Prefix="cfg" Name="Tray4_FeedDirection" OID="1.3.6.1.2.1.43.8.2.1.4.1.5">
+			<Conversion Contains="116929" Value="FaceDown"/>
+			<Conversion Contains="82677" Value="FaceUp"/>
+			<Conversion Contains="default" Value="Media-NA"/>		
+		</DataItem>	
+		
+		<DataItem Name="Tray5_Name" OID="1.3.6.1.2.1.43.8.2.1.13.1.6"/>
+		<DataItem Name="Tray5_Installed" OID="1.3.6.1.2.1.43.8.2.1.13.1.6">
+			<Conversion Contains="Tray 5" Value="Installed"/>
+			<Conversion Contains="default" Value="Not-Installed"/>
+		</DataItem>	
+		<DataItem Prefix="cfg" Name="Tray5_MediaSize" OID="1.3.6.1.2.1.43.8.2.1.5.1.6">
+			<Conversion Contains="116929" Value="A4"/>
+			<Conversion Contains="58267" Value="A5"/>
+			<Conversion Contains="default" Value="AnySize"/>
+		</DataItem>
+		<DataItem Prefix="cfg" Name="Tray5_MediaType" OID="1.3.6.1.2.1.43.8.2.1.12.1.6"/>
+		<DataItem Prefix="cfg" Name="Tray5_Capacity" OID="1.3.6.1.2.1.43.8.2.1.9.1.6"/>
+		<DataItem Prefix="cfg" Name="Tray5_Level" OID="1.3.6.1.2.1.43.8.2.1.10.1.6">
+			<Conversion Contains="0" Value="Empty"/>
+			<Conversion Contains="1" Value="10% of capacity"/>
+			<Conversion Contains="250" Value="26%-50% of capacity"/>
+			<Conversion Contains="1000" Value="51%-75% of capacity"/>
+			<Conversion Contains="1500" Value="76%-100% of capacity"/>
+			<Conversion Contains="default" Value="Empty"/>
+		</DataItem>
+		<DataItem Prefix="cfg" Name="Tray5_FeedDirection" OID="1.3.6.1.2.1.43.8.2.1.4.1.6">
+			<Conversion Contains="116929" Value="FaceDown"/>
+			<Conversion Contains="82677" Value="FaceUp"/>
+			<Conversion Contains="default" Value="Media-NA"/>		
+		</DataItem>	
+		
+		<DataItem Name="Tray6_Name" OID="1.3.6.1.2.1.43.8.2.1.13.1.7"/>
+		<DataItem Name="Tray6_Installed" OID="1.3.6.1.2.1.43.8.2.1.13.1.7">
+			<Conversion Contains="Tray 6" Value="Installed"/>
+			<Conversion Contains="default" Value="Not-Installed"/>
+		</DataItem>	
+		<DataItem Prefix="cfg" Name="Tray6_MediaSize" OID="1.3.6.1.2.1.43.8.2.1.5.1.7">
+			<Conversion Contains="116929" Value="A4"/>
+			<Conversion Contains="58267" Value="A5"/>
+			<Conversion Contains="default" Value="AnySize"/>
+		</DataItem>
+		<DataItem Prefix="cfg" Name="Tray6_MediaType" OID="1.3.6.1.2.1.43.8.2.1.12.1.7"/>
+		<DataItem Prefix="cfg" Name="Tray6_Capacity" OID="1.3.6.1.2.1.43.8.2.1.9.1.7"/>
+		<DataItem Prefix="cfg" Name="Tray6_Level" OID="1.3.6.1.2.1.43.8.2.1.10.1.7">
+			<Conversion Contains="0" Value="Empty"/>
+			<Conversion Contains="1" Value="10% of capacity"/>
+			<Conversion Contains="250" Value="26%-50% of capacity"/>
+			<Conversion Contains="1000" Value="51%-75% of capacity"/>
+			<Conversion Contains="1500" Value="76%-100% of capacity"/>
+			<Conversion Contains="default" Value="Empty"/>
+		</DataItem>
+		<DataItem Prefix="cfg" Name="Tray6_FeedDirection" OID="1.3.6.1.2.1.43.8.2.1.4.1.7">
+			<Conversion Contains="116929" Value="FaceDown"/>
+			<Conversion Contains="82677" Value="FaceUp"/>
+			<Conversion Contains="default" Value="Media-NA"/>		
+		</DataItem>	
+		
+		<DataItem Name="Tray7_Name" OID="1.3.6.1.2.1.43.8.2.1.13.1.8"/>
+		<DataItem Name="Tray7_Installed" OID="1.3.6.1.2.1.43.8.2.1.13.1.8">
+			<Conversion Contains="Tray 7" Value="Installed"/>
+			<Conversion Contains="default" Value="Not-Installed"/>
+		</DataItem>	
+		<DataItem Prefix="cfg" Name="Tray7_MediaSize" OID="1.3.6.1.2.1.43.8.2.1.5.1.8">
+			<Conversion Contains="116929" Value="A4"/>
+			<Conversion Contains="58267" Value="A5"/>
+			<Conversion Contains="default" Value="AnySize"/>
+		</DataItem>
+		<DataItem Prefix="cfg" Name="Tray7_MediaType" OID="1.3.6.1.2.1.43.8.2.1.12.1.8"/>
+		<DataItem Prefix="cfg" Name="Tray7_Capacity" OID="1.3.6.1.2.1.43.8.2.1.9.1.8"/>
+		<DataItem Prefix="cfg" Name="Tray7_Level" OID="1.3.6.1.2.1.43.8.2.1.10.1.8">
+			<Conversion Contains="0" Value="Empty"/>
+			<Conversion Contains="1" Value="10% of capacity"/>
+			<Conversion Contains="250" Value="26%-50% of capacity"/>
+			<Conversion Contains="1000" Value="51%-75% of capacity"/>
+			<Conversion Contains="1500" Value="76%-100% of capacity"/>
+			<Conversion Contains="default" Value="Empty"/>
+		</DataItem>
+		<DataItem Prefix="cfg" Name="Tray7_FeedDirection" OID="1.3.6.1.2.1.43.8.2.1.4.1.8">
+			<Conversion Contains="116929" Value="FaceDown"/>
+			<Conversion Contains="82677" Value="FaceUp"/>
+			<Conversion Contains="default" Value="Media-NA"/>		
+		</DataItem>	
+		
+		<DataItem Name="Tray8_Name" OID="1.3.6.1.2.1.43.8.2.1.13.1.9"/>
+		<DataItem Name="Tray8_Installed" OID="1.3.6.1.2.1.43.8.2.1.13.1.9">
+			<Conversion Contains="Tray 8" Value="Installed"/>
+			<Conversion Contains="default" Value="Not-Installed"/>
+		</DataItem>	
+		<DataItem Prefix="cfg" Name="Tray8_MediaSize" OID="1.3.6.1.2.1.43.8.2.1.5.1.9">
+			<Conversion Contains="116929" Value="A4"/>
+			<Conversion Contains="58267" Value="A5"/>
+			<Conversion Contains="default" Value="AnySize"/>
+		</DataItem>
+		<DataItem Prefix="cfg" Name="Tray8_MediaType" OID="1.3.6.1.2.1.43.8.2.1.12.1.9"/>
+		<DataItem Prefix="cfg" Name="Tray8_Capacity" OID="1.3.6.1.2.1.43.8.2.1.9.1.9"/>
+		<DataItem Prefix="cfg" Name="Tray8_Level" OID="1.3.6.1.2.1.43.8.2.1.10.1.9">
+			<Conversion Contains="0" Value="Empty"/>
+			<Conversion Contains="1" Value="10% of capacity"/>
+			<Conversion Contains="250" Value="26%-50% of capacity"/>
+			<Conversion Contains="1000" Value="51%-75% of capacity"/>
+			<Conversion Contains="1500" Value="76%-100% of capacity"/>
+			<Conversion Contains="default" Value="Empty"/>
+		</DataItem>
+		<DataItem Prefix="cfg" Name="Tray8_FeedDirection" OID="1.3.6.1.2.1.43.8.2.1.4.1.9">
+			<Conversion Contains="116929" Value="FaceDown"/>
+			<Conversion Contains="82677" Value="FaceUp"/>
+			<Conversion Contains="default" Value="Media-NA"/>		
+		</DataItem>	
+		
+		<DataItem Name="Tray9_Name" OID="1.3.6.1.2.1.43.8.2.1.13.1.10"/>
+		<DataItem Name="Tray9_Installed" OID="1.3.6.1.2.1.43.8.2.1.13.1.10">
+			<Conversion Contains="Tray 9" Value="Installed"/>
+			<Conversion Contains="default" Value="Not-Installed"/>
+		</DataItem>	
+		<DataItem Prefix="cfg" Name="Tray9_MediaSize" OID="1.3.6.1.2.1.43.8.2.1.5.1.10">
+			<Conversion Contains="116929" Value="A4"/>
+			<Conversion Contains="58267" Value="A5"/>
+			<Conversion Contains="default" Value="AnySize"/>
+		</DataItem>
+		<DataItem Prefix="cfg" Name="Tray9_MediaType" OID="1.3.6.1.2.1.43.8.2.1.12.1.10"/>
+		<DataItem Prefix="cfg" Name="Tray9_Capacity" OID="1.3.6.1.2.1.43.8.2.1.9.1.10"/>
+		<DataItem Prefix="cfg" Name="Tray9_Level" OID="1.3.6.1.2.1.43.8.2.1.10.1.10">
+			<Conversion Contains="0" Value="Empty"/>
+			<Conversion Contains="1" Value="10% of capacity"/>
+			<Conversion Contains="250" Value="26%-50% of capacity"/>
+			<Conversion Contains="1000" Value="51%-75% of capacity"/>
+			<Conversion Contains="1500" Value="76%-100% of capacity"/>
+			<Conversion Contains="default" Value="Empty"/>
+		</DataItem>
+		<DataItem Prefix="cfg" Name="Tray9_FeedDirection" OID="1.3.6.1.2.1.43.8.2.1.4.1.10">
+			<Conversion Contains="116929" Value="FaceDown"/>
+			<Conversion Contains="82677" Value="FaceUp"/>
+			<Conversion Contains="default" Value="Media-NA"/>		
+		</DataItem>	
+		
+		<DataItem Name="Tray10_Name" OID="1.3.6.1.2.1.43.8.2.1.13.1.11"/>
+		<DataItem Name="Tray10_Installed" OID="1.3.6.1.2.1.43.8.2.1.13.1.11">
+			<Conversion Contains="Tray 10" Value="Installed"/>
+			<Conversion Contains="default" Value="Not-Installed"/>
+		</DataItem>	
+		<DataItem Prefix="cfg" Name="Tray10_MediaSize" OID="1.3.6.1.2.1.43.8.2.1.5.1.11">
+			<Conversion Contains="116929" Value="A4"/>
+			<Conversion Contains="58267" Value="A5"/>
+			<Conversion Contains="default" Value="AnySize"/>
+		</DataItem>
+		<DataItem Prefix="cfg" Name="Tray10_MediaType" OID="1.3.6.1.2.1.43.8.2.1.12.1.11"/>
+		<DataItem Prefix="cfg" Name="Tray10_Capacity" OID="1.3.6.1.2.1.43.8.2.1.9.1.11"/>
+		<DataItem Prefix="cfg" Name="Tray10_Level" OID="1.3.6.1.2.1.43.8.2.1.10.1.11">
+			<Conversion Contains="0" Value="Empty"/>
+			<Conversion Contains="1" Value="10% of capacity"/>
+			<Conversion Contains="250" Value="26%-50% of capacity"/>
+			<Conversion Contains="1000" Value="51%-75% of capacity"/>
+			<Conversion Contains="1500" Value="76%-100% of capacity"/>
+			<Conversion Contains="default" Value="Empty"/>
+		</DataItem>
+		<DataItem Prefix="cfg" Name="Tray10_FeedDirection" OID="1.3.6.1.2.1.43.8.2.1.4.1.11">
+			<Conversion Contains="116929" Value="FaceDown"/>
+			<Conversion Contains="82677" Value="FaceUp"/>
+			<Conversion Contains="default" Value="Media-NA"/>		
+		</DataItem>
+
+
+  <DataItem Name="Envelope_Feeder_Installed" OID="1.3.6.1.2.1.43.8.2.1.13.1.4">
+    <Conversion Contains="Envelope Feeder" Value="Installed"/>
+    <Conversion Contains="default" Value="NotInstalled"/>
+  </DataItem>
+  
+   
+		<DataItem Prefix="cfg" Name="Outputbin1_Name" OID="1.3.6.1.2.1.43.9.2.1.7.1.1"/>
+		<DataItem Prefix="cfg" Name="Outputbin1_Installed" OID="1.3.6.1.2.1.43.9.2.1.6.1.1">
+			<Conversion Contains="0" Value="Installed"/>
+			<Conversion Contains="2" Value="Installed"/>
+			<Conversion Contains="4" Value="Installed"/>
+			<Conversion Contains="6" Value="Installed"/>
+			<Conversion Contains="default" Value="Not-Installed"/>
+		</DataItem>	
+		<DataItem Prefix="cfg" Name="Outputbin1_Capacity" OID="1.3.6.1.2.1.43.9.2.1.4.1.1"/>
+		<DataItem Prefix="cfg" Name="Outputbin1_Model" OID="1.3.6.1.2.1.43.9.2.1.9.1.1"/>
+		<DataItem Prefix="cfg" Name="Outputbin1_Stackler_Installer" OID="1.3.6.1.2.1.43.9.2.1.24.1.1">
+			<Conversion Contains="1" Value="Other"/>
+			<Conversion Contains="3" Value="On"/>
+			<Conversion Contains="4" Value="Off"/>
+			<Conversion Contains="5" Value="NotPresent"/>			
+			<Conversion Contains="default" Value="Not present"/>
+		</DataItem>		
+		
+		<DataItem Prefix="cfg" Name="Outputbin2_Name" OID="1.3.6.1.2.1.43.9.2.1.7.1.2"/>
+		<DataItem Prefix="cfg" Name="Outputbin2_Installed" OID="1.3.6.1.2.1.43.9.2.1.6.1.2">
+			<Conversion Contains="0" Value="Installed"/>
+			<Conversion Contains="2" Value="Installed"/>
+			<Conversion Contains="4" Value="Installed"/>
+			<Conversion Contains="6" Value="Installed"/>
+			<Conversion Contains="default" Value="Not-Installed"/>
+		</DataItem>	
+		<DataItem Prefix="cfg" Name="Outputbin2_Capacity" OID="1.3.6.1.2.1.43.9.2.1.4.1.2"/>
+		<DataItem Prefix="cfg" Name="Outputbin2_Model" OID="1.3.6.1.2.1.43.9.2.1.9.1.2"/>
+		<DataItem Prefix="cfg" Name="Outputbin2_Stackler_Installer" OID="1.3.6.1.2.1.43.9.2.1.24.1.2">
+			<Conversion Contains="1" Value="Other"/>
+			<Conversion Contains="3" Value="On"/>
+			<Conversion Contains="4" Value="Off"/>
+			<Conversion Contains="5" Value="NotPresent"/>			
+			<Conversion Contains="default" Value="Not present"/>
+		</DataItem>		
+		
+		<DataItem Prefix="cfg" Name="Outputbin3_Name" OID="1.3.6.1.2.1.43.9.2.1.7.1.3"/>
+		<DataItem Prefix="cfg" Name="Outputbin3_Installed" OID="1.3.6.1.2.1.43.9.2.1.6.1.3">
+			<Conversion Contains="0" Value="Installed"/>
+			<Conversion Contains="2" Value="Installed"/>
+			<Conversion Contains="4" Value="Installed"/>
+			<Conversion Contains="6" Value="Installed"/>
+			<Conversion Contains="default" Value="Not-Installed"/>
+		</DataItem>	
+		<DataItem Prefix="cfg" Name="Outputbin3_Capacity" OID="1.3.6.1.2.1.43.9.2.1.4.1.3"/>
+		<DataItem Prefix="cfg" Name="Outputbin3_Model" OID="1.3.6.1.2.1.43.9.2.1.9.1.3"/>
+		<DataItem Prefix="cfg" Name="Outputbin3_Stackler_Installer" OID="1.3.6.1.2.1.43.9.2.1.24.1.3">
+			<Conversion Contains="1" Value="Other"/>
+			<Conversion Contains="3" Value="On"/>
+			<Conversion Contains="4" Value="Off"/>
+			<Conversion Contains="5" Value="NotPresent"/>			
+			<Conversion Contains="default" Value="Not present"/>
+		</DataItem>		
+		
+		<DataItem Prefix="cfg" Name="Outputbin4_Name" OID="1.3.6.1.2.1.43.9.2.1.7.1.4"/>
+		<DataItem Prefix="cfg" Name="Outputbin4_Installed" OID="1.3.6.1.2.1.43.9.2.1.6.1.4">
+			<Conversion Contains="0" Value="Installed"/>
+			<Conversion Contains="2" Value="Installed"/>
+			<Conversion Contains="4" Value="Installed"/>
+			<Conversion Contains="6" Value="Installed"/>
+			<Conversion Contains="default" Value="Not-Installed"/>
+		</DataItem>	
+		<DataItem Prefix="cfg" Name="Outputbin4_Capacity" OID="1.3.6.1.2.1.43.9.2.1.4.1.4"/>
+		<DataItem Prefix="cfg" Name="Outputbin4_Model" OID="1.3.6.1.2.1.43.9.2.1.9.1.4"/>
+		<DataItem Prefix="cfg" Name="Outputbin4_Stackler_Installer" OID="1.3.6.1.2.1.43.9.2.1.24.1.4">
+			<Conversion Contains="1" Value="Other"/>
+			<Conversion Contains="3" Value="On"/>
+			<Conversion Contains="4" Value="Off"/>
+			<Conversion Contains="5" Value="NotPresent"/>			
+			<Conversion Contains="default" Value="Not present"/>
+		</DataItem>		
+		
+		<DataItem Prefix="cfg" Name="Outputbin5_Name" OID="1.3.6.1.2.1.43.9.2.1.7.1.5"/>
+		<DataItem Prefix="cfg" Name="Outputbin5_Installed" OID="1.3.6.1.2.1.43.9.2.1.6.1.5">
+			<Conversion Contains="0" Value="Installed"/>
+			<Conversion Contains="2" Value="Installed"/>
+			<Conversion Contains="4" Value="Installed"/>
+			<Conversion Contains="6" Value="Installed"/>
+			<Conversion Contains="default" Value="Not-Installed"/>
+		</DataItem>	
+		<DataItem Prefix="cfg" Name="Outputbin5_Capacity" OID="1.3.6.1.2.1.43.9.2.1.4.1.5"/>
+		<DataItem Prefix="cfg" Name="Outputbin5_Model" OID="1.3.6.1.2.1.43.9.2.1.9.1.5"/>
+		<DataItem Prefix="cfg" Name="Outputbin5_Stackler_Installer" OID="1.3.6.1.2.1.43.9.2.1.24.1.5">
+			<Conversion Contains="1" Value="Other"/>
+			<Conversion Contains="3" Value="On"/>
+			<Conversion Contains="4" Value="Off"/>
+			<Conversion Contains="5" Value="NotPresent"/>			
+			<Conversion Contains="default" Value="Not present"/>
+		</DataItem>
+		
+		
+		<DataItem Name="MediaTypes" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.4.1.8.8.1.0"/>
+  
+		<DataItem Name="Staple_Installed" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.1.6.5.28.3.4"/>
+  
+		<NextDataItem Prefix="cfg" Name="HolePunch_Installed" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.1.4.5.2.5" Count="3"/>
+
+		<DataItem GroupID="1.1.1.1.1.1.1.2" Name="DuplexUnit_Installed" OID="1.3.6.1.2.1.43.13.4.1.9.1.2">
+			<Conversion Contains="4" Value="Installed"/>
+			<Conversion Contains="3" Value="Installed"/>
+			<Conversion Contains="default" Value="Not-Installed"/>
+		</DataItem>  
+		<DataItem GroupID="1.1.1.1.1.1.1.2" Name="Duplex1" OID="1.3.6.1.2.1.43.13.4.1.9.1.3"/>
+
+		<DataItem Prefix="cfg" Name="PrinterMemory" OID="1.3.6.1.2.1.25.2.2.0"/>
+
+		<DataItem Prefix="cfg" Name="PrinterHardDisk" OID="1.3.6.1.2.1.25.3.6.1.2.2">
+		   <Conversion Contains="3" Value="Installed"/>
+		   <Conversion Contains="default" Value="NotInstalled"/>	
+		</DataItem>
+
+		<DataItem Prefix="cfg" Name="HardDisk_Capacity" OID="1.3.6.1.2.1.25.3.6.1.4.2"/>
+
+		<DataItem Prefix="cfg" Name="Mopier" OID="1.3.6.1.2.1.25.3.6.1.2.2">	
+			<Conversion Contains="3" Value="Installed"/>
+		    <Conversion Contains="default" Value="NotInstalled"/>	
+		</DataItem>
+  
+    <DataItem Prefix="cfg" Name="FinishingAccessory" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.1.4.5.2.1.0">
+      <Conversion Contains="Mailbox,A2W80A" Value="A2W80A-Mailbox"/>
+      <Conversion Contains="Stacker,A2W80A" Value="A2W80A-Stacker"/>
+      <Conversion Contains="Mailbox,A2W82A" Value="A2W82A-Mailbox"/>
+      <Conversion Contains="Puncher,A2W82A" Value="A2W82A-Stacker"/>
+      <Conversion Contains="Mailbox,A2W83A" Value="A2W83A-Mailbox"/>
+      <Conversion Contains="Stacker,A2W83A" Value="A2W83A-Stacker"/>
+      <Conversion Contains="Mailbox,A2W84A" Value="A2W84A-Mailbox"/>
+      <Conversion Contains="Stacker,A2W84A" Value="A2W84A-Stacker"/>
+      <Conversion Contains="Mailbox,CZ999A" Value="CZ999A-Mailbox"/>
+      <Conversion Contains="Stacker,CZ999A" Value="CZ999A-Stacker"/>
+	  <Conversion Contains="Mailbox,CZ994A" Value="CZ994A-Mailbox"/>
+	  <Conversion Contains="Stacker,CZ994A" Value="CZ994A-Stacker"/>
+	  <Conversion Contains="Mailbox,CZ995A" Value="CZ995A-Mailbox"/>
+	  <Conversion Contains="Puncher,CZ995A" Value="CZ995A-Stacker"/>
+	  <Conversion Contains="Mailbox,CZ996A" Value="CZ996A-Mailbox"/>
+	  <Conversion Contains="Puncher,CZ996A" Value="CZ996A-Stacker"/>
+	  <Conversion Contains="Mailbox,CZ285A" Value="CZ285A-Mailbox"/>
+	  <Conversion Contains="Stacker,CZ285A" Value="CZ285A-Stacker"/>
+    </DataItem>
+  
+	<DataItem Prefix="cfg" Name="FinishingAccessory2" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.1.4.5.2.10">
+	    <Conversion mibValue="HP LaserJet 500-Sheet Stapler/Stacker F2G72A" bidiValue="F2G72A-StaplerStacker"/>
+        <Conversion mibValue="HP LaserJet 500-Sheet Stacker F2G71A" bidiValue="F2G71A-SheetStacker"/>
+        <Conversion mibValue="HP LaserJet 500-Sheet 5-Bin Mailbox F2G81A" bidiValue="F2G81A-BinMailbox"/>
+        <Conversion mibValue="HP LaserJet 500-Sheet 5-Bin Stacker F2G81A" bidiValue="F2G81A-BinStacker"/>
+        <Conversion mibValue="HP LaserJet 500-Sheet 5-Bin Job Separator F2G81A" bidiValue="F2G81A-BinJobSeparator"/>
+        <Conversion mibValue="HP LaserJet 500-Sheet 5-Bin Collator F2G81A" bidiValue="F2G81A-BinCollator"/>
+    </DataItem>
+	
+	<DataItem Prefix="cfg" Name="Job_Storage_Supported" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.1.6.1.18.0"/>	
+		
+	
+	<DataItem Prefix="cfg" Name="Job_Storage_Type" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.1.6.1.19.0"/>	
+		
+	
+	<DataItem Prefix="cfg" Name="Job_Storage_Mode" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.1.6.1.20.0"/>	
+	
+	
+	<DataItem Prefix="cfg" Name="Job_Storage_Installed" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.1.6.1.21.0">	
+		<Conversion Contains="1" Value="Installed"/>
+		<Conversion Contains="default" Value="NotInstalled"/>
+	</DataItem>
+	
+	<DataItem Prefix="cfg" Name="Job_Storage_Encryption" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.1.6.1.22.0"/>	
+		
+	
+	<!-- If the value is true, then password is of type alphanumeric -->
+	<DataItem Prefix="cfg" Name="Job_Storage_Password_Type" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.1.6.1.15.0">
+			<Conversion Contains="1" Value="alphanumeric"/>
+			<Conversion Contains="default" Value="numeric"/>
+	</DataItem>	
+			
+	<DataItem Prefix="cfg" Name="Job_Storage_Encryption_Password_Max_Length" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.1.6.1.16.0"/>
+			
+	
+	<DataItem Prefix="cfg" Name="Job_Storage_Encryption_Password_Min_Length" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.1.6.1.17.0"/>
+			
+</OIDDataMap>
+
+
+
+<IPPDataMap>
+    <StaticDataItem Name="Protocol">IPP</StaticDataItem>
+    <DataItem Prefix="cfg" Name="MakeAndModel"  AttributeID="printer-make-and-model"    Command="Get-Printer-Attributes" JobURI="NULL"   Transient="false" />
+    <DataItem Prefix="cfg" Name="sides-supported"  AttributeID="sides-supported" Command="Get-Printer-Attributes" JobURI="NULL"   Transient="false"  LifeSpan="300" />
+	
+	<DataItem Name="Tray1_Installed" AttributeID="printer-input-tray" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false"
+	LifeSpan="300" >
+     <Conversion Contains="Tray 1" Value="Installed"/>
+     <Conversion Contains="default" Value="NotInstalled"/>
+    </DataItem> 
+
+    <DataItem Name="Tray2_Installed" AttributeID="printer-input-tray" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" >
+     <Conversion Contains="Tray 2" Value="Installed"/>
+     <Conversion Contains="default" Value="NotInstalled"/>
+    </DataItem>
+
+    <DataItem Name="Tray3_Installed" AttributeID="printer-input-tray" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" >
+     <Conversion Contains="Tray 3" Value="Installed"/>
+     <Conversion Contains="default" Value="NotInstalled"/>
+    </DataItem>
+
+    <DataItem Name="Tray4_Installed" AttributeID="printer-input-tray" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" >
+     <Conversion Contains="Tray 4" Value="Installed"/>
+     <Conversion Contains="default" Value="NotInstalled"/>
+    </DataItem>
+
+    <DataItem Name="Tray5_Installed" AttributeID="printer-input-tray" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" >
+     <Conversion Contains="Tray 5" Value="Installed"/>
+     <Conversion Contains="default" Value="NotInstalled"/>
+    </DataItem>
+
+      <DataItem Name="Tray6_Installed" AttributeID="printer-input-tray" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" >
+     <Conversion Contains="Tray 6" Value="Installed"/>
+     <Conversion Contains="default" Value="NotInstalled"/>
+    </DataItem>
+
+    <DataItem Name="Envelope_Feeder_Installed" AttributeID="printer-input-tray" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" > 
+       <Conversion Contains="Envelope Feeder" Value="Installed"/>
+       <Conversion Contains="default" Value="NotInstalled"/>
+    </DataItem>
+
+    <DataItem Prefix="cfg" Name="Outputbin1_Installed" AttributeID="output-bin-supported" Command="Get-Printer-Attributes" JobURI="NULL"   Transient="false"  LifeSpan="300" >
+     <Conversion Contains="tray-1" Value="Installed"/>
+     <Conversion Contains="default" Value="NotInstalled"/>
+    </DataItem>
+
+    <DataItem Prefix="cfg" Name="Outputbin2_Installed" AttributeID="output-bin-supported" Command="Get-Printer-Attributes" JobURI="NULL"   Transient="false"  LifeSpan="300" >
+     <Conversion Contains="tray-2" Value="Installed"/>
+     <Conversion Contains="default" Value="NotInstalled"/>
+    </DataItem>
+
+    <DataItem Prefix="cfg" Name="Outputbin3_Installed" AttributeID="output-bin-supported" Command="Get-Printer-Attributes" JobURI="NULL"   Transient="false"  LifeSpan="300" >
+     <Conversion Contains="tray-3" Value="Installed"/>
+     <Conversion Contains="default" Value="NotInstalled"/>
+    </DataItem>
+
+    <DataItem Name="Staple_Installed" AttributeID="finishings-supported" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" > 
+     <Conversion Contains="4" Value="Installed"/>
+     <Conversion Contains="default" Value="NotInstalled"/>
+    </DataItem>
+
+    <DataItem Name="Stapler_Top-Left_Supported" AttributeID="finishings-supported" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" > 
+     <Conversion Contains="20" Value="true"/>
+     <Conversion Contains="default" Value="NotInstalled"/>
+    </DataItem>
+
+    <DataItem Name="Punch_Installed" AttributeID="finishings-supported" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" > 
+     <Conversion Contains="5" Value="Installed"/>
+     <Conversion Contains="default" Value="NotInstalled"/>
+    </DataItem>
+
+    <DataItem Prefix="cfg" Name="DuplexUnit_Installed" AttributeID="sides-supported" Command="Get-Printer-Attributes" JobURI="NULL"    Transient="false" LifeSpan="300" > 
+     <Conversion Contains="two-sided-long-edge" Value="Installed"/>
+     <Conversion Contains="two-sided-short-edge" Value="Installed"/>	 
+     <Conversion Contains="default" Value="Not-Installed"/>
+    </DataItem>
+
+    <DataItem Name="Mopier"  AttributeID="multiple-document-handling-supported"    Command="Get-Printer-Attributes" JobURI="NULL"   Transient="false" LifeSpan="300">
+     <Conversion Contains="separate-documents-collated-copies" Value="Supported"/>
+     <Conversion Contains="default" Value="Not-Supported"/>
+    </DataItem>
+
+	<DataItem Name="FinishingSupported" AttributeID="finishings-supported" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" >    
+	</DataItem> 
+	
+	<DataItem Name="Media-source-Supported" AttributeID="media-source-supported" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" >    
+	</DataItem> 
+	
+	<DataItem Name="Tray1-mediafeed" AttributeID="printer-input-tray.Tray 1.mediafeed" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" >    
+	</DataItem> 
+	
+	<DataItem Name="Tray2-mediafeed" AttributeID="printer-input-tray.Tray 2.mediafeed" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" >    
+	</DataItem> 
+	
+	<DataItem Name="OutputBinSupported" AttributeID="output-bin-supported" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" > 
+	</DataItem>
+	
+	<DataItem Name="OutputBinFL-mediafeed" AttributeID="printer-output-tray.firstToLast.maxcapacity" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" >    
+	</DataItem> 
+	
+	<DataItem Name="OutputBinLF-mediafeed" AttributeID="printer-output-tray.lastToFirst.maxcapacity" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" >    
+	</DataItem> 
+	
+	 <DataItem Name="Tray1_x-dimension" AttributeID="media-col-ready.tray-1.x-dimension_OR_media-col-default.auto.x-dimension" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" >    
+	</DataItem> 
+	
+	<DataItem Name="printer_firmware_version" AttributeID="printer-firmware-version" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" >    
+	</DataItem>
+
+	<DataItem Name="Job_Storage_Supported" AttributeID="hp-save-job-storage-supported" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" /> 
+		
+	
+	<DataItem Name="Job_Storage_Type" AttributeID="hp-save-job-storage-supported" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" /> 
+		
+	
+	<DataItem Name="Job_Storage_Mode" AttributeID="save-disposition-supported" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" />
+		
+	
+	<DataItem Name="Job_Storage_Installed" AttributeID="hp-save-job-storage-available" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" > 
+		<Conversion Contains="1" Value="Installed"/>
+		<Conversion Contains="default" Value="NotInstalled"/>
+	</DataItem>
+	
+	<DataItem Name="Job_Storage_Encryption" AttributeID="hp-save-job-encryption-supported" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" />
+				
+	<DataItem Name="Job_Storage_Password_Type" AttributeID="hp-save-job-password-type" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" />		
+
+	<DataItem Name="Job_Storage_Encryption_Password_Max_Length" AttributeID="hp-save-job-password-max-length" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" />
+		
+	
+	<DataItem Name="Job_Storage_Encryption_Password_Min_Length" AttributeID="hp-save-job-password-min-length" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" />
+		
+	
+
+	
+</IPPDataMap>
+
+
+
+
+
+
+
+
+
+
+</DataMaps>

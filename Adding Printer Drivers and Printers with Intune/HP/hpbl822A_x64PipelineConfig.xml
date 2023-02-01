@@ -1,0 +1,19 @@
+<!--
+Copyright Monotype Imaging
+
+   All rights reserved.
+
+Generate from: hpbl822A_x64PipelineConfig.xml
+On: 2019-06-2703:49:55
+
+Abstract:
+
+Monotype Imaging filter configuration file. This identifies the
+filters that comprise the filter pipeline and their order.
+    -->
+<Filters>
+  <Filter dll="hpb6sy6775_x64xps.dll" clsid="{3821E518-33AF-4d17-92B3-28EB410D46B6}" name="Monotype XPS.PCL6 Filter">
+    <Input guid="{4d47a67c-66cc-4430-850e-daf466fe5bc4}" comment="IID_IPrintReadStream" />
+    <Output guid="{65bb7f1b-371e-4571-8ac7-912f510c1a38}" comment="IID_IPrintWriteStream" />
+  </Filter>
+</Filters>

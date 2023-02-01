@@ -1,0 +1,227 @@
+; Copyright Hewlett-Packard 2014
+; XPS.PCL6 Printer Drivers
+; List of supported printers, manufacturers
+
+; Manufacturer section.
+; This section lists all of the manufacturers
+; that we will display in the Dialog box
+[Version]
+Signature = "$Windows NT$"
+ClassGUID = {4D36E979-E325-11CE-BFC1-08002BE10318}
+Class = Printer
+Provider = %OEM%
+DriverVer = 06/27/2019,8.00.1324.6775
+CatalogFile = hpbl812A_x64.cat
+
+[Manufacturer]
+%OEM% = OEM,NTamd64
+
+; Model sections.
+; Each section here corresponds with an entry listed in the
+; [Manufacturer] section, above. The models will be displayed in the order
+; that they appear in the INF file.
+[OEM]
+
+[OEM.NTamd64]
+%PRINTER1% = INSTALL_SECTION1,MF\HP_PageWide_Color_MFP_586&WSD&IP_PRINT
+%PRINTER1% = INSTALL_SECTION1,USBPRINT\Hewlett-PackardHP_Pab926
+%PRINTER1% = INSTALL_SECTION1,Hewlett-PackardHP_Pab926
+%PRINTER1% = INSTALL_SECTION1,WSDPRINT\Hewlett-PackardHP_Pab926
+%PRINTER1% = INSTALL_SECTION1,WSDPRINT\VID_03F0&pid_812A
+%PRINTER1% = INSTALL_SECTION1,WSDPRINT\VID_03F0&pid_812A&REV_0100
+%PRINTER2% = INSTALL_SECTION2,MF\HP_PageWide_Color_MFP_E58650&WSD&IP_PRINT
+%PRINTER2% = INSTALL_SECTION2,USBPRINT\Hewlett-PackardHP_Pa0841
+%PRINTER2% = INSTALL_SECTION2,Hewlett-PackardHP_Pa0841
+%PRINTER2% = INSTALL_SECTION2,WSDPRINT\Hewlett-PackardHP_Pa0841
+%PRINTER2% = INSTALL_SECTION2,WSDPRINT\VID_03F0&pid_832A
+%PRINTER2% = INSTALL_SECTION2,WSDPRINT\VID_03F0&pid_832A&REV_0100
+%PRINTER3% = INSTALL_SECTION3,MF\HP_PageWide_Color_Flow_MFP_586&WSD&IP_PRINT
+%PRINTER3% = INSTALL_SECTION3,USBPRINT\Hewlett-PackardHP_Paad8e
+%PRINTER3% = INSTALL_SECTION3,Hewlett-PackardHP_Paad8e
+%PRINTER3% = INSTALL_SECTION3,WSDPRINT\Hewlett-PackardHP_Paad8e
+%PRINTER3% = INSTALL_SECTION3,WSDPRINT\VID_03F0&pid_822A
+%PRINTER3% = INSTALL_SECTION3,WSDPRINT\VID_03F0&pid_822A&REV_0100
+%PRINTER4% = INSTALL_SECTION4,MF\HP_PageWide_Color_Flow_E58650&WSD&IP_PRINT
+%PRINTER4% = INSTALL_SECTION4,USBPRINT\Hewlett-PackardHP_Paee5c
+%PRINTER4% = INSTALL_SECTION4,Hewlett-PackardHP_Paee5c
+%PRINTER4% = INSTALL_SECTION4,WSDPRINT\Hewlett-PackardHP_Paee5c
+%PRINTER4% = INSTALL_SECTION4,WSDPRINT\VID_03F0&pid_852A
+%PRINTER4% = INSTALL_SECTION4,WSDPRINT\VID_03F0&pid_852A&REV_0100
+
+; Installer Sections
+; These sections control file installation, and reference all files that
+; need to be copied. The section name will be assumed to be the driver
+; file, unless there is an explicit DriverFile section listed.
+[PrinterPackageInstallation.amd64]
+PackageAware = TRUE
+
+; Copy Sections
+; Lists of files that are actually copied. These sections are referenced
+; from the installer sections, above. Only create a section if it contains
+; two or more files (if we only copy a single file, identify it in the
+; installer section, using the @filename notation) or if it's a color
+; profile (since the DestinationDirs can only handle sections, and not
+; individual files).
+[OEM URLS]
+%OEM% = "http://www.hp.com"
+
+[INSTALL_SECTION1]
+CopyFiles = FILES_PRINT1,COMMON_FILES_DRIVER_COPY,VENDOR_SETUP,MSCORE_COPY
+DriverFile = mxdwdrv.dll
+ConfigFile = hpb6sy6775_x64gui.dll
+DataFile = hpbl812A_x64Cfg.xml
+FeatureScore = 0x20
+Copyinf = hpbuio180l.inf
+
+[INSTALL_SECTION2]
+CopyFiles = FILES_PRINT2,COMMON_FILES_DRIVER_COPY,VENDOR_SETUP,MSCORE_COPY
+DriverFile = mxdwdrv.dll
+ConfigFile = hpb6sy6775_x64gui.dll
+DataFile = hpbl832A_x64Cfg.xml
+FeatureScore = 0x20
+Copyinf = hpbuio180l.inf
+
+[INSTALL_SECTION3]
+CopyFiles = FILES_PRINT3,COMMON_FILES_DRIVER_COPY,VENDOR_SETUP,MSCORE_COPY
+DriverFile = mxdwdrv.dll
+ConfigFile = hpb6sy6775_x64gui.dll
+DataFile = hpbl822A_x64Cfg.xml
+FeatureScore = 0x20
+Copyinf = hpbuio180l.inf
+
+[INSTALL_SECTION4]
+CopyFiles = FILES_PRINT4,COMMON_FILES_DRIVER_COPY,VENDOR_SETUP,MSCORE_COPY
+DriverFile = mxdwdrv.dll
+ConfigFile = hpb6sy6775_x64gui.dll
+DataFile = hpbl852A_x64Cfg.xml
+FeatureScore = 0x20
+Copyinf = hpbuio180l.inf
+
+[FILES_PRINT1]
+hpbl812A_x64PipelineConfig.xml
+hpbl812A_x64Cfg.xml
+hpbl812A_x64.ini
+
+[FILES_PRINT2]
+hpbl832A_x64PipelineConfig.xml
+hpbl832A_x64Cfg.xml
+hpbl832A_x64.ini
+
+[FILES_PRINT3]
+hpbl822A_x64PipelineConfig.xml
+hpbl822A_x64Cfg.xml
+hpbl822A_x64.ini
+
+[FILES_PRINT4]
+hpbl852A_x64PipelineConfig.xml
+hpbl852A_x64Cfg.xml
+hpbl852A_x64.ini
+
+[INSTALL_SECTION1.CoInstallers]
+AddReg = CoLaunchInstall.AddReg
+CopyFiles = VENDOR_SETUP
+
+[INSTALL_SECTION2.CoInstallers]
+AddReg = CoLaunchInstall.AddReg
+CopyFiles = VENDOR_SETUP
+
+[INSTALL_SECTION3.CoInstallers]
+AddReg = CoLaunchInstall.AddReg
+CopyFiles = VENDOR_SETUP
+
+[INSTALL_SECTION4.CoInstallers]
+AddReg = CoLaunchInstall.AddReg
+CopyFiles = VENDOR_SETUP
+
+[CoLaunchInstall.AddReg]
+HKR,,CoInstallers32,0x10000,"hpb6sy6775x64_coins.dll,CoInstall"
+
+[MSCORE_COPY]
+mxdwdrv.dll,mxdwdrv_x64.dll,COPYFLG_NOSKIP
+XPSSVCS.dll,XPSSVCS_x64.dll,COPYFLG_NOSKIP
+
+[VENDOR_SETUP]
+hpb6sy6775x64_coins.dll
+
+[InstallData]
+LaunchExe = Autorun.exe
+Params = /HWFirst
+PnPFinishEvent = hpbsta64
+InstallerRunningEvent = hpbcsiInstaller
+IOBackfill = UIO
+
+[SourceInfo]
+SourceDirectory = %1%
+
+; Call SetupSetDirectoryId with 66000 to set the target directory at runtime
+; (depending on which environment drivers are getting installed)
+[COMMON_FILES_DRIVER_COPY]
+hpb6sy6775_x64xps.dll
+hpb6sy6775_x64hybrasto.dll
+hpb6sy6775_x64gui.dll
+hpb6sy6775_x64enus.dll
+hpb6sy6775_x64dlg.dll
+hpb6sy6775_x64help.cab
+hpb6sy6775datamap.xml
+hpb6sy6775x64_buio.dll
+hpb6sy6775x64_buiodm.dll
+hpb6sy6775x64_coins.dll
+hpb6sy6775_x64ewdm.xml
+
+; Data Sections
+; Lists of files that are specially identified for Windows
+[DestinationDirs]
+DefaultDestDir = 66000
+VENDOR_SETUP = 66002
+
+[SourceDisksNames.amd64]
+0 = %DISK%,,,.
+
+; Source Disk Section
+[SourceDisksNames]
+0 = %DISK%,,,.
+
+[SourceDisksFiles]
+mxdwdrv_x64.dll = 0
+XPSSVCS_x64.DLL = 0
+hpbl812A_x64PipelineConfig.xml = 0
+hpb6sy6775_x64xps.dll = 0
+hpb6sy6775_x64hybrasto.dll = 0
+hpbl812A_x64Cfg.xml = 0
+hpb6sy6775_x64gui.dll = 0
+hpb6sy6775_x64enus.dll = 0
+hpb6sy6775_x64dlg.dll = 0
+hpbl812A_x64.ini = 0
+hpb6sy6775_x64help.cab = 0
+hpb6sy6775datamap.xml = 0
+hpb6sy6775x64_buio.dll = 0
+hpb6sy6775x64_buiodm.dll = 0
+hpb6sy6775x64_coins.dll = 0
+hpb6sy6775_x64ewdm.xml = 0
+hpbuio180l.inf = 0
+hpbl832A_x64PipelineConfig.xml = 0
+hpbl832A_x64Cfg.xml = 0
+hpbl832A_x64.ini = 0
+hpbl822A_x64PipelineConfig.xml = 0
+hpbl822A_x64Cfg.xml = 0
+hpbl822A_x64.ini = 0
+hpbl852A_x64PipelineConfig.xml = 0
+hpbl852A_x64Cfg.xml = 0
+hpbl852A_x64.ini = 0
+
+[Strings]
+OEM = "hp"
+PRINTER1 = "HP PageWide Color MFP 586 PCL 6"
+PRINTER2 = "HP PageWide Color MFP E58650 PCL 6"
+PRINTER3 = "HP PageWide Color Flow MFP 586 PCL 6"
+PRINTER4 = "HP PageWide Color Flow E58650 PCL 6"
+DISK = "HP PageWide Color Flow E58650 PCL 6 Printer Drivers disk"
+
+[Strings.0411]
+OEM = "hp"
+PRINTER1 = "HP PageWide Color MFP 586 PCL 6"
+PRINTER2 = "HP PageWide Color MFP E58650 PCL 6"
+PRINTER3 = "HP PageWide Color Flow MFP 586 PCL 6"
+PRINTER4 = "HP PageWide Color Flow E58650 PCL 6"
+DISK = "HP PageWide Color Flow E58650 PCL 6 Printer Drivers disk"
+

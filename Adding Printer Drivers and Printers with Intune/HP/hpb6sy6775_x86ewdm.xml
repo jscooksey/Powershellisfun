@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataMaps xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\..\..\src\DataModel\DataMap.xsd">
+
+<OIDDataMap>
+       <StaticDataItem Name="Protocol">OID</StaticDataItem>
+   	  <DataItem Name="EarlyWarmup" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.1.1.101.0;1.3.6.1.4.1.11.2.3.9.4.2.1.1.1.99.0"/>
+</OIDDataMap>
+
+</DataMaps>

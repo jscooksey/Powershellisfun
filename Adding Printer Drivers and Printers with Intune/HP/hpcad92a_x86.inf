@@ -1,0 +1,101 @@
+[Version]
+Signature="$Windows NT$"
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
+Class=Printer
+Provider=%OEM%
+DriverVer=12/15/2020,8.00.2003.8281
+CatalogFile=hpcad92a_x86.cat
+[Manufacturer]
+%OEM%=OEM,NTx86,NTamd64
+[OEM.NTx86]
+%PRINTER1%=INSTALL_SECTION1,USBPRINT\HPHP_Color_LaserJet_4B10
+%PRINTER1%=INSTALL_SECTION1,WSDPRINT\HPHP_Color_LaserJet_4B10
+%PRINTER1%=INSTALL_SECTION1,HPHP_Color_LaserJet_4b10
+%PRINTER1%=INSTALL_SECTION1,WSDPRINT\HPHP_Color_LaserJet_4b10
+%PRINTER1%=INSTALL_SECTION1,USBPRINT\HPHP_Color_LaserJet_4b10
+%PRINTER1%=INSTALL_SECTION1,MF\Color_LaserJet_MFP_M480&WSD&IP_PRINT
+[INSTALL_SECTION1]
+CopyFiles=FILES_PRINT1,COMMON_FILES_DRIVER_COPY,MSCORE_COPY,COINST_FILES
+DriverFile=mxdwdrv.dll
+ConfigFile=hpb6sy8281_x86gui.dll
+DataFile=hpcad92a_x86Cfg.xml
+FeatureScore=0x20
+CopyINF=HPRestStub.inf
+[FILES_PRINT1]
+hpcad92a_x86PipelineConfig.xml
+hpcad92a_x86Cfg.xml
+hpcad92a_x86.ini
+[COMMON_FILES_DRIVER_COPY]
+hpb6sy8281_x86xps.dll
+hpb6sy8281_x86hybrasto.dll
+hpb6sy8281_x86gui.dll
+hpb6sy8281_x86enus.dll
+hpb6sy8281_x86dlg.dll
+hpb6sy8281_x86help.cab
+hpb6sy8281datamap.xml
+hpb6sy8281x86_buio.dll
+hpb6sy8281x86_buiodm.dll
+hpb6sy8281x86_coins.dll
+hpb6sy8281_x86hpfime53.dll
+hpb6sy8281_x86PdsmqConnector.exe
+hpb6sy8281_x86PdsmqConnector.PdsmqConfig.xml
+hpb6sy8281_x86ewdm.xml
+[MSCORE_COPY]
+mxdwdrv.dll,mxdwdrv_x86.dll,COPYFLG_NOSKIP
+XPSSVCS.dll,XPSSVCS_x86.dll,COPYFLG_NOSKIP
+[SourceDisksFiles]
+hpcad92a_x86PipelineConfig.xml=0
+hpcad92a_x86Cfg.xml=0
+hpcad92a_x86.ini=0
+hpb6sy8281_x86xps.dll=0
+hpb6sy8281_x86hybrasto.dll=0
+hpb6sy8281_x86gui.dll=0
+hpb6sy8281_x86enus.dll=0
+hpb6sy8281_x86dlg.dll=0
+hpb6sy8281_x86help.cab=0
+hpb6sy8281datamap.xml=0
+hpb6sy8281x86_buio.dll=0
+hpb6sy8281x86_buiodm.dll=0
+hpb6sy8281x86_coins.dll=0
+hpb6sy8281_x86hpfime53.dll=0
+hpb6sy8281_x86PdsmqConnector.exe=0
+hpb6sy8281_x86PdsmqConnector.PdsmqConfig.xml=0
+hpb6sy8281_x86ewdm.xml=0
+mxdwdrv_x86.dll=0
+XPSSVCS_x86.DLL=0
+hpinkcoid92a.dll=101
+hpinkinsd92a.exe=101
+[SourceDisksNames]
+0=%DISK%,,,.
+101=%DISK%,,,\i386
+[PrinterPackageInstallation.x86]
+PackageAware=TRUE
+[OEM.NTamd64]
+[DestinationDirs]
+DefaultDestDir=66000
+COINST_FILES=11             ; Copy CoInstaller files to system32
+[Strings]
+OEM="hp"
+PRINTER1="HP Color LaserJet MFP M480 PCL 6 (V3)"
+PRINTER2="HP Color LaserJet MFP E47528 PCL 6 (V3)"
+DISK="HP Color LaserJet MFP E47528 PCL 6 (V3) Printer Drivers disk"
+[Strings.0411]
+OEM="hp"
+PRINTER1="HP Color LaserJet MFP M480 PCL 6 (V3)"
+PRINTER2="HP Color LaserJet MFP E47528 PCL 6 (V3)"
+DISK="HP Color LaserJet MFP E47528 PCL 6 (V3) Printer Drivers disk"
+[HP]
+[INSTALL_SECTION1.CoInstallers]
+AddReg=hp_CoInstaller_CLM48_addReg
+CopyFiles=COINST_FILES
+[INSTALL_SECTION1.Services]
+AddService=,0x2    ; no value for the service name
+[hp_CoInstaller_CLM48_addReg]
+HKR,,CoInstallers32,0x00010000,"hpinkcoid92a.dll,CoDeviceInstall"
+HKR,,SoftwareRegPath,,"Software\HP\InstalledProducts\{B2782C62-CA86-4FE7-A169-260E74084671}"
+HKR,,ModelName,,"HP Color LaserJet MFP M480"
+[SourceInfo]
+SourceDirectory=%1%
+[COINST_FILES]
+hpinkcoid92a.dll
+hpinkinsd92a.exe

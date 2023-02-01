@@ -1,0 +1,1410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataMaps xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\..\..\src\DataModel\DataMap.xsd">
+  <!--Version 3.39 -->
+  <XMLDataMap Protocol="LEDM">
+    <StaticDataItem Name="Protocol">LEDM</StaticDataItem>
+    <DataItem Prefix="mhdyn" Name="Tray3_Installed" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[2]/dd:InputBin" Transient="false" LifeSpan="300">
+      <Conversion Contains="Tray3" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="prdcfgdyn" Name="DuplexUnit_Installed" URI="ledm:hpLedmProductConfigDyn" XPath="//dd:DuplexUnit" Transient="false" LifeSpan="300">
+      <Conversion Contains="Installed" Value="Installed" />
+      <Conversion Contains="NotInstalled" Value="NotInstalled" />
+    </DataItem>
+  </XMLDataMap>
+  <XMLDataMap Protocol="WS">
+    <StaticDataItem Name="Protocol">WS</StaticDataItem>
+    <DataItem Prefix="PrinterDescription" Name="PrintContractVersionMajor_Installed" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//hpprt:PCVersion/hpprt:Major">
+      <Conversion Contains="0" Value="Installed" />
+      <Conversion Contains="1" Value="Installed" />
+      <Conversion Contains="2" Value="Installed" />
+      <Conversion Contains="3" Value="Installed" />
+      <Conversion Contains="4" Value="Installed" />
+      <Conversion Contains="5" Value="Installed" />
+      <Conversion Contains="6" Value="Installed" />
+      <Conversion Contains="7" Value="Installed" />
+      <Conversion Contains="8" Value="Installed" />
+      <Conversion Contains="9" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="PrinterDescription" Name="PrintContractVersionMajor0_Installed" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//hpprt:PCVersion/hpprt:Major">
+      <Conversion Contains="0" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="PrinterDescription" Name="PrintContractVersionMajor1_Installed" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//hpprt:PCVersion/hpprt:Major">
+      <Conversion Contains="1" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="PrinterDescription" Name="PrintContractVersionMajor2_Installed" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//hpprt:PCVersion/hpprt:Major">
+      <Conversion Contains="2" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="PrinterDescription" Name="PrintContractVersionMajor3_Installed" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//hpprt:PCVersion/hpprt:Major">
+      <Conversion Contains="3" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="PrinterDescription" Name="PrintContractVersionMajor4_Installed" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//hpprt:PCVersion/hpprt:Major">
+      <Conversion Contains="4" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="PrinterDescription" Name="PrintContractVersionMajor5_Installed" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//hpprt:PCVersion/hpprt:Major">
+      <Conversion Contains="5" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="PrinterDescription" Name="PrintContractVersionMajor6_Installed" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//hpprt:PCVersion/hpprt:Major">
+      <Conversion Contains="6" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="PrinterDescription" Name="PrintContractVersionMajor7_Installed" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//hpprt:PCVersion/hpprt:Major">
+      <Conversion Contains="7" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="PrinterDescription" Name="PrintContractVersionMajor8_Installed" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//hpprt:PCVersion/hpprt:Major">
+      <Conversion Contains="8" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="PrinterDescription" Name="PrintContractVersionMajor9_Installed" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//hpprt:PCVersion/hpprt:Major">
+      <Conversion Contains="9" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="PrinterDescription" Name="PrintContractVersionMinor_Installed" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//hpprt:PCVersion/hpprt:Minor">
+      <Conversion Contains="0" Value="Installed" />
+      <Conversion Contains="1" Value="Installed" />
+      <Conversion Contains="2" Value="Installed" />
+      <Conversion Contains="3" Value="Installed" />
+      <Conversion Contains="4" Value="Installed" />
+      <Conversion Contains="5" Value="Installed" />
+      <Conversion Contains="6" Value="Installed" />
+      <Conversion Contains="7" Value="Installed" />
+      <Conversion Contains="8" Value="Installed" />
+      <Conversion Contains="9" Value="Installed" />
+      <Conversion Contains="71" Value="Installed" />
+      <Conversion Contains="72" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="PrinterDescription" Name="PrintContractVersionMinor0_Installed" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//hpprt:PCVersion/hpprt:Minor">
+      <Conversion Contains="0" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="PrinterDescription" Name="PrintContractVersionMinor1_Installed" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//hpprt:PCVersion/hpprt:Minor">
+      <Conversion Contains="1" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="PrinterDescription" Name="PrintContractVersionMinor2_Installed" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//hpprt:PCVersion/hpprt:Minor">
+      <Conversion Contains="2" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="PrinterDescription" Name="PrintContractVersionMinor3_Installed" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//hpprt:PCVersion/hpprt:Minor">
+      <Conversion Contains="3" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="PrinterDescription" Name="PrintContractVersionMinor4_Installed" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//hpprt:PCVersion/hpprt:Minor">
+      <Conversion Contains="4" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="PrinterDescription" Name="PrintContractVersionMinor5_Installed" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//hpprt:PCVersion/hpprt:Minor">
+      <Conversion Contains="5" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="PrinterDescription" Name="PrintContractVersionMinor6_Installed" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//hpprt:PCVersion/hpprt:Minor">
+      <Conversion Contains="6" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="PrinterDescription" Name="PrintContractVersionMinor7_Installed" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//hpprt:PCVersion/hpprt:Minor">
+      <Conversion Contains="7" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="PrinterDescription" Name="PrintContractVersionMinor8_Installed" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//hpprt:PCVersion/hpprt:Minor">
+      <Conversion Contains="8" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="PrinterDescription" Name="PrintContractVersionMinor9_Installed" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//hpprt:PCVersion/hpprt:Minor">
+      <Conversion Contains="9" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="PrinterDescription" Name="PrintContractVersionMinor72_Installed" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//hpprt:PCVersion/hpprt:Minor">
+      <Conversion Contains="72" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <!-- PCv1.0 -->
+    <!-- PCv1.0 -->
+    <!-- PDL -->
+    <!-- PCv1.0 -->
+    <!-- PDL End-->
+    <DataItem Prefix="PrinterConfiguration" Name="DuplexUnit_Installed" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//wprt:DuplexerInstalled">
+      <Conversion Contains="true" Value="Installed" />
+      <Conversion Contains="false" Value="NotInstalled" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="PrinterConfiguration" Name="DeviceDefaultDuplexStandard" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//hpprt:OemPrinterConfiguration/hpprt:DefaultDuplexStandard"></DataItem>
+    <!-- JobAccountingQuotaSupported -->
+    <DataItem Prefix="PrinterConfiguration" Name="Tray3_Installed" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//wprt:InputBinEntry[@Name='Tray 3' or @Name='Tray3']/@Name">
+      <Conversion Contains="Tray 3" Value="Installed" />
+      <Conversion Contains="Tray3" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <!-- MediaTypes List PCv1.0 -->
+    <!-- 1-10 -->
+    <!-- 11-20 -->
+    <!-- 21-30 -->
+    <!-- 31-40 -->
+    <!-- 41-50 -->
+    <!-- Media Types End -->
+    <!-- PC PrintQuality List, PCv1.0-->
+    <!-- PQMode -->
+    <DataItem Prefix="PrinterCapabilities" Name="PrintQuality-Draft-PQMode" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()='Draft']/@hpprt:PQMode">
+      <Conversion Contains="1" Value="1" />
+      <Conversion Contains="2" Value="2" />
+      <Conversion Contains="3" Value="3" />
+      <Conversion Contains="4" Value="4" />
+      <Conversion Contains="5" Value="5" />
+      <Conversion Contains="6" Value="6" />
+      <Conversion Contains="7" Value="7" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <DataItem Prefix="PrinterCapabilities" Name="PrintQuality-Normal-PQMode" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()='Normal']/@hpprt:PQMode">
+      <Conversion Contains="1" Value="1" />
+      <Conversion Contains="2" Value="2" />
+      <Conversion Contains="3" Value="3" />
+      <Conversion Contains="4" Value="4" />
+      <Conversion Contains="5" Value="5" />
+      <Conversion Contains="6" Value="6" />
+      <Conversion Contains="7" Value="7" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <DataItem Prefix="PrinterCapabilities" Name="PrintQuality-Best-PQMode" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()='Best']/@hpprt:PQMode">
+      <Conversion Contains="1" Value="1" />
+      <Conversion Contains="2" Value="2" />
+      <Conversion Contains="3" Value="3" />
+      <Conversion Contains="4" Value="4" />
+      <Conversion Contains="5" Value="5" />
+      <Conversion Contains="6" Value="6" />
+      <Conversion Contains="7" Value="7" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <DataItem Prefix="PrinterCapabilities" Name="PrintQuality-Max-PQMode" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()='Max']/@hpprt:PQMode">
+      <Conversion Contains="1" Value="1" />
+      <Conversion Contains="2" Value="2" />
+      <Conversion Contains="3" Value="3" />
+      <Conversion Contains="4" Value="4" />
+      <Conversion Contains="5" Value="5" />
+      <Conversion Contains="6" Value="6" />
+      <Conversion Contains="7" Value="7" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <DataItem Prefix="PrinterCapabilities" Name="PrintQuality-Economode-PQMode" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()='Economode']/@hpprt:PQMode">
+      <Conversion Contains="1" Value="1" />
+      <Conversion Contains="2" Value="2" />
+      <Conversion Contains="3" Value="3" />
+      <Conversion Contains="4" Value="4" />
+      <Conversion Contains="5" Value="5" />
+      <Conversion Contains="6" Value="6" />
+      <Conversion Contains="7" Value="7" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <!-- StdType1 -->
+    <DataItem Prefix="PrinterCapabilities" Name="PC_PQStandardType1-ImagingTechnology" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()='Draft']/@hpprt:ImageTechnology">
+      <Conversion Contains="2000" Value="2000" />
+      <Conversion Contains="2001" Value="2001" />
+      <Conversion Contains="2002" Value="2002" />
+      <Conversion Contains="2003" Value="2003" />
+      <Conversion Contains="2004" Value="2004" />
+      <Conversion Contains="2005" Value="2005" />
+      <Conversion Contains="4000" Value="4000" />
+      <Conversion Contains="4005" Value="4005" />
+      <Conversion Contains="4010" Value="4010" />
+      <Conversion Contains="4015" Value="4015" />
+      <Conversion Contains="4020" Value="4020" />
+      <Conversion Contains="4030" Value="4030" />
+      <Conversion Contains="4040" Value="4040" />
+      <Conversion Contains="4050" Value="4050" />
+      <Conversion Contains="4060" Value="4060" />
+      <Conversion Contains="4070" Value="4070" />
+      <Conversion Contains="4080" Value="4080" />
+      <Conversion Contains="4090" Value="4090" />
+      <Conversion Contains="5000" Value="5000" />
+      <Conversion Contains="3" Value="3" />
+      <Conversion Contains="4" Value="4" />
+      <Conversion Contains="5" Value="5" />
+      <Conversion Contains="10" Value="10" />
+      <Conversion Contains="11" Value="11" />
+      <Conversion Contains="21" Value="21" />
+      <Conversion Contains="22" Value="22" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <!-- StdType2 -->
+    <DataItem Prefix="PrinterCapabilities" Name="PC_PQStandardType2-ImagingTechnology" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()='Normal']/@hpprt:ImageTechnology">
+      <Conversion Contains="2000" Value="2000" />
+      <Conversion Contains="2001" Value="2001" />
+      <Conversion Contains="2002" Value="2002" />
+      <Conversion Contains="2003" Value="2003" />
+      <Conversion Contains="2004" Value="2004" />
+      <Conversion Contains="2005" Value="2005" />
+      <Conversion Contains="4000" Value="4000" />
+      <Conversion Contains="4005" Value="4005" />
+      <Conversion Contains="4010" Value="4010" />
+      <Conversion Contains="4015" Value="4015" />
+      <Conversion Contains="4020" Value="4020" />
+      <Conversion Contains="4030" Value="4030" />
+      <Conversion Contains="4040" Value="4040" />
+      <Conversion Contains="4050" Value="4050" />
+      <Conversion Contains="4060" Value="4060" />
+      <Conversion Contains="4070" Value="4070" />
+      <Conversion Contains="4080" Value="4080" />
+      <Conversion Contains="4090" Value="4090" />
+      <Conversion Contains="5000" Value="5000" />
+      <Conversion Contains="3" Value="3" />
+      <Conversion Contains="4" Value="4" />
+      <Conversion Contains="5" Value="5" />
+      <Conversion Contains="10" Value="10" />
+      <Conversion Contains="11" Value="11" />
+      <Conversion Contains="21" Value="21" />
+      <Conversion Contains="22" Value="22" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <!-- StdType3 -->
+    <DataItem Prefix="PrinterCapabilities" Name="PC_PQStandardType3-ImagingTechnology" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()='Best']/@hpprt:ImageTechnology">
+      <Conversion Contains="2000" Value="2000" />
+      <Conversion Contains="2001" Value="2001" />
+      <Conversion Contains="2002" Value="2002" />
+      <Conversion Contains="2003" Value="2003" />
+      <Conversion Contains="2004" Value="2004" />
+      <Conversion Contains="2005" Value="2005" />
+      <Conversion Contains="4000" Value="4000" />
+      <Conversion Contains="4005" Value="4005" />
+      <Conversion Contains="4010" Value="4010" />
+      <Conversion Contains="4015" Value="4015" />
+      <Conversion Contains="4020" Value="4020" />
+      <Conversion Contains="4030" Value="4030" />
+      <Conversion Contains="4040" Value="4040" />
+      <Conversion Contains="4050" Value="4050" />
+      <Conversion Contains="4060" Value="4060" />
+      <Conversion Contains="4070" Value="4070" />
+      <Conversion Contains="4080" Value="4080" />
+      <Conversion Contains="4090" Value="4090" />
+      <Conversion Contains="5000" Value="5000" />
+      <Conversion Contains="3" Value="3" />
+      <Conversion Contains="4" Value="4" />
+      <Conversion Contains="5" Value="5" />
+      <Conversion Contains="10" Value="10" />
+      <Conversion Contains="11" Value="11" />
+      <Conversion Contains="21" Value="21" />
+      <Conversion Contains="22" Value="22" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <!-- StdType4 -->
+    <DataItem Prefix="PrinterCapabilities" Name="PC_PQStandardType4-ImagingTechnology" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()='Max' or text()='Marvelous']/@hpprt:ImageTechnology">
+      <Conversion Contains="2000" Value="2000" />
+      <Conversion Contains="2001" Value="2001" />
+      <Conversion Contains="2002" Value="2002" />
+      <Conversion Contains="2003" Value="2003" />
+      <Conversion Contains="2004" Value="2004" />
+      <Conversion Contains="2005" Value="2005" />
+      <Conversion Contains="4000" Value="4000" />
+      <Conversion Contains="4005" Value="4005" />
+      <Conversion Contains="4010" Value="4010" />
+      <Conversion Contains="4015" Value="4015" />
+      <Conversion Contains="4020" Value="4020" />
+      <Conversion Contains="4030" Value="4030" />
+      <Conversion Contains="4040" Value="4040" />
+      <Conversion Contains="4050" Value="4050" />
+      <Conversion Contains="4060" Value="4060" />
+      <Conversion Contains="4070" Value="4070" />
+      <Conversion Contains="4080" Value="4080" />
+      <Conversion Contains="4090" Value="4090" />
+      <Conversion Contains="5000" Value="5000" />
+      <Conversion Contains="3" Value="3" />
+      <Conversion Contains="4" Value="4" />
+      <Conversion Contains="5" Value="5" />
+      <Conversion Contains="10" Value="10" />
+      <Conversion Contains="11" Value="11" />
+      <Conversion Contains="21" Value="21" />
+      <Conversion Contains="22" Value="22" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <!-- StdType5 -->
+    <DataItem Prefix="PrinterCapabilities" Name="PC_PQStandardType5-ImagingTechnology" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()='Economode']/@hpprt:ImageTechnology">
+      <Conversion Contains="2000" Value="2000" />
+      <Conversion Contains="2001" Value="2001" />
+      <Conversion Contains="2002" Value="2002" />
+      <Conversion Contains="2003" Value="2003" />
+      <Conversion Contains="2004" Value="2004" />
+      <Conversion Contains="2005" Value="2005" />
+      <Conversion Contains="4000" Value="4000" />
+      <Conversion Contains="4005" Value="4005" />
+      <Conversion Contains="4010" Value="4010" />
+      <Conversion Contains="4015" Value="4015" />
+      <Conversion Contains="4020" Value="4020" />
+      <Conversion Contains="4030" Value="4030" />
+      <Conversion Contains="4040" Value="4040" />
+      <Conversion Contains="4050" Value="4050" />
+      <Conversion Contains="4060" Value="4060" />
+      <Conversion Contains="4070" Value="4070" />
+      <Conversion Contains="4080" Value="4080" />
+      <Conversion Contains="4090" Value="4090" />
+      <Conversion Contains="5000" Value="5000" />
+      <Conversion Contains="3" Value="3" />
+      <Conversion Contains="4" Value="4" />
+      <Conversion Contains="5" Value="5" />
+      <Conversion Contains="10" Value="10" />
+      <Conversion Contains="11" Value="11" />
+      <Conversion Contains="21" Value="21" />
+      <Conversion Contains="22" Value="22" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <!-- CustomType1 -->
+    <DataItem Prefix="PrinterCapabilities" Name="PC_PQCustomType1-PQMode" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()='Custom1']/@hpprt:PQMode">
+      <Conversion Contains="1" Value="DRAFT" />
+      <Conversion Contains="2" Value="NORMAL" />
+      <Conversion Contains="3" Value="BEST" />
+      <Conversion Contains="4" Value="MAX" />
+      <Conversion Contains="5" Value="ECONOMODE" />
+      <Conversion Contains="6" Value="HIGHSPEED" />
+      <Conversion Contains="7" Value="DEPLETED" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <!-- CustomType2 -->
+    <DataItem Prefix="PrinterCapabilities" Name="PC_PQCustomType2-PQMode" URI="urn:hp:imaging:con:service:device:DeviceService" XPath="//wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()='Custom2']/@hpprt:PQMode">
+      <Conversion Contains="1" Value="DRAFT" />
+      <Conversion Contains="2" Value="NORMAL" />
+      <Conversion Contains="3" Value="BEST" />
+      <Conversion Contains="4" Value="MAX" />
+      <Conversion Contains="5" Value="ECONOMODE" />
+      <Conversion Contains="6" Value="HIGHSPEED" />
+      <Conversion Contains="7" Value="DEPLETED" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <!-- PC PrintQuality End-->
+    <!-- PC 0.5 support for Hallasan Start-->
+    <!-- PC 0.5 support for Hallasan End-->
+  </XMLDataMap>
+  <OIDDataMap>
+    <StaticDataItem Name="Protocol">OID</StaticDataItem>
+    <!-- PC ModelName -->
+    <!-- PCv1.0 -->
+    <!-- PPM : SNMP returns Pages per hour -->
+    <!-- PCv1.0 -->
+    <!-- Jedi FW -->
+    <!-- OR -->
+    <!-- For SoL FW
+	<DataItem Prefix="cfg" Name="PCLXLVersion" OID="1.3.6.1.2.1.43.15.1.1.3.1.2">
+		<Conversion Contains="Version 1.0" Value="1.0"/>
+		<Conversion Contains="Version 3.0" Value="3.0"/>
+		<Conversion Contains="Version 5.0" Value="5.0"/>
+		<Conversion Contains="default" Value="not-supported"/>
+	</DataItem>
+	<DataItem Prefix="cfg" Name="PSVersion" OID="1.3.6.1.2.1.43.15.1.1.3.1.3">
+		<Conversion Contains="Version 3010.107" Value="3010.107"/>
+		<Conversion Contains="Version 3011.001" Value="3011.001"/>
+		<Conversion Contains="default" Value="not-supported"/>
+	</DataItem> -->
+    <!-- PCv0.5 -->
+    <!-- <DataItem Name="Tray1_Installed" OID="1.3.6.1.2.1.43.8.2.1.18.1.1">
+			<Conversion Contains="Tray 1" Value="Installed"/>
+			<Conversion Contains="default" Value="Not-Installed"/>
+		</DataItem> -->
+    <!-- PCv0.5 -->
+    <!-- <DataItem Name="Tray2_Installed" OID="1.3.6.1.2.1.43.8.2.1.18.1.2">
+			<Conversion Contains="Tray 2" Value="Installed"/>
+			<Conversion Contains="default" Value="Not-Installed"/>
+		</DataItem> -->
+    <DataItem Name="Tray3_Installed" OID="1.3.6.1.2.1.43.8.2.1.13.1.3">
+      <Conversion Contains="Tray 3" Value="Installed" />
+      <Conversion Contains="default" Value="Not-Installed" />
+    </DataItem>
+    <!-- PCv0.5 -->
+    <!-- <DataItem Name="Tray3_Installed" OID="1.3.6.1.2.1.43.8.2.1.18.1.3">
+			<Conversion Contains="Tray 3" Value="Installed"/>
+			<Conversion Contains="default" Value="Not-Installed"/>
+		</DataItem> -->
+    <!-- PCv0.5 -->
+    <!-- <DataItem Name="Tray4_Installed" OID="1.3.6.1.2.1.43.8.2.1.18.1.5">
+			<Conversion Contains="Tray 4" Value="Installed"/>
+			<Conversion Contains="default" Value="Not-Installed"/>
+		</DataItem> -->
+    <!-- PCv0.5 -->
+    <!-- <DataItem Name="Tray5_Installed" OID="1.3.6.1.2.1.43.8.2.1.18.1.6">
+			<Conversion Contains="Tray 5" Value="Installed"/>
+			<Conversion Contains="default" Value="Not-Installed"/>
+		</DataItem> -->
+    <!-- PCv0.5 -->
+    <!-- <DataItem Name="Tray6_Installed" OID="1.3.6.1.2.1.43.8.2.1.18.1.7">
+			<Conversion Contains="Tray 6" Value="Installed"/>
+			<Conversion Contains="default" Value="Not-Installed"/>
+		</DataItem> -->
+    <!-- PCv0.5 -->
+    <!-- <DataItem Name="Tray7_Installed" OID="1.3.6.1.2.1.43.8.2.1.18.1.8">
+			<Conversion Contains="Tray 7" Value="Installed"/>
+			<Conversion Contains="default" Value="Not-Installed"/>
+		</DataItem> -->
+    <!-- PCv0.5 -->
+    <!-- <DataItem Name="Tray8_Installed" OID="1.3.6.1.2.1.43.8.2.1.18.1.9">
+			<Conversion Contains="Tray 8" Value="Installed"/>
+			<Conversion Contains="default" Value="Not-Installed"/>
+		</DataItem> -->
+    <!-- PCv0.5 -->
+    <!-- <DataItem Name="Tray9_Installed" OID="1.3.6.1.2.1.43.8.2.1.18.1.10">
+			<Conversion Contains="Tray 9" Value="Installed"/>
+			<Conversion Contains="default" Value="Not-Installed"/>
+		</DataItem> -->
+    <!-- PCv0.5 -->
+    <!-- <DataItem Name="Tray10_Installed" OID="1.3.6.1.2.1.43.8.2.1.18.1.11">
+			<Conversion Contains="Tray 10" Value="Installed"/>
+			<Conversion Contains="default" Value="Not-Installed"/>
+		</DataItem> -->
+    <!-- PCv0.5 -->
+    <!-- <DataItem Name="Envelope_Feeder_Installed" OID="1.3.6.1.2.1.43.8.2.1.18.1.4">
+			<Conversion Contains="Envelope Feeder" Value="Installed"/>
+			<Conversion Contains="default" Value="NotInstalled"/>
+		</DataItem> -->
+    <NextDataItem Prefix="cfg" Name="HolePunch_Installed" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.1.4.5.2.5" Count="3" />
+    <DataItem GroupID="1.1.1.1.1.1.1.2" Name="DuplexUnit_Installed" OID="1.3.6.1.2.1.43.13.4.1.9.1.2">
+      <Conversion Contains="4" Value="Installed" />
+      <Conversion Contains="3" Value="Installed" />
+      <Conversion Contains="default" Value="Not-Installed" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="DeviceDefaultDuplexStandard" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.4.1.1.43.0">
+      <Conversion Contains="2" Value="true" />
+      <Conversion Contains="1" Value="false" />
+      <Conversion Contains="default" Value="false" />
+    </DataItem>
+    <!-- JobAccountingQuotaSupported -->
+    <DataItem Prefix="cfg" Name="PrintContractVersionMajor_Installed" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.4.1.1.41.0">
+      <Conversion Contains="0" Value="Installed" />
+      <Conversion Contains="1" Value="Installed" />
+      <Conversion Contains="2" Value="Installed" />
+      <Conversion Contains="3" Value="Installed" />
+      <Conversion Contains="4" Value="Installed" />
+      <Conversion Contains="5" Value="Installed" />
+      <Conversion Contains="6" Value="Installed" />
+      <Conversion Contains="7" Value="Installed" />
+      <Conversion Contains="8" Value="Installed" />
+      <Conversion Contains="9" Value="Installed" />
+      <Conversion Contains="default" Value="Not-Installed" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMajor0_Installed" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.4.1.1.41.0">
+      <Conversion Contains="0" Value="Installed" />
+      <Conversion Contains="default" Value="Not-Installed" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMajor1_Installed" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.4.1.1.41.0">
+      <Conversion Contains="1" Value="Installed" />
+      <Conversion Contains="default" Value="Not-Installed" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMajor2_Installed" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.4.1.1.41.0">
+      <Conversion Contains="2" Value="Installed" />
+      <Conversion Contains="default" Value="Not-Installed" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMajor3_Installed" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.4.1.1.41.0">
+      <Conversion Contains="3" Value="Installed" />
+      <Conversion Contains="default" Value="Not-Installed" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMajor4_Installed" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.4.1.1.41.0">
+      <Conversion Contains="4" Value="Installed" />
+      <Conversion Contains="default" Value="Not-Installed" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMajor5_Installed" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.4.1.1.41.0">
+      <Conversion Contains="5" Value="Installed" />
+      <Conversion Contains="default" Value="Not-Installed" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMajor6_Installed" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.4.1.1.41.0">
+      <Conversion Contains="6" Value="Installed" />
+      <Conversion Contains="default" Value="Not-Installed" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMajor7_Installed" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.4.1.1.41.0">
+      <Conversion Contains="7" Value="Installed" />
+      <Conversion Contains="default" Value="Not-Installed" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMajor8_Installed" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.4.1.1.41.0">
+      <Conversion Contains="8" Value="Installed" />
+      <Conversion Contains="default" Value="Not-Installed" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMajor9_Installed" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.4.1.1.41.0">
+      <Conversion Contains="9" Value="Installed" />
+      <Conversion Contains="default" Value="Not-Installed" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMinor_Installed" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.4.1.1.42.0">
+      <Conversion Contains="0" Value="Installed" />
+      <Conversion Contains="1" Value="Installed" />
+      <Conversion Contains="2" Value="Installed" />
+      <Conversion Contains="3" Value="Installed" />
+      <Conversion Contains="4" Value="Installed" />
+      <Conversion Contains="5" Value="Installed" />
+      <Conversion Contains="6" Value="Installed" />
+      <Conversion Contains="7" Value="Installed" />
+      <Conversion Contains="8" Value="Installed" />
+      <Conversion Contains="9" Value="Installed" />
+      <Conversion Contains="71" Value="Installed" />
+      <Conversion Contains="72" Value="Installed" />
+      <Conversion Contains="default" Value="Not-Installed" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMinor0_Installed" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.4.1.1.42.0">
+      <Conversion Contains="0" Value="Installed" />
+      <Conversion Contains="default" Value="Not-Installed" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMinor1_Installed" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.4.1.1.42.0">
+      <Conversion Contains="1" Value="Installed" />
+      <Conversion Contains="default" Value="Not-Installed" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMinor2_Installed" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.4.1.1.42.0">
+      <Conversion Contains="2" Value="Installed" />
+      <Conversion Contains="default" Value="Not-Installed" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMinor3_Installed" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.4.1.1.42.0">
+      <Conversion Contains="3" Value="Installed" />
+      <Conversion Contains="default" Value="Not-Installed" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMinor4_Installed" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.4.1.1.42.0">
+      <Conversion Contains="4" Value="Installed" />
+      <Conversion Contains="default" Value="Not-Installed" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMinor5_Installed" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.4.1.1.42.0">
+      <Conversion Contains="5" Value="Installed" />
+      <Conversion Contains="default" Value="Not-Installed" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMinor6_Installed" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.4.1.1.42.0">
+      <Conversion Contains="6" Value="Installed" />
+      <Conversion Contains="default" Value="Not-Installed" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMinor7_Installed" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.4.1.1.42.0">
+      <Conversion Contains="7" Value="Installed" />
+      <Conversion Contains="default" Value="Not-Installed" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMinor8_Installed" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.4.1.1.42.0">
+      <Conversion Contains="8" Value="Installed" />
+      <Conversion Contains="default" Value="Not-Installed" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMinor9_Installed" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.4.1.1.42.0">
+      <Conversion Contains="9" Value="Installed" />
+      <Conversion Contains="default" Value="Not-Installed" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMinor72_Installed" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.4.1.1.42.0">
+      <Conversion Contains="72" Value="Installed" />
+      <Conversion Contains="default" Value="Not-Installed" />
+    </DataItem>
+    <!-- PC MediaTypes All PCv1.0 -->
+    <GetDataItems Prefix="cfg" Name="PC_MediaTypeAll" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.4.1.8.3.N.1.0" N="1" UntilEnd="true">
+      <Conversion Contains="Any" Value="Any" />
+      <Conversion Contains="Plain" Value="stationery" />
+      <Conversion Contains="HPEcoSmartLite" Value="com.hp.ecosmart-lite" />
+      <Conversion Contains="HP Matte 90" Value="com.hp.matte.intermediateweight" />
+      <Conversion Contains="HP Matte 105" Value="com.hp.matte.midweight" />
+      <Conversion Contains="HP Matte 120" Value="com.hp.matte.heavyweight" />
+      <Conversion Contains="HPPremMatte" Value="com.hp.matte-premium.heavyweight" />
+      <Conversion Contains="HP Matte 160" Value="com.hp.matte-brochure.extraheavyweight" />
+      <Conversion Contains="matteBrochure" Value="com.hp.matte-brochure.cardstock" />
+      <Conversion Contains="HP Glossy 160" Value="com.hp.glossy-brochure.extraheavyweight" />
+      <Conversion Contains="glossyBrochure" Value="com.hp.glossy-brochure2.cardstock" />
+      <Conversion Contains="HPPremPlusPhoto" Value="com.hp.premium-plus-photo" />
+      <Conversion Contains="HPAdvancedPhoto" Value="com.hp.advanced-photo" />
+      <Conversion Contains="HPEverydayPhotoMatte" Value="com.hp.everyday-photo" />
+      <Conversion Contains="HPCoverMatte" Value="com.hp.matte-cover.cardstock" />
+      <Conversion Contains="HP Soft Gloss 120" Value="com.hp.soft-gloss.heavyweight" />
+      <Conversion Contains="HP Glossy 130" Value="com.hp.glossy-brochure.heavyweight" />
+      <Conversion Contains="HP Glossy 220" Value="com.hp.glossy-brochure.cardstock" />
+      <Conversion Contains="Light" Value="com.hp.stationery-lightweight" />
+      <Conversion Contains="Intermediate" Value="com.hp.intermediateweight" />
+      <Conversion Contains="Mid Weight" Value="com.hp.midweight" />
+      <Conversion Contains="Heavy" Value="com.hp.stationery-heavyweight" />
+      <Conversion Contains="Extra Heavy" Value="com.hp.extra-heavy" />
+      <Conversion Contains="Card Stock" Value="Cardstock" />
+      <Conversion Contains="Gloss" Value="com.hp.glossy.midweight" />
+      <Conversion Contains="Heavy Gloss" Value="com.hp.glossy.heavyweight" />
+      <Conversion Contains="Extra Heavy Gloss" Value="com.hp.glossy.extraheavyweight" />
+      <Conversion Contains="Card Glossy" Value="com.hp.glossy.cardstock" />
+      <Conversion Contains="Transparency" Value="Transparency" />
+      <Conversion Contains="Labels" Value="Labels" />
+      <Conversion Contains="Letterhead" Value="stationery-letterhead" />
+      <Conversion Contains="Envelope" Value="Envelope" />
+      <Conversion Contains="Heavy Envelope" Value="envelope-heavyweight" />
+      <Conversion Contains="Preprinted" Value="stationery-preprinted" />
+      <Conversion Contains="Prepunched" Value="stationery-prepunched" />
+      <Conversion Contains="Color" Value="stationery-colored" />
+      <Conversion Contains="LightBond" Value="com.hp.lightbond" />
+      <Conversion Contains="Bond" Value="stationery-bond" />
+      <Conversion Contains="Recycled" Value="com.hp.recycled" />
+      <Conversion Contains="Paperboard" Value="com.hp.paperboard" />
+      <Conversion Contains="HeavyPaperboard" Value="com.hp.heavypaperboard" />
+      <Conversion Contains="LightPaperboard" Value="com.hp.lightpaperboard" />
+      <Conversion Contains="Rough" Value="com.hp.rough" />
+      <Conversion Contains="LightRough" Value="com.hp.lightrough" />
+      <Conversion Contains="Heavy Rough" Value="com.hp.heavyrough" />
+      <Conversion Contains="Vellum" Value="stationery-fine" />
+      <Conversion Contains="Tab" Value="tab-stock" />
+      <Conversion Contains="Gloss Film" Value="com.hp.opaque-film" />
+      <Conversion Contains="HP Tough" Value="com.hp.tough-paper" />
+      <Conversion Contains="Photo Gloss" Value="photographic-glossy" />
+      <Conversion Contains="Specialty Paper, Matte" Value="com.hp.specialty-matte" />
+      <Conversion Contains="Specialty Paper, Glossy" Value="com.hp.specialty-glossy" />
+      <Conversion Contains="default" Value="not-supported" />
+    </GetDataItems>
+    <!-- MediaTypes PCv1.0 -->
+    <!-- 1-10 -->
+    <!-- 1-10 -->
+    <!-- 11-20 -->
+    <!-- 21-30 -->
+    <!-- 31-40 -->
+    <!-- 41-48 -->
+    <!-- MediaType list end -->
+    <!-- PrintQuality Support List PCv1.0 -->
+    <!-- PQMode -->
+    <DataItem Prefix="cfg" Name="PrintQuality-Draft-PQMode" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.1.4.0">
+      <Conversion Contains="1" Value="1" />
+      <Conversion Contains="2" Value="2" />
+      <Conversion Contains="3" Value="3" />
+      <Conversion Contains="4" Value="4" />
+      <Conversion Contains="5" Value="5" />
+      <Conversion Contains="6" Value="6" />
+      <Conversion Contains="7" Value="7" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintQuality-Normal-PQMode" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.2.4.0">
+      <Conversion Contains="1" Value="1" />
+      <Conversion Contains="2" Value="2" />
+      <Conversion Contains="3" Value="3" />
+      <Conversion Contains="4" Value="4" />
+      <Conversion Contains="5" Value="5" />
+      <Conversion Contains="6" Value="6" />
+      <Conversion Contains="7" Value="7" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintQuality-Best-PQMode" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.3.4.0">
+      <Conversion Contains="1" Value="1" />
+      <Conversion Contains="2" Value="2" />
+      <Conversion Contains="3" Value="3" />
+      <Conversion Contains="4" Value="4" />
+      <Conversion Contains="5" Value="5" />
+      <Conversion Contains="6" Value="6" />
+      <Conversion Contains="7" Value="7" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintQuality-Max-PQMode" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.4.4.0">
+      <Conversion Contains="1" Value="1" />
+      <Conversion Contains="2" Value="2" />
+      <Conversion Contains="3" Value="3" />
+      <Conversion Contains="4" Value="4" />
+      <Conversion Contains="5" Value="5" />
+      <Conversion Contains="6" Value="6" />
+      <Conversion Contains="7" Value="7" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintQuality-Economode-PQMode" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.5.4.0">
+      <Conversion Contains="1" Value="1" />
+      <Conversion Contains="2" Value="2" />
+      <Conversion Contains="3" Value="3" />
+      <Conversion Contains="4" Value="4" />
+      <Conversion Contains="5" Value="5" />
+      <Conversion Contains="6" Value="6" />
+      <Conversion Contains="7" Value="7" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <!-- StdType1 -->
+    <DataItem Prefix="cfg" Name="PC_PQStandardType1-ImagingTechnology" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.1.2.0">
+      <Conversion Contains="2000" Value="2000" />
+      <Conversion Contains="2001" Value="2001" />
+      <Conversion Contains="2002" Value="2002" />
+      <Conversion Contains="2003" Value="2003" />
+      <Conversion Contains="2004" Value="2004" />
+      <Conversion Contains="2005" Value="2005" />
+      <Conversion Contains="4000" Value="4000" />
+      <Conversion Contains="4005" Value="4005" />
+      <Conversion Contains="4010" Value="4010" />
+      <Conversion Contains="4015" Value="4015" />
+      <Conversion Contains="4020" Value="4020" />
+      <Conversion Contains="4030" Value="4030" />
+      <Conversion Contains="4040" Value="4040" />
+      <Conversion Contains="4050" Value="4050" />
+      <Conversion Contains="4060" Value="4060" />
+      <Conversion Contains="4070" Value="4070" />
+      <Conversion Contains="4080" Value="4080" />
+      <Conversion Contains="4090" Value="4090" />
+      <Conversion Contains="5000" Value="5000" />
+      <Conversion Contains="3" Value="3" />
+      <Conversion Contains="4" Value="4" />
+      <Conversion Contains="5" Value="5" />
+      <Conversion Contains="10" Value="10" />
+      <Conversion Contains="11" Value="11" />
+      <Conversion Contains="21" Value="21" />
+      <Conversion Contains="22" Value="22" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <!-- StdType2 -->
+    <DataItem Prefix="cfg" Name="PC_PQStandardType2-ImagingTechnology" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.2.2.0">
+      <Conversion Contains="2000" Value="2000" />
+      <Conversion Contains="2001" Value="2001" />
+      <Conversion Contains="2002" Value="2002" />
+      <Conversion Contains="2003" Value="2003" />
+      <Conversion Contains="2004" Value="2004" />
+      <Conversion Contains="2005" Value="2005" />
+      <Conversion Contains="4000" Value="4000" />
+      <Conversion Contains="4005" Value="4005" />
+      <Conversion Contains="4010" Value="4010" />
+      <Conversion Contains="4015" Value="4015" />
+      <Conversion Contains="4020" Value="4020" />
+      <Conversion Contains="4030" Value="4030" />
+      <Conversion Contains="4040" Value="4040" />
+      <Conversion Contains="4050" Value="4050" />
+      <Conversion Contains="4060" Value="4060" />
+      <Conversion Contains="4070" Value="4070" />
+      <Conversion Contains="4080" Value="4080" />
+      <Conversion Contains="4090" Value="4090" />
+      <Conversion Contains="5000" Value="5000" />
+      <Conversion Contains="3" Value="3" />
+      <Conversion Contains="4" Value="4" />
+      <Conversion Contains="5" Value="5" />
+      <Conversion Contains="10" Value="10" />
+      <Conversion Contains="11" Value="11" />
+      <Conversion Contains="21" Value="21" />
+      <Conversion Contains="22" Value="22" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <!-- StdType3 -->
+    <DataItem Prefix="cfg" Name="PC_PQStandardType3-ImagingTechnology" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.3.2.0">
+      <Conversion Contains="2000" Value="2000" />
+      <Conversion Contains="2001" Value="2001" />
+      <Conversion Contains="2002" Value="2002" />
+      <Conversion Contains="2003" Value="2003" />
+      <Conversion Contains="2004" Value="2004" />
+      <Conversion Contains="2005" Value="2005" />
+      <Conversion Contains="4000" Value="4000" />
+      <Conversion Contains="4005" Value="4005" />
+      <Conversion Contains="4010" Value="4010" />
+      <Conversion Contains="4015" Value="4015" />
+      <Conversion Contains="4020" Value="4020" />
+      <Conversion Contains="4030" Value="4030" />
+      <Conversion Contains="4040" Value="4040" />
+      <Conversion Contains="4050" Value="4050" />
+      <Conversion Contains="4060" Value="4060" />
+      <Conversion Contains="4070" Value="4070" />
+      <Conversion Contains="4080" Value="4080" />
+      <Conversion Contains="4090" Value="4090" />
+      <Conversion Contains="5000" Value="5000" />
+      <Conversion Contains="3" Value="3" />
+      <Conversion Contains="4" Value="4" />
+      <Conversion Contains="5" Value="5" />
+      <Conversion Contains="10" Value="10" />
+      <Conversion Contains="11" Value="11" />
+      <Conversion Contains="21" Value="21" />
+      <Conversion Contains="22" Value="22" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <!-- StdType4 -->
+    <DataItem Prefix="cfg" Name="PC_PQStandardType4-ImagingTechnology" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.4.2.0">
+      <Conversion Contains="2000" Value="2000" />
+      <Conversion Contains="2001" Value="2001" />
+      <Conversion Contains="2002" Value="2002" />
+      <Conversion Contains="2003" Value="2003" />
+      <Conversion Contains="2004" Value="2004" />
+      <Conversion Contains="2005" Value="2005" />
+      <Conversion Contains="4000" Value="4000" />
+      <Conversion Contains="4005" Value="4005" />
+      <Conversion Contains="4010" Value="4010" />
+      <Conversion Contains="4015" Value="4015" />
+      <Conversion Contains="4020" Value="4020" />
+      <Conversion Contains="4030" Value="4030" />
+      <Conversion Contains="4040" Value="4040" />
+      <Conversion Contains="4050" Value="4050" />
+      <Conversion Contains="4060" Value="4060" />
+      <Conversion Contains="4070" Value="4070" />
+      <Conversion Contains="4080" Value="4080" />
+      <Conversion Contains="4090" Value="4090" />
+      <Conversion Contains="5000" Value="5000" />
+      <Conversion Contains="3" Value="3" />
+      <Conversion Contains="4" Value="4" />
+      <Conversion Contains="5" Value="5" />
+      <Conversion Contains="10" Value="10" />
+      <Conversion Contains="11" Value="11" />
+      <Conversion Contains="21" Value="21" />
+      <Conversion Contains="22" Value="22" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <!-- StdType5 -->
+    <DataItem Prefix="cfg" Name="PC_PQStandardType5-ImagingTechnology" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.5.2.0">
+      <Conversion Contains="2000" Value="2000" />
+      <Conversion Contains="2001" Value="2001" />
+      <Conversion Contains="2002" Value="2002" />
+      <Conversion Contains="2003" Value="2003" />
+      <Conversion Contains="2004" Value="2004" />
+      <Conversion Contains="2005" Value="2005" />
+      <Conversion Contains="4000" Value="4000" />
+      <Conversion Contains="4005" Value="4005" />
+      <Conversion Contains="4010" Value="4010" />
+      <Conversion Contains="4015" Value="4015" />
+      <Conversion Contains="4020" Value="4020" />
+      <Conversion Contains="4030" Value="4030" />
+      <Conversion Contains="4040" Value="4040" />
+      <Conversion Contains="4050" Value="4050" />
+      <Conversion Contains="4060" Value="4060" />
+      <Conversion Contains="4070" Value="4070" />
+      <Conversion Contains="4080" Value="4080" />
+      <Conversion Contains="4090" Value="4090" />
+      <Conversion Contains="5000" Value="5000" />
+      <Conversion Contains="3" Value="3" />
+      <Conversion Contains="4" Value="4" />
+      <Conversion Contains="5" Value="5" />
+      <Conversion Contains="10" Value="10" />
+      <Conversion Contains="11" Value="11" />
+      <Conversion Contains="21" Value="21" />
+      <Conversion Contains="22" Value="22" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <!-- CustomType1 -->
+    <DataItem Prefix="cfg" Name="PC_PQCustomType1-PQMode" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.6.4.0">
+      <Conversion Contains="1" Value="DRAFT" />
+      <Conversion Contains="2" Value="NORMAL" />
+      <Conversion Contains="3" Value="BEST" />
+      <Conversion Contains="4" Value="MAX" />
+      <Conversion Contains="5" Value="ECONOMODE" />
+      <Conversion Contains="6" Value="HIGHSPEED" />
+      <Conversion Contains="7" Value="DEPLETED" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <!-- CustomType2 -->
+    <DataItem Prefix="cfg" Name="PC_PQCustomType2-PQMode" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.7.4.0">
+      <Conversion Contains="1" Value="DRAFT" />
+      <Conversion Contains="2" Value="NORMAL" />
+      <Conversion Contains="3" Value="BEST" />
+      <Conversion Contains="4" Value="MAX" />
+      <Conversion Contains="5" Value="ECONOMODE" />
+      <Conversion Contains="6" Value="HIGHSPEED" />
+      <Conversion Contains="7" Value="DEPLETED" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <!-- PrintQuality List End -->
+    <!-- PC PQ CustomModes All-->
+    <!-- PCv1.0 -->
+    <GetDataItems Prefix="cfg" Name="PC_PQCustomTypesAll" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.N.1.0" N="6" UntilEnd="true">
+      <Conversion Contains="1" Value="Supported" />
+      <Conversion Contains="2" Value="Supported" />
+      <Conversion Contains="3" Value="Supported" />
+      <Conversion Contains="4" Value="Supported" />
+      <Conversion Contains="default" Value="not-supported" />
+    </GetDataItems>
+    <!-- PC PQ CustomModes Resolution-->
+    <!-- PCv1.0 -->
+    <GetDataItems Prefix="cfg" Name="PC_PQCustomTypesOptimalResolutionAll" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.N.1.0" N="6" UntilEnd="true">
+      <Conversion Contains="1" Value="150" />
+      <Conversion Contains="2" Value="300" />
+      <Conversion Contains="3" Value="600" />
+      <Conversion Contains="4" Value="1200" />
+      <Conversion Contains="default" Value="not-supported" />
+    </GetDataItems>
+    <!-- PC PQ CustomModes ImagingTechnology-->
+    <!-- PCv1.0 -->
+    <GetDataItems Prefix="cfg" Name="PC_PQCustomTypesImagingTechnologyAll" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.N.2.0" N="6" UntilEnd="true">
+      <Conversion Contains="2000" Value="2000" />
+      <Conversion Contains="2001" Value="2001" />
+      <Conversion Contains="2002" Value="2002" />
+      <Conversion Contains="2003" Value="2003" />
+      <Conversion Contains="2004" Value="2004" />
+      <Conversion Contains="2005" Value="2005" />
+      <Conversion Contains="4000" Value="4000" />
+      <Conversion Contains="4005" Value="4005" />
+      <Conversion Contains="4010" Value="4010" />
+      <Conversion Contains="4015" Value="4015" />
+      <Conversion Contains="4020" Value="4020" />
+      <Conversion Contains="4030" Value="4030" />
+      <Conversion Contains="4040" Value="4040" />
+      <Conversion Contains="4050" Value="4050" />
+      <Conversion Contains="4060" Value="4060" />
+      <Conversion Contains="4070" Value="4070" />
+      <Conversion Contains="3" Value="3" />
+      <Conversion Contains="4" Value="4" />
+      <Conversion Contains="5" Value="5" />
+      <Conversion Contains="10" Value="10" />
+      <Conversion Contains="11" Value="11" />
+      <Conversion Contains="21" Value="21" />
+      <Conversion Contains="22" Value="22" />
+      <Conversion Contains="23" Value="23" />
+      <Conversion Contains="default" Value="not-supported" />
+    </GetDataItems>
+    <!-- PC PQ CustomModes DisplayTag-->
+    <!-- PCv1.0 -->
+    <GetDataItems Prefix="cfg" Name="PC_PQCustomTypesDisplayTagAll" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.N.3.0" N="6" UntilEnd="true">
+      <Conversion Contains="1000" Value="1000" />
+      <Conversion Contains="1002" Value="1002" />
+      <Conversion Contains="1003" Value="1003" />
+      <Conversion Contains="1004" Value="1004" />
+      <Conversion Contains="1005" Value="1005" />
+      <Conversion Contains="3000" Value="3000" />
+      <Conversion Contains="3001" Value="3001" />
+      <Conversion Contains="3002" Value="3002" />
+      <Conversion Contains="3003" Value="3003" />
+      <Conversion Contains="3020" Value="3020" />
+      <Conversion Contains="3030" Value="3030" />
+      <Conversion Contains="3040" Value="3040" />
+      <Conversion Contains="3050" Value="3050" />
+      <Conversion Contains="3060" Value="3060" />
+      <Conversion Contains="3070" Value="3070" />
+      <Conversion Contains="3" Value="3" />
+      <Conversion Contains="4" Value="4" />
+      <Conversion Contains="5" Value="5" />
+      <Conversion Contains="10" Value="10" />
+      <Conversion Contains="11" Value="11" />
+      <Conversion Contains="21" Value="21" />
+      <Conversion Contains="22" Value="22" />
+      <Conversion Contains="23" Value="23" />
+      <Conversion Contains="default" Value="not-supported" />
+    </GetDataItems>
+    <!-- PC PQ CustomModes PQMode -->
+    <!-- PCv1.0 -->
+    <GetDataItems Prefix="cfg" Name="PC_PQCustomTypesPQMode" OID="1.3.6.1.4.1.11.2.3.9.4.2.1.3.3.1.46.N.4.0" N="6" UntilEnd="true">
+      <Conversion Contains="1" Value="DRAFT" />
+      <Conversion Contains="2" Value="NORMAL" />
+      <Conversion Contains="3" Value="BEST" />
+      <Conversion Contains="4" Value="MAX" />
+      <Conversion Contains="5" Value="ECONOMODE" />
+      <Conversion Contains="6" Value="HIGHSPEED" />
+      <Conversion Contains="7" Value="DEPLETED" />
+      <Conversion Contains="default" Value="not-supported" />
+    </GetDataItems>
+    <!-- PC 0.5 support for Hallasan Start-->
+    <!-- PC 0.5 support for Hallasan End-->
+  </OIDDataMap>
+  <IPPDataMap>
+    <StaticDataItem Name="Protocol">IPP</StaticDataItem>
+    <!-- PCv1.0-->
+    <!-- PCv1.0-->
+    <!-- MediaTypes All PCv1.0-->
+    <!-- MediaTypes PCv1.0-->
+    <!-- 1-10 -->
+    <!-- 11-20 -->
+    <!-- 21-30 -->
+    <!-- 31-40 -->
+    <!-- 41-47 -->
+    <!-- MediaType list end -->
+    <DataItem Name="Tray3_Installed" AttributeID="printer-input-tray" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="SET_OF_OCTET_STRING">
+      <Conversion Contains="Tray 3" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="DuplexUnit_Installed" AttributeID="sides-supported" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="SET_OF_KEYWORD">
+      <Conversion Contains="two-sided-long-edge" Value="Installed" />
+      <Conversion Contains="two-sided-short-edge" Value="Installed" />
+      <Conversion Contains="default" Value="Not-Installed" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="DeviceDefaultDuplexStandard" AttributeID="hp-default-duplex-standard" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="BOOLEAN">
+      <Conversion Contains="1" Value="true" />
+      <Conversion Contains="0" Value="false" />
+      <Conversion Contains="default" Value="false" />
+    </DataItem>
+    <!-- PCv0.5 -->
+    <!-- PCv0.6 -->
+    <!-- JobAccountingQuotaSupported -->
+    <DataItem Prefix="cfg" Name="PrintContractVersionMajor_Installed" AttributeID="hp-pc-version-major" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="INTEGER">
+      <Conversion Contains="0" Value="Installed" />
+      <Conversion Contains="1" Value="Installed" />
+      <Conversion Contains="2" Value="Installed" />
+      <Conversion Contains="3" Value="Installed" />
+      <Conversion Contains="4" Value="Installed" />
+      <Conversion Contains="5" Value="Installed" />
+      <Conversion Contains="6" Value="Installed" />
+      <Conversion Contains="7" Value="Installed" />
+      <Conversion Contains="8" Value="Installed" />
+      <Conversion Contains="9" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMajor0_Installed" AttributeID="hp-pc-version-major" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="INTEGER">
+      <Conversion Contains="0" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMajor1_Installed" AttributeID="hp-pc-version-major" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="INTEGER">
+      <Conversion Contains="1" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMajor2_Installed" AttributeID="hp-pc-version-major" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="INTEGER">
+      <Conversion Contains="2" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMajor3_Installed" AttributeID="hp-pc-version-major" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="INTEGER">
+      <Conversion Contains="3" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMajor4_Installed" AttributeID="hp-pc-version-major" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="INTEGER">
+      <Conversion Contains="4" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMajor5_Installed" AttributeID="hp-pc-version-major" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="INTEGER">
+      <Conversion Contains="5" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMajor6_Installed" AttributeID="hp-pc-version-major" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="INTEGER">
+      <Conversion Contains="6" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMajor7_Installed" AttributeID="hp-pc-version-major" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="INTEGER">
+      <Conversion Contains="7" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMajor8_Installed" AttributeID="hp-pc-version-major" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="INTEGER">
+      <Conversion Contains="8" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMajor9_Installed" AttributeID="hp-pc-version-major" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="INTEGER">
+      <Conversion Contains="9" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMinor_Installed" AttributeID="hp-pc-version-minor" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="INTEGER">
+      <Conversion Contains="0" Value="Installed" />
+      <Conversion Contains="1" Value="Installed" />
+      <Conversion Contains="2" Value="Installed" />
+      <Conversion Contains="3" Value="Installed" />
+      <Conversion Contains="4" Value="Installed" />
+      <Conversion Contains="5" Value="Installed" />
+      <Conversion Contains="6" Value="Installed" />
+      <Conversion Contains="7" Value="Installed" />
+      <Conversion Contains="8" Value="Installed" />
+      <Conversion Contains="9" Value="Installed" />
+      <Conversion Contains="71" Value="Installed" />
+      <Conversion Contains="72" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMinor0_Installed" AttributeID="hp-pc-version-minor" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="INTEGER">
+      <Conversion Contains="0" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMinor1_Installed" AttributeID="hp-pc-version-minor" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="INTEGER">
+      <Conversion Contains="1" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMinor2_Installed" AttributeID="hp-pc-version-minor" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="INTEGER">
+      <Conversion Contains="2" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMinor3_Installed" AttributeID="hp-pc-version-minor" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="INTEGER">
+      <Conversion Contains="3" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMinor4_Installed" AttributeID="hp-pc-version-minor" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="INTEGER">
+      <Conversion Contains="4" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMinor5_Installed" AttributeID="hp-pc-version-minor" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="INTEGER">
+      <Conversion Contains="5" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMinor6_Installed" AttributeID="hp-pc-version-minor" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="INTEGER">
+      <Conversion Contains="6" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMinor7_Installed" AttributeID="hp-pc-version-minor" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="INTEGER">
+      <Conversion Contains="7" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMinor8_Installed" AttributeID="hp-pc-version-minor" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="INTEGER">
+      <Conversion Contains="8" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMinor9_Installed" AttributeID="hp-pc-version-minor" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="INTEGER">
+      <Conversion Contains="9" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintContractVersionMinor72_Installed" AttributeID="hp-pc-version-minor" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="INTEGER">
+      <Conversion Contains="72" Value="Installed" />
+      <Conversion Contains="default" Value="NotInstalled" />
+    </DataItem>
+    <!-- PC_PrintQuality All PCv1.0-->
+    <!-- PC_PrintQuality PCv1.0-->
+    <!-- PQMode -->
+    <DataItem Prefix="cfg" Name="PrintQuality-Draft-PQMode" AttributeID="hp-print-quality-supported.type,3.pq-mode" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="ENUM">
+      <Conversion Contains="1" Value="1" />
+      <Conversion Contains="2" Value="2" />
+      <Conversion Contains="3" Value="3" />
+      <Conversion Contains="4" Value="4" />
+      <Conversion Contains="5" Value="5" />
+      <Conversion Contains="6" Value="6" />
+      <Conversion Contains="7" Value="7" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintQuality-Normal-PQMode" AttributeID="hp-print-quality-supported.type,4.pq-mode" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="ENUM">
+      <Conversion Contains="1" Value="1" />
+      <Conversion Contains="2" Value="2" />
+      <Conversion Contains="3" Value="3" />
+      <Conversion Contains="4" Value="4" />
+      <Conversion Contains="5" Value="5" />
+      <Conversion Contains="6" Value="6" />
+      <Conversion Contains="7" Value="7" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintQuality-Best-PQMode" AttributeID="hp-print-quality-supported.type,5.pq-mode" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="ENUM">
+      <Conversion Contains="1" Value="1" />
+      <Conversion Contains="2" Value="2" />
+      <Conversion Contains="3" Value="3" />
+      <Conversion Contains="4" Value="4" />
+      <Conversion Contains="5" Value="5" />
+      <Conversion Contains="6" Value="6" />
+      <Conversion Contains="7" Value="7" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintQuality-Max-PQMode" AttributeID="hp-print-quality-supported.type,10.pq-mode" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="ENUM">
+      <Conversion Contains="1" Value="1" />
+      <Conversion Contains="2" Value="2" />
+      <Conversion Contains="3" Value="3" />
+      <Conversion Contains="4" Value="4" />
+      <Conversion Contains="5" Value="5" />
+      <Conversion Contains="6" Value="6" />
+      <Conversion Contains="7" Value="7" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <DataItem Prefix="cfg" Name="PrintQuality-Economode-PQMode" AttributeID="hp-print-quality-supported.type,11.pq-mode" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="ENUM">
+      <Conversion Contains="1" Value="1" />
+      <Conversion Contains="2" Value="2" />
+      <Conversion Contains="3" Value="3" />
+      <Conversion Contains="4" Value="4" />
+      <Conversion Contains="5" Value="5" />
+      <Conversion Contains="6" Value="6" />
+      <Conversion Contains="7" Value="7" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <!-- stdType1 -->
+    <DataItem Prefix="cfg" Name="PC_PQStandardType1-ImagingTechnology" AttributeID="hp-print-quality-supported.type,3.imaging-technology" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="ENUM">
+      <Conversion Contains="2000" Value="2000" />
+      <Conversion Contains="2001" Value="2001" />
+      <Conversion Contains="2002" Value="2002" />
+      <Conversion Contains="2003" Value="2003" />
+      <Conversion Contains="2004" Value="2004" />
+      <Conversion Contains="2005" Value="2005" />
+      <Conversion Contains="4000" Value="4000" />
+      <Conversion Contains="4005" Value="4005" />
+      <Conversion Contains="4010" Value="4010" />
+      <Conversion Contains="4015" Value="4015" />
+      <Conversion Contains="4020" Value="4020" />
+      <Conversion Contains="4030" Value="4030" />
+      <Conversion Contains="4040" Value="4040" />
+      <Conversion Contains="4050" Value="4050" />
+      <Conversion Contains="4060" Value="4060" />
+      <Conversion Contains="4070" Value="4070" />
+      <Conversion Contains="4080" Value="4080" />
+      <Conversion Contains="4090" Value="4090" />
+      <Conversion Contains="5000" Value="5000" />
+      <Conversion Contains="3" Value="3" />
+      <Conversion Contains="4" Value="4" />
+      <Conversion Contains="5" Value="5" />
+      <Conversion Contains="10" Value="10" />
+      <Conversion Contains="11" Value="11" />
+      <Conversion Contains="21" Value="21" />
+      <Conversion Contains="22" Value="22" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <!-- stdType2 -->
+    <DataItem Prefix="cfg" Name="PC_PQStandardType2-ImagingTechnology" AttributeID="hp-print-quality-supported.type,4.imaging-technology" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="ENUM">
+      <Conversion Contains="2000" Value="2000" />
+      <Conversion Contains="2001" Value="2001" />
+      <Conversion Contains="2002" Value="2002" />
+      <Conversion Contains="2003" Value="2003" />
+      <Conversion Contains="2004" Value="2004" />
+      <Conversion Contains="2005" Value="2005" />
+      <Conversion Contains="4000" Value="4000" />
+      <Conversion Contains="4005" Value="4005" />
+      <Conversion Contains="4010" Value="4010" />
+      <Conversion Contains="4015" Value="4015" />
+      <Conversion Contains="4020" Value="4020" />
+      <Conversion Contains="4030" Value="4030" />
+      <Conversion Contains="4040" Value="4040" />
+      <Conversion Contains="4050" Value="4050" />
+      <Conversion Contains="4060" Value="4060" />
+      <Conversion Contains="4070" Value="4070" />
+      <Conversion Contains="4080" Value="4080" />
+      <Conversion Contains="4090" Value="4090" />
+      <Conversion Contains="5000" Value="5000" />
+      <Conversion Contains="3" Value="3" />
+      <Conversion Contains="4" Value="4" />
+      <Conversion Contains="5" Value="5" />
+      <Conversion Contains="10" Value="10" />
+      <Conversion Contains="11" Value="11" />
+      <Conversion Contains="21" Value="21" />
+      <Conversion Contains="22" Value="22" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <!--stdType3-->
+    <DataItem Prefix="cfg" Name="PC_PQStandardType3-ImagingTechnology" AttributeID="hp-print-quality-supported.type,5.imaging-technology" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="ENUM">
+      <Conversion Contains="2000" Value="2000" />
+      <Conversion Contains="2001" Value="2001" />
+      <Conversion Contains="2002" Value="2002" />
+      <Conversion Contains="2003" Value="2003" />
+      <Conversion Contains="2004" Value="2004" />
+      <Conversion Contains="2005" Value="2005" />
+      <Conversion Contains="4000" Value="4000" />
+      <Conversion Contains="4005" Value="4005" />
+      <Conversion Contains="4010" Value="4010" />
+      <Conversion Contains="4015" Value="4015" />
+      <Conversion Contains="4020" Value="4020" />
+      <Conversion Contains="4030" Value="4030" />
+      <Conversion Contains="4040" Value="4040" />
+      <Conversion Contains="4050" Value="4050" />
+      <Conversion Contains="4060" Value="4060" />
+      <Conversion Contains="4070" Value="4070" />
+      <Conversion Contains="4080" Value="4080" />
+      <Conversion Contains="4090" Value="4090" />
+      <Conversion Contains="5000" Value="5000" />
+      <Conversion Contains="3" Value="3" />
+      <Conversion Contains="4" Value="4" />
+      <Conversion Contains="5" Value="5" />
+      <Conversion Contains="10" Value="10" />
+      <Conversion Contains="11" Value="11" />
+      <Conversion Contains="21" Value="21" />
+      <Conversion Contains="22" Value="22" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <!--stdType4-->
+    <DataItem Prefix="cfg" Name="PC_PQStandardType4-ImagingTechnology" AttributeID="hp-print-quality-supported.type,10.imaging-technology" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="ENUM">
+      <Conversion Contains="2000" Value="2000" />
+      <Conversion Contains="2001" Value="2001" />
+      <Conversion Contains="2002" Value="2002" />
+      <Conversion Contains="2003" Value="2003" />
+      <Conversion Contains="2004" Value="2004" />
+      <Conversion Contains="2005" Value="2005" />
+      <Conversion Contains="4000" Value="4000" />
+      <Conversion Contains="4005" Value="4005" />
+      <Conversion Contains="4010" Value="4010" />
+      <Conversion Contains="4015" Value="4015" />
+      <Conversion Contains="4020" Value="4020" />
+      <Conversion Contains="4030" Value="4030" />
+      <Conversion Contains="4040" Value="4040" />
+      <Conversion Contains="4050" Value="4050" />
+      <Conversion Contains="4060" Value="4060" />
+      <Conversion Contains="4070" Value="4070" />
+      <Conversion Contains="4080" Value="4080" />
+      <Conversion Contains="4090" Value="4090" />
+      <Conversion Contains="5000" Value="5000" />
+      <Conversion Contains="3" Value="3" />
+      <Conversion Contains="4" Value="4" />
+      <Conversion Contains="5" Value="5" />
+      <Conversion Contains="10" Value="10" />
+      <Conversion Contains="11" Value="11" />
+      <Conversion Contains="21" Value="21" />
+      <Conversion Contains="22" Value="22" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <!--StdType5-->
+    <DataItem Prefix="cfg" Name="PC_PQStandardType5-ImagingTechnology" AttributeID="hp-print-quality-supported.type,11.imaging-technology" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="ENUM">
+      <Conversion Contains="2000" Value="2000" />
+      <Conversion Contains="2001" Value="2001" />
+      <Conversion Contains="2002" Value="2002" />
+      <Conversion Contains="2003" Value="2003" />
+      <Conversion Contains="2004" Value="2004" />
+      <Conversion Contains="2005" Value="2005" />
+      <Conversion Contains="4000" Value="4000" />
+      <Conversion Contains="4005" Value="4005" />
+      <Conversion Contains="4010" Value="4010" />
+      <Conversion Contains="4015" Value="4015" />
+      <Conversion Contains="4020" Value="4020" />
+      <Conversion Contains="4030" Value="4030" />
+      <Conversion Contains="4040" Value="4040" />
+      <Conversion Contains="4050" Value="4050" />
+      <Conversion Contains="4060" Value="4060" />
+      <Conversion Contains="4070" Value="4070" />
+      <Conversion Contains="4080" Value="4080" />
+      <Conversion Contains="4090" Value="4090" />
+      <Conversion Contains="5000" Value="5000" />
+      <Conversion Contains="3" Value="3" />
+      <Conversion Contains="4" Value="4" />
+      <Conversion Contains="5" Value="5" />
+      <Conversion Contains="10" Value="10" />
+      <Conversion Contains="11" Value="11" />
+      <Conversion Contains="21" Value="21" />
+      <Conversion Contains="22" Value="22" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <!--CustomType1-->
+    <DataItem Prefix="cfg" Name="PC_PQCustomType1-PQMode" AttributeID="hp-print-quality-supported.type,21.pq-mode" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="ENUM">
+      <Conversion Contains="1" Value="DRAFT" />
+      <Conversion Contains="2" Value="NORMAL" />
+      <Conversion Contains="3" Value="BEST" />
+      <Conversion Contains="4" Value="MAX" />
+      <Conversion Contains="5" Value="ECONOMODE" />
+      <Conversion Contains="6" Value="HIGHSPEED" />
+      <Conversion Contains="7" Value="DEPLETED" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <!--CustomType2-->
+    <DataItem Prefix="cfg" Name="PC_PQCustomType2-PQMode" AttributeID="hp-print-quality-supported.type,22.pq-mode" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300" DataType="ENUM">
+      <Conversion Contains="1" Value="DRAFT" />
+      <Conversion Contains="2" Value="NORMAL" />
+      <Conversion Contains="3" Value="BEST" />
+      <Conversion Contains="4" Value="MAX" />
+      <Conversion Contains="5" Value="ECONOMODE" />
+      <Conversion Contains="6" Value="HIGHSPEED" />
+      <Conversion Contains="7" Value="DEPLETED" />
+      <Conversion Contains="default" Value="not-supported" />
+    </DataItem>
+    <!-- PC_PrintQuality End-->
+    <!-- CR61067 Facing issues with K30 Onyx,agate,Keystone device wrt to Output bins. Added the support of PC hp-outputbins-supported to know the output bins supported on the device -->
+    <!-- Need a requirement to support both PC way and non PC way to know the output bins support on the device. For now we will comment out non PC queries for the output tray support -->
+    <!--<DataItem Prefix="cfg" Name="Outputbins_Mode" AttributeID="printer-output-tray" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300">
+	  <Conversion Contains="tray-1" Value="Installed" />
+	  <Conversion Contains="mailbox-1" Value="Installed" />
+	  <Conversion Contains="mailbox-2" Value="Installed" />
+	  <Conversion Contains="mailbox-3" Value="Installed" />
+	  <Conversion Contains="mailbox-4" Value="Installed" />
+	  <Conversion Contains="mailbox-5" Value="Installed" />
+	  <Conversion Contains="mailbox-6" Value="Installed" />
+	  <Conversion Contains="stacker-1" Value="Installed" />
+	  <Conversion Contains="Bin0" Value="Installed" />
+	  <Conversion Contains="Bin1" Value="Installed" />
+	  <Conversion Contains="Bin2" Value="Installed" />
+	  <Conversion Contains="auto" Value="Installed" />
+	  <Conversion Contains="default" Value="NotInstalled" /> 
+	</DataItem>
+	<DataItem Prefix="cfg" Name="Outputbin1_Type" AttributeID="printer-output-tray" Command="Get-Printer-Attributes" JobURI="NULL" Transient="false" LifeSpan="300">
+	  <Conversion Contains="tray-1" Value="Bin0" />
+	  <Conversion Contains="mailbox-1" Value="Mailbox1" />
+	  <Conversion Contains="stacker-1" Value="Stacker1" />
+	  <Conversion Contains="Engine-optional1" Value="Engine-optional1" />
+      <Conversion Contains="removableBin" Value="Bin0" />
+	  <Conversion Contains="Bin1" Value="Bin1" />
+	  <Conversion Contains="Bin2" Value="Bin2" />
+	  <Conversion Contains="default" Value="NotInstalled" /> 
+	</DataItem>
+	<DataItem Prefix="cfg" Name="Outputbin2_Type" AttributeID="printer-output-tray" Command="Get-Printer-Attributes" JobURI="NULL"   Transient="false"  LifeSpan="300" >		 
+	  <Conversion Contains="mailbox-2" Value="Mailbox2"/>
+	  <Conversion Contains="stacker-1" Value="Stacker1" />
+	  <Conversion Contains="Engine-optional1" Value="Engine-optional1" />
+	  <Conversion Contains="removableBin" Value="Engine-optional1" />
+	  <Conversion Contains="Bin1" Value="Bin1" />
+	  <Conversion Contains="Bin2" Value="Bin2" />
+	  <Conversion Contains="default" Value="NotInstalled"/>
+	</DataItem>
+	<DataItem Prefix="cfg" Name="Outputbin3_Type" AttributeID="printer-output-tray" Command="Get-Printer-Attributes" JobURI="NULL"   Transient="false"  LifeSpan="300" >		  
+	  <Conversion Contains="mailbox-3" Value="Mailbox3"/>
+	  <Conversion Contains="stacker-1" Value="Stacker1" />
+	  <Conversion Contains="Engine-optional1" Value="Engine-optional1" />
+	  <Conversion Contains="removableBin" Value="Engine-optional1" />
+	  <Conversion Contains="Bin1" Value="Bin1" />
+	  <Conversion Contains="Bin2" Value="Bin2" />
+	  <Conversion Contains="auto" Value="Bin0" />
+	  <Conversion Contains="default" Value="NotInstalled"/>
+	</DataItem>
+	<DataItem Prefix="cfg" Name="Outputbin4_Type" AttributeID="printer-output-tray" Command="Get-Printer-Attributes" JobURI="NULL"   Transient="false"  LifeSpan="300" >		  
+	  <Conversion Contains="mailbox-4" Value="Mailbox4"/>
+	  <Conversion Contains="stacker-1" Value="Stacker1" />
+	  <Conversion Contains="Engine-optional1" Value="Engine-optional1" />
+	  <Conversion Contains="removableBin" Value="Engine-optional1" />
+	  <Conversion Contains="Bin1" Value="Bin1" />
+	  <Conversion Contains="Bin2" Value="Bin2" />
+	  <Conversion Contains="auto" Value="Bin0" />
+	  <Conversion Contains="default" Value="NotInstalled"/>
+	</DataItem>
+	<DataItem Prefix="cfg" Name="Outputbin5_Type" AttributeID="printer-output-tray" Command="Get-Printer-Attributes" JobURI="NULL"   Transient="false"  LifeSpan="300" >		  
+	  <Conversion Contains="mailbox-5" Value="Mailbox5"/>
+	  <Conversion Contains="stacker-1" Value="Stacker1" />
+	  <Conversion Contains="Engine-optional1" Value="Engine-optional1" />
+	  <Conversion Contains="removableBin" Value="Engine-optional1" />
+	  <Conversion Contains="Bin1" Value="Bin1" />
+	  <Conversion Contains="Bin2" Value="Bin2" />
+	  <Conversion Contains="auto" Value="Bin0" />
+	  <Conversion Contains="default" Value="NotInstalled"/>
+	</DataItem>
+	<DataItem Prefix="cfg" Name="Outputbin6_Type" AttributeID="printer-output-tray" Command="Get-Printer-Attributes" JobURI="NULL"   Transient="false"  LifeSpan="300" >		  
+	  <Conversion Contains="mailbox-6" Value="Mailbox6"/>
+	  <Conversion Contains="stacker-1" Value="Stacker1" />
+	  <Conversion Contains="Engine-optional1" Value="Engine-optional1" />
+	  <Conversion Contains="removableBin" Value="Engine-optional1" />
+	  <Conversion Contains="Bin1" Value="Bin1" />
+	  <Conversion Contains="Bin2" Value="Bin2" />
+	  <Conversion Contains="auto" Value="Bin0" />
+	  <Conversion Contains="default" Value="NotInstalled"/>
+	</DataItem> -->
+    <!-- PC-Way query of hp-outputbins-supported -->
+    <!-- PC 0.5 support for Hallasan Start  -->
+    <!-- PC 0.5 support for Hallasan End -->
+  </IPPDataMap>
+</DataMaps>

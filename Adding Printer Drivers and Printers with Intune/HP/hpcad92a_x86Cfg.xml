@@ -1,0 +1,3394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DeviceCapabilities xsi:schemaLocation="http://www.pwg.org/schemas/upd/2.0/                                         ..\..\..\..\..\PDK\V3V4\Schemas\updf2\updf.xsd                                         http://schemas.monotypeimaging.com/upd/2.0/                                         ..\..\..\..\..\PDK\V3V4\Schemas\updf2\MTI\MTIDataTypes.xsd                                          http://schemas.monotypeimaging.com/upd/oem/1/                                         ..\..\..\..\..\PDK\V3V4\HP-Stanley\Schemas\Updf2\OEMDataTypes.xsd" xmlns="http://www.pwg.org/schemas/upd/2.0/" xmlns:hp="http://schemas.hp.com/ptpc/2006/1" xmlns:oemupdf="http://schemas.monotypeimaging.com/upd/oem/1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:psk="http://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords" FileTypeIdentification="device description" UPDFVersion="2.00.00.00">
+  <FileInfo FileVersion="8.00.2003.8281" />
+  <DeviceHeader ModelName="STR_MODEL_NAME" ProductName="HP Color LaserJet Enterprise MFP M480">
+    <About AboutStatement="STR_MODEL_NAME" />
+    <About AboutStatement="IDS_ABOUT_HP_COPYRIGHT1" />
+    <About AboutStatement="IDS_ABOUT_HP_COPYRIGHT2" />
+  </DeviceHeader>
+  <PrintCapabilities>
+    <Header>
+      <Engine EngineSpeedPPM="29" EngineType="laser" />
+      <Languages>
+        <PageDescriptionLanguage PDLMajorLevel="application/vnd.hp-PCL6" PDLMinorLevel="3" />
+        <VendorExtension>
+          <oemupdf:PrintTicketInfo PreferredPrefix="hp" URI="http://schemas.hp.com/ptpc/2006/1" />
+          <hp:LanguageFeatures>
+            <hp:LanguageFeature ClassifyingID="PCL6-OrientDuplex" />
+            <hp:LanguageFeature ClassifyingID="PCL6-DeltaRow" />
+            <hp:LanguageFeature ClassifyingID="PCL6-Jpeg" />
+            <hp:LanguageFeature ClassifyingID="PCL6-PageColorCmds" />
+          </hp:LanguageFeatures>
+        </VendorExtension>
+      </Languages>
+      <VendorExtension>
+        <oemupdf:PrinterDriverInfo OEMLongName="Hewlett-Packard" OEMShortName="HP">
+          <oemupdf:v3-XPS DriverName="HP Color LaserJet MFP M480 PCL 6 (V3)">
+            <oemupdf:PipelineConfig install="hpcad92a_x86PipelineConfig.xml" />
+            <oemupdf:FilterCore original="" install="hpb6sy8281_x86xps.dll" name="HP XPS.PCL6 Filter" />
+            <oemupdf:OCM original="" install="hpb6sy8281_x86hybrasto.dll" />
+            <oemupdf:INF install="hpcad92a_x86.inf" />
+            <oemupdf:DataFile original="" install="hpcad92a_x86Cfg.xml" />
+            <oemupdf:GUI original="" install="hpb6sy8281_x86gui.dll" />
+            <oemupdf:PlatformDependent original="" install="hpb6sy8281_x86enus.dll" />
+            <oemupdf:PlatformDependent original="" install="hpb6sy8281_x86dlg.dll" />
+            <oemupdf:PlatformIndependent original="" install="hpcad92a_x86.ini" />
+            <oemupdf:PlatformIndependent original="" install="hpb6sy8281_x86help.cab" />
+            <oemupdf:PlatformIndependent original="datamap.xml" install="hpb6sy8281datamap.xml" />
+            <oemupdf:PlatformIndependent original="buiox86.dll" install="hpb6sy8281x86_buio.dll" />
+            <oemupdf:PlatformIndependent original="buiodmx86.dll" install="hpb6sy8281x86_buiodm.dll" />
+            <oemupdf:PlatformIndependent original="coinsx86.dll" install="hpb6sy8281x86_coins.dll" />
+            <oemupdf:PlatformIndependent original="" install="hpb6sy8281_x86hpfime53.dll" />
+            <oemupdf:PlatformIndependent original="" install="hpb6sy8281_x86PdsmqConnector.exe" />
+            <oemupdf:PlatformIndependent original="" install="hpb6sy8281_x86PdsmqConnector.PdsmqConfig.xml" />
+            <oemupdf:PlatformIndependent original="" install="hpb6sy8281_x86ewdm.xml" />
+          </oemupdf:v3-XPS>
+          <oemupdf:v4-XPS GUID="{757d8174-2dae-43a3-b962-a68c7997eb79}" MSXPS="true" OpenXPS="true" DriverName="HP Color LaserJet MFP M480 PCL-6 (V4)">
+            <oemupdf:Manifest install="hpcad92a4_x86-manifest.ini" />
+            <oemupdf:PipelineConfig install="hpcad92a4_x86-PipelineConfig.xml" />
+            <oemupdf:GDL install="hpcad92a4_x86cfg.gdl" />
+            <oemupdf:INF install="hpcad92a4_x86.inf" />
+            <oemupdf:DataFile install="hpcad92a4_x86cfg.gpd" />
+            <oemupdf:FilterCore original="" install="hpb6sy8281_x86pcl6.dll" name="HP V4.PCL6 Filter" />
+            <oemupdf:OCM original="" install="hpb6sy8281_x86hybrasto.dll" />
+            <oemupdf:PrinterExtension original="" install="hpPE.exe" />
+            <oemupdf:UIResource original="" install="hpb6sy8281_x86uires.dll" />
+            <oemupdf:UISymbols original="StringsCluster.gpd" original2="StringsCluster.gpd" original3="StringsCluster_UISymbols.gpd" install="hpcad92a4_x86symbols.gpd" />
+            <oemupdf:DevModeMap original="" install="hpb6sy8281_x86map.xml" />
+            <oemupdf:QueueProps original="" install="hpb6sy8281_x86que.xml" />
+            <oemupdf:Constraints original="" install="hpb6sy8281_x86constraints.js" />
+            <oemupdf:constraintsWin10s original="" install="hpb6sy8281_x86constraintsWin10s.js" />
+            <oemupdf:PropertyBag install="hpcad92a4_x86drv.bag" />
+            <oemupdf:Event original="bidi-Event.xml" install="hpb6sy8281bidi-Event.xml" />
+            <oemupdf:BidiSPM original="Bidi-SNMP.xml" install="hpb6sy8281Bidi-SNMP.xml" />
+            <oemupdf:BidiWSD original="bidi-WSD.xml" install="hpb6sy8281bidi-WSD.xml" />
+            <oemupdf:BidiUSB original="bidi-IPPoverUSB.xml" install="hpb6sy8281_bidi-IPPoverUSB.xml" />
+            <oemupdf:BidiUSBJS original="bidi-IPPoverUSB.js" install="hpb6sy8281_bidi-IPPoverUSB.js" />
+            <oemupdf:PlatformDependent original="" install="userfors.dll" />
+            <oemupdf:PlatformIndependent original="" install="hpb6sy8281_x86help.cab" />
+            <oemupdf:PlatformIndependent original="" install="hpPELib.dll" />
+            <oemupdf:PlatformIndependent original="" install="hpb6sy8281_x86hpfime53.dll" />
+            <oemupdf:PlatformIndependent original="" install="hpb6sy8281_x86PdsmqConnector.exe" />
+            <oemupdf:PlatformIndependent original="" install="hpb6sy8281_x86PdsmqConnector.PdsmqConfig.xml" />
+            <oemupdf:PlatformIndependent original="buiox86.dll" install="hpb6sy8281x86_buio.dll" />
+            <oemupdf:PlatformIndependent original="buiodmx86.dll" install="hpb6sy8281x86_buiodm.dll" />
+          </oemupdf:v4-XPS>
+          <oemupdf:DefaultDuplexStandard Enable="true"></oemupdf:DefaultDuplexStandard>
+        </oemupdf:PrinterDriverInfo>
+        <hp:XpsFilterConfiguration>
+          <hp:General>
+            <hp:Features>
+              <hp:PageOrder Enable="true" ReverseDuplex="false" />
+              <hp:DocCollate Enable="true" />
+              <hp:JobCollate Enable="true" />
+              <hp:JobCopyCount Enable="true" />
+              <hp:DocCopyCount Enable="true" />
+              <hp:PageCopyCount Enable="true" />
+              <hp:NUp Enable="true" />
+              <hp:Watermarks Enable="true" />
+              <hp:MtiCovers Enable="true" />
+              <hp:Booklet Enable="true" />
+              <hp:Overlays Enable="true" />
+              <hp:Interleaves Enable="true" />
+              <hp:Poster Enable="true" />
+              <hp:Scaling Enable="true" />
+              <hp:Exceptions Enable="true" />
+              <hp:PageRanges Enable="true" />
+              <hp:BindingShift Enable="true" />
+              <hp:MirrorImage Enable="false" />
+              <hp:SmartDuplex Enable="true" Auto="true" />
+              <hp:BookletOverrideNup Enable="true" />
+            </hp:Features>
+            <hp:Memory>
+              <hp:Scheme Physical="0" ManagedArena="0" GenericPool="10" ResourcePool="10" LanguagePool="10" Band="4096" TexturePool="4096" TextureNodes="0" ColorNodes="4096" Input="4096" Output="4096" />
+              <hp:Scheme Physical="1024000" ManagedArena="0" GenericPool="65536" ResourcePool="131070" LanguagePool="131070" Band="4096" TexturePool="4096" TextureNodes="0" ColorNodes="4096" Input="4096" Output="4096" />
+              <hp:Scheme Physical="2048000" ManagedArena="0" GenericPool="131070" ResourcePool="262144" LanguagePool="262144" Band="4096" TexturePool="8192" TextureNodes="0" ColorNodes="4096" Input="4096" Output="4096" />
+            </hp:Memory>
+            <hp:Optimizations>
+              <hp:FontOptimization Enable="true" />
+              <hp:FlattenStrokes Enable="false" />
+              <hp:FlattenLinearGradient Enable="true" Granularity="12" />
+              <hp:FlattenRadialGradient Enable="true" Granularity="12" />
+              <hp:FlattenCurves Enable="false" Granularity="10" />
+              <hp:FlattenOpacityMask Enable="false" />
+              <hp:FlattenThinStrokes Enable="true" AbsoluteMin="0.16" AbsoluteMax="0.48" />
+              <hp:FlattenTinyTilesImg Enable="true" Threshold="1.28" />
+              <hp:FlattenTinyTilesVisBrush Enable="true" Threshold="1.28" />
+              <hp:FlattenOpacity Enable="false" />
+              <hp:ConvertImages Enable="false" Wdp="TIFF,NONE" Tiff="WDP,JPEG,NONE" Png="JPEG,PNG,TIFF" Jpeg="TIFF,PNG" />
+              <hp:GlyphsGreek Enable="false" Threshold="1" />
+              <hp:GlyphsVectorize Enable="true" Threshold="4096" />
+              <hp:ImageHealing Enable="true" />
+            </hp:Optimizations>
+            <hp:Options>
+              <hp:CollectInsets Enable="false" />
+              <hp:ObeyDiscards Enable="true" />
+              <hp:NUpEjectOnNewSize Enable="false" />
+              <hp:NUpScaleMedia Enable="true" />
+              <hp:NUpSingleLayout Enable="false" />
+              <hp:NUpMismatchRotate Enable="true" Angle="90" />
+              <hp:WmZoom Enable="false" />
+              <hp:WmZoomClip Enable="false" />
+              <hp:DocumentRelationSearch Enable="true" Distance="3" />
+              <hp:DeepQueryImageColor Enable="false" />
+            </hp:Options>
+            <hp:Rendering>
+              <hp:Blend ColorSpace="sRGB" Force="false" />
+              <hp:Glyphs Rasterizer="UFST" BoldSimulationEmPercent="2.0" ItalicSimulationShearDegrees="20.0" />
+              <hp:ImageTransform Upscale="NearestNeighbor" Downscale="NearestNeighbor" />
+              <hp:EasyColorLibrary Name="hpb6sy8281_x86hpfime53.dll" />
+            </hp:Rendering>
+          </hp:General>
+          <hp:Cxl>
+            <hp:Options>
+              <hp:NoBitmasks Enable="true" />
+              <hp:DebugInvertRaster Enable="false" />
+              <hp:DebugOutputBounds Enable="false" />
+              <hp:DebugWriteBands Enable="false" />
+              <hp:JpegPassthrough Enable="true" />
+            </hp:Options>
+            <hp:Optimizations>
+              <hp:JpegCompression Enable="false" Level="95" />
+            </hp:Optimizations>
+          </hp:Cxl>
+        </hp:XpsFilterConfiguration>
+      </VendorExtension>
+    </Header>
+    <Features>
+      <PrinterResolution ID="PrinterResolution" DefaultSetting="Normal">
+        <PrinterResolutionRecord ID="Normal" ClassifyingID="Resolution_600x600" StringID="IDS_NORMAL">
+          <VendorExtension>
+            <hp:PJLCommand value="@PJL SET PRINTQUALITY=NORMAL" />
+          </VendorExtension>
+        </PrinterResolutionRecord>
+        <PrinterResolutionRecord ID="QuickView_Draft" ClassifyingID="Resolution_300x300" StringID="IDS_HP_PC_DRAFT">
+          <VendorExtension>
+            <hp:PJLCommand value="@PJL SET PRINTQUALITY=DRAFT" />
+          </VendorExtension>
+        </PrinterResolutionRecord>
+        <PrinterResolutionRecord ID="Enhanced" ClassifyingID="Resolution_1200x1200" StringID="IDS_HP_PC_ENHANCED">
+          <VendorExtension>
+            <hp:PJLCommand value="@PJL SET PRINTQUALITY=BEST" />
+          </VendorExtension>
+        </PrinterResolutionRecord>
+      </PrinterResolution>
+      <PCPrinterResolution ID="PCPrinterResolution" DefaultSetting="Normal">
+        <PCPrinterResolutionRecord ID="Normal" ClassifyingID="Resolution_600x600" StringID="IDS_NORMAL">
+          <VendorExtension></VendorExtension>
+        </PCPrinterResolutionRecord>
+        <PCPrinterResolutionRecord ID="FineLines_MaxDPI" ClassifyingID="Resolution_1200x1200" StringID="IDS_HP_PC_MAX">
+          <VendorExtension></VendorExtension>
+        </PCPrinterResolutionRecord>
+        <PCPrinterResolutionRecord ID="QuickView_Draft" ClassifyingID="Resolution_300x300" StringID="IDS_HP_PC_DRAFT">
+          <VendorExtension></VendorExtension>
+        </PCPrinterResolutionRecord>
+        <PCPrinterResolutionRecord ID="EconoMode" ClassifyingID="Resolution_300x300" StringID="IDS_ECONOMODE_Q206">
+          <VendorExtension></VendorExtension>
+        </PCPrinterResolutionRecord>
+        <PCPrinterResolutionRecord ID="GeneralOffice_Draft" ClassifyingID="Resolution_300x300" StringID="IDS_PQ_GENERAL_OFFICE_CAP">
+          <VendorExtension></VendorExtension>
+        </PCPrinterResolutionRecord>
+        <PCPrinterResolutionRecord ID="Professional" ClassifyingID="Resolution_600x600" StringID="IDS_PQ_PROFESSIONAL">
+          <VendorExtension></VendorExtension>
+        </PCPrinterResolutionRecord>
+        <PCPrinterResolutionRecord ID="Presentation" ClassifyingID="Resolution_600x600" StringID="IDS_PQ_PRESENTATION_CSL">
+          <VendorExtension></VendorExtension>
+        </PCPrinterResolutionRecord>
+        <PCPrinterResolutionRecord ID="MaxDPI" ClassifyingID="Resolution_1200x1200" StringID="IDS_MAXIMUM_DPI">
+          <VendorExtension></VendorExtension>
+        </PCPrinterResolutionRecord>
+        <PCPrinterResolutionRecord ID="Enhanced" ClassifyingID="Resolution_1200x1200" StringID="IDS_HP_PC_ENHANCED">
+          <VendorExtension></VendorExtension>
+        </PCPrinterResolutionRecord>
+        <PCPrinterResolutionRecord ID="PC_Custom_1" ClassifyingID="Resolution_600x600" StringID="IDS_CUSTOM_1">
+          <VendorExtension></VendorExtension>
+        </PCPrinterResolutionRecord>
+        <PCPrinterResolutionRecord ID="PC_Custom_2" ClassifyingID="Resolution_600x600" StringID="IDS_CUSTOM_2">
+          <VendorExtension></VendorExtension>
+        </PCPrinterResolutionRecord>
+      </PCPrinterResolution>
+      <Color ID="Color" DefaultSetting="ColorOutput" StringID="IDS_PRINT_IN_GRAYSCALE_WITHOUT_HK">
+        <ColorRecord ID="ColorOutput" PlaneImplementation="PerPixel" StringID="IDS_OFF">
+          <RGBColor BitsPerPixel="8" Color="custom-media-color-rgb-ff0000-red" />
+          <RGBColor BitsPerPixel="8" Color="custom-media-color-rgb-00ff00-green" />
+          <RGBColor BitsPerPixel="8" Color="custom-media-color-rgb-0000ff-blue" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:Color" />
+          </VendorExtension>
+        </ColorRecord>
+        <ColorRecord ID="MonoCompositeOutput" PlaneImplementation="PerPixel" StringID="IDS_HP_PC_BLACK_ONLY">
+          <RGBColor BitsPerPixel="8" Color="custom-media-color-rgb-000000-black" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:Monochrome" />
+          </VendorExtension>
+        </ColorRecord>
+        <ColorRecord ID="CompositeOutput" PlaneImplementation="PerPixel" StringID="IDS_HP_PC_HIGH_QUALITY_GRAY">
+          <RGBColor BitsPerPixel="8" Color="custom-media-color-rgb-000000-black" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:Grayscale" />
+          </VendorExtension>
+        </ColorRecord>
+      </Color>
+      <Copies ID="Copies" DefaultSetting="1">
+        <VariableValue ID="CopyCount" Minimum="1" Maximum="9999" Step="1" />
+      </Copies>
+      <Collation ID="Collation" DefaultSetting="Collated">
+        <CollationRecord ID="Uncollated" ClassifyingID="Uncollated" />
+        <CollationRecord ID="Collated" ClassifyingID="Collated" />
+      </Collation>
+      <OrientationRequested ID="OrientationRequested" DefaultSetting="Portrait">
+        <OrientationRequestedRecord ID="Portrait" ClassifyingID="Portrait" />
+        <OrientationRequestedRecord ID="Landscape" ClassifyingID="Landscape" />
+      </OrientationRequested>
+      <MediaSize ID="MediaSize" StringID="IDS_PAPER_SIZE_TROJA">
+        <MediaSizeRecord ID="LETTER" ClassifyingID="na_letter_8.5x11in" HardwareMargins="margins_left-0.167_top-0.167_right-0.167_bottom-0.167in" AlternateMargins="margins_left-0.080_top-0.080_right-0.080_bottom-0.080in" StringID="IDS_LETTER">
+          <Parameter Value="LETTER" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:NorthAmericaLetter" />
+          </VendorExtension>
+        </MediaSizeRecord>
+        <MediaSizeRecord ID="LEGAL" ClassifyingID="na_legal_8.5x14in" HardwareMargins="margins_left-0.167_top-0.167_right-0.167_bottom-0.167in" AlternateMargins="margins_left-0.080_top-0.080_right-0.080_bottom-0.080in" StringID="IDS_LEGAL">
+          <Parameter Value="LEGAL" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:NorthAmericaLegal" />
+          </VendorExtension>
+        </MediaSizeRecord>
+        <MediaSizeRecord ID="Executive" ClassifyingID="na_executive_7.25x10.5in" HardwareMargins="margins_left-0.167_top-0.167_right-0.167_bottom-0.167in" AlternateMargins="margins_left-0.080_top-0.080_right-0.080_bottom-0.080in" StringID="IDS_MSIZE_EXECUTIVE">
+          <Parameter Value="EXEC" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:NorthAmericaExecutive" />
+          </VendorExtension>
+        </MediaSizeRecord>
+        <MediaSizeRecord ID="Statement" ClassifyingID="na_invoice_5.5x8.5in" HardwareMargins="margins_left-0.167_top-0.167_right-0.167_bottom-0.167in" AlternateMargins="margins_left-0.080_top-0.080_right-0.080_bottom-0.080in" StringID="IDS_STATEMENT">
+          <Parameter Value="STATEMENT" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:NorthAmericaStatement" />
+            <oemupdf:ForceManualDuplex />
+          </VendorExtension>
+        </MediaSizeRecord>
+        <MediaSizeRecord ID="Officio8.5x13" ClassifyingID="na_foolscap_8.5x13in" HardwareMargins="margins_left-0.167_top-0.167_right-0.167_bottom-0.167in" AlternateMargins="margins_left-0.080_top-0.080_right-0.080_bottom-0.080in" StringID="STR_OFFICIO_8_5x13in">
+          <Parameter Value="8.5x13" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:Officio8.5x13" />
+          </VendorExtension>
+        </MediaSizeRecord>
+        <MediaSizeRecord ID="Index3x5" ClassifyingID="na_index_3x5in" HardwareMargins="margins_left-0.167_top-0.167_right-0.167_bottom-0.167in" AlternateMargins="margins_left-0.080_top-0.080_right-0.080_bottom-0.080in" StringID="IDS_3_X_5">
+          <Parameter Value="3x5" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:INDEX3x5" />
+            <oemupdf:ForceManualDuplex />
+          </VendorExtension>
+        </MediaSizeRecord>
+        <MediaSizeRecord ID="Index4x6" ClassifyingID="na_index_4x6in" HardwareMargins="margins_left-0.167_top-0.167_right-0.167_bottom-0.167in" AlternateMargins="margins_left-0.080_top-0.080_right-0.080_bottom-0.080in" StringID="IDS_PSIZE_4_X_6">
+          <Parameter Value="4x6" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:NorthAmerica4x6" />
+            <oemupdf:ForceManualDuplex />
+          </VendorExtension>
+        </MediaSizeRecord>
+        <MediaSizeRecord ID="Index5x7" ClassifyingID="na_index_5x7in" HardwareMargins="margins_left-0.167_top-0.167_right-0.167_bottom-0.167in" AlternateMargins="margins_left-0.080_top-0.080_right-0.080_bottom-0.080in" StringID="IDS_PSIZE_5_X_7">
+          <Parameter Value="5x7" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:5x7" />
+            <oemupdf:ForceManualDuplex />
+          </VendorExtension>
+        </MediaSizeRecord>
+        <MediaSizeRecord ID="Index5x8" ClassifyingID="na_index-5x8_5x8in" HardwareMargins="margins_left-0.167_top-0.167_right-0.167_bottom-0.167in" AlternateMargins="margins_left-0.080_top-0.080_right-0.080_bottom-0.080in" StringID="IDS_PSIZE_5_X_8">
+          <Parameter Value="5x8" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:5x8" />
+            <oemupdf:ForceManualDuplex />
+          </VendorExtension>
+        </MediaSizeRecord>
+        <MediaSizeRecord ID="A4" ClassifyingID="iso_a4_210x297mm" HardwareMargins="margins_left-0.167_top-0.167_right-0.167_bottom-0.167in" AlternateMargins="margins_left-0.080_top-0.080_right-0.080_bottom-0.080in" StringID="IDS_MSIZE_A4">
+          <Parameter Value="A4" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:ISOA4" />
+          </VendorExtension>
+        </MediaSizeRecord>
+        <MediaSizeRecord ID="A5" ClassifyingID="iso_a5_148x210mm" HardwareMargins="margins_left-0.167_top-0.167_right-0.167_bottom-0.167in" AlternateMargins="margins_left-0.080_top-0.080_right-0.080_bottom-0.080in" StringID="IDS_A5" FeedOrientation="LongEdgeFirst">
+          <Parameter Value="A5" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:ISOA5" />
+            <oemupdf:ForceManualDuplex />
+          </VendorExtension>
+        </MediaSizeRecord>
+        <MediaSizeRecord ID="A6" ClassifyingID="iso_a6_105x148mm" HardwareMargins="margins_left-0.167_top-0.167_right-0.167_bottom-0.167in" AlternateMargins="margins_left-0.080_top-0.080_right-0.080_bottom-0.080in" StringID="IDS_MSIZE_A6">
+          <Parameter Value="A6" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:ISOA6" />
+            <oemupdf:ForceManualDuplex />
+          </VendorExtension>
+        </MediaSizeRecord>
+        <MediaSizeRecord ID="RA4" ClassifyingID="iso_ra4_215x305mm" HardwareMargins="margins_left-0.167_top-0.167_right-0.167_bottom-0.167in" AlternateMargins="margins_left-0.080_top-0.080_right-0.080_bottom-0.080in" StringID="IDS_PSIZE_RA4">
+          <Parameter Value="RA4" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:RA4" />
+          </VendorExtension>
+        </MediaSizeRecord>
+        <MediaSizeRecord ID="JIS-B5" ClassifyingID="jis_b5_182x257mm" HardwareMargins="margins_left-0.167_top-0.167_right-0.167_bottom-0.167in" AlternateMargins="margins_left-0.080_top-0.080_right-0.080_bottom-0.080in" StringID="IDS_MSIZE_B5_JIS">
+          <Parameter Value="JIS B5" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:JISB5" />
+          </VendorExtension>
+        </MediaSizeRecord>
+        <MediaSizeRecord ID="JIS-B6" ClassifyingID="jis_b6_128x182mm" HardwareMargins="margins_left-0.167_top-0.167_right-0.167_bottom-0.167in" AlternateMargins="margins_left-0.080_top-0.080_right-0.080_bottom-0.080in" StringID="IDS_B6_JIS">
+          <Parameter Value="JIS B6" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:JISB6" />
+            <oemupdf:ForceManualDuplex />
+          </VendorExtension>
+        </MediaSizeRecord>
+        <MediaSizeRecord ID="Index10x15" ClassifyingID="om_smallphoto_100x150mm" HardwareMargins="margins_left-0.167_top-0.167_right-0.167_bottom-0.167in" AlternateMargins="margins_left-0.080_top-0.080_right-0.080_bottom-0.080in" StringID="IDS_MSIZE_10X15_CM">
+          <Parameter Value="10x15 cm" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:INDEX10x15cm" />
+            <oemupdf:ForceManualDuplex />
+          </VendorExtension>
+        </MediaSizeRecord>
+        <MediaSizeRecord ID="Officio216x340mm" ClassifyingID="om_legal_215.9x340mm" HardwareMargins="margins_left-0.167_top-0.167_right-0.167_bottom-0.167in" AlternateMargins="margins_left-0.080_top-0.080_right-0.080_bottom-0.080in" StringID="STR_OFF_216x340mm">
+          <Parameter Value="OFICIO 216X340MM" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:Officio216x340mm" />
+          </VendorExtension>
+        </MediaSizeRecord>
+        <MediaSizeRecord ID="ROC-16K195x270" ClassifyingID="prc_16k_195x270mm" HardwareMargins="margins_left-0.167_top-0.167_right-0.167_bottom-0.167in" AlternateMargins="margins_left-0.080_top-0.080_right-0.080_bottom-0.080in" StringID="IDS_MSIZE_16k_MM_Q306">
+          <Parameter Value="16K 195X270MM" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:ROC-16K195x270" />
+          </VendorExtension>
+        </MediaSizeRecord>
+        <MediaSizeRecord ID="ROC-16K184x260" ClassifyingID="prc_16k_184x260mm" HardwareMargins="margins_left-0.167_top-0.167_right-0.167_bottom-0.167in" AlternateMargins="margins_left-0.080_top-0.080_right-0.080_bottom-0.080in" StringID="IDS_MSIZE_16k_184_MM_Q306">
+          <Parameter Value="16K 184X260MM" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:ROC-16K184x260" />
+          </VendorExtension>
+        </MediaSizeRecord>
+        <MediaSizeRecord ID="ROC-16K197x273" ClassifyingID="prc_16k_197x273mm" HardwareMargins="margins_left-0.167_top-0.167_right-0.167_bottom-0.167in" AlternateMargins="margins_left-0.080_top-0.080_right-0.080_bottom-0.080in" StringID="IDS_MSIZE_16K_197X273">
+          <Parameter Value="ROC16K" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:ROC-16K197x273" />
+          </VendorExtension>
+        </MediaSizeRecord>
+        <MediaSizeRecord ID="Hagaki" ClassifyingID="jpn_hagaki_100x148mm" HardwareMargins="margins_left-0.167_top-0.167_right-0.167_bottom-0.167in" AlternateMargins="margins_left-0.080_top-0.080_right-0.080_bottom-0.080in" StringID="IDS_JAPAN_POST">
+          <Parameter Value="JPOST" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:JapanHagakiPostcard" />
+            <oemupdf:ForceManualDuplex />
+          </VendorExtension>
+        </MediaSizeRecord>
+        <MediaSizeRecord ID="Oufuku" ClassifyingID="jpn_oufuku_148x200mm" HardwareMargins="margins_left-0.167_top-0.167_right-0.167_bottom-0.167in" AlternateMargins="margins_left-0.080_top-0.080_right-0.080_bottom-0.080in" StringID="IDS_DBL_JAPAN_POST_ROTATED">
+          <Parameter Value="JPOSTD" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:JapanDoubleHagakiPostcardRotated" />
+            <oemupdf:ForceManualDuplex />
+          </VendorExtension>
+        </MediaSizeRecord>
+        <MediaSizeRecord ID="Env9" ClassifyingID="na_number-9_3.875x8.875in" HardwareMargins="margins_left-0.167_top-0.167_right-0.167_bottom-0.167in" AlternateMargins="margins_left-0.080_top-0.080_right-0.080_bottom-0.080in" StringID="IDS_PSIZE_ENVELOPE_9">
+          <Parameter Value="COM9" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:NorthAmericaNumber9Envelope" />
+          </VendorExtension>
+        </MediaSizeRecord>
+        <MediaSizeRecord ID="Env10" ClassifyingID="na_number-10_4.125x9.5in" HardwareMargins="margins_left-0.167_top-0.167_right-0.167_bottom-0.167in" AlternateMargins="margins_left-0.080_top-0.080_right-0.080_bottom-0.080in" StringID="IDS_MSIZE_ENV_10">
+          <Parameter Value="COM10" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:NorthAmericaNumber10Envelope" />
+          </VendorExtension>
+        </MediaSizeRecord>
+        <MediaSizeRecord ID="EnvMonarch" ClassifyingID="na_monarch_3.875x7.5in" HardwareMargins="margins_left-0.167_top-0.167_right-0.167_bottom-0.167in" AlternateMargins="margins_left-0.080_top-0.080_right-0.080_bottom-0.080in" StringID="IDS_MSIZE_ENV_MONARCH">
+          <Parameter Value="MONARCH" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:NorthAmericaMonarchEnvelope" />
+          </VendorExtension>
+        </MediaSizeRecord>
+        <MediaSizeRecord ID="EnvB5" ClassifyingID="iso_b5_176x250mm" HardwareMargins="margins_left-0.167_top-0.167_right-0.167_bottom-0.167in" AlternateMargins="margins_left-0.080_top-0.080_right-0.080_bottom-0.080in" StringID="IDS_MSIZE_ENV_B5">
+          <Parameter Value="B5 ENV" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:ISOB5Envelope" />
+          </VendorExtension>
+        </MediaSizeRecord>
+        <MediaSizeRecord ID="EnvC5" ClassifyingID="iso_c5_162x229mm" HardwareMargins="margins_left-0.167_top-0.167_right-0.167_bottom-0.167in" AlternateMargins="margins_left-0.080_top-0.080_right-0.080_bottom-0.080in" StringID="IDS_MSIZE_ENV_C5">
+          <Parameter Value="C5" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:ISOC5Envelope" />
+          </VendorExtension>
+        </MediaSizeRecord>
+        <MediaSizeRecord ID="EnvC6" ClassifyingID="iso_c6_114x162mm" HardwareMargins="margins_left-0.167_top-0.167_right-0.167_bottom-0.167in" AlternateMargins="margins_left-0.080_top-0.080_right-0.080_bottom-0.080in" StringID="IDS_ENVELOPE_C6">
+          <Parameter Value="C6" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:ISOC6Envelope" />
+          </VendorExtension>
+        </MediaSizeRecord>
+        <MediaSizeRecord ID="EnvDL" ClassifyingID="iso_dl_110x220mm" HardwareMargins="margins_left-0.167_top-0.167_right-0.167_bottom-0.167in" AlternateMargins="margins_left-0.080_top-0.080_right-0.080_bottom-0.080in" StringID="IDS_MSIZE_ENV_DL">
+          <Parameter Value="DL" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:ISODLEnvelope" />
+          </VendorExtension>
+        </MediaSizeRecord>
+        <MediaSizeRecord ID="Custom" ClassifyingID="custom" HardwareMargins="margins_left-0.167_top-0.167_right-0.167_bottom-0.167in" AlternateMargins="margins_left-0.080_top-0.080_right-0.080_bottom-0.080in">
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:Custom" />
+            <oemupdf:ForceManualDuplex />
+          </VendorExtension>
+        </MediaSizeRecord>
+      </MediaSize>
+      <MediaType ID="MediaType" DefaultSetting="AutoSelectMediaType" StringID="IDS_PAPER_TYPE_WTCL">
+        <MediaTypeRecord ID="AutoSelectMediaType" ClassifyingID="auto-select" StringID="IDS_UNSPECIFIED_TYPE">
+          <Parameter Value="Unknown" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:AutoSelect" />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="Plain" ClassifyingID="custom-media-type-plain" StringID="IDS_PLAIN_TYPE">
+          <Parameter Value="Plain" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:Plain" />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="HPEcoFFICIENT" ClassifyingID="custom-media-type-hpecosmartlite" StringID="IDS_HP_ECOFFICIENT">
+          <Parameter Value="HPEcoSmartLite" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:HPEcoSMARTLite" />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="HPLaserJet90gsm" ClassifyingID="custom-media-type-hplaserjet90gsm" StringID="IDS_MTYPE_LJ_HP_LASERJET_90_G">
+          <Parameter Value="HP Matte 90" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:HPLaserJet90gsm" />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="HPColorLaserMatte105g" ClassifyingID="custom-media-type-hpcolorlaser105gsm" StringID="IDS_MTYPE_LJ_HP_COLORLASERMATTE_105">
+          <Parameter Value="HP Matte 105" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:HPColorLaser105gsm" />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="HPPremiumChoiceMatte120g" ClassifyingID="custom-media-type-hppremium-120gsm" StringID="IDS_MTYPE_LJ_HP_PREMIUM_CHOICE_MATTE_120">
+          <Parameter Value="HP Matte 120" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:HPPremium_120gsm" />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="HPBrochureMatte150g" ClassifyingID="custom-media-type-hpsuperiormatte160gsm" StringID="IDS_HP_BROCHURE_MATTE_150G_CSL">
+          <Parameter Value="HP Matte 160" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:HPSuperiorMatte160gsm" />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="HPCoverMatte200g" ClassifyingID="custom-media-type-hpmattecover200gsm" StringID="IDS_MTYPE_HP_MATTE_200G">
+          <Parameter Value="HPCoverMatte" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:HPMatteCover200gsm" />
+            <oemupdf:ForceManualDuplex />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="HPProfessionalSoftGloss120g" ClassifyingID="custom-media-type-hpprofessionalsoftgloss120gsm" StringID="IDS_MTYPE_LJ_HP_PROFESSIONAL_SOFT_GLOSS_120">
+          <Parameter Value="HP Soft Gloss 120" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:HPProfessionalSoftGloss120gsm" />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="HPPremiumPresentationGlossy120g" ClassifyingID="custom-media-type-hpprofessionalglossy130gsm" StringID="IDS_HP_PREMIUM_PRESENTATION_GLOSSY_120G_CSL">
+          <Parameter Value="HP Glossy 130" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:HPProfessionalGlossy130gsm" />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="HPBrochureGlossy150g" ClassifyingID="custom-media-type-hpsuperiorglossy160gsm" StringID="IDS_HP_BROCHURE_GLOSSY_150G_CSL">
+          <Parameter Value="HP Glossy 160" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:HPSuperiorGlossy160gsm" />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="HPBrochureGlossy200g" ClassifyingID="custom-media-type-hpglossphoto220gsm" StringID="IDS_HP_BROCHURE_GLOSSY_200G_CSL">
+          <Parameter Value="HP Glossy 220" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:HPGlossPhoto220gsm" />
+            <oemupdf:ForceManualDuplex />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="Light6074g" ClassifyingID="custom-media-type-light" StringID="IDS_MTYPE_LJ_LIGHT_60_70">
+          <Parameter Value="Light" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:light" />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="Intermediate8595g" ClassifyingID="custom-media-type-intermediate" StringID="IDS_MTYPE_LJ_INTERMEDIATE_85_95">
+          <Parameter Value="Intermediate" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:intermediate" />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="MidWeight96110g" ClassifyingID="custom-media-type-midweight" StringID="IDS_MTYPE_LJ_HP_MID_WEIGHT_96_110">
+          <Parameter Value="Mid Weight" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:midweight" />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="Heavy111130g" ClassifyingID="custom-media-type-heavy" StringID="IDS_MTYPE_HEAVY_111_130">
+          <Parameter Value="Heavy" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:heavy" />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="ExtraHeavy131175g" ClassifyingID="custom-media-type-extraheavy" StringID="IDS_MTYPE_EXTRAHEAVY_131_175">
+          <Parameter Value="Extra Heavy" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:extraHeavy" />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="Cardstock176220g" ClassifyingID="custom-media-type-cardstock" StringID="IDS_MTYPE_LJ_CARDSTOCK_176_220">
+          <Parameter Value="Card Stock" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:CardStock" />
+            <oemupdf:ForceManualDuplex />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="HeavyGlossy111130g" ClassifyingID="custom-media-type-heavyglossy" StringID="IDS_MTYPE_HEAVYGLOSSY_111_130">
+          <Parameter Value="Heavy Gloss" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:heavyGlossy" />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="ExtraHeavyGlossy131175g" ClassifyingID="custom-media-type-extraheavygloss" StringID="IDS_MTYPE_EXTRAHEAVY_GLOOSY_131_175">
+          <Parameter Value="Extra Heavy Gloss" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:extraHeavyGloss" />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="MidWeightGlossy96110g" ClassifyingID="custom-media-type-midweightglossy" StringID="IDS_MTYPE_LJ_HP_MID_WEIGHTgLOSSY_96_110">
+          <Parameter Value="Gloss" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:midweightGlossy" />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="CardGlossy176220g" ClassifyingID="custom-media-type-cardstockglossy" StringID="IDS_MTYPE_LJ_CARD_GLOSSY_176_220">
+          <Parameter Value="Card Glossy" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:cardstockGlossy" />
+            <oemupdf:ForceManualDuplex />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="Transparency" ClassifyingID="custom-media-type-transparency" StringID="IDS_MTYPE_TRANSPARENCY">
+          <Parameter Value="Transparency" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:transparency" />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="Labels" ClassifyingID="custom-media-type-labels" StringID="IDS_LABELS_TYPE">
+          <Parameter Value="Labels" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:Label" />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="Letterhead" ClassifyingID="custom-media-type-stationery-letterhead" StringID="IDS_LETTERHEAD_TYPE">
+          <Parameter Value="Letterhead" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:stationery-letterhead" />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="Envelope" ClassifyingID="custom-media-type-envelope" StringID="IDS_MTYPE_ENVELOPE">
+          <Parameter Value="Envelope" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:EnvelopePlain" />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="HeavyEnvelope" ClassifyingID="custom-media-type-heavyenvelope" StringID="IDS_MTYPE_LJ_HEAVY_ENVELOPE">
+          <Parameter Value="Heavy Envelope" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:HeavyEnvelope" />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="Preprinted" ClassifyingID="custom-media-type-stationery-preprinted" StringID="IDS_PREPRINTED_TYPE">
+          <Parameter Value="Preprinted" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:stationery-preprinted" />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="Prepunched" ClassifyingID="custom-media-type-stationery-prepunched" StringID="IDS_PREPUNCHED_TYPE">
+          <Parameter Value="Prepunched" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:stationery-prepunched" />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="Colored" ClassifyingID="custom-media-type-color" StringID="IDS_MTYPE_COLORED">
+          <Parameter Value="Color" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:color" />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="Bond" ClassifyingID="custom-media-type-bond" StringID="IDS_BOND_TYPE">
+          <Parameter Value="Bond" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:Bond" />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="Recycled" ClassifyingID="custom-media-type-recycled" StringID="IDS_RECYCLED_TYPE">
+          <Parameter Value="Recycled" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:recycled" />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="Rough" ClassifyingID="custom-media-type-rough" StringID="IDS_ROUGH_TYPE">
+          <Parameter Value="Rough" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:rough" />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="HeavyRough" ClassifyingID="custom-media-type-heavyrough" StringID="IDS_MTYPE_HEAVY_ROUGH">
+          <Parameter Value="Heavy Rough" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:heavyRough" />
+          </VendorExtension>
+        </MediaTypeRecord>
+        <MediaTypeRecord ID="OpaqueFilm" ClassifyingID="custom-media-type-filmopaque" StringID="IDS_MTYPE_OPAQUE_FILM">
+          <Parameter Value="Gloss Film" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:filmOpaque" />
+          </VendorExtension>
+        </MediaTypeRecord>
+      </MediaType>
+      <PCMediaType ExpectedMediaTypes="36" ID="PCMediaType" DefaultSetting="AutoSelectMediaType" StringID="IDS_PAPER_TYPE_WTCL">
+        <PCMediaTypeRecord ID="AutoSelectMediaType" ClassifyingID="auto-select" StringID="IDS_UNSPECIFIED_TYPE">
+          <Parameter Value="Unknown" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:AutoSelect" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="Plain" ClassifyingID="custom-media-type-plain" StringID="IDS_PLAIN_TYPE">
+          <Parameter Value="Plain" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:Plain" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="HPEcoFFICIENT" ClassifyingID="custom-media-type-hpecosmartlite" StringID="IDS_HP_ECOFFICIENT">
+          <Parameter Value="HPEcoSmartLite" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:HPEcoSMARTLite" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="HPLaserJet90gsm" ClassifyingID="custom-media-type-hplaserjet90gsm" StringID="IDS_MTYPE_LJ_HP_LASERJET_90_G">
+          <Parameter Value="HP Matte 90" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:HPLaserJet90gsm" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="HPColorLaserMatte105g" ClassifyingID="custom-media-type-hpcolorlaser105gsm" StringID="IDS_MTYPE_LJ_HP_COLORLASERMATTE_105">
+          <Parameter Value="HP Matte 105" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:HPColorLaser105gsm" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="HPPremiumChoiceMatte120g" ClassifyingID="custom-media-type-hppremium-120gsm" StringID="IDS_MTYPE_LJ_HP_PREMIUM_CHOICE_MATTE_120">
+          <Parameter Value="HP Matte 120" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:HPPremium_120gsm" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="HPPremiumPresentationMatte120g" ClassifyingID="custom-media-type-hppre-presentationmatte" StringID="IDS_MTYPE_HP_PREM_PRES_MATTE_120">
+          <Parameter Value="HPPremMatte" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:HPPremiumPresentationMatte" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="HPBrochureMatte150g" ClassifyingID="custom-media-type-hpsuperiormatte160gsm" StringID="IDS_HP_BROCHURE_MATTE_150G_CSL">
+          <Parameter Value="HP Matte 160" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:HPSuperiorMatte160gsm" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="HPCoverMatte200g" ClassifyingID="custom-media-type-hpmattecover200gsm" StringID="IDS_MTYPE_HP_MATTE_200G">
+          <Parameter Value="HPCoverMatte" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:HPMatteCover200gsm" />
+            <oemupdf:ForceManualDuplex />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="HPMattePhoto200g" ClassifyingID="custom-media-type-hpmattephoto200gsm" StringID="IDS_MTYPE_HP_MATTE_PHOTO_200G">
+          <Parameter Value="HPCoverMatte" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:HPMattePhoto200gsm" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="HPPresentationSoftGloss120g" ClassifyingID="custom-media-type-hppresentationsoftgloss120gsm" StringID="IDS_MTYPE_HP_PRESENTATION_SOFT_GLOS120">
+          <Parameter Value="HP Soft Gloss 120" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:HPPresentationSoftGloss120gsm" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="HPProfessionalSoftGloss120g" ClassifyingID="custom-media-type-hpprofessionalsoftgloss120gsm" StringID="IDS_MTYPE_LJ_HP_PROFESSIONAL_SOFT_GLOSS_120">
+          <Parameter Value="HP Soft Gloss 120" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:HPProfessionalSoftGloss120gsm" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="HPPremiumPresentationGlossy120g" ClassifyingID="custom-media-type-hpprofessionalglossy130gsm" StringID="IDS_HP_PREMIUM_PRESENTATION_GLOSSY_120G_CSL">
+          <Parameter Value="HP Glossy 130" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:HPProfessionalGlossy130gsm" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="HPBrochureGlossy150g" ClassifyingID="custom-media-type-hpsuperiorglossy160gsm" StringID="IDS_HP_BROCHURE_GLOSSY_150G_CSL">
+          <Parameter Value="HP Glossy 160" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:HPSuperiorGlossy160gsm" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="HPBrochureGlossy200g" ClassifyingID="custom-media-type-hpglossphoto220gsm" StringID="IDS_HP_BROCHURE_GLOSSY_200G_CSL">
+          <Parameter Value="HP Glossy 220" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:HPGlossPhoto220gsm" />
+            <oemupdf:ForceManualDuplex />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="Light6074g" ClassifyingID="custom-media-type-light" StringID="IDS_MTYPE_LJ_LIGHT_60_70">
+          <Parameter Value="Light" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:light" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="Intermediate8595g" ClassifyingID="custom-media-type-intermediate" StringID="IDS_MTYPE_LJ_INTERMEDIATE_85_95">
+          <Parameter Value="Intermediate" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:intermediate" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="MidWeight96110g" ClassifyingID="custom-media-type-midweight" StringID="IDS_MTYPE_LJ_HP_MID_WEIGHT_96_110">
+          <Parameter Value="Mid Weight" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:midweight" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="Heavy111130g" ClassifyingID="custom-media-type-heavy" StringID="IDS_MTYPE_HEAVY_111_130">
+          <Parameter Value="Heavy" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:heavy" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="ExtraHeavy131175g" ClassifyingID="custom-media-type-extraheavy" StringID="IDS_MTYPE_EXTRAHEAVY_131_175">
+          <Parameter Value="Extra Heavy" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:extraHeavy" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="Cardstock176220g" ClassifyingID="custom-media-type-cardstock" StringID="IDS_MTYPE_LJ_CARDSTOCK_176_220">
+          <Parameter Value="Card Stock" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:CardStock" />
+            <oemupdf:ForceManualDuplex />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="HeavyGlossy111130g" ClassifyingID="custom-media-type-heavyglossy" StringID="IDS_MTYPE_HEAVYGLOSSY_111_130">
+          <Parameter Value="Heavy Gloss" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:heavyGlossy" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="ExtraHeavyGlossy131175g" ClassifyingID="custom-media-type-extraheavygloss" StringID="IDS_MTYPE_EXTRAHEAVY_GLOOSY_131_175">
+          <Parameter Value="Extra Heavy Gloss" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:extraHeavyGloss" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="MidWeightGlossy96110g" ClassifyingID="custom-media-type-midweightglossy" StringID="IDS_MTYPE_LJ_HP_MID_WEIGHTgLOSSY_96_110">
+          <Parameter Value="Gloss" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:midweightGlossy" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="CardGlossy176220g" ClassifyingID="custom-media-type-cardstockglossy" StringID="IDS_MTYPE_LJ_CARD_GLOSSY_176_220">
+          <Parameter Value="Card Glossy" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:cardstockGlossy" />
+            <oemupdf:ForceManualDuplex />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="Transparency" ClassifyingID="custom-media-type-transparency" StringID="IDS_MTYPE_TRANSPARENCY">
+          <Parameter Value="Transparency" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:transparency" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="Labels" ClassifyingID="custom-media-type-labels" StringID="IDS_LABELS_TYPE">
+          <Parameter Value="Labels" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:Label" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="Letterhead" ClassifyingID="custom-media-type-stationery-letterhead" StringID="IDS_LETTERHEAD_TYPE">
+          <Parameter Value="Letterhead" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:stationery-letterhead" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="Envelope" ClassifyingID="custom-media-type-envelope" StringID="IDS_MTYPE_ENVELOPE">
+          <Parameter Value="Envelope" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:EnvelopePlain" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="HeavyEnvelope" ClassifyingID="custom-media-type-heavyenvelope" StringID="IDS_MTYPE_LJ_HEAVY_ENVELOPE">
+          <Parameter Value="Heavy Envelope" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:HeavyEnvelope" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="Preprinted" ClassifyingID="custom-media-type-stationery-preprinted" StringID="IDS_PREPRINTED_TYPE">
+          <Parameter Value="Preprinted" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:stationery-preprinted" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="Prepunched" ClassifyingID="custom-media-type-stationery-prepunched" StringID="IDS_PREPUNCHED_TYPE">
+          <Parameter Value="Prepunched" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:stationery-prepunched" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="Colored" ClassifyingID="custom-media-type-color" StringID="IDS_MTYPE_COLORED">
+          <Parameter Value="Color" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:color" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="LightBond" ClassifyingID="custom-media-type-lightbond" StringID="IDS_MTYPE_LIGHT_BOND">
+          <Parameter Value="Light Bond" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:lightBond" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="Bond" ClassifyingID="custom-media-type-bond" StringID="IDS_BOND_TYPE">
+          <Parameter Value="Bond" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:Bond" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="Recycled" ClassifyingID="custom-media-type-recycled" StringID="IDS_RECYCLED_TYPE">
+          <Parameter Value="Recycled" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:recycled" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="Rough" ClassifyingID="custom-media-type-rough" StringID="IDS_ROUGH_TYPE">
+          <Parameter Value="Rough" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:rough" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="HeavyRough" ClassifyingID="custom-media-type-heavyrough" StringID="IDS_MTYPE_HEAVY_ROUGH">
+          <Parameter Value="Heavy Rough" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:heavyRough" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+        <PCMediaTypeRecord ID="OpaqueFilm" ClassifyingID="custom-media-type-filmopaque" StringID="IDS_MTYPE_OPAQUE_FILM">
+          <Parameter Value="Gloss Film" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:filmOpaque" />
+          </VendorExtension>
+        </PCMediaTypeRecord>
+      </PCMediaType>
+      <MediaInputTrayCheck ID="MediaInputTrayCheck" DefaultSetting="PrinterAutoSelectInputTray" StringID="IDS_PAPER_SOURCE_WTCL">
+        <MediaInputTrayCheckRecord ID="PrinterAutoSelectInputTray" ClassifyingID="device-setting" StringID="IDS_PRINTER_AUTO_SELECT" CustomSizeMinimumSize="custom_min_98.0x148.1mm" CustomSizeMaximumSize="custom_max_215.9x355.6mm">
+          <Parameter Value="1" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:UsePrinterSetting" />
+          </VendorExtension>
+        </MediaInputTrayCheckRecord>
+        <MediaInputTrayCheckRecord ID="ManualFeed" ClassifyingID="manual" StringID="IDS_SOURCE_IS_MANUAL" CustomSizeMinimumSize="custom_min_98.0x148.1mm" CustomSizeMaximumSize="custom_max_215.9x355.6mm">
+          <Parameter Value="2" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="psk:Manual" />
+            <hp:DriverID value="0" />
+          </VendorExtension>
+        </MediaInputTrayCheckRecord>
+        <MediaInputTrayCheckRecord ID="Tray1" ClassifyingID="tray-1" StringID="IDS_TRAY1" CustomSizeMinimumSize="custom_min_98.0x148.1mm" CustomSizeMaximumSize="custom_max_215.9x355.6mm">
+          <Parameter Value="3" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:Tray1" />
+          </VendorExtension>
+        </MediaInputTrayCheckRecord>
+        <MediaInputTrayCheckRecord ID="Tray2" ClassifyingID="tray-2" StringID="IDS_TRAY2" CustomSizeMinimumSize="custom_min_98.0x148.1mm" CustomSizeMaximumSize="custom_max_215.9x355.6mm">
+          <Parameter Value="4" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:Tray2" />
+          </VendorExtension>
+        </MediaInputTrayCheckRecord>
+        <MediaInputTrayCheckRecord ID="Tray3" ClassifyingID="tray-3" StringID="IDS_TRAY3" CustomSizeMinimumSize="custom_min_98.0x148.1mm" CustomSizeMaximumSize="custom_max_215.9x355.6mm">
+          <Parameter Value="5" />
+          <VendorExtension>
+            <hp:PrintTicketOptionName name="hp:Tray3" />
+          </VendorExtension>
+        </MediaInputTrayCheckRecord>
+      </MediaInputTrayCheck>
+      <Sides ID="Sides" DefaultSetting="Simplex" DeviceFeature="true">
+        <SidesRecord ID="Simplex" ClassifyingID="OneSided" StringID="IDS_NO" />
+        <SidesRecord ID="LongEdge" ClassifyingID="TwoSidedLongEdge" StringID="IDS_YES_FLIP_OVER" />
+        <SidesRecord ID="ShortEdge" ClassifyingID="TwoSidedShortEdge" StringID="IDS_FLIP_UP" />
+      </Sides>
+      <NumberUp ID="NumberUp" DefaultSetting="NUp1" StringID="IDS_PAGES_PER_SHEET">
+        <NumberUpRecord ID="NUp1" ClassifyingID="NUp_1x1" StringID="IDS_1_PAGE_PER_SHEET" />
+        <NumberUpRecord ID="NUp2" ClassifyingID="NUp_2x1" StringID="IDS_2_PAGES_PER_SHEET" />
+        <NumberUpRecord ID="NUp4" ClassifyingID="NUp_2x2" StringID="IDS_4_PAGES_PER_SHEET" />
+        <NumberUpRecord ID="NUp6" ClassifyingID="NUp_3x2" StringID="IDS_6_PAGES_PER_SHEET" />
+        <NumberUpRecord ID="NUp9" ClassifyingID="NUp_3x3" StringID="IDS_9_PAGES_PER_SHEET" />
+        <NumberUpRecord ID="NUp16" ClassifyingID="NUp_4x4" StringID="IDS_16_PAGES_PER_SHEET" />
+      </NumberUp>
+      <FinishingBooklet ID="FinishingBooklet" DefaultSetting="BookletOff" StringID="IDS_BOOKLET_PRINTING_SUI">
+        <FinishingBookletRecord ID="BookletOff" ClassifyingID="BookletOff" StringID="IDS_BOOKLET_PRINTING_OFF" />
+        <FinishingBookletRecord ID="BookletOn" ClassifyingID="BookletMaker" StringID="IDS_ON" />
+      </FinishingBooklet>
+      <FinishingBookletBinding ID="FinishingBookletBinding" DefaultSetting="BindingLeft" StringID="IDS_BOOKLET_PRINTING_SUI">
+        <FinishingBookletBindingRecord ID="BindingLeft" ClassifyingID="Left" StringID="IDS_BOOKLET_PRINTING_LEFT_EDGE_Q207" />
+        <FinishingBookletBindingRecord ID="BindingRight" ClassifyingID="Right" StringID="IDS_BOOKLET_PRINTING_RIGHT_EDGE_Q207" />
+      </FinishingBookletBinding>
+      <GenericFeature ID="JobImageType" DefaultSetting="CompressionPng" StringID="STR_NO_LOCALIZATION_COMPRESSION">
+        <GenericFeatureRecord ID="CompressionDoNotSelect" StringID="STR_NO_LOCALIZATION_NOSELECTION" />
+        <GenericFeatureRecord ID="CompressionJpegHigh" StringID="STR_NO_LOCALIZATION_JPEG_HIGH" />
+        <GenericFeatureRecord ID="CompressionJpegMedium" StringID="STR_NO_LOCALIZATION_JPEG_MEDIUM" />
+        <GenericFeatureRecord ID="CompressionJpegLow" StringID="STR_NO_LOCALIZATION_JPEG_LOW" />
+        <GenericFeatureRecord ID="CompressionPng" StringID="STR_NO_LOCALIZATION_PNG" />
+      </GenericFeature>
+      <GenericFeature ID="RGBColor" DefaultSetting="PrinterDefault" StringID="IDS_RGB_COLOR_HK">
+        <GenericFeatureRecord ID="PrinterDefault" StringID="IDS_PRINTER_DEFAULT">
+          <VendorExtension>
+            <hp:CustomCommand usage="PhysicalPage" type="xsd:string" value="\C0\00\F8\78\58" />
+          </VendorExtension>
+        </GenericFeatureRecord>
+        <GenericFeatureRecord ID="RGBColorRGB" StringID="IDS_OFFICE_SRGB">
+          <VendorExtension>
+            <hp:CustomCommand usage="PhysicalPage" type="xsd:string" value="\C0\81\F8\78\58" />
+          </VendorExtension>
+        </GenericFeatureRecord>
+        <GenericFeatureRecord ID="RGBColorCustomProfile" StringID="IDS_CUSTOM_RGB">
+          <VendorExtension>
+            <hp:CustomCommand usage="PhysicalPage" type="xsd:string" value="\C0\82\F8\78\58" />
+          </VendorExtension>
+        </GenericFeatureRecord>
+        <GenericFeatureRecord ID="RGBColorSRGB" StringID="IDS_PHOTO_SRGB">
+          <VendorExtension>
+            <hp:CustomCommand usage="PhysicalPage" type="xsd:string" value="\C0\83\F8\78\58" />
+          </VendorExtension>
+        </GenericFeatureRecord>
+        <GenericFeatureRecord ID="RGBColorAdobeRGB" StringID="IDS_PHOTO_ADOBE_RGB_1998">
+          <VendorExtension>
+            <hp:CustomCommand usage="PhysicalPage" type="xsd:string" value="\C0\84\F8\78\58" />
+          </VendorExtension>
+        </GenericFeatureRecord>
+        <GenericFeatureRecord ID="RGBColorNone" StringID="IDS_DEVICE_RGB">
+          <VendorExtension>
+            <hp:CustomCommand usage="PhysicalPage" type="xsd:string" value="\C0\85\F8\78\58" />
+          </VendorExtension>
+        </GenericFeatureRecord>
+        <GenericFeatureRecord ID="RGBColorVivid" StringID="IDS_VIVID_SRGB">
+          <VendorExtension>
+            <hp:CustomCommand usage="PhysicalPage" type="xsd:string" value="\C0\87\F8\78\58" />
+          </VendorExtension>
+        </GenericFeatureRecord>
+      </GenericFeature>
+      <GenericFeature ID="JobStorage" DefaultSetting="JobStorageOff" StringID="IDS_JR_MODE">
+        <GenericFeatureRecord ID="JobStorageOff" ClassifyingID="JobStorageOff" StringID="IDS_OFF" />
+        <GenericFeatureRecord ID="JobStorageProofAndHold" StringID="IDS_JR_PROOF_HOLD" />
+        <GenericFeatureRecord ID="JobStoragePersonalJob" StringID="IDS_STORE_JOB_UNTIL_PRINTED" />
+        <GenericFeatureRecord ID="JobStorageQuickCopy" StringID="IDS_JR_QUICK_COPY" />
+        <GenericFeatureRecord ID="JobStorageStoreJob" StringID="IDS_JR_STORED_JOB" />
+      </GenericFeature>
+      <GenericFeature ID="JobStorageJobName" DefaultSetting="JobNameAuto" StringID="IDS_JR_JOB_NAME">
+        <GenericFeatureRecord ID="JobNameAuto" StringID="IDS_RB_AUTOMATIC" />
+        <GenericFeatureRecord ID="JobNameCustom" StringID="IDS_CUSTOM" />
+      </GenericFeature>
+      <GenericFeature ID="JobStorageUserName" DefaultSetting="UserNameCurrent" StringID="IDS_JR_USER_NAME">
+        <GenericFeatureRecord ID="UserNameCurrent" StringID="IDS_HK_USER_NAME" />
+        <GenericFeatureRecord ID="UserNameCustom" StringID="IDS_CUSTOM" />
+      </GenericFeature>
+      <GenericFeature ID="JobStoragePrivateSecure" DefaultSetting="PrivateSecureOff" StringID="IDS_MAKE_JOB_PRIVATE_SECURE">
+        <GenericFeatureRecord ID="PrivateSecureOff" StringID="IDS_NONE_FEM" />
+        <GenericFeatureRecord ID="PrivateSecurePINtoPrint" StringID="IDS_PIN_TO_PRINT" />
+        <GenericFeatureRecord ID="PrivateSecureEncryptJob" StringID="IDS_ENCRYPT_JOB_WITH_PASSWORD" />
+      </GenericFeature>
+      <GenericFeature ID="JobStorageJobNameExist" DefaultSetting="JobNameExistsUse" StringID="IDS_IF_JOB_NAME_EXISTS">
+        <GenericFeatureRecord ID="JobNameExistsUse" StringID="IDS_USE_JOB_NAME">
+          <VendorExtension>
+            <hp:PJLCommand value="@PJL SET DUPLICATEJOB=APPEND" />
+          </VendorExtension>
+        </GenericFeatureRecord>
+        <GenericFeatureRecord ID="JobNameExistsReplace" StringID="IDS_REPLACE_EXISTING_FILE">
+          <VendorExtension>
+            <hp:PJLCommand value="@PJL SET DUPLICATEJOB = REPLACE" />
+          </VendorExtension>
+        </GenericFeatureRecord>
+      </GenericFeature>
+      <GenericFeature ID="JobStorageSavePassword" DefaultSetting="SavePasswordOff" StringID="IDS_SAVE_DEFAULT_PASSWORD">
+        <GenericFeatureRecord ID="SavePasswordOff" StringID="IDS_OFF" />
+        <GenericFeatureRecord ID="SavePasswordOn" StringID="IDS_ON" />
+      </GenericFeature>
+      <GenericFeature ID="JobStorageCustomUserName" DefaultSetting="" StringID="IDS_JS1_CUSTOM">
+        <VariableStringValue ID="CustomUserName" MinimumLength="1" MaximumLength="16" ValidCharacters="AlphaNumeric" />
+        <VendorExtension>
+          <hp:PJLCommand value="@PJL SET USERNAME=&quot;%s&quot;" />
+        </VendorExtension>
+      </GenericFeature>
+      <GenericFeature ID="JobStorageCustomJobName" DefaultSetting="" StringID="IDS_JS2_CUSTOM">
+        <VariableStringValue ID="CustomJobName" MinimumLength="1" MaximumLength="24" ValidCharacters="AlphaNumeric" />
+        <VendorExtension>
+          <hp:PJLCommand value="@PJL SET JOBNAME=&quot;%s&quot;" />
+        </VendorExtension>
+      </GenericFeature>
+      <GenericFeature ID="JobStoragePassword" DefaultSetting="" StringID="IDS_PASSWORD">
+        <VariableStringValue ID="Password" MinimumLength="4" MaximumLength="32" ValidCharacters="AlphaNumeric" />
+      </GenericFeature>
+      <GenericFeature ID="JobStoragePIN" DefaultSetting="" StringID="IDS_HK_PIN">
+        <VariableStringValue ID="PIN" MinimumLength="4" MaximumLength="4" ValidCharacters="Numeric" />
+        <VendorExtension>
+          <hp:PJLCommand value="@PJL SET HOLDKEY=&quot;%s&quot;" />
+        </VendorExtension>
+      </GenericFeature>
+      <GenericFeature ID="DefaultDuplexStandard" DefaultSetting="DefaultDuplexOff" StringID="IDS_EMPTY">
+        <GenericFeatureRecord ID="DefaultDuplexOff" StringID="IDS_OFF" />
+        <GenericFeatureRecord ID="DefaultDuplexOn" StringID="IDS_ON" />
+      </GenericFeature>
+      <GenericFeature ID="HPEasyColor" DefaultSetting="HPEasyColorOn" StringID="IDS_HP_EASY_COLOR_CSL">
+        <GenericFeatureRecord ID="HPEasyColorOff" StringID="IDS_OFF" />
+        <GenericFeatureRecord ID="HPEasyColorOn" StringID="IDS_ON" />
+      </GenericFeature>
+      <GenericFeature ID="PCEnable" DefaultSetting="On" StringID="IDS_PC_ENABLE">
+        <GenericFeatureRecord ID="Off" StringID="IDS_OFF" />
+        <GenericFeatureRecord ID="On" StringID="IDS_ON" />
+      </GenericFeature>
+      <GenericFeature ID="PrintContractversionMinor" DefaultSetting="0" StringID="IDS_EMPTY">
+        <GenericFeatureRecord ID="0" StringID="IDS_EMPTY" />
+        <GenericFeatureRecord ID="1" StringID="IDS_EMPTY" />
+        <GenericFeatureRecord ID="2" StringID="IDS_EMPTY" />
+        <GenericFeatureRecord ID="3" StringID="IDS_EMPTY" />
+        <GenericFeatureRecord ID="4" StringID="IDS_EMPTY" />
+        <GenericFeatureRecord ID="5" StringID="IDS_EMPTY" />
+        <GenericFeatureRecord ID="6" StringID="IDS_EMPTY" />
+        <GenericFeatureRecord ID="7" StringID="IDS_EMPTY" />
+        <GenericFeatureRecord ID="72" StringID="IDS_EMPTY" />
+        <GenericFeatureRecord ID="8" StringID="IDS_EMPTY" />
+        <GenericFeatureRecord ID="9" StringID="IDS_EMPTY" />
+      </GenericFeature>
+      <GenericFeature ID="PrintContractversionMajor" DefaultSetting="0" StringID="IDS_EMPTY">
+        <GenericFeatureRecord ID="0" StringID="IDS_EMPTY" />
+        <GenericFeatureRecord ID="1" StringID="IDS_EMPTY" />
+        <GenericFeatureRecord ID="2" StringID="IDS_EMPTY" />
+        <GenericFeatureRecord ID="3" StringID="IDS_EMPTY" />
+        <GenericFeatureRecord ID="4" StringID="IDS_EMPTY" />
+        <GenericFeatureRecord ID="5" StringID="IDS_EMPTY" />
+        <GenericFeatureRecord ID="6" StringID="IDS_EMPTY" />
+        <GenericFeatureRecord ID="7" StringID="IDS_EMPTY" />
+        <GenericFeatureRecord ID="8" StringID="IDS_EMPTY" />
+        <GenericFeatureRecord ID="9" StringID="IDS_EMPTY" />
+      </GenericFeature>
+      <GenericFeature ID="RasterCompression" DefaultSetting="Automatic" StringID="IDS_RASTER_COMPRESSION">
+        <GenericFeatureRecord ID="Automatic" StringID="IDS_AUTOMATIC_CE" />
+        <GenericFeatureRecord ID="BestQuality" StringID="IDS_PQ_BEST_QUALITY" />
+        <GenericFeatureRecord ID="MaxCompression" StringID="IDS_MAXIMUM_COMPRESSION" />
+      </GenericFeature>
+      <GenericFeature ID="IgnoreDminfo" DefaultSetting="DminfoOn" StringID="IDS_PC_ENABLE">
+        <GenericFeatureRecord ID="DminfoOff" StringID="IDS_OFF" />
+        <GenericFeatureRecord ID="DminfoOn" StringID="IDS_ON" />
+      </GenericFeature>
+      <GenericFeature ID="EnableBigDataCollection" DefaultSetting="BigDataCollectionOn" StringID="IDS_EMPTY">
+        <GenericFeatureRecord ID="BigDataCollectionOff" StringID="IDS_OFF" />
+        <GenericFeatureRecord ID="BigDataCollectionOn" StringID="IDS_ON" />
+      </GenericFeature>
+      <GenericFeature ID="DocumentTintTesting" DefaultSetting="Disabled" StringID="IDS_TINT_TESTING">
+        <GenericFeatureRecord ID="Disabled" StringID="IDS_TINTTESTING_DISABLED" />
+        <GenericFeatureRecord ID="JPEGARPassthrough" StringID="IDS_JPEG_AR_PASSTHROUGH" />
+        <GenericFeatureRecord ID="RLTCSCPassthrough" StringID="IDS_RLT_CSC_PASSTHROUGH" />
+        <GenericFeatureRecord ID="ImageResamplingPassthrough" StringID="IDS_IMAGE_RESAMPLING_PASSTHROUGH" />
+        <GenericFeatureRecord ID="ImageHealingPassthrough" StringID="IDS_IMAGE_HEALING_PASSTHROUGH" />
+      </GenericFeature>
+      <GenericFeature ID="DocumentMargins" DefaultSetting="Standard" StringID="IDS_EDGE_TO_EDGE">
+        <GenericFeatureRecord ID="Standard" StringID="IDS_OFF">
+          <VendorExtension>
+            <hp:PJLCommand value="@PJL SET EDGETOEDGE=NO" />
+          </VendorExtension>
+        </GenericFeatureRecord>
+        <GenericFeatureRecord ID="Alternate" StringID="IDS_ON">
+          <VendorExtension>
+            <hp:PJLCommand value="@PJL SET EDGETOEDGE=YES" />
+          </VendorExtension>
+        </GenericFeatureRecord>
+      </GenericFeature>
+      <CompositeFeature ID="Shortcuts">
+        <CompositeFeatureRecord ID="_FactoryDefaults" StringID="IDS_FACTORY_DEFAULTS_LASER">
+          <GlobalizedComponent FeatureID="MediaSize" FeatureSetting="_Globalized_MediaSize" />
+          <Component FeatureID="MediaInputTrayCheck" FeatureSetting="PrinterAutoSelectInputTray" />
+          <Component FeatureID="PCMediaType" FeatureSetting="AutoSelectMediaType" />
+          <GlobalizedComponent FeatureID="Sides" FeatureSetting="_Globalized_Duplex" />
+          <Component FeatureID="NumberUp" FeatureSetting="NUp1" />
+          <Component FeatureID="Color" FeatureSetting="ColorOutput" />
+        </CompositeFeatureRecord>
+        <CompositeFeatureRecord ID="_GeneralEveryday" StringID="IDS_GENERAL_EVERYDAY_PRINTING">
+          <GlobalizedComponent FeatureID="MediaSize" FeatureSetting="_Globalized_MediaSize" />
+          <Component FeatureID="MediaInputTrayCheck" FeatureSetting="PrinterAutoSelectInputTray" />
+          <Component FeatureID="PCMediaType" FeatureSetting="AutoSelectMediaType" />
+          <GlobalizedComponent FeatureID="Sides" FeatureSetting="_Globalized_Duplex" />
+          <Component FeatureID="NumberUp" FeatureSetting="NUp1" />
+          <Component FeatureID="Color" FeatureSetting="ColorOutput" />
+        </CompositeFeatureRecord>
+        <CompositeFeatureRecord ID="_envelope_48" StringID="IDS_MSIZE_GROUP_ENVELOPES">
+          <Component FeatureID="MediaSize" FeatureSetting="Env10" />
+          <Component FeatureID="MediaInputTrayCheck" FeatureSetting="PrinterAutoSelectInputTray" />
+          <Component FeatureID="PCMediaType" FeatureSetting="Envelope" />
+          <Component FeatureID="Color" FeatureSetting="ColorOutput" />
+          <Component FeatureID="Sides" FeatureSetting="Simplex" Hidden="true" />
+        </CompositeFeatureRecord>
+        <CompositeFeatureRecord ID="_CardstockHeavy" StringID="IDS_CARDSTOCK_HEAVY_PRINTING">
+          <GlobalizedComponent FeatureID="MediaSize" FeatureSetting="_Globalized_MediaSize" />
+          <Component FeatureID="MediaInputTrayCheck" FeatureSetting="PrinterAutoSelectInputTray" />
+          <Component FeatureID="PCMediaType" FeatureSetting="HPCoverMatte200g" />
+          <Component FeatureID="Sides" FeatureSetting="Simplex" />
+          <Component FeatureID="Color" FeatureSetting="ColorOutput" />
+        </CompositeFeatureRecord>
+        <CompositeFeatureRecord ID="_Labels" StringID="IDS_LABELS_TYPE">
+          <GlobalizedComponent FeatureID="MediaSize" FeatureSetting="_Globalized_MediaSize" />
+          <Component FeatureID="MediaInputTrayCheck" FeatureSetting="PrinterAutoSelectInputTray" />
+          <Component FeatureID="PCMediaType" FeatureSetting="Labels" />
+          <Component FeatureID="Color" FeatureSetting="ColorOutput" />
+          <Component FeatureID="Sides" FeatureSetting="Simplex" Hidden="true" />
+        </CompositeFeatureRecord>
+        <CompositeFeatureRecord ID="_Transparancy" StringID="IDS_PRESETS_EXTERNAL_TRANSPARENCIES">
+          <GlobalizedComponent FeatureID="MediaSize" FeatureSetting="_Globalized_MediaSize" />
+          <Component FeatureID="MediaInputTrayCheck" FeatureSetting="PrinterAutoSelectInputTray" />
+          <Component FeatureID="PCMediaType" FeatureSetting="Transparency" />
+          <Component FeatureID="Color" FeatureSetting="ColorOutput" />
+          <Component FeatureID="Sides" FeatureSetting="Simplex" Hidden="true" />
+        </CompositeFeatureRecord>
+        <CompositeFeatureRecord ID="_TwoSided" StringID="IDS_ECOSMART_SETTINGS_CSL">
+          <GlobalizedComponent FeatureID="MediaSize" FeatureSetting="_Globalized_MediaSize" />
+          <Component FeatureID="MediaInputTrayCheck" FeatureSetting="PrinterAutoSelectInputTray" />
+          <Component FeatureID="PCMediaType" FeatureSetting="AutoSelectMediaType" />
+          <Component FeatureID="Sides" FeatureSetting="LongEdge" />
+          <Component FeatureID="NumberUp" FeatureSetting="NUp1" />
+          <Component FeatureID="Color" FeatureSetting="ColorOutput" />
+        </CompositeFeatureRecord>
+        <CompositeFeatureRecord ID="_Booklet" StringID="IDS_BOOKLET_PRINTING_NOHK">
+          <GlobalizedComponent FeatureID="MediaSize" FeatureSetting="_Globalized_MediaSize" />
+          <Component FeatureID="MediaInputTrayCheck" FeatureSetting="PrinterAutoSelectInputTray" />
+          <Component FeatureID="PCMediaType" FeatureSetting="AutoSelectMediaType" />
+          <Component FeatureID="FinishingBooklet" FeatureSetting="BookletOn" />
+          <Component FeatureID="FinishingBookletBinding" FeatureSetting="BindingLeft" />
+          <Component FeatureID="Sides" FeatureSetting="ShortEdge" Hidden="true" />
+        </CompositeFeatureRecord>
+        <CompositeFeatureRecord ID="_Photo" StringID="IDS_SNAPSHOT_PHOTOS">
+          <GlobalizedComponent FeatureID="MediaSize" FeatureSetting="_Globalized_PhotoMediaSize" />
+          <Component FeatureID="MediaInputTrayCheck" FeatureSetting="PrinterAutoSelectInputTray" />
+          <Component FeatureID="MediaType" FeatureSetting="HPBrochureGlossy200g" />
+          <Component FeatureID="RGBColor" FeatureSetting="RGBColorSRGB" />
+        </CompositeFeatureRecord>
+      </CompositeFeature>
+      <hp:ManualDuplex ID="ManualDuplex" DefaultSetting="ManualSimplex" ManualBackSource="ManualFeed" BindingRotate="false" BackReverseOrder="true" EvensFirst="true" DuplexFallback="true" MergeCopies="true">
+        <hp:ManualDuplexRecord ID="ManualSimplex" ClassifyingID="OneSided">
+          <VendorExtension>
+            <hp:PJLCommand value="@PJL SET MANUALDUPLEX=OFF" />
+          </VendorExtension>
+        </hp:ManualDuplexRecord>
+        <hp:ManualDuplexRecord ID="ManualLongEdge" ClassifyingID="TwoSidedLongEdge">
+          <VendorExtension>
+            <hp:PJLCommand value="@PJL SET ENHANCEDMANUALDUPLEX=ON" />
+          </VendorExtension>
+          <VendorExtension>
+            <hp:PJLCommand value="@PJL SET BINDING=LONGEDGE" />
+          </VendorExtension>
+        </hp:ManualDuplexRecord>
+        <hp:ManualDuplexRecord ID="ManualShortEdge" ClassifyingID="TwoSidedShortEdge">
+          <VendorExtension>
+            <hp:PJLCommand value="@PJL SET ENHANCEDMANUALDUPLEX=ON" />
+          </VendorExtension>
+          <VendorExtension>
+            <hp:PJLCommand value="@PJL SET BINDING=SHORTEDGE" />
+          </VendorExtension>
+        </hp:ManualDuplexRecord>
+      </hp:ManualDuplex>
+      <VendorExtension>
+        <oemupdf:ColorCorrection ID="ColorCorrection" DefaultSetting="Automatic">
+          <oemupdf:ColorCorrectionRecord ID="Automatic" ClassifyingID="custom" StringID="IDS_AUTOMATIC_CE">
+            <oemupdf:ColorCorrectionSetting ObjectFeatureID="PC_GeneralEdgeControl" ObjectFeatureSetting="GeneralAuto" />
+            <oemupdf:ColorCorrectionSetting ObjectFeatureID="PC_TextGrays" ObjectFeatureSetting="TextAuto" />
+            <oemupdf:ColorCorrectionSetting ObjectFeatureID="PC_TextHalftone" ObjectFeatureSetting="TextAuto" />
+            <oemupdf:ColorCorrectionSetting ObjectFeatureID="PC_GraphicsGrays" ObjectFeatureSetting="GraphicsAuto" />
+            <oemupdf:ColorCorrectionSetting ObjectFeatureID="PC_GraphicsHalftone" ObjectFeatureSetting="GraphicsAuto" />
+            <oemupdf:ColorCorrectionSetting ObjectFeatureID="PC_ImageGrays" ObjectFeatureSetting="ImageAuto" />
+            <oemupdf:ColorCorrectionSetting ObjectFeatureID="PC_ImageHalftone" ObjectFeatureSetting="ImageAuto" />
+          </oemupdf:ColorCorrectionRecord>
+          <oemupdf:ColorCorrectionRecord ID="Manual" ClassifyingID="manual" StringID="IDS_MANUAL" />
+        </oemupdf:ColorCorrection>
+        <oemupdf:ObjectColorCorrection ID="GeneralEdgeControl" Object="General" StringID="IDS_EDGE_CONTROL" DefaultSetting="GeneralAuto">
+          <oemupdf:ObjectColorCorrectionRecord ID="GeneralOff" StringID="IDS_OFF_EDGE">
+            <oemupdf:ColorCorrectionCommand type="xsd:string" value="\C0\00\F8\1D\94" />
+            <oemupdf:ColorCorrectionCommand type="xsd:string" value="\C0\00\F8\1D\92" />
+          </oemupdf:ObjectColorCorrectionRecord>
+          <oemupdf:ObjectColorCorrectionRecord ID="GeneralAuto" StringID="IDS_AUTO">
+            <oemupdf:ColorCorrectionCommand type="xsd:string" value="" />
+          </oemupdf:ObjectColorCorrectionRecord>
+          <oemupdf:ObjectColorCorrectionRecord ID="GeneralLight" StringID="IDS_EDGE_CONTROL_LIGHT">
+            <oemupdf:ColorCorrectionCommand type="xsd:string" value="\C0\01\F8\1D\94" />
+            <oemupdf:ColorCorrectionCommand type="xsd:string" value="\C0\03\F8\1D\92" />
+          </oemupdf:ObjectColorCorrectionRecord>
+          <oemupdf:ObjectColorCorrectionRecord ID="GeneralNormal" StringID="IDS_COLOR_NORMAL">
+            <oemupdf:ColorCorrectionCommand type="xsd:string" value="\C0\01\F8\1D\94" />
+            <oemupdf:ColorCorrectionCommand type="xsd:string" value="\C0\02\F8\1D\92" />
+          </oemupdf:ObjectColorCorrectionRecord>
+          <oemupdf:ObjectColorCorrectionRecord ID="GeneralMax" StringID="IDS_EC_MAXIMUM">
+            <oemupdf:ColorCorrectionCommand type="xsd:string" value="\C0\01\F8\1D\94" />
+            <oemupdf:ColorCorrectionCommand type="xsd:string" value="\C0\01\F8\1D\92" />
+          </oemupdf:ObjectColorCorrectionRecord>
+        </oemupdf:ObjectColorCorrection>
+        <oemupdf:ObjectColorCorrection ID="TextGrays" Object="Text" StringID="IDS_NEUTRAL_GRAYS" DefaultSetting="TextAuto">
+          <oemupdf:ObjectColorCorrectionRecord ID="TextAuto" StringID="IDS_AUTO">
+            <oemupdf:ColorCorrectionCommand type="xsd:string" value="" />
+          </oemupdf:ObjectColorCorrectionRecord>
+          <oemupdf:ObjectColorCorrectionRecord ID="TextBlack" StringID="IDS_NEUTRAL_GRAYS_BLACK">
+            <oemupdf:ColorCorrectionCommand type="xsd:string" value="\C0\00\F8\1E\7E" />
+          </oemupdf:ObjectColorCorrectionRecord>
+          <oemupdf:ObjectColorCorrectionRecord ID="TextComposite" StringID="IDS_NEUTRAL_GRAYS_CMYK_GRAY">
+            <oemupdf:ColorCorrectionCommand type="xsd:string" value="\C0\01\F8\1E\7E" />
+          </oemupdf:ObjectColorCorrectionRecord>
+        </oemupdf:ObjectColorCorrection>
+        <oemupdf:ObjectColorCorrection ID="TextHalftone" Object="Text" StringID="IDS_HALFTONE" DefaultSetting="TextAuto">
+          <oemupdf:ObjectColorCorrectionRecord ID="TextAuto" StringID="IDS_AUTO">
+            <oemupdf:ColorCorrectionCommand type="xsd:string" value="" />
+          </oemupdf:ObjectColorCorrectionRecord>
+          <oemupdf:ObjectColorCorrectionRecord ID="TextSmooth" StringID="IDS_HALFTONE2">
+            <oemupdf:ColorCorrectionCommand type="xsd:string" value="\C0\02\F8\1E\6D" />
+          </oemupdf:ObjectColorCorrectionRecord>
+          <oemupdf:ObjectColorCorrectionRecord ID="TextDetail" StringID="IDS_HALFTONE1">
+            <oemupdf:ColorCorrectionCommand type="xsd:string" value="\C0\00\F8\1E\6D" />
+          </oemupdf:ObjectColorCorrectionRecord>
+        </oemupdf:ObjectColorCorrection>
+        <oemupdf:ObjectColorCorrection ID="GraphicsGrays" Object="Graphics" StringID="IDS_NEUTRAL_GRAYS" DefaultSetting="GraphicsAuto">
+          <oemupdf:ObjectColorCorrectionRecord ID="GraphicsAuto" StringID="IDS_AUTO">
+            <oemupdf:ColorCorrectionCommand type="xsd:string" value="" />
+          </oemupdf:ObjectColorCorrectionRecord>
+          <oemupdf:ObjectColorCorrectionRecord ID="GraphicsBlack" StringID="IDS_NEUTRAL_GRAYS_BLACK">
+            <oemupdf:ColorCorrectionCommand type="xsd:string" value="\C0\00\F8\1F\7E" />
+          </oemupdf:ObjectColorCorrectionRecord>
+          <oemupdf:ObjectColorCorrectionRecord ID="GraphicsComposite" StringID="IDS_NEUTRAL_GRAYS_CMYK_GRAY">
+            <oemupdf:ColorCorrectionCommand type="xsd:string" value="\C0\01\F8\1F\7E" />
+          </oemupdf:ObjectColorCorrectionRecord>
+        </oemupdf:ObjectColorCorrection>
+        <oemupdf:ObjectColorCorrection ID="GraphicsHalftone" Object="Graphics" StringID="IDS_HALFTONE" DefaultSetting="GraphicsAuto">
+          <oemupdf:ObjectColorCorrectionRecord ID="GraphicsAuto" StringID="IDS_AUTO">
+            <oemupdf:ColorCorrectionCommand type="xsd:string" value="" />
+          </oemupdf:ObjectColorCorrectionRecord>
+          <oemupdf:ObjectColorCorrectionRecord ID="GraphicsSmooth" StringID="IDS_HALFTONE2">
+            <oemupdf:ColorCorrectionCommand type="xsd:string" value="\C0\02\F8\1F\6D" />
+          </oemupdf:ObjectColorCorrectionRecord>
+          <oemupdf:ObjectColorCorrectionRecord ID="GraphicsDetail" StringID="IDS_HALFTONE1">
+            <oemupdf:ColorCorrectionCommand type="xsd:string" value="\C0\00\F8\1F\6D" />
+          </oemupdf:ObjectColorCorrectionRecord>
+        </oemupdf:ObjectColorCorrection>
+        <oemupdf:ObjectColorCorrection ID="ImageGrays" Object="Image" StringID="IDS_NEUTRAL_GRAYS" DefaultSetting="ImageAuto">
+          <oemupdf:ObjectColorCorrectionRecord ID="ImageAuto" StringID="IDS_AUTO">
+            <oemupdf:ColorCorrectionCommand type="xsd:string" value="" />
+          </oemupdf:ObjectColorCorrectionRecord>
+          <oemupdf:ObjectColorCorrectionRecord ID="ImageBlack" StringID="IDS_NEUTRAL_GRAYS_BLACK">
+            <oemupdf:ColorCorrectionCommand type="xsd:string" value="\C0\00\F8\20\7E" />
+          </oemupdf:ObjectColorCorrectionRecord>
+          <oemupdf:ObjectColorCorrectionRecord ID="ImageComposite" StringID="IDS_NEUTRAL_GRAYS_CMYK_GRAY">
+            <oemupdf:ColorCorrectionCommand type="xsd:string" value="\C0\01\F8\20\7E" />
+          </oemupdf:ObjectColorCorrectionRecord>
+        </oemupdf:ObjectColorCorrection>
+        <oemupdf:ObjectColorCorrection ID="ImageHalftone" Object="Image" StringID="IDS_HALFTONE" DefaultSetting="ImageAuto">
+          <oemupdf:ObjectColorCorrectionRecord ID="ImageAuto" StringID="IDS_AUTO">
+            <oemupdf:ColorCorrectionCommand type="xsd:string" value="" />
+          </oemupdf:ObjectColorCorrectionRecord>
+          <oemupdf:ObjectColorCorrectionRecord ID="ImageSmooth" StringID="IDS_HALFTONE2">
+            <oemupdf:ColorCorrectionCommand type="xsd:string" value="\C0\02\F8\20\6D" />
+          </oemupdf:ObjectColorCorrectionRecord>
+          <oemupdf:ObjectColorCorrectionRecord ID="ImageDetail" StringID="IDS_HALFTONE1">
+            <oemupdf:ColorCorrectionCommand type="xsd:string" value="\C0\00\F8\20\6D" />
+          </oemupdf:ObjectColorCorrectionRecord>
+        </oemupdf:ObjectColorCorrection>
+        <oemupdf:DeviceCollation ID="DeviceCollation" DefaultSetting="DeviceUncollated" PJLVariable="QTY">
+          <oemupdf:DeviceCollationRecord ID="DeviceUncollated" ClassifyingID="Uncollated" />
+          <oemupdf:DeviceCollationRecord ID="DeviceCollated" ClassifyingID="Collated" />
+        </oemupdf:DeviceCollation>
+      </VendorExtension>
+    </Features>
+    <BaseUnit ID="BaseUnit" ShippingUnit="true">
+      <Connectors>
+        <ConnectorForChildUnit ID="OptionalTrayConnector" />
+        <ConnectorForChildUnit ID="DuplexConnector" />
+      </Connectors>
+      <FeatureReferences>
+        <FeatureReference ID="PrinterResolution">
+          <FeatureRecordReference ID="Normal" />
+          <FeatureRecordReference ID="QuickView_Draft" />
+          <FeatureRecordReference ID="Enhanced" />
+        </FeatureReference>
+        <FeatureReference ID="PCPrinterResolution">
+          <FeatureRecordReference ID="Normal" />
+          <FeatureRecordReference ID="FineLines_MaxDPI" />
+          <FeatureRecordReference ID="QuickView_Draft" />
+          <FeatureRecordReference ID="EconoMode" />
+          <FeatureRecordReference ID="GeneralOffice_Draft" />
+          <FeatureRecordReference ID="Professional" />
+          <FeatureRecordReference ID="Presentation" />
+          <FeatureRecordReference ID="MaxDPI" />
+          <FeatureRecordReference ID="Enhanced" />
+          <FeatureRecordReference ID="PC_Custom_1" />
+          <FeatureRecordReference ID="PC_Custom_2" />
+        </FeatureReference>
+        <FeatureReference ID="Color">
+          <FeatureRecordReference ID="ColorOutput" />
+          <FeatureRecordReference ID="MonoCompositeOutput" />
+          <FeatureRecordReference ID="CompositeOutput" />
+        </FeatureReference>
+        <FeatureReference ID="Copies">
+          <FeatureRecordReference ID="CopyCount" />
+        </FeatureReference>
+        <FeatureReference ID="Collation">
+          <FeatureRecordReference ID="Uncollated" />
+          <FeatureRecordReference ID="Collated" />
+        </FeatureReference>
+        <FeatureReference ID="OrientationRequested">
+          <FeatureRecordReference ID="Portrait" />
+          <FeatureRecordReference ID="Landscape" />
+        </FeatureReference>
+        <FeatureReference ID="MediaSize">
+          <FeatureRecordReference ID="LETTER" />
+          <FeatureRecordReference ID="LEGAL" />
+          <FeatureRecordReference ID="Executive" />
+          <FeatureRecordReference ID="Statement" />
+          <FeatureRecordReference ID="Officio8.5x13" />
+          <FeatureRecordReference ID="Index3x5" />
+          <FeatureRecordReference ID="Index4x6" />
+          <FeatureRecordReference ID="Index5x7" />
+          <FeatureRecordReference ID="Index5x8" />
+          <FeatureRecordReference ID="A4" />
+          <FeatureRecordReference ID="A5" />
+          <FeatureRecordReference ID="A6" />
+          <FeatureRecordReference ID="RA4" />
+          <FeatureRecordReference ID="JIS-B5" />
+          <FeatureRecordReference ID="JIS-B6" />
+          <FeatureRecordReference ID="Index10x15" />
+          <FeatureRecordReference ID="Officio216x340mm" />
+          <FeatureRecordReference ID="ROC-16K195x270" />
+          <FeatureRecordReference ID="ROC-16K184x260" />
+          <FeatureRecordReference ID="ROC-16K197x273" />
+          <FeatureRecordReference ID="Hagaki" />
+          <FeatureRecordReference ID="Oufuku" />
+          <FeatureRecordReference ID="Env9" />
+          <FeatureRecordReference ID="Env10" />
+          <FeatureRecordReference ID="EnvMonarch" />
+          <FeatureRecordReference ID="EnvB5" />
+          <FeatureRecordReference ID="EnvC5" />
+          <FeatureRecordReference ID="EnvC6" />
+          <FeatureRecordReference ID="EnvDL" />
+          <FeatureRecordReference ID="Custom" />
+        </FeatureReference>
+        <FeatureReference ID="MediaType">
+          <FeatureRecordReference ID="AutoSelectMediaType" />
+          <FeatureRecordReference ID="Plain" />
+          <FeatureRecordReference ID="HPEcoFFICIENT" />
+          <FeatureRecordReference ID="HPLaserJet90gsm" />
+          <FeatureRecordReference ID="HPColorLaserMatte105g" />
+          <FeatureRecordReference ID="HPPremiumChoiceMatte120g" />
+          <FeatureRecordReference ID="HPBrochureMatte150g" />
+          <FeatureRecordReference ID="HPCoverMatte200g" />
+          <FeatureRecordReference ID="HPProfessionalSoftGloss120g" />
+          <FeatureRecordReference ID="HPPremiumPresentationGlossy120g" />
+          <FeatureRecordReference ID="HPBrochureGlossy150g" />
+          <FeatureRecordReference ID="HPBrochureGlossy200g" />
+          <FeatureRecordReference ID="Light6074g" />
+          <FeatureRecordReference ID="Intermediate8595g" />
+          <FeatureRecordReference ID="MidWeight96110g" />
+          <FeatureRecordReference ID="Heavy111130g" />
+          <FeatureRecordReference ID="ExtraHeavy131175g" />
+          <FeatureRecordReference ID="Cardstock176220g" />
+          <FeatureRecordReference ID="HeavyGlossy111130g" />
+          <FeatureRecordReference ID="ExtraHeavyGlossy131175g" />
+          <FeatureRecordReference ID="MidWeightGlossy96110g" />
+          <FeatureRecordReference ID="CardGlossy176220g" />
+          <FeatureRecordReference ID="Transparency" />
+          <FeatureRecordReference ID="Labels" />
+          <FeatureRecordReference ID="Letterhead" />
+          <FeatureRecordReference ID="Envelope" />
+          <FeatureRecordReference ID="HeavyEnvelope" />
+          <FeatureRecordReference ID="Preprinted" />
+          <FeatureRecordReference ID="Prepunched" />
+          <FeatureRecordReference ID="Colored" />
+          <FeatureRecordReference ID="Bond" />
+          <FeatureRecordReference ID="Recycled" />
+          <FeatureRecordReference ID="Rough" />
+          <FeatureRecordReference ID="HeavyRough" />
+          <FeatureRecordReference ID="OpaqueFilm" />
+        </FeatureReference>
+        <FeatureReference ID="PCMediaType">
+          <FeatureRecordReference ID="AutoSelectMediaType" />
+          <FeatureRecordReference ID="Plain" />
+          <FeatureRecordReference ID="HPEcoFFICIENT" />
+          <FeatureRecordReference ID="HPLaserJet90gsm" />
+          <FeatureRecordReference ID="HPColorLaserMatte105g" />
+          <FeatureRecordReference ID="HPPremiumChoiceMatte120g" />
+          <FeatureRecordReference ID="HPPremiumPresentationMatte120g" />
+          <FeatureRecordReference ID="HPBrochureMatte150g" />
+          <FeatureRecordReference ID="HPCoverMatte200g" />
+          <FeatureRecordReference ID="HPMattePhoto200g" />
+          <FeatureRecordReference ID="HPPresentationSoftGloss120g" />
+          <FeatureRecordReference ID="HPProfessionalSoftGloss120g" />
+          <FeatureRecordReference ID="HPPremiumPresentationGlossy120g" />
+          <FeatureRecordReference ID="HPBrochureGlossy150g" />
+          <FeatureRecordReference ID="HPBrochureGlossy200g" />
+          <FeatureRecordReference ID="Light6074g" />
+          <FeatureRecordReference ID="Intermediate8595g" />
+          <FeatureRecordReference ID="MidWeight96110g" />
+          <FeatureRecordReference ID="Heavy111130g" />
+          <FeatureRecordReference ID="ExtraHeavy131175g" />
+          <FeatureRecordReference ID="Cardstock176220g" />
+          <FeatureRecordReference ID="HeavyGlossy111130g" />
+          <FeatureRecordReference ID="ExtraHeavyGlossy131175g" />
+          <FeatureRecordReference ID="MidWeightGlossy96110g" />
+          <FeatureRecordReference ID="CardGlossy176220g" />
+          <FeatureRecordReference ID="Transparency" />
+          <FeatureRecordReference ID="Labels" />
+          <FeatureRecordReference ID="Letterhead" />
+          <FeatureRecordReference ID="Envelope" />
+          <FeatureRecordReference ID="HeavyEnvelope" />
+          <FeatureRecordReference ID="Preprinted" />
+          <FeatureRecordReference ID="Prepunched" />
+          <FeatureRecordReference ID="Colored" />
+          <FeatureRecordReference ID="LightBond" />
+          <FeatureRecordReference ID="Bond" />
+          <FeatureRecordReference ID="Recycled" />
+          <FeatureRecordReference ID="Rough" />
+          <FeatureRecordReference ID="HeavyRough" />
+          <FeatureRecordReference ID="OpaqueFilm" />
+        </FeatureReference>
+        <FeatureReference ID="MediaInputTrayCheck">
+          <FeatureRecordReference ID="PrinterAutoSelectInputTray" />
+          <FeatureRecordReference ID="ManualFeed" />
+          <FeatureRecordReference ID="Tray1" />
+          <FeatureRecordReference ID="Tray2" />
+        </FeatureReference>
+        <FeatureReference ID="NumberUp">
+          <FeatureRecordReference ID="NUp1" />
+          <FeatureRecordReference ID="NUp2" />
+          <FeatureRecordReference ID="NUp4" />
+          <FeatureRecordReference ID="NUp6" />
+          <FeatureRecordReference ID="NUp9" />
+          <FeatureRecordReference ID="NUp16" />
+        </FeatureReference>
+        <FeatureReference ID="FinishingBooklet">
+          <FeatureRecordReference ID="BookletOff" />
+          <FeatureRecordReference ID="BookletOn" />
+        </FeatureReference>
+        <FeatureReference ID="FinishingBookletBinding">
+          <FeatureRecordReference ID="BindingLeft" />
+          <FeatureRecordReference ID="BindingRight" />
+        </FeatureReference>
+        <FeatureReference ID="ManualDuplex">
+          <FeatureRecordReference ID="ManualSimplex" />
+          <FeatureRecordReference ID="ManualLongEdge" />
+          <FeatureRecordReference ID="ManualShortEdge" />
+        </FeatureReference>
+        <FeatureReference ID="JobImageType">
+          <FeatureRecordReference ID="CompressionDoNotSelect" />
+          <FeatureRecordReference ID="CompressionJpegHigh" />
+          <FeatureRecordReference ID="CompressionJpegMedium" />
+          <FeatureRecordReference ID="CompressionJpegLow" />
+          <FeatureRecordReference ID="CompressionPng" />
+        </FeatureReference>
+        <FeatureReference ID="ColorCorrection">
+          <FeatureRecordReference ID="Automatic" />
+          <FeatureRecordReference ID="Manual" />
+        </FeatureReference>
+        <FeatureReference ID="GeneralEdgeControl">
+          <FeatureRecordReference ID="GeneralOff" />
+          <FeatureRecordReference ID="GeneralAuto" />
+          <FeatureRecordReference ID="GeneralLight" />
+          <FeatureRecordReference ID="GeneralNormal" />
+          <FeatureRecordReference ID="GeneralMax" />
+        </FeatureReference>
+        <FeatureReference ID="TextGrays">
+          <FeatureRecordReference ID="TextAuto" />
+          <FeatureRecordReference ID="TextBlack" />
+          <FeatureRecordReference ID="TextComposite" />
+        </FeatureReference>
+        <FeatureReference ID="TextHalftone">
+          <FeatureRecordReference ID="TextAuto" />
+          <FeatureRecordReference ID="TextSmooth" />
+          <FeatureRecordReference ID="TextDetail" />
+        </FeatureReference>
+        <FeatureReference ID="GraphicsGrays">
+          <FeatureRecordReference ID="GraphicsAuto" />
+          <FeatureRecordReference ID="GraphicsBlack" />
+          <FeatureRecordReference ID="GraphicsComposite" />
+        </FeatureReference>
+        <FeatureReference ID="GraphicsHalftone">
+          <FeatureRecordReference ID="GraphicsAuto" />
+          <FeatureRecordReference ID="GraphicsSmooth" />
+          <FeatureRecordReference ID="GraphicsDetail" />
+        </FeatureReference>
+        <FeatureReference ID="ImageGrays">
+          <FeatureRecordReference ID="ImageAuto" />
+          <FeatureRecordReference ID="ImageBlack" />
+          <FeatureRecordReference ID="ImageComposite" />
+        </FeatureReference>
+        <FeatureReference ID="ImageHalftone">
+          <FeatureRecordReference ID="ImageAuto" />
+          <FeatureRecordReference ID="ImageSmooth" />
+          <FeatureRecordReference ID="ImageDetail" />
+        </FeatureReference>
+        <FeatureReference ID="RGBColor">
+          <FeatureRecordReference ID="PrinterDefault" />
+          <FeatureRecordReference ID="RGBColorRGB" />
+          <FeatureRecordReference ID="RGBColorCustomProfile" />
+          <FeatureRecordReference ID="RGBColorSRGB" />
+          <FeatureRecordReference ID="RGBColorAdobeRGB" />
+          <FeatureRecordReference ID="RGBColorNone" />
+          <FeatureRecordReference ID="RGBColorVivid" />
+        </FeatureReference>
+        <FeatureReference ID="JobStorage">
+          <FeatureRecordReference ID="JobStorageOff" />
+          <FeatureRecordReference ID="JobStorageProofAndHold" />
+          <FeatureRecordReference ID="JobStoragePersonalJob" />
+          <FeatureRecordReference ID="JobStorageQuickCopy" />
+          <FeatureRecordReference ID="JobStorageStoreJob" />
+        </FeatureReference>
+        <FeatureReference ID="JobStorageJobName">
+          <FeatureRecordReference ID="JobNameAuto" />
+          <FeatureRecordReference ID="JobNameCustom" />
+        </FeatureReference>
+        <FeatureReference ID="JobStorageUserName">
+          <FeatureRecordReference ID="UserNameCurrent" />
+          <FeatureRecordReference ID="UserNameCustom" />
+        </FeatureReference>
+        <FeatureReference ID="JobStoragePrivateSecure">
+          <FeatureRecordReference ID="PrivateSecureOff" />
+          <FeatureRecordReference ID="PrivateSecurePINtoPrint" />
+          <FeatureRecordReference ID="PrivateSecureEncryptJob" />
+        </FeatureReference>
+        <FeatureReference ID="JobStorageJobNameExist">
+          <FeatureRecordReference ID="JobNameExistsUse" />
+          <FeatureRecordReference ID="JobNameExistsReplace" />
+        </FeatureReference>
+        <FeatureReference ID="JobStorageSavePassword">
+          <FeatureRecordReference ID="SavePasswordOff" />
+          <FeatureRecordReference ID="SavePasswordOn" />
+        </FeatureReference>
+        <FeatureReference ID="DeviceCollation">
+          <FeatureRecordReference ID="DeviceUncollated" />
+          <FeatureRecordReference ID="DeviceCollated" />
+        </FeatureReference>
+        <FeatureReference ID="Shortcuts">
+          <FeatureRecordReference ID="_FactoryDefaults" />
+          <FeatureRecordReference ID="_GeneralEveryday" />
+          <FeatureRecordReference ID="_envelope_48" />
+          <FeatureRecordReference ID="_CardstockHeavy" />
+          <FeatureRecordReference ID="_Labels" />
+          <FeatureRecordReference ID="_Transparancy" />
+          <FeatureRecordReference ID="_TwoSided" />
+          <FeatureRecordReference ID="_Booklet" />
+          <FeatureRecordReference ID="_Photo" />
+        </FeatureReference>
+        <FeatureReference ID="DefaultDuplexStandard">
+          <FeatureRecordReference ID="DefaultDuplexOff" />
+          <FeatureRecordReference ID="DefaultDuplexOn" />
+        </FeatureReference>
+        <FeatureReference ID="HPEasyColor">
+          <FeatureRecordReference ID="HPEasyColorOff" />
+          <FeatureRecordReference ID="HPEasyColorOn" />
+        </FeatureReference>
+        <FeatureReference ID="PCEnable">
+          <FeatureRecordReference ID="Off" />
+          <FeatureRecordReference ID="On" />
+        </FeatureReference>
+        <FeatureReference ID="PrintContractversionMinor">
+          <FeatureRecordReference ID="0" />
+          <FeatureRecordReference ID="1" />
+          <FeatureRecordReference ID="2" />
+          <FeatureRecordReference ID="3" />
+          <FeatureRecordReference ID="4" />
+          <FeatureRecordReference ID="5" />
+          <FeatureRecordReference ID="6" />
+          <FeatureRecordReference ID="7" />
+          <FeatureRecordReference ID="72" />
+          <FeatureRecordReference ID="8" />
+          <FeatureRecordReference ID="9" />
+        </FeatureReference>
+        <FeatureReference ID="PrintContractversionMajor">
+          <FeatureRecordReference ID="0" />
+          <FeatureRecordReference ID="1" />
+          <FeatureRecordReference ID="2" />
+          <FeatureRecordReference ID="3" />
+          <FeatureRecordReference ID="4" />
+          <FeatureRecordReference ID="5" />
+          <FeatureRecordReference ID="6" />
+          <FeatureRecordReference ID="7" />
+          <FeatureRecordReference ID="8" />
+          <FeatureRecordReference ID="9" />
+        </FeatureReference>
+        <FeatureReference ID="RasterCompression">
+          <FeatureRecordReference ID="Automatic" />
+          <FeatureRecordReference ID="BestQuality" />
+          <FeatureRecordReference ID="MaxCompression" />
+        </FeatureReference>
+        <FeatureReference ID="IgnoreDminfo">
+          <FeatureRecordReference ID="DminfoOff" />
+          <FeatureRecordReference ID="DminfoOn" />
+        </FeatureReference>
+        <FeatureReference ID="EnableBigDataCollection">
+          <FeatureRecordReference ID="BigDataCollectionOff" />
+          <FeatureRecordReference ID="BigDataCollectionOn" />
+        </FeatureReference>
+        <FeatureReference ID="DocumentTintTesting">
+          <FeatureRecordReference ID="Disabled" />
+          <FeatureRecordReference ID="JPEGARPassthrough" />
+          <FeatureRecordReference ID="RLTCSCPassthrough" />
+          <FeatureRecordReference ID="ImageResamplingPassthrough" />
+          <FeatureRecordReference ID="ImageHealingPassthrough" />
+        </FeatureReference>
+        <FeatureReference ID="DocumentMargins">
+          <FeatureRecordReference ID="Standard" />
+          <FeatureRecordReference ID="Alternate" />
+        </FeatureReference>
+      </FeatureReferences>
+      <Dependencies>
+        <Dependency>
+          <FeatureCondition FeatureID="MediaSize" ConditionOperator="Equal" FeatureSetting="Env9" />
+          <FeatureCondition FeatureID="Sides" ConditionOperator="NotEqual" FeatureSetting="Simplex" />
+          <Action>
+            <ActionMessage StringID="IDS_NO_DUPLEX_MEDIA_SIZE">
+              <ActionMessageOK StringID="IDS_OK">
+                <SetFeature FeatureID="Sides" FeatureSetting="Simplex" />
+              </ActionMessageOK>
+            </ActionMessage>
+          </Action>
+        </Dependency>
+        <Dependency>
+          <FeatureCondition FeatureID="MediaSize" ConditionOperator="Equal" FeatureSetting="Env10" />
+          <FeatureCondition FeatureID="Sides" ConditionOperator="NotEqual" FeatureSetting="Simplex" />
+          <Action>
+            <ActionMessage StringID="IDS_NO_DUPLEX_MEDIA_SIZE">
+              <ActionMessageOK StringID="IDS_OK">
+                <SetFeature FeatureID="Sides" FeatureSetting="Simplex" />
+              </ActionMessageOK>
+            </ActionMessage>
+          </Action>
+        </Dependency>
+        <Dependency>
+          <FeatureCondition FeatureID="MediaSize" ConditionOperator="Equal" FeatureSetting="EnvMonarch" />
+          <FeatureCondition FeatureID="Sides" ConditionOperator="NotEqual" FeatureSetting="Simplex" />
+          <Action>
+            <ActionMessage StringID="IDS_NO_DUPLEX_MEDIA_SIZE">
+              <ActionMessageOK StringID="IDS_OK">
+                <SetFeature FeatureID="Sides" FeatureSetting="Simplex" />
+              </ActionMessageOK>
+            </ActionMessage>
+          </Action>
+        </Dependency>
+        <Dependency>
+          <FeatureCondition FeatureID="MediaSize" ConditionOperator="Equal" FeatureSetting="EnvB5" />
+          <FeatureCondition FeatureID="Sides" ConditionOperator="NotEqual" FeatureSetting="Simplex" />
+          <Action>
+            <ActionMessage StringID="IDS_NO_DUPLEX_MEDIA_SIZE">
+              <ActionMessageOK StringID="IDS_OK">
+                <SetFeature FeatureID="Sides" FeatureSetting="Simplex" />
+              </ActionMessageOK>
+            </ActionMessage>
+          </Action>
+        </Dependency>
+        <Dependency>
+          <FeatureCondition FeatureID="MediaSize" ConditionOperator="Equal" FeatureSetting="EnvC5" />
+          <FeatureCondition FeatureID="Sides" ConditionOperator="NotEqual" FeatureSetting="Simplex" />
+          <Action>
+            <ActionMessage StringID="IDS_NO_DUPLEX_MEDIA_SIZE">
+              <ActionMessageOK StringID="IDS_OK">
+                <SetFeature FeatureID="Sides" FeatureSetting="Simplex" />
+              </ActionMessageOK>
+            </ActionMessage>
+          </Action>
+        </Dependency>
+        <Dependency>
+          <FeatureCondition FeatureID="MediaSize" ConditionOperator="Equal" FeatureSetting="EnvC6" />
+          <FeatureCondition FeatureID="Sides" ConditionOperator="NotEqual" FeatureSetting="Simplex" />
+          <Action>
+            <ActionMessage StringID="IDS_NO_DUPLEX_MEDIA_SIZE">
+              <ActionMessageOK StringID="IDS_OK">
+                <SetFeature FeatureID="Sides" FeatureSetting="Simplex" />
+              </ActionMessageOK>
+            </ActionMessage>
+          </Action>
+        </Dependency>
+        <Dependency>
+          <FeatureCondition FeatureID="MediaSize" ConditionOperator="Equal" FeatureSetting="EnvDL" />
+          <FeatureCondition FeatureID="Sides" ConditionOperator="NotEqual" FeatureSetting="Simplex" />
+          <Action>
+            <ActionMessage StringID="IDS_NO_DUPLEX_MEDIA_SIZE">
+              <ActionMessageOK StringID="IDS_OK">
+                <SetFeature FeatureID="Sides" FeatureSetting="Simplex" />
+              </ActionMessageOK>
+            </ActionMessage>
+          </Action>
+        </Dependency>
+        <Dependency>
+          <FeatureCondition FeatureID="MediaSize" ConditionOperator="Equal" FeatureSetting="Env9" />
+          <FeatureCondition FeatureID="ManualDuplex" ConditionOperator="NotEqual" FeatureSetting="ManualSimplex" />
+          <Action>
+            <ActionMessage StringID="IDS_NO_DUPLEX_MEDIA_SIZE">
+              <ActionMessageOK StringID="IDS_OK">
+                <SetFeature FeatureID="ManualDuplex" FeatureSetting="ManualSimplex" />
+              </ActionMessageOK>
+            </ActionMessage>
+          </Action>
+        </Dependency>
+        <Dependency>
+          <FeatureCondition FeatureID="MediaSize" ConditionOperator="Equal" FeatureSetting="Env10" />
+          <FeatureCondition FeatureID="ManualDuplex" ConditionOperator="NotEqual" FeatureSetting="ManualSimplex" />
+          <Action>
+            <ActionMessage StringID="IDS_NO_DUPLEX_MEDIA_SIZE">
+              <ActionMessageOK StringID="IDS_OK">
+                <SetFeature FeatureID="ManualDuplex" FeatureSetting="ManualSimplex" />
+              </ActionMessageOK>
+            </ActionMessage>
+          </Action>
+        </Dependency>
+        <Dependency>
+          <FeatureCondition FeatureID="MediaSize" ConditionOperator="Equal" FeatureSetting="EnvMonarch" />
+          <FeatureCondition FeatureID="ManualDuplex" ConditionOperator="NotEqual" FeatureSetting="ManualSimplex" />
+          <Action>
+            <ActionMessage StringID="IDS_NO_DUPLEX_MEDIA_SIZE">
+              <ActionMessageOK StringID="IDS_OK">
+                <SetFeature FeatureID="ManualDuplex" FeatureSetting="ManualSimplex" />
+              </ActionMessageOK>
+            </ActionMessage>
+          </Action>
+        </Dependency>
+        <Dependency>
+          <FeatureCondition FeatureID="MediaSize" ConditionOperator="Equal" FeatureSetting="EnvB5" />
+          <FeatureCondition FeatureID="ManualDuplex" ConditionOperator="NotEqual" FeatureSetting="ManualSimplex" />
+          <Action>
+            <ActionMessage StringID="IDS_NO_DUPLEX_MEDIA_SIZE">
+              <ActionMessageOK StringID="IDS_OK">
+                <SetFeature FeatureID="ManualDuplex" FeatureSetting="ManualSimplex" />
+              </ActionMessageOK>
+            </ActionMessage>
+          </Action>
+        </Dependency>
+        <Dependency>
+          <FeatureCondition FeatureID="MediaSize" ConditionOperator="Equal" FeatureSetting="EnvC5" />
+          <FeatureCondition FeatureID="ManualDuplex" ConditionOperator="NotEqual" FeatureSetting="ManualSimplex" />
+          <Action>
+            <ActionMessage StringID="IDS_NO_DUPLEX_MEDIA_SIZE">
+              <ActionMessageOK StringID="IDS_OK">
+                <SetFeature FeatureID="ManualDuplex" FeatureSetting="ManualSimplex" />
+              </ActionMessageOK>
+            </ActionMessage>
+          </Action>
+        </Dependency>
+        <Dependency>
+          <FeatureCondition FeatureID="MediaSize" ConditionOperator="Equal" FeatureSetting="EnvC6" />
+          <FeatureCondition FeatureID="ManualDuplex" ConditionOperator="NotEqual" FeatureSetting="ManualSimplex" />
+          <Action>
+            <ActionMessage StringID="IDS_NO_DUPLEX_MEDIA_SIZE">
+              <ActionMessageOK StringID="IDS_OK">
+                <SetFeature FeatureID="ManualDuplex" FeatureSetting="ManualSimplex" />
+              </ActionMessageOK>
+            </ActionMessage>
+          </Action>
+        </Dependency>
+        <Dependency>
+          <FeatureCondition FeatureID="MediaSize" ConditionOperator="Equal" FeatureSetting="EnvDL" />
+          <FeatureCondition FeatureID="ManualDuplex" ConditionOperator="NotEqual" FeatureSetting="ManualSimplex" />
+          <Action>
+            <ActionMessage StringID="IDS_NO_DUPLEX_MEDIA_SIZE">
+              <ActionMessageOK StringID="IDS_OK">
+                <SetFeature FeatureID="ManualDuplex" FeatureSetting="ManualSimplex" />
+              </ActionMessageOK>
+            </ActionMessage>
+          </Action>
+        </Dependency>
+        <Dependency>
+          <FeatureCondition FeatureID="MediaType" ConditionOperator="Equal" FeatureSetting="Labels" />
+          <FeatureCondition FeatureID="Sides" ConditionOperator="NotEqual" FeatureSetting="Simplex" />
+          <Action>
+            <ActionMessage StringID="IDS_NO_DUPLEX_MEDIA_TYPE">
+              <ActionMessageOK StringID="IDS_OK">
+                <SetFeature FeatureID="Sides" FeatureSetting="Simplex" />
+              </ActionMessageOK>
+            </ActionMessage>
+          </Action>
+        </Dependency>
+        <Dependency>
+          <FeatureCondition FeatureID="MediaType" ConditionOperator="Equal" FeatureSetting="Envelope" />
+          <FeatureCondition FeatureID="Sides" ConditionOperator="NotEqual" FeatureSetting="Simplex" />
+          <Action>
+            <ActionMessage StringID="IDS_NO_DUPLEX_MEDIA_TYPE">
+              <ActionMessageOK StringID="IDS_OK">
+                <SetFeature FeatureID="Sides" FeatureSetting="Simplex" />
+              </ActionMessageOK>
+            </ActionMessage>
+          </Action>
+        </Dependency>
+        <Dependency>
+          <FeatureCondition FeatureID="MediaType" ConditionOperator="Equal" FeatureSetting="HeavyEnvelope" />
+          <FeatureCondition FeatureID="Sides" ConditionOperator="NotEqual" FeatureSetting="Simplex" />
+          <Action>
+            <ActionMessage StringID="IDS_NO_DUPLEX_MEDIA_TYPE">
+              <ActionMessageOK StringID="IDS_OK">
+                <SetFeature FeatureID="Sides" FeatureSetting="Simplex" />
+              </ActionMessageOK>
+            </ActionMessage>
+          </Action>
+        </Dependency>
+        <Dependency>
+          <FeatureCondition FeatureID="MediaType" ConditionOperator="Equal" FeatureSetting="OpaqueFilm" />
+          <FeatureCondition FeatureID="Sides" ConditionOperator="NotEqual" FeatureSetting="Simplex" />
+          <Action>
+            <ActionMessage StringID="IDS_NO_DUPLEX_MEDIA_TYPE">
+              <ActionMessageOK StringID="IDS_OK">
+                <SetFeature FeatureID="Sides" FeatureSetting="Simplex" />
+              </ActionMessageOK>
+            </ActionMessage>
+          </Action>
+        </Dependency>
+        <Dependency>
+          <FeatureCondition FeatureID="MediaType" ConditionOperator="Equal" FeatureSetting="Labels" />
+          <FeatureCondition FeatureID="ManualDuplex" ConditionOperator="NotEqual" FeatureSetting="ManualSimplex" />
+          <Action>
+            <ActionMessage StringID="IDS_NO_DUPLEX_MEDIA_TYPE">
+              <ActionMessageOK StringID="IDS_OK">
+                <SetFeature FeatureID="ManualDuplex" FeatureSetting="ManualSimplex" />
+              </ActionMessageOK>
+            </ActionMessage>
+          </Action>
+        </Dependency>
+        <Dependency>
+          <FeatureCondition FeatureID="MediaType" ConditionOperator="Equal" FeatureSetting="Envelope" />
+          <FeatureCondition FeatureID="ManualDuplex" ConditionOperator="NotEqual" FeatureSetting="ManualSimplex" />
+          <Action>
+            <ActionMessage StringID="IDS_NO_DUPLEX_MEDIA_TYPE">
+              <ActionMessageOK StringID="IDS_OK">
+                <SetFeature FeatureID="ManualDuplex" FeatureSetting="ManualSimplex" />
+              </ActionMessageOK>
+            </ActionMessage>
+          </Action>
+        </Dependency>
+        <Dependency>
+          <FeatureCondition FeatureID="MediaType" ConditionOperator="Equal" FeatureSetting="HeavyEnvelope" />
+          <FeatureCondition FeatureID="ManualDuplex" ConditionOperator="NotEqual" FeatureSetting="ManualSimplex" />
+          <Action>
+            <ActionMessage StringID="IDS_NO_DUPLEX_MEDIA_TYPE">
+              <ActionMessageOK StringID="IDS_OK">
+                <SetFeature FeatureID="ManualDuplex" FeatureSetting="ManualSimplex" />
+              </ActionMessageOK>
+            </ActionMessage>
+          </Action>
+        </Dependency>
+        <Dependency>
+          <FeatureCondition FeatureID="MediaType" ConditionOperator="Equal" FeatureSetting="OpaqueFilm" />
+          <FeatureCondition FeatureID="ManualDuplex" ConditionOperator="NotEqual" FeatureSetting="ManualSimplex" />
+          <Action>
+            <ActionMessage StringID="IDS_NO_DUPLEX_MEDIA_TYPE">
+              <ActionMessageOK StringID="IDS_OK">
+                <SetFeature FeatureID="ManualDuplex" FeatureSetting="ManualSimplex" />
+              </ActionMessageOK>
+            </ActionMessage>
+          </Action>
+        </Dependency>
+        <Dependency>
+          <FeatureCondition FeatureID="MediaInputTrayCheck" ConditionOperator="Equal" FeatureSetting="ManualFeed" />
+          <FeatureCondition FeatureID="ManualDuplex" ConditionOperator="NotEqual" FeatureSetting="ManualSimplex" />
+          <Action>
+            <ActionSelection>
+              <SetFeature FeatureID="ManualDuplex" FeatureSetting="ManualSimplex" />
+            </ActionSelection>
+          </Action>
+        </Dependency>
+        <Dependency>
+          <FeatureCondition FeatureID="MediaType" ConditionOperator="Equal" FeatureSetting="Transparency" />
+          <FeatureCondition FeatureID="Sides" ConditionOperator="NotEqual" FeatureSetting="Simplex" />
+          <Action>
+            <ActionMessage StringID="IDS_NO_DUPLEX_MEDIA_TYPE">
+              <ActionMessageOK StringID="IDS_OK">
+                <SetFeature FeatureID="Sides" FeatureSetting="Simplex" />
+              </ActionMessageOK>
+            </ActionMessage>
+          </Action>
+        </Dependency>
+        <Dependency>
+          <FeatureCondition FeatureID="MediaType" ConditionOperator="Equal" FeatureSetting="Transparency" />
+          <FeatureCondition FeatureID="ManualDuplex" ConditionOperator="NotEqual" FeatureSetting="ManualSimplex" />
+          <Action>
+            <ActionMessage StringID="IDS_NO_DUPLEX_MEDIA_TYPE">
+              <ActionMessageOK StringID="IDS_OK">
+                <SetFeature FeatureID="ManualDuplex" FeatureSetting="ManualSimplex" />
+              </ActionMessageOK>
+            </ActionMessage>
+          </Action>
+        </Dependency>
+      </Dependencies>
+    </BaseUnit>
+    <InstallableOption ID="OptionalTray3" StringID="IDS_TRAY3" WinConfig="Layout.InputBins.Tray003:Installed">
+      <Connectors>
+        <ConnectorForChildUnit ID="OptionalTrayConnector3" />
+        <ConnectorAtParentUnit ConnectorIDRef="OptionalTrayConnector" />
+      </Connectors>
+      <FeatureReferences>
+        <FeatureReference ID="MediaInputTrayCheck">
+          <FeatureRecordReference ID="Tray3" />
+        </FeatureReference>
+      </FeatureReferences>
+      <VendorExtension>
+        <oemupdf:UDMStringQuery Query="Tray3_Installed" Value="Installed" />
+      </VendorExtension>
+    </InstallableOption>
+    <InstallableOption ID="DuplexUnit" StringID="IDS_OPTIONAL_DUPLEXER" WinConfig="Configuration.DuplexUnit:Installed">
+      <Connectors>
+        <ConnectorAtParentUnit ConnectorIDRef="DuplexConnector" />
+      </Connectors>
+      <FeatureReferences>
+        <FeatureReference ID="Sides">
+          <FeatureRecordReference ID="Simplex" />
+          <FeatureRecordReference ID="LongEdge" />
+          <FeatureRecordReference ID="ShortEdge" />
+        </FeatureReference>
+      </FeatureReferences>
+      <VendorExtension>
+        <oemupdf:UDMStringQuery Query="DuplexUnit_Installed" Value="Installed" />
+      </VendorExtension>
+    </InstallableOption>
+    <InstallableOption ID="PC_PrintContractVersionMajor" StringID="IDS_EMPTY" WinConfig="Configuration.PrintContract:VersionMajor" WinIntegerFeatureArr="0,1,2,3,4,5,6,7,8,9" WinIntegerOptionArr="0,1,2,3,4,5,6,7,8,9">
+      <FeatureReferences>
+        <FeatureReference ID="PrintContractversionMajor">
+          <FeatureRecordReference ID="0" />
+          <FeatureRecordReference ID="1" />
+          <FeatureRecordReference ID="2" />
+          <FeatureRecordReference ID="3" />
+          <FeatureRecordReference ID="4" />
+          <FeatureRecordReference ID="5" />
+          <FeatureRecordReference ID="6" />
+          <FeatureRecordReference ID="7" />
+          <FeatureRecordReference ID="8" />
+          <FeatureRecordReference ID="9" />
+        </FeatureReference>
+      </FeatureReferences>
+      <VendorExtension>
+        <oemupdf:UDMStringQuery Query="PrintContractVersionMajor_Installed" Value="Installed" />
+      </VendorExtension>
+    </InstallableOption>
+    <InstallableOption ID="PC_PrintContractVersionMajor0" StringID="IDS_EMPTY" WinConfig="Configuration.PrintContract:VersionMajor" WinIntegerFeatureArr="0,1,2,3,4,5,6,7,8,9" WinIntegerOptionArr="0,1,2,3,4,5,6,7,8,9">
+      <FeatureReferences>
+        <FeatureReference ID="PrintContractversionMajor">
+          <FeatureRecordReference ID="0" />
+          <FeatureRecordReference ID="1" />
+          <FeatureRecordReference ID="2" />
+          <FeatureRecordReference ID="3" />
+          <FeatureRecordReference ID="4" />
+          <FeatureRecordReference ID="5" />
+          <FeatureRecordReference ID="6" />
+          <FeatureRecordReference ID="7" />
+          <FeatureRecordReference ID="8" />
+          <FeatureRecordReference ID="9" />
+        </FeatureReference>
+      </FeatureReferences>
+      <VendorExtension>
+        <oemupdf:UDMStringQuery Query="PrintContractVersionMajor0_Installed" Value="Installed" />
+      </VendorExtension>
+    </InstallableOption>
+    <InstallableOption ID="PC_PrintContractVersionMajor1" StringID="IDS_EMPTY" WinConfig="Configuration.PrintContract:VersionMajor" WinIntegerFeatureArr="0,1,2,3,4,5,6,7,8,9" WinIntegerOptionArr="0,1,2,3,4,5,6,7,8,9">
+      <FeatureReferences>
+        <FeatureReference ID="PrintContractversionMajor">
+          <FeatureRecordReference ID="0" />
+          <FeatureRecordReference ID="1" />
+          <FeatureRecordReference ID="2" />
+          <FeatureRecordReference ID="3" />
+          <FeatureRecordReference ID="4" />
+          <FeatureRecordReference ID="5" />
+          <FeatureRecordReference ID="6" />
+          <FeatureRecordReference ID="7" />
+          <FeatureRecordReference ID="8" />
+          <FeatureRecordReference ID="9" />
+        </FeatureReference>
+      </FeatureReferences>
+      <VendorExtension>
+        <oemupdf:UDMStringQuery Query="PrintContractVersionMajor1_Installed" Value="Installed" />
+      </VendorExtension>
+    </InstallableOption>
+    <InstallableOption ID="PC_PrintContractVersionMajor2" StringID="IDS_EMPTY" WinConfig="Configuration.PrintContract:VersionMajor" WinIntegerFeatureArr="0,1,2,3,4,5,6,7,8,9" WinIntegerOptionArr="0,1,2,3,4,5,6,7,8,9">
+      <FeatureReferences>
+        <FeatureReference ID="PrintContractversionMajor">
+          <FeatureRecordReference ID="0" />
+          <FeatureRecordReference ID="1" />
+          <FeatureRecordReference ID="2" />
+          <FeatureRecordReference ID="3" />
+          <FeatureRecordReference ID="4" />
+          <FeatureRecordReference ID="5" />
+          <FeatureRecordReference ID="6" />
+          <FeatureRecordReference ID="7" />
+          <FeatureRecordReference ID="8" />
+          <FeatureRecordReference ID="9" />
+        </FeatureReference>
+      </FeatureReferences>
+      <VendorExtension>
+        <oemupdf:UDMStringQuery Query="PrintContractVersionMajor2_Installed" Value="Installed" />
+      </VendorExtension>
+    </InstallableOption>
+    <InstallableOption ID="PC_PrintContractVersionMajor3" StringID="IDS_EMPTY" WinConfig="Configuration.PrintContract:VersionMajor" WinIntegerFeatureArr="0,1,2,3,4,5,6,7,8,9" WinIntegerOptionArr="0,1,2,3,4,5,6,7,8,9">
+      <FeatureReferences>
+        <FeatureReference ID="PrintContractversionMajor">
+          <FeatureRecordReference ID="0" />
+          <FeatureRecordReference ID="1" />
+          <FeatureRecordReference ID="2" />
+          <FeatureRecordReference ID="3" />
+          <FeatureRecordReference ID="4" />
+          <FeatureRecordReference ID="5" />
+          <FeatureRecordReference ID="6" />
+          <FeatureRecordReference ID="7" />
+          <FeatureRecordReference ID="8" />
+          <FeatureRecordReference ID="9" />
+        </FeatureReference>
+      </FeatureReferences>
+      <VendorExtension>
+        <oemupdf:UDMStringQuery Query="PrintContractVersionMajor3_Installed" Value="Installed" />
+      </VendorExtension>
+    </InstallableOption>
+    <InstallableOption ID="PC_PrintContractVersionMajor4" StringID="IDS_EMPTY" WinConfig="Configuration.PrintContract:VersionMajor" WinIntegerFeatureArr="0,1,2,3,4,5,6,7,8,9" WinIntegerOptionArr="0,1,2,3,4,5,6,7,8,9">
+      <FeatureReferences>
+        <FeatureReference ID="PrintContractversionMajor">
+          <FeatureRecordReference ID="0" />
+          <FeatureRecordReference ID="1" />
+          <FeatureRecordReference ID="2" />
+          <FeatureRecordReference ID="3" />
+          <FeatureRecordReference ID="4" />
+          <FeatureRecordReference ID="5" />
+          <FeatureRecordReference ID="6" />
+          <FeatureRecordReference ID="7" />
+          <FeatureRecordReference ID="8" />
+          <FeatureRecordReference ID="9" />
+        </FeatureReference>
+      </FeatureReferences>
+      <VendorExtension>
+        <oemupdf:UDMStringQuery Query="PrintContractVersionMajor4_Installed" Value="Installed" />
+      </VendorExtension>
+    </InstallableOption>
+    <InstallableOption ID="PC_PrintContractVersionMajor5" StringID="IDS_EMPTY" WinConfig="Configuration.PrintContract:VersionMajor" WinIntegerFeatureArr="0,1,2,3,4,5,6,7,8,9" WinIntegerOptionArr="0,1,2,3,4,5,6,7,8,9">
+      <FeatureReferences>
+        <FeatureReference ID="PrintContractversionMajor">
+          <FeatureRecordReference ID="0" />
+          <FeatureRecordReference ID="1" />
+          <FeatureRecordReference ID="2" />
+          <FeatureRecordReference ID="3" />
+          <FeatureRecordReference ID="4" />
+          <FeatureRecordReference ID="5" />
+          <FeatureRecordReference ID="6" />
+          <FeatureRecordReference ID="7" />
+          <FeatureRecordReference ID="8" />
+          <FeatureRecordReference ID="9" />
+        </FeatureReference>
+      </FeatureReferences>
+      <VendorExtension>
+        <oemupdf:UDMStringQuery Query="PrintContractVersionMajor5_Installed" Value="Installed" />
+      </VendorExtension>
+    </InstallableOption>
+    <InstallableOption ID="PC_PrintContractVersionMajor6" StringID="IDS_EMPTY" WinConfig="Configuration.PrintContract:VersionMajor" WinIntegerFeatureArr="0,1,2,3,4,5,6,7,8,9" WinIntegerOptionArr="0,1,2,3,4,5,6,7,8,9">
+      <FeatureReferences>
+        <FeatureReference ID="PrintContractversionMajor">
+          <FeatureRecordReference ID="0" />
+          <FeatureRecordReference ID="1" />
+          <FeatureRecordReference ID="2" />
+          <FeatureRecordReference ID="3" />
+          <FeatureRecordReference ID="4" />
+          <FeatureRecordReference ID="5" />
+          <FeatureRecordReference ID="6" />
+          <FeatureRecordReference ID="7" />
+          <FeatureRecordReference ID="8" />
+          <FeatureRecordReference ID="9" />
+        </FeatureReference>
+      </FeatureReferences>
+      <VendorExtension>
+        <oemupdf:UDMStringQuery Query="PrintContractVersionMajor6_Installed" Value="Installed" />
+      </VendorExtension>
+    </InstallableOption>
+    <InstallableOption ID="PC_PrintContractVersionMajor7" StringID="IDS_EMPTY" WinConfig="Configuration.PrintContract:VersionMajor" WinIntegerFeatureArr="0,1,2,3,4,5,6,7,8,9" WinIntegerOptionArr="0,1,2,3,4,5,6,7,8,9">
+      <FeatureReferences>
+        <FeatureReference ID="PrintContractversionMajor">
+          <FeatureRecordReference ID="0" />
+          <FeatureRecordReference ID="1" />
+          <FeatureRecordReference ID="2" />
+          <FeatureRecordReference ID="3" />
+          <FeatureRecordReference ID="4" />
+          <FeatureRecordReference ID="5" />
+          <FeatureRecordReference ID="6" />
+          <FeatureRecordReference ID="7" />
+          <FeatureRecordReference ID="8" />
+          <FeatureRecordReference ID="9" />
+        </FeatureReference>
+      </FeatureReferences>
+      <VendorExtension>
+        <oemupdf:UDMStringQuery Query="PrintContractVersionMajor7_Installed" Value="Installed" />
+      </VendorExtension>
+    </InstallableOption>
+    <InstallableOption ID="PC_PrintContractVersionMajor8" StringID="IDS_EMPTY" WinConfig="Configuration.PrintContract:VersionMajor" WinIntegerFeatureArr="0,1,2,3,4,5,6,7,8,9" WinIntegerOptionArr="0,1,2,3,4,5,6,7,8,9">
+      <FeatureReferences>
+        <FeatureReference ID="PrintContractversionMajor">
+          <FeatureRecordReference ID="0" />
+          <FeatureRecordReference ID="1" />
+          <FeatureRecordReference ID="2" />
+          <FeatureRecordReference ID="3" />
+          <FeatureRecordReference ID="4" />
+          <FeatureRecordReference ID="5" />
+          <FeatureRecordReference ID="6" />
+          <FeatureRecordReference ID="7" />
+          <FeatureRecordReference ID="8" />
+          <FeatureRecordReference ID="9" />
+        </FeatureReference>
+      </FeatureReferences>
+      <VendorExtension>
+        <oemupdf:UDMStringQuery Query="PrintContractVersionMajor8_Installed" Value="Installed" />
+      </VendorExtension>
+    </InstallableOption>
+    <InstallableOption ID="PC_PrintContractVersionMajor9" StringID="IDS_EMPTY" WinConfig="Configuration.PrintContract:VersionMajor" WinIntegerFeatureArr="0,1,2,3,4,5,6,7,8,9" WinIntegerOptionArr="0,1,2,3,4,5,6,7,8,9">
+      <FeatureReferences>
+        <FeatureReference ID="PrintContractversionMajor">
+          <FeatureRecordReference ID="0" />
+          <FeatureRecordReference ID="1" />
+          <FeatureRecordReference ID="2" />
+          <FeatureRecordReference ID="3" />
+          <FeatureRecordReference ID="4" />
+          <FeatureRecordReference ID="5" />
+          <FeatureRecordReference ID="6" />
+          <FeatureRecordReference ID="7" />
+          <FeatureRecordReference ID="8" />
+          <FeatureRecordReference ID="9" />
+        </FeatureReference>
+      </FeatureReferences>
+      <VendorExtension>
+        <oemupdf:UDMStringQuery Query="PrintContractVersionMajor9_Installed" Value="Installed" />
+      </VendorExtension>
+    </InstallableOption>
+    <InstallableOption ID="PC_PrintContractVersionMinor" StringID="IDS_EMPTY" WinConfig="Configuration.PrintContract:VersionMinor" WinIntegerFeatureArr="0,1,2,3,4,5,6,7,8,9,72" WinIntegerOptionArr="0,1,2,3,4,5,6,7,8,9,72">
+      <FeatureReferences>
+        <FeatureReference ID="PrintContractversionMinor">
+          <FeatureRecordReference ID="0" />
+          <FeatureRecordReference ID="1" />
+          <FeatureRecordReference ID="2" />
+          <FeatureRecordReference ID="3" />
+          <FeatureRecordReference ID="4" />
+          <FeatureRecordReference ID="5" />
+          <FeatureRecordReference ID="6" />
+          <FeatureRecordReference ID="7" />
+          <FeatureRecordReference ID="8" />
+          <FeatureRecordReference ID="9" />
+          <FeatureRecordReference ID="72" />
+        </FeatureReference>
+      </FeatureReferences>
+      <VendorExtension>
+        <oemupdf:UDMStringQuery Query="PrintContractVersionMinor_Installed" Value="Installed" />
+      </VendorExtension>
+    </InstallableOption>
+    <InstallableOption ID="PC_PrintContractVersionMinor0" StringID="IDS_EMPTY" WinConfig="Configuration.PrintContract:VersionMinor" WinIntegerFeatureArr="0,1,2,3,4,5,6,7,8,9,72" WinIntegerOptionArr="0,1,2,3,4,5,6,7,8,9,72">
+      <FeatureReferences>
+        <FeatureReference ID="PrintContractversionMinor">
+          <FeatureRecordReference ID="0" />
+          <FeatureRecordReference ID="1" />
+          <FeatureRecordReference ID="2" />
+          <FeatureRecordReference ID="3" />
+          <FeatureRecordReference ID="4" />
+          <FeatureRecordReference ID="5" />
+          <FeatureRecordReference ID="6" />
+          <FeatureRecordReference ID="7" />
+          <FeatureRecordReference ID="8" />
+          <FeatureRecordReference ID="9" />
+          <FeatureRecordReference ID="72" />
+        </FeatureReference>
+      </FeatureReferences>
+      <VendorExtension>
+        <oemupdf:UDMStringQuery Query="PrintContractVersionMinor0_Installed" Value="Installed" />
+      </VendorExtension>
+    </InstallableOption>
+    <InstallableOption ID="PC_PrintContractVersionMinor1" StringID="IDS_EMPTY" WinConfig="Configuration.PrintContract:VersionMinor" WinIntegerFeatureArr="0,1,2,3,4,5,6,7,8,9,72" WinIntegerOptionArr="0,1,2,3,4,5,6,7,8,9,72">
+      <FeatureReferences>
+        <FeatureReference ID="PrintContractversionMinor">
+          <FeatureRecordReference ID="0" />
+          <FeatureRecordReference ID="1" />
+          <FeatureRecordReference ID="2" />
+          <FeatureRecordReference ID="3" />
+          <FeatureRecordReference ID="4" />
+          <FeatureRecordReference ID="5" />
+          <FeatureRecordReference ID="6" />
+          <FeatureRecordReference ID="7" />
+          <FeatureRecordReference ID="8" />
+          <FeatureRecordReference ID="9" />
+          <FeatureRecordReference ID="72" />
+        </FeatureReference>
+      </FeatureReferences>
+      <VendorExtension>
+        <oemupdf:UDMStringQuery Query="PrintContractVersionMinor1_Installed" Value="Installed" />
+      </VendorExtension>
+    </InstallableOption>
+    <InstallableOption ID="PC_PrintContractVersionMinor2" StringID="IDS_EMPTY" WinConfig="Configuration.PrintContract:VersionMinor" WinIntegerFeatureArr="0,1,2,3,4,5,6,7,8,9,72" WinIntegerOptionArr="0,1,2,3,4,5,6,7,8,9,72">
+      <FeatureReferences>
+        <FeatureReference ID="PrintContractversionMinor">
+          <FeatureRecordReference ID="0" />
+          <FeatureRecordReference ID="1" />
+          <FeatureRecordReference ID="2" />
+          <FeatureRecordReference ID="3" />
+          <FeatureRecordReference ID="4" />
+          <FeatureRecordReference ID="5" />
+          <FeatureRecordReference ID="6" />
+          <FeatureRecordReference ID="7" />
+          <FeatureRecordReference ID="8" />
+          <FeatureRecordReference ID="9" />
+          <FeatureRecordReference ID="72" />
+        </FeatureReference>
+      </FeatureReferences>
+      <VendorExtension>
+        <oemupdf:UDMStringQuery Query="PrintContractVersionMinor2_Installed" Value="Installed" />
+      </VendorExtension>
+    </InstallableOption>
+    <InstallableOption ID="PC_PrintContractVersionMinor3" StringID="IDS_EMPTY" WinConfig="Configuration.PrintContract:VersionMinor" WinIntegerFeatureArr="0,1,2,3,4,5,6,7,8,9,72" WinIntegerOptionArr="0,1,2,3,4,5,6,7,8,9,72">
+      <FeatureReferences>
+        <FeatureReference ID="PrintContractversionMinor">
+          <FeatureRecordReference ID="0" />
+          <FeatureRecordReference ID="1" />
+          <FeatureRecordReference ID="2" />
+          <FeatureRecordReference ID="3" />
+          <FeatureRecordReference ID="4" />
+          <FeatureRecordReference ID="5" />
+          <FeatureRecordReference ID="6" />
+          <FeatureRecordReference ID="7" />
+          <FeatureRecordReference ID="8" />
+          <FeatureRecordReference ID="9" />
+          <FeatureRecordReference ID="72" />
+        </FeatureReference>
+      </FeatureReferences>
+      <VendorExtension>
+        <oemupdf:UDMStringQuery Query="PrintContractVersionMinor3_Installed" Value="Installed" />
+      </VendorExtension>
+    </InstallableOption>
+    <InstallableOption ID="PC_PrintContractVersionMinor4" StringID="IDS_EMPTY" WinConfig="Configuration.PrintContract:VersionMinor" WinIntegerFeatureArr="0,1,2,3,4,5,6,7,8,9,72" WinIntegerOptionArr="0,1,2,3,4,5,6,7,8,9,72">
+      <FeatureReferences>
+        <FeatureReference ID="PrintContractversionMinor">
+          <FeatureRecordReference ID="0" />
+          <FeatureRecordReference ID="1" />
+          <FeatureRecordReference ID="2" />
+          <FeatureRecordReference ID="3" />
+          <FeatureRecordReference ID="4" />
+          <FeatureRecordReference ID="5" />
+          <FeatureRecordReference ID="6" />
+          <FeatureRecordReference ID="7" />
+          <FeatureRecordReference ID="8" />
+          <FeatureRecordReference ID="9" />
+          <FeatureRecordReference ID="72" />
+        </FeatureReference>
+      </FeatureReferences>
+      <VendorExtension>
+        <oemupdf:UDMStringQuery Query="PrintContractVersionMinor4_Installed" Value="Installed" />
+      </VendorExtension>
+    </InstallableOption>
+    <InstallableOption ID="PC_PrintContractVersionMinor5" StringID="IDS_EMPTY" WinConfig="Configuration.PrintContract:VersionMinor" WinIntegerFeatureArr="0,1,2,3,4,5,6,7,8,9,72" WinIntegerOptionArr="0,1,2,3,4,5,6,7,8,9,72">
+      <FeatureReferences>
+        <FeatureReference ID="PrintContractversionMinor">
+          <FeatureRecordReference ID="0" />
+          <FeatureRecordReference ID="1" />
+          <FeatureRecordReference ID="2" />
+          <FeatureRecordReference ID="3" />
+          <FeatureRecordReference ID="4" />
+          <FeatureRecordReference ID="5" />
+          <FeatureRecordReference ID="6" />
+          <FeatureRecordReference ID="7" />
+          <FeatureRecordReference ID="8" />
+          <FeatureRecordReference ID="9" />
+          <FeatureRecordReference ID="72" />
+        </FeatureReference>
+      </FeatureReferences>
+      <VendorExtension>
+        <oemupdf:UDMStringQuery Query="PrintContractVersionMinor5_Installed" Value="Installed" />
+      </VendorExtension>
+    </InstallableOption>
+    <InstallableOption ID="PC_PrintContractVersionMinor6" StringID="IDS_EMPTY" WinConfig="Configuration.PrintContract:VersionMinor" WinIntegerFeatureArr="0,1,2,3,4,5,6,7,8,9,72" WinIntegerOptionArr="0,1,2,3,4,5,6,7,8,9,72">
+      <FeatureReferences>
+        <FeatureReference ID="PrintContractversionMinor">
+          <FeatureRecordReference ID="0" />
+          <FeatureRecordReference ID="1" />
+          <FeatureRecordReference ID="2" />
+          <FeatureRecordReference ID="3" />
+          <FeatureRecordReference ID="4" />
+          <FeatureRecordReference ID="5" />
+          <FeatureRecordReference ID="6" />
+          <FeatureRecordReference ID="7" />
+          <FeatureRecordReference ID="8" />
+          <FeatureRecordReference ID="9" />
+          <FeatureRecordReference ID="72" />
+        </FeatureReference>
+      </FeatureReferences>
+      <VendorExtension>
+        <oemupdf:UDMStringQuery Query="PrintContractVersionMinor6_Installed" Value="Installed" />
+      </VendorExtension>
+    </InstallableOption>
+    <InstallableOption ID="PC_PrintContractVersionMinor7" StringID="IDS_EMPTY" WinConfig="Configuration.PrintContract:VersionMinor" WinIntegerFeatureArr="0,1,2,3,4,5,6,7,8,9,72" WinIntegerOptionArr="0,1,2,3,4,5,6,7,8,9,72">
+      <FeatureReferences>
+        <FeatureReference ID="PrintContractversionMinor">
+          <FeatureRecordReference ID="0" />
+          <FeatureRecordReference ID="1" />
+          <FeatureRecordReference ID="2" />
+          <FeatureRecordReference ID="3" />
+          <FeatureRecordReference ID="4" />
+          <FeatureRecordReference ID="5" />
+          <FeatureRecordReference ID="6" />
+          <FeatureRecordReference ID="7" />
+          <FeatureRecordReference ID="8" />
+          <FeatureRecordReference ID="9" />
+          <FeatureRecordReference ID="72" />
+        </FeatureReference>
+      </FeatureReferences>
+      <VendorExtension>
+        <oemupdf:UDMStringQuery Query="PrintContractVersionMinor7_Installed" Value="Installed" />
+      </VendorExtension>
+    </InstallableOption>
+    <InstallableOption ID="PC_PrintContractVersionMinor8" StringID="IDS_EMPTY" WinConfig="Configuration.PrintContract:VersionMinor" WinIntegerFeatureArr="0,1,2,3,4,5,6,7,8,9,72" WinIntegerOptionArr="0,1,2,3,4,5,6,7,8,9,72">
+      <FeatureReferences>
+        <FeatureReference ID="PrintContractversionMinor">
+          <FeatureRecordReference ID="0" />
+          <FeatureRecordReference ID="1" />
+          <FeatureRecordReference ID="2" />
+          <FeatureRecordReference ID="3" />
+          <FeatureRecordReference ID="4" />
+          <FeatureRecordReference ID="5" />
+          <FeatureRecordReference ID="6" />
+          <FeatureRecordReference ID="7" />
+          <FeatureRecordReference ID="8" />
+          <FeatureRecordReference ID="9" />
+          <FeatureRecordReference ID="72" />
+        </FeatureReference>
+      </FeatureReferences>
+      <VendorExtension>
+        <oemupdf:UDMStringQuery Query="PrintContractVersionMinor8_Installed" Value="Installed" />
+      </VendorExtension>
+    </InstallableOption>
+    <InstallableOption ID="PC_PrintContractVersionMinor9" StringID="IDS_EMPTY" WinConfig="Configuration.PrintContract:VersionMinor" WinIntegerFeatureArr="0,1,2,3,4,5,6,7,8,9,72" WinIntegerOptionArr="0,1,2,3,4,5,6,7,8,9,72">
+      <FeatureReferences>
+        <FeatureReference ID="PrintContractversionMinor">
+          <FeatureRecordReference ID="0" />
+          <FeatureRecordReference ID="1" />
+          <FeatureRecordReference ID="2" />
+          <FeatureRecordReference ID="3" />
+          <FeatureRecordReference ID="4" />
+          <FeatureRecordReference ID="5" />
+          <FeatureRecordReference ID="6" />
+          <FeatureRecordReference ID="7" />
+          <FeatureRecordReference ID="8" />
+          <FeatureRecordReference ID="9" />
+          <FeatureRecordReference ID="72" />
+        </FeatureReference>
+      </FeatureReferences>
+      <VendorExtension>
+        <oemupdf:UDMStringQuery Query="PrintContractVersionMinor9_Installed" Value="Installed" />
+      </VendorExtension>
+    </InstallableOption>
+    <InstallableOption ID="PC_PrintContractVersionMinor72" StringID="IDS_EMPTY" WinConfig="Configuration.PrintContract:VersionMinor" WinIntegerFeatureArr="0,1,2,3,4,5,6,7,8,9,72" WinIntegerOptionArr="0,1,2,3,4,5,6,7,8,9,72">
+      <FeatureReferences>
+        <FeatureReference ID="PrintContractversionMinor">
+          <FeatureRecordReference ID="0" />
+          <FeatureRecordReference ID="1" />
+          <FeatureRecordReference ID="2" />
+          <FeatureRecordReference ID="3" />
+          <FeatureRecordReference ID="4" />
+          <FeatureRecordReference ID="5" />
+          <FeatureRecordReference ID="6" />
+          <FeatureRecordReference ID="7" />
+          <FeatureRecordReference ID="8" />
+          <FeatureRecordReference ID="9" />
+          <FeatureRecordReference ID="72" />
+        </FeatureReference>
+      </FeatureReferences>
+      <VendorExtension>
+        <oemupdf:UDMStringQuery Query="PrintContractVersionMinor72_Installed" Value="Installed" />
+      </VendorExtension>
+    </InstallableOption>
+    <InstallableOption ID="PC_DefaultDuplexStandard" StringID="IDS_EMPTY" WinConfig="Configuration.DeviceDefaultDuplexStandard:DefaultDuplexStandard" WinStringOptionInstalled="DefaultDuplexOn" WinStringOptionNotInstalled="DefaultDuplexOff">
+      <FeatureReferences>
+        <FeatureReference ID="DefaultDuplexStandard">
+          <FeatureRecordReference ID="DefaultDuplexOff" />
+          <FeatureRecordReference ID="DefaultDuplexOn" />
+        </FeatureReference>
+      </FeatureReferences>
+      <VendorExtension>
+        <oemupdf:UDMStringQuery Query="DeviceDefaultDuplexStandard" Value="true" />
+      </VendorExtension>
+    </InstallableOption>
+    <InstallableOption ID="PC_NoMediaType" StringID="IDS_EMPTY">
+      <FeatureReferences>
+        <FeatureReference ID="PCMediaType">
+          <FeatureRecordReference ID="None" />
+        </FeatureReference>
+      </FeatureReferences>
+    </InstallableOption>
+    <InstallableOption ID="PQMode1" StringID="IDS_EMPTY">
+      <FeatureReferences>
+        <FeatureReference ID="PCEnable">
+          <FeatureRecordReference ID="Off" />
+        </FeatureReference>
+      </FeatureReferences>
+    </InstallableOption>
+    <InstallableOption ID="PQMode2" StringID="IDS_EMPTY">
+      <FeatureReferences>
+        <FeatureReference ID="PCEnable">
+          <FeatureRecordReference ID="Off" />
+        </FeatureReference>
+      </FeatureReferences>
+    </InstallableOption>
+    <InstallableOption ID="PQMode3" StringID="IDS_EMPTY">
+      <FeatureReferences>
+        <FeatureReference ID="PCEnable">
+          <FeatureRecordReference ID="Off" />
+        </FeatureReference>
+      </FeatureReferences>
+    </InstallableOption>
+    <InstallableOption ID="PQMode4" StringID="IDS_EMPTY">
+      <FeatureReferences>
+        <FeatureReference ID="PCEnable">
+          <FeatureRecordReference ID="Off" />
+        </FeatureReference>
+      </FeatureReferences>
+    </InstallableOption>
+    <InstallableOption ID="PQMode5" StringID="IDS_EMPTY">
+      <FeatureReferences>
+        <FeatureReference ID="PCEnable">
+          <FeatureRecordReference ID="Off" />
+        </FeatureReference>
+      </FeatureReferences>
+    </InstallableOption>
+    <InstallableOption ID="PQMode6" StringID="IDS_EMPTY">
+      <FeatureReferences>
+        <FeatureReference ID="PCEnable">
+          <FeatureRecordReference ID="Off" />
+        </FeatureReference>
+      </FeatureReferences>
+    </InstallableOption>
+    <InstallableOption ID="PQMode7" StringID="IDS_EMPTY">
+      <FeatureReferences>
+        <FeatureReference ID="PCEnable">
+          <FeatureRecordReference ID="Off" />
+        </FeatureReference>
+      </FeatureReferences>
+    </InstallableOption>
+    <InstallableOption ID="HintTag2000" StringID="IDS_EMPTY">
+      <FeatureReferences>
+        <FeatureReference ID="PCEnable">
+          <FeatureRecordReference ID="Off" />
+        </FeatureReference>
+      </FeatureReferences>
+    </InstallableOption>
+    <InstallableOption ID="HintTag2001" StringID="IDS_EMPTY">
+      <FeatureReferences>
+        <FeatureReference ID="PCEnable">
+          <FeatureRecordReference ID="Off" />
+        </FeatureReference>
+      </FeatureReferences>
+    </InstallableOption>
+    <InstallableOption ID="HintTag2002" StringID="IDS_EMPTY">
+      <FeatureReferences>
+        <FeatureReference ID="PCEnable">
+          <FeatureRecordReference ID="Off" />
+        </FeatureReference>
+      </FeatureReferences>
+    </InstallableOption>
+    <InstallableOption ID="HintTag2003" StringID="IDS_EMPTY">
+      <FeatureReferences>
+        <FeatureReference ID="PCEnable">
+          <FeatureRecordReference ID="Off" />
+        </FeatureReference>
+      </FeatureReferences>
+    </InstallableOption>
+    <InstallableOption ID="HintTag2004" StringID="IDS_EMPTY">
+      <FeatureReferences>
+        <FeatureReference ID="PCEnable">
+          <FeatureRecordReference ID="Off" />
+        </FeatureReference>
+      </FeatureReferences>
+    </InstallableOption>
+    <InstallableOption ID="HintTag2005" StringID="IDS_EMPTY">
+      <FeatureReferences>
+        <FeatureReference ID="PCEnable">
+          <FeatureRecordReference ID="Off" />
+        </FeatureReference>
+      </FeatureReferences>
+    </InstallableOption>
+    <InstallableOption ID="HintTag4000" StringID="IDS_EMPTY">
+      <FeatureReferences>
+        <FeatureReference ID="PCEnable">
+          <FeatureRecordReference ID="Off" />
+        </FeatureReference>
+      </FeatureReferences>
+    </InstallableOption>
+    <InstallableOption ID="HintTag4005" StringID="IDS_EMPTY">
+      <FeatureReferences>
+        <FeatureReference ID="PCEnable">
+          <FeatureRecordReference ID="Off" />
+        </FeatureReference>
+      </FeatureReferences>
+    </InstallableOption>
+    <InstallableOption ID="HintTag4010" StringID="IDS_EMPTY">
+      <FeatureReferences>
+        <FeatureReference ID="PCEnable">
+          <FeatureRecordReference ID="Off" />
+        </FeatureReference>
+      </FeatureReferences>
+    </InstallableOption>
+    <InstallableOption ID="HintTag4015" StringID="IDS_EMPTY">
+      <FeatureReferences>
+        <FeatureReference ID="PCEnable">
+          <FeatureRecordReference ID="Off" />
+        </FeatureReference>
+      </FeatureReferences>
+    </InstallableOption>
+    <UserInterface>
+      <InstallableOptionGroup ID="EconomodeHintTag" DefaultSetting="PC_NoMediaType" StringID="IDS_EMPTY" WinConfig="Capabilities.PrintQuality.StandardType1:ImageTechnology">
+        <InstallableOptionReference ID="PC_NoMediaType" />
+        <InstallableOptionReference ID="HintTag2000" WinStringValue="2000">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2000" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag2001" WinStringValue="2001">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2001" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag2002" WinStringValue="2002">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2002" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag2003" WinStringValue="2003">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2003" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag2004" WinStringValue="2004">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2004" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag2005" WinStringValue="2005">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2005" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag4000" WinStringValue="4000">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="4000" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag4005" WinStringValue="4005">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="4005" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag4010" WinStringValue="4010">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="4010" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag4015" WinStringValue="4015">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="4015" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <VendorExtension>
+          <oemupdf:UDMQuery Query="PC_PQStandardType1-ImagingTechnology" />
+        </VendorExtension>
+      </InstallableOptionGroup>
+      <InstallableOptionGroup ID="DraftHintTag" DefaultSetting="PC_NoMediaType" StringID="IDS_EMPTY" WinConfig="Capabilities.PrintQuality.StandardType2:ImageTechnology">
+        <InstallableOptionReference ID="PC_NoMediaType" />
+        <InstallableOptionReference ID="HintTag2000" WinStringValue="2000">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2000" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag2001" WinStringValue="2001">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2001" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag2002" WinStringValue="2002">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2002" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag2003" WinStringValue="2003">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2003" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag2004" WinStringValue="2004">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2004" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag2005" WinStringValue="2005">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2005" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag4000" WinStringValue="4000">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="4000" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag4005" WinStringValue="4005">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="4005" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag4010" WinStringValue="4010">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="4010" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag4015" WinStringValue="4015">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="4015" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <VendorExtension>
+          <oemupdf:UDMQuery Query="PC_PQStandardType2-ImagingTechnology" />
+        </VendorExtension>
+      </InstallableOptionGroup>
+      <InstallableOptionGroup ID="NormalHintTag" DefaultSetting="PC_NoMediaType" StringID="IDS_EMPTY" WinConfig="Capabilities.PrintQuality.StandardType3:ImageTechnology">
+        <InstallableOptionReference ID="PC_NoMediaType" />
+        <InstallableOptionReference ID="HintTag2000" WinStringValue="2000">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2000" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag2001" WinStringValue="2001">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2001" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag2002" WinStringValue="2002">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2002" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag2003" WinStringValue="2003">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2003" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag2004" WinStringValue="2004">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2004" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag2005" WinStringValue="2005">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2005" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag4000" WinStringValue="4000">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="4000" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag4005" WinStringValue="4005">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="4005" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag4010" WinStringValue="4010">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="4010" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag4015" WinStringValue="4015">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="4015" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <VendorExtension>
+          <oemupdf:UDMQuery Query="PC_PQStandardType3-ImagingTechnology" />
+        </VendorExtension>
+      </InstallableOptionGroup>
+      <InstallableOptionGroup ID="BestHintTag" DefaultSetting="PC_NoMediaType" StringID="IDS_EMPTY" WinConfig="Capabilities.PrintQuality.StandardType4:ImageTechnology">
+        <InstallableOptionReference ID="PC_NoMediaType" />
+        <InstallableOptionReference ID="HintTag2000" WinStringValue="2000">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2000" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag2001" WinStringValue="2001">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2001" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag2002" WinStringValue="2002">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2002" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag2003" WinStringValue="2003">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2003" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag2004" WinStringValue="2004">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2004" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag2005" WinStringValue="2005">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2005" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag4000" WinStringValue="4000">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="4000" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag4005" WinStringValue="4005">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="4005" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag4010" WinStringValue="4010">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="4010" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag4015" WinStringValue="4015">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="4015" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <VendorExtension>
+          <oemupdf:UDMQuery Query="PC_PQStandardType4-ImagingTechnology" />
+        </VendorExtension>
+      </InstallableOptionGroup>
+      <InstallableOptionGroup ID="MaxHintTag" DefaultSetting="PC_NoMediaType" StringID="IDS_EMPTY" WinConfig="Capabilities.PrintQuality.StandardType5:ImageTechnology">
+        <InstallableOptionReference ID="PC_NoMediaType" />
+        <InstallableOptionReference ID="HintTag2000" WinStringValue="2000">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2000" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag2001" WinStringValue="2001">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2001" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag2002" WinStringValue="2002">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2002" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag2003" WinStringValue="2003">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2003" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag2004" WinStringValue="2004">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2004" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag2005" WinStringValue="2005">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2005" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag4000" WinStringValue="4000">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="4000" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag4005" WinStringValue="4005">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="4005" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag4010" WinStringValue="4010">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="4010" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="HintTag4015" WinStringValue="4015">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="4015" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <VendorExtension>
+          <oemupdf:UDMQuery Query="PC_PQStandardType5-ImagingTechnology" />
+        </VendorExtension>
+      </InstallableOptionGroup>
+      <InstallableOptionGroup ID="EconomodePQMode" DefaultSetting="PC_NoMediaType" StringID="IDS_EMPTY" WinConfig="Capabilities.PrintQuality.StandardType1:PQMode">
+        <InstallableOptionReference ID="PC_NoMediaType" />
+        <InstallableOptionReference ID="PQMode1" WinStringValue="1">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="1" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode2" WinStringValue="2">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode3" WinStringValue="3">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="3" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode4" WinStringValue="4">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="4" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode5" WinStringValue="5">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="5" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode6" WinStringValue="6">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="6" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode7" WinStringValue="7">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="7" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <VendorExtension>
+          <oemupdf:UDMQuery Query="PrintQuality-Economode-PQMode" />
+        </VendorExtension>
+      </InstallableOptionGroup>
+      <InstallableOptionGroup ID="DraftPQMode" DefaultSetting="PC_NoMediaType" StringID="IDS_EMPTY" WinConfig="Capabilities.PrintQuality.StandardType2:PQMode">
+        <InstallableOptionReference ID="PC_NoMediaType" />
+        <InstallableOptionReference ID="PQMode1" WinStringValue="1">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="1" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode2" WinStringValue="2">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode3" WinStringValue="3">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="3" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode4" WinStringValue="4">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="4" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode5" WinStringValue="5">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="5" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode6" WinStringValue="6">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="6" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode7" WinStringValue="7">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="7" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <VendorExtension>
+          <oemupdf:UDMQuery Query="PrintQuality-Draft-PQMode" />
+        </VendorExtension>
+      </InstallableOptionGroup>
+      <InstallableOptionGroup ID="NormalPQMode" DefaultSetting="PC_NoMediaType" StringID="IDS_EMPTY" WinConfig="Capabilities.PrintQuality.StandardType3:PQMode">
+        <InstallableOptionReference ID="PC_NoMediaType" />
+        <InstallableOptionReference ID="PQMode1" WinStringValue="1">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="1" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode2" WinStringValue="2">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode3" WinStringValue="3">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="3" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode4" WinStringValue="4">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="4" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode5" WinStringValue="5">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="5" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode6" WinStringValue="6">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="6" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode7" WinStringValue="7">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="7" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <VendorExtension>
+          <oemupdf:UDMQuery Query="PrintQuality-Normal-PQMode" />
+        </VendorExtension>
+      </InstallableOptionGroup>
+      <InstallableOptionGroup ID="BestPQMode" DefaultSetting="PC_NoMediaType" StringID="IDS_EMPTY" WinConfig="Capabilities.PrintQuality.StandardType4:PQMode">
+        <InstallableOptionReference ID="PC_NoMediaType" />
+        <InstallableOptionReference ID="PQMode1" WinStringValue="1">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="1" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode2" WinStringValue="2">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode3" WinStringValue="3">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="3" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode4" WinStringValue="4">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="4" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode5" WinStringValue="5">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="5" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode6" WinStringValue="6">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="6" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode7" WinStringValue="7">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="7" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <VendorExtension>
+          <oemupdf:UDMQuery Query="PrintQuality-Best-PQMode" />
+        </VendorExtension>
+      </InstallableOptionGroup>
+      <InstallableOptionGroup ID="MaxPQMode" DefaultSetting="PC_NoMediaType" StringID="IDS_EMPTY" WinConfig="Capabilities.PrintQuality.StandardType5:PQMode">
+        <InstallableOptionReference ID="PC_NoMediaType" />
+        <InstallableOptionReference ID="PQMode1" WinStringValue="1">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="1" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode2" WinStringValue="2">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="2" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode3" WinStringValue="3">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="3" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode4" WinStringValue="4">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="4" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode5" WinStringValue="5">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="5" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode6" WinStringValue="6">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="6" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode7" WinStringValue="7">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="7" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <VendorExtension>
+          <oemupdf:UDMQuery Query="PrintQuality-Max-PQMode" />
+        </VendorExtension>
+      </InstallableOptionGroup>
+      <InstallableOptionGroup ID="Custom1PQMode" DefaultSetting="PC_NoMediaType" StringID="IDS_EMPTY" WinConfig="Capabilities.PrintQuality.CustomType1:PQMode">
+        <InstallableOptionReference ID="PC_NoMediaType" />
+        <InstallableOptionReference ID="PQMode1" WinStringValue="1">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="DRAFT" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode2" WinStringValue="2">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="NORMAL" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode3" WinStringValue="3">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="BEST" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode4" WinStringValue="4">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="MAXIMUM" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode5" WinStringValue="5">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="ECONOMODE" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode6" WinStringValue="6">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="FASTNORMAL" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode7" WinStringValue="7">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="DEPLETED" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <VendorExtension>
+          <oemupdf:UDMQuery Query="PC_PQCustomType1-PQMode" />
+        </VendorExtension>
+      </InstallableOptionGroup>
+      <InstallableOptionGroup ID="Custom2PQMode" DefaultSetting="PC_NoMediaType" StringID="IDS_EMPTY" WinConfig="Capabilities.PrintQuality.CustomType2:PQMode">
+        <InstallableOptionReference ID="PC_NoMediaType" />
+        <InstallableOptionReference ID="PQMode1" WinStringValue="1">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="DRAFT" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode2" WinStringValue="2">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="NORMAL" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode3" WinStringValue="3">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="BEST" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode4" WinStringValue="4">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="MAXIMUM" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode5" WinStringValue="5">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="ECONOMODE" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode6" WinStringValue="6">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="FASTNORMAL" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <InstallableOptionReference ID="PQMode7" WinStringValue="7">
+          <VendorExtension>
+            <oemupdf:UDMStringValue Value="DEPLETED" />
+          </VendorExtension>
+        </InstallableOptionReference>
+        <VendorExtension>
+          <oemupdf:UDMQuery Query="PC_PQCustomType2-PQMode" />
+        </VendorExtension>
+      </InstallableOptionGroup>
+      <FeatureControl ID="JobStorageControl" DefaultSetting="JobStorageControlAuto" StringID="IDS_JOBSTORAGETAB_NAME">
+        <FeatureControlRecord ID="JobStorageControlAuto" ClassifyingID="auto" StringID="IDS_AUTOMATIC" />
+        <FeatureControlRecord ID="JobStorageControlDisable" ClassifyingID="disable" StringID="IDS_DISABLE" />
+        <FeatureReferences>
+          <FeatureReference ID="JobStorage">
+            <FeatureRecordReference ID="JobStorageOff" />
+            <FeatureRecordReference ID="JobStoragePersonalJob" />
+            <FeatureRecordReference ID="JobStorageProofAndHold" />
+            <FeatureRecordReference ID="JobStorageQuickCopy" />
+            <FeatureRecordReference ID="JobStorageStoreJob" />
+          </FeatureReference>
+          <FeatureReference ID="JobStoragePrivateSecure">
+            <FeatureRecordReference ID="PrivateSecureOff" />
+            <FeatureRecordReference ID="PrivateSecurePINtoPrint" />
+          </FeatureReference>
+          <FeatureReference ID="JobStorageUserName">
+            <FeatureRecordReference ID="UserNameCurrent" />
+            <FeatureRecordReference ID="UserNameCustom" />
+          </FeatureReference>
+          <FeatureReference ID="JobStorageJobName">
+            <FeatureRecordReference ID="JobNameAuto" />
+            <FeatureRecordReference ID="JobNameCustom" />
+          </FeatureReference>
+          <FeatureReference ID="JobStorageJobNameExist">
+            <FeatureRecordReference ID="JobNameExistsUse" />
+            <FeatureRecordReference ID="JobNameExistsReplace" />
+          </FeatureReference>
+        </FeatureReferences>
+      </FeatureControl>
+      <FeatureControl ID="DeviceCollationControl" DefaultSetting="DeviceCollationControlAuto" StringID="IDS_MOPIER_MODE">
+        <FeatureControlRecord ID="DeviceCollationControlAuto" ClassifyingID="auto" StringID="IDS_ENABLE" />
+        <FeatureControlRecord ID="DeviceCollationControlDisable" ClassifyingID="disable" StringID="IDS_DISABLE" />
+        <FeatureReferences>
+          <FeatureReference ID="DeviceCollation">
+            <FeatureRecordReference ID="DeviceUncollated" />
+            <FeatureRecordReference ID="DeviceCollated" />
+          </FeatureReference>
+        </FeatureReferences>
+      </FeatureControl>
+      <FeatureControl ID="SecurePrintControl" DefaultSetting="SecurePrintControlAuto" StringID="IDS_SECURE_PRINTING">
+        <FeatureControlRecord ID="SecurePrintControlAuto" ClassifyingID="auto" StringID="IDS_AUTOMATIC" />
+        <FeatureControlRecord ID="SecurePrintControlDisable" ClassifyingID="disable" StringID="IDS_DISABLE" />
+        <FeatureReferences>
+          <FeatureReference ID="JobStoragePrivateSecure">
+            <FeatureRecordReference ID="PrivateSecureEncryptJob" />
+          </FeatureReference>
+        </FeatureReferences>
+      </FeatureControl>
+      <FeatureControl ID="TintTestingControl" DefaultSetting="TintTestingControlDisable" StringID="IDS_EMPTY">
+        <FeatureControlRecord ID="TintTestingControlAuto" ClassifyingID="auto" StringID="IDS_ENABLE" />
+        <FeatureControlRecord ID="TintTestingControlDisable" ClassifyingID="disable" StringID="IDS_DISABLE" />
+        <FeatureReferences>
+          <FeatureReference ID="DocumentTintTesting">
+            <FeatureRecordReference ID="Disabled" />
+            <FeatureRecordReference ID="JPEGARPassthrough" />
+            <FeatureRecordReference ID="RLTCSCPassthrough" />
+            <FeatureRecordReference ID="ImageResamplingPassthrough" />
+            <FeatureRecordReference ID="ImageHealingPassthrough" />
+          </FeatureReference>
+        </FeatureReferences>
+      </FeatureControl>
+      <VendorExtension>
+        <oemupdf:UserInterfaceInfo>
+          <oemupdf:ManualDuplexInfo>
+            <oemupdf:UserInfo StringID="IDS_ICD_MANUAL_DUPLEX_INSTRUCTION_A" StringPart2ID="IDS_ICD_MANUAL_DUPLEX_INSTRUCTION_B" />
+            <oemupdf:UserInfoIcon StringID="IDS_ICD_MANUAL_DUPLEX_STEP_1" IconID="TOP_OUTPUT_FACE_DOWN" />
+            <oemupdf:UserInfoIcon StringID="IDS_MANUAL_DUPLEX_MESSAGE2_STR1" IconID="FRONT_INPUT_FACE_DOWN" />
+            <oemupdf:UserInfoIcon StringID="IDS_ICD_MANUAL_DUPLEX_STEP_3" IconID="PRESS_START" />
+          </oemupdf:ManualDuplexInfo>
+        </oemupdf:UserInterfaceInfo>
+      </VendorExtension>
+    </UserInterface>
+    <UserInterfaceStrings>
+      <DefaultLocale>
+        <LocaleIdentifierLong Country="US-United_States" Language="en-English" />
+        <DefaultLocaleElement StringID="STR_NO_LOCALIZATION_COMPRESSION" LocalizedString="XPS Image Compression" />
+        <DefaultLocaleElement StringID="STR_NO_LOCALIZATION_NOSELECTION" LocalizedString="No Selection" />
+        <DefaultLocaleElement StringID="STR_NO_LOCALIZATION_JPEG_HIGH" LocalizedString="Jpeg High" />
+        <DefaultLocaleElement StringID="STR_NO_LOCALIZATION_JPEG_MEDIUM" LocalizedString="Jpeg Medium" />
+        <DefaultLocaleElement StringID="STR_NO_LOCALIZATION_JPEG_LOW" LocalizedString="Jpeg Low" />
+        <DefaultLocaleElement StringID="STR_NO_LOCALIZATION_PNG" LocalizedString="PNG" />
+        <DefaultLocaleElement StringID="IDS_NORMAL" />
+        <DefaultLocaleElement StringID="IDS_HP_PC_DRAFT" />
+        <DefaultLocaleElement StringID="IDS_HP_PC_ENHANCED" />
+        <DefaultLocaleElement StringID="IDS_HP_PC_MAX" />
+        <DefaultLocaleElement StringID="IDS_ECONOMODE_Q206" />
+        <DefaultLocaleElement StringID="IDS_PQ_GENERAL_OFFICE_CAP" />
+        <DefaultLocaleElement StringID="IDS_PQ_PROFESSIONAL" />
+        <DefaultLocaleElement StringID="IDS_PQ_PRESENTATION_CSL" />
+        <DefaultLocaleElement StringID="IDS_MAXIMUM_DPI" />
+        <DefaultLocaleElement StringID="IDS_CUSTOM_1" />
+        <DefaultLocaleElement StringID="IDS_CUSTOM_2" />
+        <DefaultLocaleElement StringID="IDS_PAPER_SOURCE_WTCL" />
+        <DefaultLocaleElement StringID="IDS_PRINTER_AUTO_SELECT" />
+        <DefaultLocaleElement StringID="IDS_SOURCE_IS_MANUAL" />
+        <DefaultLocaleElement StringID="IDS_TRAY1" />
+        <DefaultLocaleElement StringID="IDS_TRAY2" />
+        <DefaultLocaleElement StringID="IDS_TRAY3" />
+        <DefaultLocaleElement StringID="IDS_ICD_MANUAL_DUPLEX_INSTRUCTION_A" />
+        <DefaultLocaleElement StringID="IDS_ICD_MANUAL_DUPLEX_INSTRUCTION_B" />
+        <DefaultLocaleElement StringID="IDS_ICD_MANUAL_DUPLEX_STEP_1" />
+        <DefaultLocaleElement StringID="TOP_OUTPUT_FACE_DOWN" />
+        <DefaultLocaleElement StringID="IDS_MANUAL_DUPLEX_MESSAGE2_STR1" />
+        <DefaultLocaleElement StringID="FRONT_INPUT_FACE_DOWN" />
+        <DefaultLocaleElement StringID="IDS_ICD_MANUAL_DUPLEX_STEP_3" />
+        <DefaultLocaleElement StringID="PRESS_START" />
+        <DefaultLocaleElement StringID="IDS_AUTOMATIC_CE" />
+        <DefaultLocaleElement StringID="IDS_MANUAL" />
+        <DefaultLocaleElement StringID="IDS_EDGE_CONTROL" />
+        <DefaultLocaleElement StringID="IDS_OFF_EDGE" />
+        <DefaultLocaleElement StringID="IDS_AUTO" />
+        <DefaultLocaleElement StringID="IDS_EDGE_CONTROL_LIGHT" />
+        <DefaultLocaleElement StringID="IDS_COLOR_NORMAL" />
+        <DefaultLocaleElement StringID="IDS_EC_MAXIMUM" />
+        <DefaultLocaleElement StringID="IDS_NEUTRAL_GRAYS" />
+        <DefaultLocaleElement StringID="IDS_NEUTRAL_GRAYS_BLACK" />
+        <DefaultLocaleElement StringID="IDS_NEUTRAL_GRAYS_CMYK_GRAY" />
+        <DefaultLocaleElement StringID="IDS_HALFTONE" />
+        <DefaultLocaleElement StringID="IDS_HALFTONE2" />
+        <DefaultLocaleElement StringID="IDS_HALFTONE1" />
+        <DefaultLocaleElement StringID="IDS_PRINT_IN_GRAYSCALE_WITHOUT_HK" />
+        <DefaultLocaleElement StringID="IDS_OFF" />
+        <DefaultLocaleElement StringID="IDS_HP_PC_BLACK_ONLY" />
+        <DefaultLocaleElement StringID="IDS_HP_PC_HIGH_QUALITY_GRAY" />
+        <DefaultLocaleElement StringID="IDS_RGB_COLOR_HK" />
+        <DefaultLocaleElement StringID="IDS_PRINTER_DEFAULT" />
+        <DefaultLocaleElement StringID="IDS_OFFICE_SRGB" />
+        <DefaultLocaleElement StringID="IDS_CUSTOM_RGB" />
+        <DefaultLocaleElement StringID="IDS_PHOTO_SRGB" />
+        <DefaultLocaleElement StringID="IDS_PHOTO_ADOBE_RGB_1998" />
+        <DefaultLocaleElement StringID="IDS_DEVICE_RGB" />
+        <DefaultLocaleElement StringID="IDS_VIVID_SRGB" />
+        <DefaultLocaleElement StringID="IDS_OPTIONAL_DUPLEXER" />
+        <DefaultLocaleElement StringID="IDS_EMPTY" />
+        <DefaultLocaleElement StringID="IDS_JOBSTORAGETAB_NAME" />
+        <DefaultLocaleElement StringID="IDS_AUTOMATIC" />
+        <DefaultLocaleElement StringID="IDS_DISABLE" />
+        <DefaultLocaleElement StringID="IDS_MOPIER_MODE" />
+        <DefaultLocaleElement StringID="IDS_ENABLE" />
+        <DefaultLocaleElement StringID="IDS_SECURE_PRINTING" />
+        <DefaultLocaleElement StringID="IDS_JR_MODE" />
+        <DefaultLocaleElement StringID="IDS_JR_PROOF_HOLD" />
+        <DefaultLocaleElement StringID="IDS_STORE_JOB_UNTIL_PRINTED" />
+        <DefaultLocaleElement StringID="IDS_JR_QUICK_COPY" />
+        <DefaultLocaleElement StringID="IDS_JR_STORED_JOB" />
+        <DefaultLocaleElement StringID="IDS_JR_JOB_NAME" />
+        <DefaultLocaleElement StringID="IDS_RB_AUTOMATIC" />
+        <DefaultLocaleElement StringID="IDS_CUSTOM" />
+        <DefaultLocaleElement StringID="IDS_JR_USER_NAME" />
+        <DefaultLocaleElement StringID="IDS_HK_USER_NAME" />
+        <DefaultLocaleElement StringID="IDS_MAKE_JOB_PRIVATE_SECURE" />
+        <DefaultLocaleElement StringID="IDS_NONE_FEM" />
+        <DefaultLocaleElement StringID="IDS_PIN_TO_PRINT" />
+        <DefaultLocaleElement StringID="IDS_ENCRYPT_JOB_WITH_PASSWORD" />
+        <DefaultLocaleElement StringID="IDS_IF_JOB_NAME_EXISTS" />
+        <DefaultLocaleElement StringID="IDS_USE_JOB_NAME" />
+        <DefaultLocaleElement StringID="IDS_REPLACE_EXISTING_FILE" />
+        <DefaultLocaleElement StringID="IDS_SAVE_DEFAULT_PASSWORD" />
+        <DefaultLocaleElement StringID="IDS_ON" />
+        <DefaultLocaleElement StringID="IDS_JS1_CUSTOM" />
+        <DefaultLocaleElement StringID="IDS_JS2_CUSTOM" />
+        <DefaultLocaleElement StringID="IDS_PASSWORD" />
+        <DefaultLocaleElement StringID="IDS_HK_PIN" />
+        <DefaultLocaleElement StringID="IDS_PAGES_PER_SHEET" />
+        <DefaultLocaleElement StringID="IDS_1_PAGE_PER_SHEET" />
+        <DefaultLocaleElement StringID="IDS_2_PAGES_PER_SHEET" />
+        <DefaultLocaleElement StringID="IDS_4_PAGES_PER_SHEET" />
+        <DefaultLocaleElement StringID="IDS_6_PAGES_PER_SHEET" />
+        <DefaultLocaleElement StringID="IDS_9_PAGES_PER_SHEET" />
+        <DefaultLocaleElement StringID="IDS_16_PAGES_PER_SHEET" />
+        <DefaultLocaleElement StringID="IDS_BOOKLET_PRINTING_SUI" />
+        <DefaultLocaleElement StringID="IDS_BOOKLET_PRINTING_OFF" />
+        <DefaultLocaleElement StringID="IDS_BOOKLET_PRINTING_LEFT_EDGE_Q207" />
+        <DefaultLocaleElement StringID="IDS_BOOKLET_PRINTING_RIGHT_EDGE_Q207" />
+        <DefaultLocaleElement StringID="IDS_PAPER_SIZE_TROJA" />
+        <DefaultLocaleElement StringID="IDS_LETTER" />
+        <DefaultLocaleElement StringID="IDS_LEGAL" />
+        <DefaultLocaleElement StringID="IDS_MSIZE_EXECUTIVE" />
+        <DefaultLocaleElement StringID="IDS_STATEMENT" />
+        <DefaultLocaleElement StringID="STR_OFFICIO_8_5x13in" LocalizedString="Oficio 8.5x13" />
+        <DefaultLocaleElement StringID="IDS_3_X_5" />
+        <DefaultLocaleElement StringID="IDS_PSIZE_4_X_6" />
+        <DefaultLocaleElement StringID="IDS_PSIZE_5_X_7" />
+        <DefaultLocaleElement StringID="IDS_PSIZE_5_X_8" />
+        <DefaultLocaleElement StringID="IDS_MSIZE_A4" />
+        <DefaultLocaleElement StringID="IDS_A5" />
+        <DefaultLocaleElement StringID="IDS_MSIZE_A6" />
+        <DefaultLocaleElement StringID="IDS_PSIZE_RA4" />
+        <DefaultLocaleElement StringID="IDS_MSIZE_B5_JIS" />
+        <DefaultLocaleElement StringID="IDS_B6_JIS" />
+        <DefaultLocaleElement StringID="IDS_MSIZE_10X15_CM" />
+        <DefaultLocaleElement StringID="STR_OFF_216x340mm" LocalizedString="Oficio 216x340 mm" />
+        <DefaultLocaleElement StringID="IDS_MSIZE_16k_MM_Q306" />
+        <DefaultLocaleElement StringID="IDS_MSIZE_16k_184_MM_Q306" />
+        <DefaultLocaleElement StringID="IDS_MSIZE_16K_197X273" />
+        <DefaultLocaleElement StringID="IDS_JAPAN_POST" />
+        <DefaultLocaleElement StringID="IDS_DBL_JAPAN_POST_ROTATED" />
+        <DefaultLocaleElement StringID="IDS_PSIZE_ENVELOPE_9" />
+        <DefaultLocaleElement StringID="IDS_MSIZE_ENV_10" />
+        <DefaultLocaleElement StringID="IDS_MSIZE_ENV_MONARCH" />
+        <DefaultLocaleElement StringID="IDS_MSIZE_ENV_B5" />
+        <DefaultLocaleElement StringID="IDS_MSIZE_ENV_C5" />
+        <DefaultLocaleElement StringID="IDS_ENVELOPE_C6" />
+        <DefaultLocaleElement StringID="IDS_MSIZE_ENV_DL" />
+        <DefaultLocaleElement StringID="IDS_PAPER_TYPE_WTCL" />
+        <DefaultLocaleElement StringID="IDS_UNSPECIFIED_TYPE" />
+        <DefaultLocaleElement StringID="IDS_PLAIN_TYPE" />
+        <DefaultLocaleElement StringID="IDS_HP_ECOFFICIENT" />
+        <DefaultLocaleElement StringID="IDS_MTYPE_LJ_HP_LASERJET_90_G" />
+        <DefaultLocaleElement StringID="IDS_MTYPE_LJ_HP_COLORLASERMATTE_105" />
+        <DefaultLocaleElement StringID="IDS_MTYPE_LJ_HP_PREMIUM_CHOICE_MATTE_120" />
+        <DefaultLocaleElement StringID="IDS_HP_BROCHURE_MATTE_150G_CSL" />
+        <DefaultLocaleElement StringID="IDS_MTYPE_HP_MATTE_200G" />
+        <DefaultLocaleElement StringID="IDS_MTYPE_LJ_HP_PROFESSIONAL_SOFT_GLOSS_120" />
+        <DefaultLocaleElement StringID="IDS_HP_PREMIUM_PRESENTATION_GLOSSY_120G_CSL" />
+        <DefaultLocaleElement StringID="IDS_HP_BROCHURE_GLOSSY_150G_CSL" />
+        <DefaultLocaleElement StringID="IDS_HP_BROCHURE_GLOSSY_200G_CSL" />
+        <DefaultLocaleElement StringID="IDS_MTYPE_LJ_LIGHT_60_70" />
+        <DefaultLocaleElement StringID="IDS_MTYPE_LJ_INTERMEDIATE_85_95" />
+        <DefaultLocaleElement StringID="IDS_MTYPE_LJ_HP_MID_WEIGHT_96_110" />
+        <DefaultLocaleElement StringID="IDS_MTYPE_HEAVY_111_130" />
+        <DefaultLocaleElement StringID="IDS_MTYPE_EXTRAHEAVY_131_175" />
+        <DefaultLocaleElement StringID="IDS_MTYPE_LJ_CARDSTOCK_176_220" />
+        <DefaultLocaleElement StringID="IDS_MTYPE_HEAVYGLOSSY_111_130" />
+        <DefaultLocaleElement StringID="IDS_MTYPE_EXTRAHEAVY_GLOOSY_131_175" />
+        <DefaultLocaleElement StringID="IDS_MTYPE_LJ_HP_MID_WEIGHTgLOSSY_96_110" />
+        <DefaultLocaleElement StringID="IDS_MTYPE_LJ_CARD_GLOSSY_176_220" />
+        <DefaultLocaleElement StringID="IDS_MTYPE_TRANSPARENCY" />
+        <DefaultLocaleElement StringID="IDS_LABELS_TYPE" />
+        <DefaultLocaleElement StringID="IDS_LETTERHEAD_TYPE" />
+        <DefaultLocaleElement StringID="IDS_MTYPE_ENVELOPE" />
+        <DefaultLocaleElement StringID="IDS_MTYPE_LJ_HEAVY_ENVELOPE" />
+        <DefaultLocaleElement StringID="IDS_PREPRINTED_TYPE" />
+        <DefaultLocaleElement StringID="IDS_PREPUNCHED_TYPE" />
+        <DefaultLocaleElement StringID="IDS_MTYPE_COLORED" />
+        <DefaultLocaleElement StringID="IDS_BOND_TYPE" />
+        <DefaultLocaleElement StringID="IDS_RECYCLED_TYPE" />
+        <DefaultLocaleElement StringID="IDS_ROUGH_TYPE" />
+        <DefaultLocaleElement StringID="IDS_MTYPE_HEAVY_ROUGH" />
+        <DefaultLocaleElement StringID="IDS_MTYPE_OPAQUE_FILM" />
+        <DefaultLocaleElement StringID="IDS_MTYPE_HP_PREM_PRES_MATTE_120" />
+        <DefaultLocaleElement StringID="IDS_MTYPE_HP_MATTE_PHOTO_200G" />
+        <DefaultLocaleElement StringID="IDS_MTYPE_HP_PRESENTATION_SOFT_GLOS120" />
+        <DefaultLocaleElement StringID="IDS_MTYPE_LIGHT_BOND" />
+        <DefaultLocaleElement StringID="IDS_NO" />
+        <DefaultLocaleElement StringID="IDS_YES_FLIP_OVER" />
+        <DefaultLocaleElement StringID="IDS_FLIP_UP" />
+        <DefaultLocaleElement StringID="IDS_FACTORY_DEFAULTS_LASER" />
+        <DefaultLocaleElement StringID="IDS_GENERAL_EVERYDAY_PRINTING" />
+        <DefaultLocaleElement StringID="IDS_MSIZE_GROUP_ENVELOPES" />
+        <DefaultLocaleElement StringID="IDS_CARDSTOCK_HEAVY_PRINTING" />
+        <DefaultLocaleElement StringID="IDS_PRESETS_EXTERNAL_TRANSPARENCIES" />
+        <DefaultLocaleElement StringID="IDS_ECOSMART_SETTINGS_CSL" />
+        <DefaultLocaleElement StringID="IDS_BOOKLET_PRINTING_NOHK" />
+        <DefaultLocaleElement StringID="IDS_SNAPSHOT_PHOTOS" />
+        <DefaultLocaleElement StringID="IDS_HP_EASY_COLOR_CSL" />
+        <DefaultLocaleElement StringID="IDS_PC_ENABLE" />
+        <DefaultLocaleElement StringID="IDS_NO_DUPLEX_MEDIA_SIZE" />
+        <DefaultLocaleElement StringID="IDS_OK" />
+        <DefaultLocaleElement StringID="IDS_NO_DUPLEX_MEDIA_TYPE" />
+        <DefaultLocaleElement StringID="IDS_RASTER_COMPRESSION" />
+        <DefaultLocaleElement StringID="IDS_PQ_BEST_QUALITY" />
+        <DefaultLocaleElement StringID="IDS_MAXIMUM_COMPRESSION" />
+        <DefaultLocaleElement StringID="IDS_TINT_TESTING" />
+        <DefaultLocaleElement StringID="IDS_TINTTESTING_DISABLED" />
+        <DefaultLocaleElement StringID="IDS_JPEG_AR_PASSTHROUGH" />
+        <DefaultLocaleElement StringID="IDS_RLT_CSC_PASSTHROUGH" />
+        <DefaultLocaleElement StringID="IDS_IMAGE_RESAMPLING_PASSTHROUGH" />
+        <DefaultLocaleElement StringID="IDS_IMAGE_HEALING_PASSTHROUGH" />
+        <DefaultLocaleElement StringID="IDS_EDGE_TO_EDGE" />
+        <DefaultLocaleElement StringID="STR_MODEL_NAME" LocalizedString="HP Color LaserJet Enterprise MFP M480 (v3)" />
+        <DefaultLocaleElement StringID="IDS_ABOUT_HP_COPYRIGHT1" />
+        <DefaultLocaleElement StringID="IDS_ABOUT_HP_COPYRIGHT2" />
+      </DefaultLocale>
+    </UserInterfaceStrings>
+    <VendorExtension>
+      <hp:Defaults>
+        <hp:FixedFont DefaultSetting="Courier" />
+        <hp:ProportionalFont DefaultSetting="Helvetica" />
+        <hp:FontSize DefaultSetting="10" />
+      </hp:Defaults>
+    </VendorExtension>
+  </PrintCapabilities>
+</DeviceCapabilities>

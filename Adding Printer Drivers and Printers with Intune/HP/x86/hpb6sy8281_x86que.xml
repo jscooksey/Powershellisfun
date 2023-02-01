@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Properties xmlns="http://schemas.microsoft.com/windows/2011/08/printing/queueproperties">
+  <Property Name="DriverVersion">
+    <String>1.0.0</String>
+  </Property>
+  <Property Name="CustomPQ">
+    <String></String>
+  </Property>
+  <Property Name="MediaTypesInstalled">
+    <String></String>
+  </Property>
+  <Property Name="Shortcuts">
+    <String>&lt;Shortcuts/&gt;</String>
+  </Property>
+  <Property Name="Shortcut0">
+    <String></String>
+  </Property>
+  <Property Name="Shortcut1">
+    <String></String>
+  </Property>
+  <Property Name="Shortcut2">
+    <String></String>
+  </Property>
+  <Property Name="Shortcut3">
+    <String></String>
+  </Property>
+  <Property Name="Shortcut4">
+    <String></String>
+  </Property>
+  <Property Name="Shortcut5">
+    <String></String>
+  </Property>
+  <Property Name="Shortcut6">
+    <String></String>
+  </Property>
+  <Property Name="Shortcut7">
+    <String></String>
+  </Property>
+  <Property Name="Shortcut8">
+    <String></String>
+  </Property>
+  <Property Name="Shortcut9">
+    <String></String>
+  </Property>
+  <Property Name="Shortcut10">
+    <String></String>
+  </Property>
+  <Property Name="Shortcut11">
+    <String></String>
+  </Property>
+  <Property Name="Shortcut12">
+    <String></String>
+  </Property>
+  <Property Name="Shortcut13">
+    <String></String>
+  </Property>
+  <Property Name="Shortcut14">
+    <String></String>
+  </Property>
+  <Property Name="Shortcut15">
+    <String></String>
+  </Property>
+  <Property Name="Shortcut16">
+    <String></String>
+  </Property>
+  <Property Name="Shortcut17">
+    <String></String>
+  </Property>
+  <Property Name="Shortcut18">
+    <String></String>
+  </Property>
+  <Property Name="Shortcut19">
+    <String></String>
+  </Property>
+  <Property Name="EnablePointandPrintSEP">
+    <Bool>false</Bool>
+  </Property>
+  <Property Name="Watermarks">
+    <String>
+&lt;Watermarks&gt;
+
+&lt;Watermark type=&quot;Text&quot; name=&quot;IDS_WM_OPTION_CONFIDENTIAL&quot;&gt;
+&lt;Text&gt;IDS_WM_OPTION_CONFIDENTIAL&lt;/Text&gt;
+&lt;Alignment&gt;Center&lt;/Alignment&gt;
+&lt;Bold&gt;0&lt;/Bold&gt;
+&lt;Italic&gt;0&lt;/Italic&gt;
+&lt;FontSize&gt;120&lt;/FontSize&gt;
+&lt;Angle&gt;47&lt;/Angle&gt;
+&lt;Color&gt;#FF808080&lt;/Color&gt;
+&lt;ColorSel&gt;00808080&lt;/ColorSel&gt;
+&lt;Transparency&gt;50&lt;/Transparency&gt;
+&lt;Shading&gt;50&lt;/Shading&gt;
+&lt;Outline&gt;0&lt;/Outline&gt;
+&lt;OffsetHeight&gt;0&lt;/OffsetHeight&gt;
+&lt;OffsetWidth&gt;0&lt;/OffsetWidth&gt;
+&lt;/Watermark&gt;
+
+&lt;Watermark type=&quot;Text&quot; name=&quot;IDS_WM_OPTION_DRAFT&quot;&gt;
+&lt;Text&gt;IDS_WM_OPTION_DRAFT&lt;/Text&gt;
+&lt;Alignment&gt;Center&lt;/Alignment&gt;
+&lt;Bold&gt;0&lt;/Bold&gt;
+&lt;Italic&gt;0&lt;/Italic&gt;
+&lt;FontSize&gt;160&lt;/FontSize&gt;
+&lt;Angle&gt;47&lt;/Angle&gt;
+&lt;Color&gt;#FF808080&lt;/Color&gt;
+&lt;ColorSel&gt;00808080&lt;/ColorSel&gt;
+&lt;Transparency&gt;50&lt;/Transparency&gt;
+&lt;Shading&gt;50&lt;/Shading&gt;
+&lt;Outline&gt;0&lt;/Outline&gt;
+&lt;OffsetHeight&gt;0&lt;/OffsetHeight&gt;
+&lt;OffsetWidth&gt;0&lt;/OffsetWidth&gt;
+&lt;/Watermark&gt;
+
+&lt;Watermark type=&quot;Text&quot; name=&quot;IDS_WM_OPTION_SAMPLE&quot;&gt;
+&lt;Text&gt;IDS_WM_OPTION_SAMPLE&lt;/Text&gt;
+&lt;Alignment&gt;Center&lt;/Alignment&gt;
+&lt;Bold&gt;0&lt;/Bold&gt;
+&lt;Italic&gt;0&lt;/Italic&gt;
+&lt;FontSize&gt;160&lt;/FontSize&gt;
+&lt;Angle&gt;47&lt;/Angle&gt;
+&lt;Color&gt;#FF808080&lt;/Color&gt;
+&lt;ColorSel&gt;00808080&lt;/ColorSel&gt;
+&lt;Transparency&gt;50&lt;/Transparency&gt;
+&lt;Shading&gt;50&lt;/Shading&gt;
+&lt;Outline&gt;0&lt;/Outline&gt;
+&lt;OffsetHeight&gt;0&lt;/OffsetHeight&gt;
+&lt;OffsetWidth&gt;0&lt;/OffsetWidth&gt;
+&lt;/Watermark&gt;
+
+&lt;/Watermarks&gt;
+</String>
+  </Property>
+</Properties>

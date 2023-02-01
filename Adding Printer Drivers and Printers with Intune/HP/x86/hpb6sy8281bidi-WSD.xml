@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<bidi:Definition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bidi="http://schemas.microsoft.com/windows/2005/03/printing/bidi" xsi:schemaLocation="http://schemas.microsoft.com/windows/2005/03/printing/bidi wsdbidi.xsd">
+  <!--Version 3.28-->
+  <Schema xmlns:nprt="http://schemas.microsoft.com/windows/2006/08/wdp/print" xmlns:hpprt="http://www.hp.com/schemas/imaging/con/hpprt/2014/08/22" xmlns:wprt="http://schemas.microsoft.com/windows/2006/08/wdp/print">
+    <Property name="Printer">
+      <!--Query for Status-->
+      <Property name="Status">
+        <Property name="Summary">
+          <Value name="StateReason" query="wprt:PrinterStatus" filter="wprt:PrinterStatus/wprt:PrinterPrimaryStateReason" type="BIDI_STRING" />
+        </Property>
+      </Property>
+      <Property name="Configuration">
+        <Property name="PrintContract">
+          <Value name="VersionMajor" query="wprt:PrinterConfiguration" filter="wprt:PrinterConfiguration/hpprt:OemPrinterConfiguration/hpprt:PCVersion/hpprt:Major" drvPrinterEvent="true" type="BIDI_INT" />
+          <Value name="VersionMinor" query="wprt:PrinterConfiguration" filter="wprt:PrinterConfiguration/hpprt:OemPrinterConfiguration/hpprt:PCVersion/hpprt:Minor" drvPrinterEvent="true" type="BIDI_INT" />
+        </Property>
+        <Property name="DeviceDefaultDuplexStandard">
+          <Value name="DefaultDuplexStandard" query="wprt:PrinterConfiguration" filter="wprt:PrinterConfiguration/hpprt:OemPrinterConfiguration/hpprt:DefaultDuplexStandard" drvPrinterEvent="true" type="BIDI_BOOL" />
+        </Property>
+      </Property>
+      <Property name="Capabilities">
+        <!--Queries for Edge to Edge -->
+        <!--Queries for Tab Printing -->
+        <Property name="PrintQuality">
+          <!-- PCv0.5 -->
+          <!-- PCv1.0 -->
+          <Property name="StandardType1">
+            <Installed name="Supported" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Draft&quot;]" drvPrinterEvent="true" />
+            <Value name="Name" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Draft&quot;]" drvPrinterEvent="true" type="BIDI_STRING" />
+            <Value name="OptimalResolution" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Draft&quot;]/@hpprt:OptimalResolution" drvPrinterEvent="true" type="BIDI_STRING" />
+            <Value name="ImageTechnology" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Draft&quot;]/@hpprt:ImageTechnology" drvPrinterEvent="true" type="BIDI_STRING" />
+            <Value name="DisplayTag" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Draft&quot;]/@hpprt:DisplayTag" drvPrinterEvent="true" type="BIDI_STRING" />
+            <Value name="PQMode" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Draft&quot;]/@hpprt:PQMode" drvPrinterEvent="true" type="BIDI_STRING" />
+          </Property>
+          <Property name="StandardType2">
+            <Installed name="Supported" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Normal&quot;]" drvPrinterEvent="true" />
+            <Value name="Name" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Normal&quot;]" drvPrinterEvent="true" type="BIDI_STRING" />
+            <Value name="OptimalResolution" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Normal&quot;]/@hpprt:OptimalResolution" drvPrinterEvent="true" type="BIDI_STRING" />
+            <Value name="ImageTechnology" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Normal&quot;]/@hpprt:ImageTechnology" drvPrinterEvent="true" type="BIDI_STRING" />
+            <Value name="DisplayTag" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Normal&quot;]/@hpprt:DisplayTag" drvPrinterEvent="true" type="BIDI_STRING" />
+            <Value name="PQMode" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Normal&quot;]/@hpprt:PQMode" drvPrinterEvent="true" type="BIDI_STRING" />
+          </Property>
+          <Property name="StandardType3">
+            <Installed name="Supported" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Best&quot;]" drvPrinterEvent="true" />
+            <Value name="Name" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Best&quot;]" drvPrinterEvent="true" type="BIDI_STRING" />
+            <Value name="OptimalResolution" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Best&quot;]/@hpprt:OptimalResolution" drvPrinterEvent="true" type="BIDI_STRING" />
+            <Value name="ImageTechnology" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Best&quot;]/@hpprt:ImageTechnology" drvPrinterEvent="true" type="BIDI_STRING" />
+            <Value name="DisplayTag" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Best&quot;]/@hpprt:DisplayTag" drvPrinterEvent="true" type="BIDI_STRING" />
+            <Value name="PQMode" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Best&quot;]/@hpprt:PQMode" drvPrinterEvent="true" type="BIDI_STRING" />
+          </Property>
+          <Property name="StandardType4">
+            <Installed name="Supported" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Max&quot;]" drvPrinterEvent="true" />
+            <Value name="Name" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Max&quot;]" drvPrinterEvent="true" type="BIDI_STRING" />
+            <Value name="OptimalResolution" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Max&quot;]/@hpprt:OptimalResolution" drvPrinterEvent="true" type="BIDI_STRING" />
+            <Value name="ImageTechnology" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Max&quot;]/@hpprt:ImageTechnology" drvPrinterEvent="true" type="BIDI_STRING" />
+            <Value name="DisplayTag" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Max&quot;]/@hpprt:DisplayTag" drvPrinterEvent="true" type="BIDI_STRING" />
+            <Value name="PQMode" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Max&quot;]/@hpprt:PQMode" drvPrinterEvent="true" type="BIDI_STRING" />
+          </Property>
+          <Property name="StandardType5">
+            <Installed name="Supported" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Economode&quot;]" drvPrinterEvent="true" />
+            <Value name="Name" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Economode&quot;]" drvPrinterEvent="true" type="BIDI_STRING" />
+            <Value name="OptimalResolution" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Economode&quot;]/@hpprt:OptimalResolution" drvPrinterEvent="true" type="BIDI_STRING" />
+            <Value name="ImageTechnology" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Economode&quot;]/@hpprt:ImageTechnology" drvPrinterEvent="true" type="BIDI_STRING" />
+            <Value name="DisplayTag" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Economode&quot;]/@hpprt:DisplayTag" drvPrinterEvent="true" type="BIDI_STRING" />
+            <Value name="PQMode" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Economode&quot;]/@hpprt:PQMode" drvPrinterEvent="true" type="BIDI_STRING" />
+          </Property>
+          <!-- Custom PQ-->
+          <Property name="CustomType1">
+            <Installed name="Supported" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Custom1&quot;]" drvPrinterEvent="true" />
+            <Value name="Name" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Custom1&quot;]" drvPrinterEvent="true" type="BIDI_STRING" />
+            <Value name="OptimalResolution" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Custom1&quot;]/@hpprt:OptimalResolution" drvPrinterEvent="true" type="BIDI_STRING" />
+            <Value name="ImageTechnology" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Custom1&quot;]/@hpprt:ImageTechnology" drvPrinterEvent="true" type="BIDI_STRING" />
+            <Value name="DisplayTag" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Custom1&quot;]/@hpprt:DisplayTag" drvPrinterEvent="true" type="BIDI_STRING" />
+            <Value name="PQMode" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Custom1&quot;]/@hpprt:PQMode" drvPrinterEvent="true" type="BIDI_STRING" />
+          </Property>
+          <Property name="CustomType2">
+            <Installed name="Supported" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Custom2&quot;]" drvPrinterEvent="true" />
+            <Value name="Name" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Custom2&quot;]" drvPrinterEvent="true" type="BIDI_STRING" />
+            <Value name="OptimalResolution" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Custom2&quot;]/@hpprt:OptimalResolution" drvPrinterEvent="true" type="BIDI_STRING" />
+            <Value name="ImageTechnology" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Custom2&quot;]/@hpprt:ImageTechnology" drvPrinterEvent="true" type="BIDI_STRING" />
+            <Value name="DisplayTag" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Custom2&quot;]/@hpprt:DisplayTag" drvPrinterEvent="true" type="BIDI_STRING" />
+            <Value name="PQMode" query="wprt:PrinterCapabilities" filter="wprt:PrinterCapabilities/wprt:JobValues/wprt:DocumentProcessing/wprt:PrintQuality/wprt:AllowedValue[text()=&quot;Custom2&quot;]/@hpprt:PQMode" drvPrinterEvent="true" type="BIDI_STRING" />
+          </Property>
+        </Property>
+      </Property>
+      <!--Queries for InputBins-->
+      <Property name="Layout">
+        <Property name="InputBins">
+          <Property name="Tray003">
+            <Installed name="Installed" query="wprt:PrinterConfiguration" filter="wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name=&quot;Tray 3&quot; or @wprt:Name=&quot;Tray3&quot;]" drvPrinterEvent="true" />
+            <Value name="MediaSize" query="wprt:PrinterConfiguration" filter="wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name=&quot;Tray 3&quot; or @wprt:Name=&quot;Tray3&quot;]/wprt:MediaSize" type="BIDI_STRING" drvPrinterEvent="true" />
+            <Value name="MediaType" query="wprt:PrinterConfiguration" filter="wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name=&quot;Tray 3&quot; or @wprt:Name=&quot;Tray3&quot;]/wprt:MediaType" type="BIDI_STRING" drvPrinterEvent="true" />
+            <Value name="MediaColor" query="wprt:PrinterConfiguration" filter="wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name=&quot;Tray 3&quot; or @wprt:Name=&quot;Tray3&quot;]/wprt:MediaColor" type="BIDI_STRING" drvPrinterEvent="true" />
+            <Value name="FeedDirection" query="wprt:PrinterConfiguration" filter="wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name=&quot;Tray 3&quot; or @wprt:Name=&quot;Tray3&quot;]/wprt:FeedDirection" type="BIDI_STRING" drvPrinterEvent="true" />
+            <Value name="Capacity" query="wprt:PrinterConfiguration" filter="wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name=&quot;Tray 3&quot; or @wprt:Name=&quot;Tray3&quot;]/wprt:Capacity" type="BIDI_INT" drvPrinterEvent="true" />
+            <Value name="Level" query="wprt:PrinterConfiguration" filter="wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name=&quot;Tray 3&quot; or @wprt:Name=&quot;Tray3&quot;]/wprt:Level" type="BIDI_INT" drvPrinterEvent="true" />
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+  </Schema>
+  <PortStatus>
+    <Status>
+      <Keyword>None</Keyword>
+      <Code>0</Code>
+      <Severity>0</Severity>
+    </Status>
+    <Status>
+      <Keyword>AttentionRequired</Keyword>
+      <Code>8</Code>
+      <Severity>1</Severity>
+    </Status>
+    <Status>
+      <Keyword>DoorOpen</Keyword>
+      <Code>7</Code>
+      <Severity>1</Severity>
+    </Status>
+    <Status>
+      <Keyword>MarkerFailure</Keyword>
+      <ResourceIdOffset>0</ResourceIdOffset>
+      <Severity>1</Severity>
+    </Status>
+    <Status>
+      <Keyword>MarkerSupplyLow</Keyword>
+      <Code>10</Code>
+      <Severity>2</Severity>
+    </Status>
+    <Status>
+      <Keyword>MarkerSupplyEmpty</Keyword>
+      <Code>6</Code>
+      <Severity>1</Severity>
+    </Status>
+    <Status>
+      <Keyword>MediaEmpty</Keyword>
+      <Code>3</Code>
+      <Severity>1</Severity>
+    </Status>
+    <Status>
+      <Keyword>MediaJam</Keyword>
+      <Code>2</Code>
+      <Severity>1</Severity>
+    </Status>
+    <Status>
+      <Keyword>MediaLow</Keyword>
+      <ResourceIdOffset>1</ResourceIdOffset>
+      <Severity>2</Severity>
+    </Status>
+    <Status>
+      <Keyword>MediaNeeded</Keyword>
+      <Code>5</Code>
+      <Severity>1</Severity>
+    </Status>
+    <Status>
+      <Keyword>OutputAreaAlmostFull</Keyword>
+      <ResourceIdOffset>2</ResourceIdOffset>
+      <Severity>2</Severity>
+    </Status>
+    <Status>
+      <Keyword>OutputAreaFull</Keyword>
+      <Code>4</Code>
+      <Severity>1</Severity>
+    </Status>
+    <Status>
+      <Keyword>Paused</Keyword>
+      <ResourceIdOffset>3</ResourceIdOffset>
+      <Severity>3</Severity>
+    </Status>
+  </PortStatus>
+</bidi:Definition>

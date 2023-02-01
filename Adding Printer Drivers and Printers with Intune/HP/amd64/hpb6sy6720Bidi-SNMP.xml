@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<bidi:Schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bidi="http://schemas.microsoft.com/windows/2005/03/printing/bidi" xsi:schemaLocation="http://schemas.microsoft.com/windows/2005/03/printing/bidi tcpbidi.xsd">
+<!-- Version 3.0 -->
+  <Property name="Printer">
+    
+    <!--Omitting the queries for Duplexer, Memory and HardDisk as they are included implicitly in in-OS xml-->
+	<Property name="Status">
+	  <IndexedProperty  name="Summary">
+        <Converter name="StateReason"  deviceIndex ="true" oid="1.3.6.1.2.1.25.3.5.1.2.1"  useFirstIndex="true" drvPrinterEvent="true">
+          
+		 		  
+		  <Conversion mibValue="08" bidiValue="DoorOpen"/>
+          <Conversion mibValue="0B" bidiValue="DoorOpen"/> <!--DoorOpen,DoorOpen+CatridgeMissing,DoorOpen+PrinterPaused-->
+		  <Conversion mibValue="CB" bidiValue="DoorOpen"/> <!--DoorOpen+OutofPaper-->
+		  <Conversion mibValue="48" bidiValue="DoorOpen"/> <!--DoorOpen+OutofPaper_Orion/Nebula-->
+		  <Conversion mibValue="0F" bidiValue="DoorOpen"/> <!--DoorOpen+PaperJam-->
+		  <Conversion mibValue="0C" bidiValue="DoorOpen"/> <!--DoorOpen+PaperJam_Orion/Nebula-->
+		  <Conversion mibValue="8B" bidiValue="OutputAreaFull"/> <!--DoorOpen+OutputbinFull-->
+			
+          <Conversion mibValue="40" bidiValue="MediaEmpty"/> <!--OutOfPaper-->
+          <Conversion mibValue="C3" bidiValue="MediaEmpty"/>
+		  
+          <Conversion mibValue="01" bidiValue="cartridgeMissing"/>  
+		  <Conversion mibValue="D3" bidiValue="cartridgeMissing"/> <!--OutOfPaper+CatridgeMissing-->
+		  <Conversion mibValue="13" bidiValue="cartridgeMissing"/> <!--CatridgeMissing, CatridgeMissing+PaperJam, CatridgeMissing+PrinterPaused-->   
+		  
+		  
+          <Conversion mibValue="04" bidiValue="MediaJam"/>              
+          <Conversion mibValue="07" bidiValue="MediaJam"/> <!--PaperJam,PaperJam+PrinterPaused-->
+		  
+          <Conversion mibValue="81" bidiValue="OutputAreaFull"/>
+		  <Conversion mibValue="93" bidiValue="OutputAreaFull"/> <!--CatridgeMissing+OutputBinFull-->
+
+          <Conversion mibValue="03" bidiValue="paused"/>
+		  <Conversion mibValue="83" bidiValue="paused"/> <!--OutOfPaper+PrinterPaused-->
+		  <Conversion mibValue="33" bidiValue="paused"/> <!--PrinterPaused-->
+		  
+		  <!--Toner is low-->
+		  <Conversion mibValue="20" bidiValue="LowToner"/> 
+		  <Conversion mibValue="21" bidiValue="LowToner"/>
+		  <Conversion mibValue="22" bidiValue="LowToner"/>
+		  <Conversion mibValue="23" bidiValue="LowToner"/>
+		  
+        </Converter>
+    </IndexedProperty>
+	</Property>
+	
+	
+    
+    <!--Queries for InputBins and EnvelopeFeeder-->
+    <Property name="Layout">
+      <Property name="InputBins">
+        <IndexedProperty name="Tray">
+          <Converter name="Installed" oid="1.3.6.1.2.1.43.8.2.1.2" deviceIndex="true" useFirstIndex="true" drvPrinterEvent="true">
+            <Conversion mibValue="2" bidiValue="True"/>
+            <Conversion mibValue="3" bidiValue="True"/>
+            <Conversion mibValue="4" bidiValue="True"/>
+            <Conversion mibValue="5" bidiValue="True"/>
+            <Conversion mibValue="6" bidiValue="True"/>
+            <Conversion mibValue="7" bidiValue="True"/>
+          </Converter>
+        </IndexedProperty>
+		  
+		  <IndexedProperty name="PhotoTrayUnit">
+				<Converter name="Installed" oid="1.3.6.1.2.1.43.8.2.1.13" deviceIndex="true" useFirstIndex="true" drvPrinterEvent="true">
+					<Conversion mibValue="PhotoTray" bidiValue="TRUE"/>
+				</Converter>
+			</IndexedProperty>
+			
+		</Property>
+    </Property>
+
+    <Property name="Configuration">
+      <IndexedProperty  name="StorageMedia">
+        <Converter name="Installed"  oid="1.3.6.1.2.1.25.3.6.1.2" deviceIndex="false" drvPrinterEvent="true">
+          <Conversion mibValue="3" bidiValue="true"/>
+          <Conversion mibValue="6400" bidiValue="false"/>
+        </Converter>
+      </IndexedProperty>
+  
+	<Property name="JobStorage"> 
+        	<Converter name="IsAlphaNumeric"  oid="1.3.6.1.4.1.11.2.3.9.4.2.1.1.6.1.15" deviceIndex="false" drvPrinterEvent="true">
+				<Conversion mibValue="1" bidiValue="true"/>
+				<Conversion mibValue="0" bidiValue="false"/>
+			</Converter>
+    </Property>
+  
+      <IndexedProperty  name="JobStorage">
+        <Converter name="Installed"  oid="1.3.6.1.2.1.25.3.6.1.2" deviceIndex="false" drvPrinterEvent="true">
+          <Conversion mibValue="3" bidiValue="true"/>
+          <Conversion mibValue="6400" bidiValue="false"/>
+        </Converter>
+      </IndexedProperty>
+  
+	<Property  name="JobStorage"> 
+        	<Value name="Type"  type="BIDI_STRING" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.1.6.1.19" deviceIndex="false" drvPrinterEvent="true"/>
+        </Property>
+  
+	<Property  name="JobStorage"> 
+        	<Value name="Mode"  type="BIDI_STRING" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.1.6.1.20" deviceIndex="false" drvPrinterEvent="true"/>
+        </Property>
+  
+	<Property  name="JobStorage"> 
+        	<Value name="PasswordMaxLength"  type="BIDI_INT" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.1.6.1.16" deviceIndex="false" drvPrinterEvent="true"/>			
+        </Property>
+  
+	<Property  name="JobStorage"> 
+        	<Value name="PasswordMinLength"  type="BIDI_INT" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.1.6.1.17" deviceIndex="false" drvPrinterEvent="true"/>			
+        </Property>
+  
+	<Property  name="JobStorage"> 
+        	<Value name="Encryption"  type="BIDI_STRING" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.1.6.1.22" deviceIndex="false" drvPrinterEvent="true"/>			
+        </Property>
+  </Property>
+  
+  
+    <!--Queries for OutputBins-->
+    <Property name="Finishing">
+      <Converter name="ConvertMode" oid="1.3.6.1.4.1.11.2.3.9.4.2.1.1.4.5.2.10" deviceIndex="false" drvPrinterEvent="true">
+        <Conversion mibValue="&#xFD;&#xE8;&#x22;HP LaserJet 500-Sheet Stapler/Stacker F2G72A&#x22;" bidiValue="HP LaserJet 500-Sheet Stapler/Stacker F2G72A"/>
+        <Conversion mibValue="&#xFD;&#xE8;&#x22;HP LaserJet 500-Sheet Stacker F2G71A&#x22;" bidiValue="HP LaserJet 500-Sheet Stacker F2G71A"/>
+        <Conversion mibValue="&#xFD;&#xE8;&#x22;HP LaserJet 500-Sheet 5-Bin Mailbox F2G81A&#x22;" bidiValue="HP LaserJet 500-Sheet 5-Bin Mailbox F2G81A"/>
+        <Conversion mibValue="&#xFD;&#xE8;&#x22;HP LaserJet 500-Sheet 5-Bin Stacker F2G81A&#x22;" bidiValue="HP LaserJet 500-Sheet 5-Bin Stacker F2G81A"/>
+        <Conversion mibValue="&#xFD;&#xE8;&#x22;HP LaserJet 500-Sheet 5-Bin Job Separator F2G81A&#x22;" bidiValue="HP LaserJet 500-Sheet 5-Bin Job Separator F2G81A"/>
+        <Conversion mibValue="&#xFD;&#xE8;&#x22;HP LaserJet 500-Sheet 5-Bin Collator F2G81A&#x22;" bidiValue="HP LaserJet 500-Sheet 5-Bin Collator F2G81A"/>
+      </Converter>
+    </Property>
+  </Property>
+</bidi:Schema>

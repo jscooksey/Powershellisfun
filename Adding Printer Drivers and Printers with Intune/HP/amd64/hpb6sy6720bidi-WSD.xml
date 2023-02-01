@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<bidi:Definition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bidi="http://schemas.microsoft.com/windows/2005/03/printing/bidi" xsi:schemaLocation="http://schemas.microsoft.com/windows/2005/03/printing/bidi wsdbidi.xsd">
+<!--Version 3.0-->
+  <Schema xmlns:nprt="http://schemas.microsoft.com/windows/2006/08/wdp/print"
+          xmlns:hpprt="http://www.hp.com/schemas/imaging/con/hpprt/2014/08/22"
+          xmlns:wprt="http://schemas.microsoft.com/windows/2006/08/wdp/print">
+    <Property name="Printer">
+
+      <Property name="Status">
+        <Property name="Summary">
+          <Value name="StateReason" query="nprt:PrinterStatus" filter="nprt:PrinterStatus/nprt:PrinterPrimaryStateReason" type="BIDI_STRING"/>
+        </Property>
+      </Property>
+	  
+	   <Property name="Configuration">
+        <Property name="JobStorage002">
+		<Value name="Installed" type="BIDI_STRING" query="wprt:PrinterConfiguration" filter="wprt:PrinterConfiguration/wprt:Storage/wprt:StorageEntry/hpprt:Available" optional="true" drvPrinterEvent="true">false</Value>
+        </Property>
+      
+	  
+        <Property name="JobStorage">
+			<Value name="Supported" type="BIDI_STRING" query="wprt:PrinterConfiguration" filter="wprt:PrinterConfiguration/wprt:Storage/wprt:StorageEntry/@Name" drvPrinterEvent="true"/>
+        </Property>
+     
+	  
+	  
+        <Property name="JobStorage">
+			<Value name="Type" type="BIDI_STRING" query="wprt:PrinterConfiguration" filter="wprt:PrinterConfiguration/wprt:Storage/wprt:StorageEntry/wprt:Type" drvPrinterEvent="true"/>
+        </Property>
+     
+        <Property name="JobStorage">
+			<Value name="Mode" type="BIDI_STRING" query="wprt:PrinterConfiguration" filter="wprt:PrinterConfiguration/wprt:Storage/wprt:StorageEntry/hpprt:Modes/hpprt:Mode" drvPrinterEvent="true"/>
+        </Property>
+     
+        <Property name="JobStorage">
+			<Value name="Encryption" type="BIDI_STRING" query="wprt:PrinterConfiguration" filter="wprt:PrinterConfiguration/wprt:Storage/wprt:StorageEntry/hpprt:Encryptions/hpprt:Encryption" drvPrinterEvent="true"/>
+        </Property>
+     
+        <Property name="JobStorage">
+			<Value name="IsAlphaNumeric"  type="BIDI_STRING" query="wprt:PrinterConfiguration" filter="wprt:PrinterConfiguration/wprt:Storage/wprt:StorageEntry/hpprt:Password/hpprt:Alphanumeric" drvPrinterEvent="true" optional="true">false</Value>
+        </Property>
+      
+        <Property name="JobStorage">
+			<Value name="PasswordMaxLength"  type="BIDI_INT" query="wprt:PrinterConfiguration" filter="wprt:PrinterConfiguration/wprt:Storage/wprt:StorageEntry/hpprt:Password/hpprt:MaxLength" drvPrinterEvent="true"/>
+        </Property>
+      
+        <Property name="JobStorage">
+			<Value name="PasswordMinLength"  type="BIDI_INT" query="wprt:PrinterConfiguration" filter="wprt:PrinterConfiguration/wprt:Storage/wprt:StorageEntry/hpprt:Password/hpprt:MinLength" drvPrinterEvent="true"/>
+        </Property>
+      </Property>
+	  
+      <Property name="Layout">
+        <Property name="InputBins">
+	   <Property name="PhotoTrayUnit002">
+            <Installed name="Installed" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="PhotoTray"]' drvPrinterEvent="true"/>
+           </Property>
+
+          <Property name="Tray001">
+            <Installed name="Installed" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 1" or @wprt:Name="Tray1"]' drvPrinterEvent="true"/>
+            <Value name="MediaSize" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 1" or @wprt:Name="Tray1"]/wprt:MediaSize' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="MediaType" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 1" or @wprt:Name="Tray1"]/wprt:MediaType' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="MediaColor" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 1" or @wprt:Name="Tray1"]/wprt:MediaColor' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="FeedDirection" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 1" or @wprt:Name="Tray1"]/wprt:FeedDirection' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="Capacity" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 1" or @wprt:Name="Tray1"]/wprt:Capacity' type="BIDI_INT" drvPrinterEvent="true"/>
+            <Value name="Level" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 1" or @wprt:Name="Tray1"]/wprt:Level' type="BIDI_INT" drvPrinterEvent="true"/>
+          </Property>
+          <Property name="Tray002">
+            <Installed name="Installed" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 2" or @wprt:Name="Tray2"]' drvPrinterEvent="true"/>
+            <Value name="MediaSize" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 2" or @wprt:Name="Tray2"]/wprt:MediaSize' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="MediaType" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 2" or @wprt:Name="Tray2"]/wprt:MediaType' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="MediaColor" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 2" or @wprt:Name="Tray2"]/wprt:MediaColor' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="FeedDirection" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 2" or @wprt:Name="Tray2"]/wprt:FeedDirection' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="Capacity" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 2" or @wprt:Name="Tray2"]/wprt:Capacity' type="BIDI_INT" drvPrinterEvent="true"/>
+            <Value name="Level" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 2" or @wprt:Name="Tray2"]/wprt:Level' type="BIDI_INT" drvPrinterEvent="true"/>
+          </Property>
+          <Property name="Tray003">
+            <Installed name="Installed" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 3" or @wprt:Name="Tray3"]' drvPrinterEvent="true"/>
+            <Value name="MediaSize" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 3" or @wprt:Name="Tray3"]/wprt:MediaSize' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="MediaType" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 3" or @wprt:Name="Tray3"]/wprt:MediaType' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="MediaColor" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 3" or @wprt:Name="Tray3"]/wprt:MediaColor' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="FeedDirection" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 3" or @wprt:Name="Tray3"]/wprt:FeedDirection' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="Capacity" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 3" or @wprt:Name="Tray3"]/wprt:Capacity' type="BIDI_INT" drvPrinterEvent="true"/>
+            <Value name="Level" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 3" or @wprt:Name="Tray3"]/wprt:Level' type="BIDI_INT" drvPrinterEvent="true"/>
+          </Property>
+          <Property name="Tray005">
+            <Installed name="Installed" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 4" or @wprt:Name="Tray4"]' drvPrinterEvent="true"/>
+            <Value name="MediaSize" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 4" or @wprt:Name="Tray4"]/wprt:MediaSize' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="MediaType" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 4" or @wprt:Name="Tray4"]/wprt:MediaType' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="MediaColor" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 4" or @wprt:Name="Tray4"]/wprt:MediaColor' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="FeedDirection" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 4" or @wprt:Name="Tray4"]/wprt:FeedDirection' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="Capacity" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 4" or @wprt:Name="Tray4"]/wprt:Capacity' type="BIDI_INT" drvPrinterEvent="true"/>
+            <Value name="Level" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 4" or @wprt:Name="Tray4"]/wprt:Level' type="BIDI_INT" drvPrinterEvent="true"/>
+          </Property>
+          <Property name="Tray006">
+            <Installed name="Installed" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 5" or @wprt:Name="Tray5"]' drvPrinterEvent="true"/>
+            <Value name="MediaSize" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 5" or @wprt:Name="Tray5"]/wprt:MediaSize' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="MediaType" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 5" or @wprt:Name="Tray5"]/wprt:MediaType' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="MediaColor" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 5" or @wprt:Name="Tray5"]/wprt:MediaColor' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="FeedDirection" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 5" or @wprt:Name="Tray5"]/wprt:FeedDirection' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="Capacity" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 5" or @wprt:Name="Tray5"]/wprt:Capacity' type="BIDI_INT" drvPrinterEvent="true"/>
+            <Value name="Level" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 5" or @wprt:Name="Tray5"]/wprt:Level' type="BIDI_INT" drvPrinterEvent="true"/>
+          </Property>
+          <Property name="Tray007">
+            <Installed name="Installed" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 6" or @wprt:Name="Tray6"]' drvPrinterEvent="true"/>
+            <Value name="MediaSize" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 6" or @wprt:Name="Tray6"]/wprt:MediaSize' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="MediaType" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 6" or @wprt:Name="Tray6"]/wprt:MediaType' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="MediaColor" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 6" or @wprt:Name="Tray6"]/wprt:MediaColor' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="FeedDirection" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 6 or @wprt:Name="Tray6""]/wprt:FeedDirection' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="Capacity" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 6" or @wprt:Name="Tray6"]/wprt:Capacity' type="BIDI_INT" drvPrinterEvent="true"/>
+            <Value name="Level" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Tray 6 or @wprt:Name="Tray6""]/wprt:Level' type="BIDI_INT" drvPrinterEvent="true"/>
+          </Property>
+          <Property name="Tray004">
+            <Installed name="Installed" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Envelope Feeder" or @wprt:Name="EnvelopeFeeder"]' drvPrinterEvent="true"/>
+            <Value name="MediaSize" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Envelope Feeder" or @wprt:Name="EnvelopeFeeder"]/wprt:MediaSize' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="MediaType" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Envelope Feeder" or @wprt:Name="EnvelopeFeeder"]/wprt:MediaType' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="MediaColor" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Envelope Feeder" or @wprt:Name="EnvelopeFeeder"]/wprt:MediaColor' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="FeedDirection" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Envelope Feeder" or @wprt:Name="EnvelopeFeeder"]/wprt:FeedDirection' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="Capacity" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Envelope Feeder" or @wprt:Name="EnvelopeFeeder"]/wprt:Capacity' type="BIDI_INT" drvPrinterEvent="true"/>
+            <Value name="Level" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[@wprt:Name="Envelope Feeder" or @wprt:Name="EnvelopeFeeder"]/wprt:Level' type="BIDI_INT" drvPrinterEvent="true"/>
+          </Property>
+        </Property>
+      </Property>
+
+
+		<Property name="Finishing">
+			<Value name="ConvertMode" query="wprt:PrinterConfiguration" filter="wprt:PrinterConfiguration/wprt:OutputBins/wprt:OutputBinEntry/hpprt:Model" type="BIDI_STRING" />
+		</Property>
+
+		
+    </Property>
+  </Schema>
+  <PortStatus>
+    <Status>
+      <Keyword>None</Keyword>
+      <Code>0</Code>
+      <Severity>0</Severity>
+    </Status>
+    <Status>
+      <Keyword>AttentionRequired</Keyword>
+      <Code>8</Code>
+      <Severity>1</Severity>
+    </Status>
+    <Status>
+      <Keyword>DoorOpen</Keyword>
+      <Code>7</Code>
+      <Severity>1</Severity>
+    </Status>
+    <Status>
+      <Keyword>MarkerFailure</Keyword>
+      <ResourceIdOffset>0</ResourceIdOffset>
+      <Severity>1</Severity>
+    </Status>
+    <Status>
+      <Keyword>MarkerSupplyLow</Keyword>
+      <Code>10</Code>
+      <Severity>2</Severity>
+    </Status>
+    <Status>
+      <Keyword>MarkerSupplyEmpty</Keyword>
+      <Code>6</Code>
+      <Severity>1</Severity>
+    </Status>
+    <Status>
+      <Keyword>MediaEmpty</Keyword>
+      <Code>3</Code>
+      <Severity>1</Severity>
+    </Status>
+    <Status>
+      <Keyword>MediaJam</Keyword>
+      <Code>2</Code>
+      <Severity>1</Severity>
+    </Status>
+    <Status>
+      <Keyword>MediaLow</Keyword>
+      <ResourceIdOffset>1</ResourceIdOffset>
+      <Severity>2</Severity>
+    </Status>
+    <Status>
+      <Keyword>MediaNeeded</Keyword>
+      <Code>5</Code>
+      <Severity>1</Severity>
+    </Status>
+    <Status>
+      <Keyword>OutputAreaAlmostFull</Keyword>
+      <ResourceIdOffset>2</ResourceIdOffset>
+      <Severity>2</Severity>
+    </Status>
+    <Status>
+      <Keyword>OutputAreaFull</Keyword>
+      <Code>4</Code>
+      <Severity>1</Severity>
+    </Status>
+    <Status>
+      <Keyword>Paused</Keyword>
+      <ResourceIdOffset>3</ResourceIdOffset>
+      <Severity>3</Severity>
+    </Status>
+  </PortStatus>
+</bidi:Definition>

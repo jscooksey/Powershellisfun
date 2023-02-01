@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- NOTE: Schema of this file has changed for AutoTrackerLib 3.0 and above -->
+<PdsmqConfig version="4.0">
+
+  <!-- Stanley V3 -->
+  <AppDeployedId>Stanley_v3/8.0</AppDeployedId>
+
+  <!-- Leave that as is -->
+  <EventQueue>app_eventinfo</EventQueue>
+  
+  <!--PrinterDriver: For production purposes-->
+  <ProjectId>57647f5ede1422b03bea19c5</ProjectId>
+
+  <!--"ProjDeployment PrinterDriver 2016"-->
+  <AuthenticationToken>8y6DQW3Ld2TthLWfwIxggRjyhm0JDOqdyG7QkdPyCHqPgq</AuthenticationToken>
+
+  <!-- Leave that as is -->
+  <PDSServerUri>https://mq.dataservices.hp.com</PDSServerUri>
+
+  <!-- Use default logging level -->
+  <Log>on</Log>
+</PdsmqConfig>

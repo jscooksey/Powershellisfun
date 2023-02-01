@@ -1,0 +1,261 @@
+; FF6HOAL.INF
+;
+;
+; (C) FUJIFILM Business Innovation Corp. 2014-2022
+; Plug-in Driver for Windows
+;
+
+[Version]
+Signature="$Windows NT$"
+Provider=%FF%
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
+Class=Printer
+CatalogFile=FF6HOAL.cat
+DriverVer=02/14/2022,6.9.5.1
+
+;
+; Manufacturer section.
+;
+; This section lists all of the manufacturers 
+; that we will display in the Dialog box
+;
+[Manufacturer]
+%FF%=FFIDPF,NTamd64,NTamd64.6.0
+
+[OEM URLS]
+%FF%="https://fujifilm.com/fbglobal"
+
+;
+; Model sections. 
+; 
+; Each section here corresponds with an entry listed in the
+; [Manufacturer] section, above. The models will be displayed in the order
+; that they appear in the INF file.
+;
+
+[FFIDPF.NTamd64]
+"FF K534p for DocuPrint CM415 AP PCL 6"  = DP_CM415_PCL,USBPRINT\FUJI_XEROXDocuPrint_F67A
+"FF K534p for DocuPrint CM415 AP PCL 6"  = DP_CM415_PCL,WSDPRINT\FUJI_XEROXDocuPrint_F67A
+
+"FF K534p for ApeosPort-V C3320 PCL 6"  = AP_C3320_PCL,USBPRINT\FUJI_XEROXApeosPort-4257
+"FF K534p for ApeosPort-V C3320 PCL 6"  = AP_C3320_PCL,WSDPRINT\FUJI_XEROXApeosPort-4257
+
+[FFIDPF.NTamd64.6.0]
+"FF K534p for DocuPrint CM415 AP PCL 6"  = DP_CM415_PCL,USBPRINT\FUJI_XEROXDocuPrint_F67A
+"FF K534p for DocuPrint CM415 AP PCL 6"  = DP_CM415_PCL,WSDPRINT\FUJI_XEROXDocuPrint_F67A
+
+"FF K534p for ApeosPort-V C3320 PCL 6"  = AP_C3320_PCL,USBPRINT\FUJI_XEROXApeosPort-4257
+"FF K534p for ApeosPort-V C3320 PCL 6"  = AP_C3320_PCL,WSDPRINT\FUJI_XEROXApeosPort-4257
+
+;
+; Installer Sections
+;
+; These sections control file installation, and reference all files that
+; need to be copied. The section name will be assumed to be the driver
+; file, unless there is an explicit DriverFile section listed.
+;
+
+[DP_CM415_PCL]
+CopyFiles=@FF6HOAL-1.GPD,@FF6HOAL-1.INI,DP_CM415_PCL_COPYFILES,FF_DP_CM415_PCL_ICC,FF_COPYFILES,UniDrv_Redist,@FF6HOAL-1.DXDT
+DataFile=FF6HOAL-1.GPD
+DataSection=Data_UniDrv_Redist
+
+[AP_C3320_PCL]
+CopyFiles=@FF6HOAL-A.GPD,@FF6HOAL-A.INI,AP_C3320_PCL_COPYFILES,FF_AP_C3320_PCL_ICC,FF_COPYFILES,UniDrv_Redist,@FF6HOAL-A.DXDT
+DataFile=FF6HOAL-A.GPD
+DataSection=Data_UniDrv_Redist
+
+; Copy Sections
+;
+; Lists of files that are actually copied. These sections are referenced
+; from the installer sections, above. Only create a section if it contains
+; two or more files (if we only copy a single file, identify it in the
+; installer section, using the @filename notation) or if it's a color
+; profile (since the DestinationDirs can only handle sections, and not
+; individual files).
+;
+
+[DP_CM415_PCL_COPYFILES]
+FF6HOAL-1.CFG,FF6HOAL.CFG
+FF6HOAL-1.DXDS,FF6HOAL.DXDS
+FF6HOAL-1.DXDC,FF6HOAL.DXDC
+FF6HOAL-1.DXDM,FF6HOAL.DXDM
+FF6HOALM-1.DXDB,FF6HOALM.DXDB
+FF6HOALD-1.DXDB,FF6HOALD.DXDB
+FF6HOALU-1.DLL,FF6HOALU.DLL
+FF6HOALK-1.DLL,FF6HOALK.DLL
+FF6HOALS-1.XRS,FF6HOALS.xrs
+FF6HOALT-1.XRS,FF6HOALT.xrs
+FF6HOALL-1.XRS,FF6HOALL.xrs
+FF6HOALF-1.XRS,FF6HOALF.xrs
+FF6HOAL-1.CHM,FF6HOAL.CHM
+FF6HOA-1.CDD,FF6HOA.cdd
+FF6HOA-1.DDD,FF6HOA.ddd
+FF6HOAXA5-1.DLL,FF6HOAXA5.dll
+FF6HOAADC3-1.DLL,FF6HOAADC3.dll
+FF6HOAARL32-1.DLL,FF6HOAARL32.dll
+FF6HOADHB32-1.DLL,FF6HOADHB32.dll
+FF6HOAF01-1.EXE,FF6HOAF01.exe
+FF6HOAF01-1.DLL,FF6HOAF01.dll
+FF6HOANIE2-1.DLL,FF6HOANIE2.dll
+FF6HOAJNIE-1.DLL,FF6HOAJNIE.dll
+
+[FF_DP_CM415_PCL_ICC]
+FF6HOZL1.ICM
+
+[AP_C3320_PCL_COPYFILES]
+FF6HOAL-A.CFG,FF6HOAL.CFG
+FF6HOAL-A.DXDS,FF6HOAL.DXDS
+FF6HOAL-A.DXDC,FF6HOAL.DXDC
+FF6HOAL-A.DXDM,FF6HOAL.DXDM
+FF6HOALM-A.DXDB,FF6HOALM.DXDB
+FF6HOALD-A.DXDB,FF6HOALD.DXDB
+FF6HOALU-A.DLL,FF6HOALU.DLL
+FF6HOALK-A.DLL,FF6HOALK.DLL
+FF6HOALS-A.XRS,FF6HOALS.xrs
+FF6HOALT-A.XRS,FF6HOALT.xrs
+FF6HOALL-A.XRS,FF6HOALL.xrs
+FF6HOALF-A.XRS,FF6HOALF.xrs
+FF6HOAL-A.CHM,FF6HOAL.CHM
+FF6HOA-A.CDD,FF6HOA.cdd
+FF6HOA-A.DDD,FF6HOA.ddd
+FF6HOAXA5-A.DLL,FF6HOAXA5.dll
+FF6HOAADC3-A.DLL,FF6HOAADC3.dll
+FF6HOAARL32-A.DLL,FF6HOAARL32.dll
+FF6HOADHB32-A.DLL,FF6HOADHB32.dll
+FF6HOAF01-A.EXE,FF6HOAF01.exe
+FF6HOAF01-A.DLL,FF6HOAF01.dll
+FF6HOANIE2-A.DLL,FF6HOANIE2.dll
+FF6HOAJNIE-A.DLL,FF6HOAJNIE.dll
+
+[FF_AP_C3320_PCL_ICC]
+FF6HOZLA.ICM
+
+[FF_COPYFILES]
+ffzddmif.dll
+ffzdmifk.dll
+
+[UniDrv_Redist]
+LOCALE.GPD
+P6DISP.GPD
+P6FONT.GPD
+PCL4RES.DLL
+PCL5ERES.DLL
+PCL5URES.DLL
+PCLXL.DLL
+PCLXL.GPD
+PJL.GPD
+STDDTYPE.GDL
+STDNAMES.GPD
+STDSCHEM.GDL
+STDSCHMX.GDL
+TTFSUB.GPD
+UNIDRV.DLL
+UNIDRVUI.DLL
+UNIRES.DLL
+UNIDRV.HLP
+
+;
+; Data Sections
+;
+[Data_UniDrv_Redist]
+DriverFile=UNIDRV.DLL
+ConfigFile=UNIDRVUI.DLL
+HelpFile=UNIDRV.HLP
+
+;
+; Package-Aware declaration
+;
+[PrinterPackageInstallation.amd64]
+PackageAware=TRUE
+
+; These sections contain data that is shared between devices.
+;
+
+;
+;  Location of source files not in Layout.inf.
+;
+
+[SourceDisksNames]
+100 = %FFIDPF%
+
+[SourceDisksFiles.amd64]
+FF6HOALU.dll        = 100
+FF6HOALK.dll        = 100
+
+FF6HOALS.xrs        = 100
+FF6HOALL.xrs        = 100
+FF6HOALT.xrs        = 100
+FF6HOALF.xrs        = 100
+
+FF6HOAXA5.dll       = 100
+FF6HOAADC3.dll      = 100
+FF6HOAARL32.dll     = 100
+FF6HOADHB32.dll     = 100
+FF6HOAF01.exe       = 100
+FF6HOAF01.dll       = 100
+FF6HOANIE2.dll      = 100
+FF6HOAJNIE.dll      = 100
+
+ffzddmif.dll        = 100
+ffzdmifk.dll        = 100
+
+FF6HOA.cdd          = 100
+FF6HOA.ddd          = 100
+
+LOCALE.GPD          = 100
+P6DISP.GPD          = 100
+P6FONT.GPD          = 100
+PCL4RES.DLL         = 100
+PCL5ERES.DLL        = 100
+PCL5URES.DLL        = 100
+PCLXL.DLL           = 100
+PCLXL.GPD           = 100
+PJL.GPD             = 100
+STDDTYPE.GDL        = 100
+STDNAMES.GPD        = 100
+STDSCHEM.GDL        = 100
+STDSCHMX.GDL        = 100
+TTFSUB.GPD          = 100
+UNIDRV.DLL          = 100
+UNIDRVUI.DLL        = 100
+UNIRES.DLL          = 100
+UNIDRV.HLP          = 100
+
+FF6HOAL.CHM         = 100
+
+FF6HOAL-1.GPD    = 100
+FF6HOAL-1.INI    = 100
+FF6HOAL-1.DXDT   = 100
+FF6HOZL1.ICM     = 100
+
+FF6HOAL-A.GPD    = 100
+FF6HOAL-A.INI    = 100
+FF6HOAL-A.DXDT   = 100
+FF6HOZLA.ICM     = 100
+
+FF6HOAL.DXDC     = 100
+FF6HOAL.DXDM     = 100
+FF6HOAL.DXDS     = 100
+FF6HOALM.DXDB    = 100
+FF6HOALD.DXDB    = 100
+
+FF6HOAL.CFG      = 100
+;
+; Call SetupSetDirectoryId with 66000 to set the target directory at runtime
+; (depending on which environment drivers are getting installed)
+;
+
+[DestinationDirs]
+DefaultDestDir=66000
+FF_DP_CM415_PCL_ICC=66003
+
+FF_AP_C3320_PCL_ICC=66003
+
+;
+; Localizable Strings
+;
+[Strings]
+FF="FUJIFILM"
+FFIDPF="FF IDPF"
+

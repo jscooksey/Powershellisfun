@@ -1,0 +1,113 @@
+
+[Version]
+Signature="$Windows NT$"
+Class=USB
+ClassGUID={36FC9E60-C465-11CF-8056-444553540000}
+Provider=%Provider%
+CatalogFile=HPIPPStub.CAT
+DriverVer=07/14/2020, 52.1.4835.20196
+;====================================================
+
+[DestinationDirs]
+; By default, files will be copied to \windows\system.
+DefaultDestDir=11
+
+[ControlFlags]
+; Remove comment from this line if all devices are PnP.
+ExcludeFromSelect=*
+
+[Manufacturer]
+%Mfg%=Models,NTamd64.6.0,NTamd64.6.1,NTamd64.6.2,NTamd64.6.3,NTx86.5.1,NTx86.6.0,NTx86.6.1,NTx86.6.2,NTx86.6.3,NTamd64.5.2
+
+; Windows 2K is not supported
+;[Models]
+;; ; No support for Windows 2000
+;Camden_Ent
+; Windows XP
+[Models.NTx86.5.1]
+"HP Color LaserJet MFP M480(IPP WinUSB)"=DMR.USB, USB\vid_03F0&Pid_d92a&mi_01
+"HP Color LaserJet MFP M480(IPP1 WinUSB)"=DMR.USB, USB\vid_03F0&Pid_d92a&mi_03
+
+[Models.NTamd64.5.2]
+"HP Color LaserJet MFP M480(IPP WinUSB)"=DMR.USB, USB\vid_03F0&Pid_d92a&mi_01
+"HP Color LaserJet MFP M480(IPP1 WinUSB)"=DMR.USB, USB\vid_03F0&Pid_d92a&mi_03
+
+[Models.NTx86.6.0]
+"HP Color LaserJet MFP M480(IPP WinUSB)"=DMR.USB, USB\vid_03F0&Pid_d92a&mi_01
+	
+"HP Color LaserJet MFP M480(IPP1 WinUSB)"=DMR.USB, USB\vid_03F0&Pid_d92a&mi_03
+
+[Models.NTx86.6.1]
+"HP Color LaserJet MFP M480(IPP WinUSB)"=DMR.USB, USB\vid_03F0&Pid_d92a&mi_01
+"HP Color LaserJet MFP M480(IPP1 WinUSB)"=DMR.USB, USB\vid_03F0&Pid_d92a&mi_03
+
+[Models.NTx86.6.2]
+"HP Color LaserJet MFP M480(IPP WinUSB)"=DMR.USB, USB\vid_03F0&Pid_d92a&mi_01
+"HP Color LaserJet MFP M480(IPP1 WinUSB)"=DMR.USB, USB\vid_03F0&Pid_d92a&mi_03
+
+[Models.NTx86.6.3]
+"HP Color LaserJet MFP M480(IPP WinUSB)"=DMR.USB, USB\vid_03F0&Pid_d92a&mi_01
+"HP Color LaserJet MFP M480(IPP1 WinUSB)"=DMR.USB, USB\vid_03F0&Pid_d92a&mi_03
+
+; Windows x64
+[Models.NTamd64.6.0]
+"HP Color LaserJet MFP M480(IPP WinUSB)"=DMR.USB, USB\vid_03F0&Pid_d92a&mi_01
+"HP Color LaserJet MFP M480(IPP1 WinUSB)"=DMR.USB, USB\vid_03F0&Pid_d92a&mi_03
+
+; Windows x64
+[Models.NTamd64.6.1]
+"HP Color LaserJet MFP M480(IPP WinUSB)"=DMR.USB, USB\vid_03F0&Pid_d92a&mi_01
+"HP Color LaserJet MFP M480(IPP1 WinUSB)"=DMR.USB, USB\vid_03F0&Pid_d92a&mi_03
+
+; Windows x64
+[Models.NTamd64.6.2]
+"HP Color LaserJet MFP M480(IPP WinUSB)"=DMR.USB, USB\vid_03F0&Pid_d92a&mi_01
+"HP Color LaserJet MFP M480(IPP1 WinUSB)"=DMR.USB, USB\vid_03F0&Pid_d92a&mi_03
+
+; Windows x64
+[Models.NTamd64.6.3]
+"HP Color LaserJet MFP M480(IPP WinUSB)"=DMR.USB, USB\vid_03F0&Pid_d92a&mi_01
+"HP Color LaserJet MFP M480(IPP1 WinUSB)"=DMR.USB, USB\vid_03F0&Pid_d92a&mi_03
+
+
+; *****************************************************************************************
+;           Windows XP (Whistler) and later
+; *****************************************************************************************
+
+[DMR.Usb]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage
+DeviceType=1
+Capabilities=0x0
+FeatureScore=00
+AddReg=DMR.UsbReg
+CopyFiles=Nothing
+CopyINF=hpcad92a.inf
+
+[DMR.Usb.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[DMR.UsbReg]
+; This all depends on which kernel services you need
+; Hardware configuration is not known
+HKR,,HardwareConfig,1,1
+HKR,,DevLoader,,*NTKERN
+HKR,,NTMPDriver,,"usbscan.sys"
+
+[SourceDisksNames]
+1 = %CD%,,,
+
+[SourceDisksFiles]
+
+[Nothing]
+
+[Strings]
+; Always put strings down here so they can be easily localized to
+; other languages.
+
+Provider="Hewlett-Packard"
+Mfg="Hewlett-Packard"
+CD="hp cd"
+

@@ -1,0 +1,80 @@
+
+*%=================================================================*%
+*%             Copyright (c) Monotype Imaging Inc.                 *%
+*%                    All rights reserved.                         *%
+*%                                                                 *%
+*%                 Bidi Autoconfiguration File                     *%
+*%   Generated from a UPDF specification using the UPDF Tool.      *%
+*%=================================================================*%
+
+*%=================================================================*%
+*%     OptionalTray3
+*%=================================================================*%
+
+*Feature: OptionalTray3 {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: OptionalTray3 {
+        *QueryString: "\Printer.Layout.InputBins.Tray003:Installed"
+    } 
+
+    *BidiResponse: OptionalTray3 {
+        *ResponseType: BIDI_BOOL
+        *ResponseData: ENUM_OPTION (OptionalTray3)
+    }
+    *Option: NotInstalled {
+        *BidiValue: BOOL(FALSE)
+    }
+    *Option: Installed {
+        *BidiValue: BOOL(TRUE)
+    }
+
+}
+
+*%=================================================================*%
+*%     OptionalTray4
+*%=================================================================*%
+
+*Feature: OptionalTray4 {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: OptionalTray4 {
+        *QueryString: "\Printer.Layout.InputBins.Tray005:Installed"
+    } 
+
+    *BidiResponse: OptionalTray4 {
+        *ResponseType: BIDI_BOOL
+        *ResponseData: ENUM_OPTION (OptionalTray4)
+    }
+    *Option: NotInstalled {
+        *BidiValue: BOOL(FALSE)
+    }
+    *Option: Installed {
+        *BidiValue: BOOL(TRUE)
+    }
+
+}
+
+*%=================================================================*%
+*%     DuplexUnit
+*%=================================================================*%
+
+*Feature: DuplexUnit {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: DuplexUnit {
+        *QueryString: "\Printer.Configuration.DuplexUnit:Installed"
+    } 
+
+    *BidiResponse: DuplexUnit {
+        *ResponseType: BIDI_BOOL
+        *ResponseData: ENUM_OPTION (DuplexUnit)
+    }
+    *Option: NotInstalled {
+        *BidiValue: BOOL(FALSE)
+    }
+    *Option: Installed {
+        *BidiValue: BOOL(TRUE)
+    }
+
+}

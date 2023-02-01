@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<bidi:Schema xmlns:bidi="http://schemas.microsoft.com/windows/2010/09/printing/usbbidi">
+  <!--Version 3.0-->
+  <Property name="Printer">
+	
+    <Property name='Status'>
+      <Property name='Summary'>
+        <Value name="StateReason" type="BIDI_STRING" accessType="Get" drvPrinterEvent="true"/>
+      </Property>
+    </Property>
+	
+    <Property name="Configuration">
+			<Property name="DuplexUnit">
+				<Value name="Installed" accessType="Get" type="BIDI_BOOL" queryKey="\Printer.Configuration.DuplexUnit:Installed;MultiTagContainsBool;/DevMgmt/ProductConfigDyn.xml;dd:DuplexUnit,dd:DuplexBindingOption;Installed;longEdge;shortEdge" drvPrinterEvent="true"/>
+			</Property>
+			<Property name="Memory">
+				<Value name="Size" accessType="Get" type="BIDI_INT" queryKey="\Printer.Configuration.Memory:Size;InnerXmlInt;/DevMgmt/ProductConfigDyn.xml;dd:TotalMemory" drvPrinterEvent="true"/>
+			</Property>
+			<Property name="HardDisk">
+				<Value name="Installed" accessType="Get" type="BIDI_BOOL" queryKey="\Printer.Configuration.HardDisk:Installed;TagAnyContainsBool;/DevMgmt/MassStorageConfigDyn.xml;dd:DigitalStorateTypeEnum;harddisk" drvPrinterEvent="true"/>
+			</Property>
+			
+			<Property name="JobStorage002">
+				<Value name="Installed" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Configuration.JobStorage002:Installed;InnerXmlStr;/StoredJobs/Config;sj:StoredJobsEnabled" drvPrinterEvent="true"/>
+			</Property>
+						
+			<Property name="ColorPrinting">
+            	<Value name="Enabled" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Configuration.ColorPrinting:Enabled;InnerXmlStr;/DevMgmt/ProductConfigCap.xml;prdcfgcap2:ColorPrinting" drvPrinterEvent="true"/>
+        	</Property>
+    </Property>
+    
+    
+    
+    <Property name="Layout">
+      <Property name="InputBins">
+		<Property name="PhotoTrayUnit002">
+			<Value name="Installed" accessType="Get" type="BIDI_BOOL" queryKey="\Printer.Layout.InputBins.PhotoTrayUnit002:Installed;TagAnyContainsBool;/DevMgmt/MediaHandlingDyn.xml;dd:InputBin;PhotoTray" drvPrinterEvent="true"/>
+		</Property>
+        <Property name="Tray001">
+          <Value name="Name" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray001:Name;FindIndexXmlStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:InputTray;dd:InputBin;Tray1" drvPrinterEvent="true"/>
+          <Value name="Installed" accessType="Get" type="BIDI_BOOL" queryKey="\Printer.Layout.InputBins.Tray001:Installed;TagAnyContainsBool;/DevMgmt/MediaHandlingDyn.xml;dd:InputBin;Tray1" drvPrinterEvent="true"/>
+          <Value name="MediaType" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray001:MediaType;FindIndexXmlConvertStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:InputTray;dd:MediaType;Tray1;light;stationery-lightweight" drvPrinterEvent="true"/>
+          <Value name="MediaSize" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray001:MediaSize;FindIndexXmlStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:InputTray;dd:MediaSizeName;Tray1" drvPrinterEvent="true"/>
+          <Value name="FeedDirection" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray001:FeedDirection;FindIndexXmlStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:InputTray;dd:PageOrientation;Tray1" drvPrinterEvent="true"/>
+        </Property>
+        <Property name="Tray002">
+          <Value name="Name" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray002:Name;FindIndexXmlStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:InputTray;dd:InputBin;Tray2" drvPrinterEvent="true"/>
+          <Value name="Installed" accessType="Get" type="BIDI_BOOL" queryKey="\Printer.Layout.InputBins.Tray002:Installed;TagAnyContainsBool;/DevMgmt/MediaHandlingDyn.xml;dd:InputBin;Tray2" drvPrinterEvent="true"/>
+          <Value name="MediaType" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray002:MediaType;FindIndexXmlConvertStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:InputTray;dd:MediaType;Tray2;light;stationery-lightweight" drvPrinterEvent="true"/>
+          <Value name="MediaSize" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray002:MediaSize;FindIndexXmlStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:InputTray;dd:MediaSizeName;Tray2" drvPrinterEvent="true"/>
+          <Value name="FeedDirection" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray002:FeedDirection;FindIndexXmlStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:InputTray;dd:PageOrientation;Tray2" drvPrinterEvent="true"/>
+        </Property>
+        <Property name="Tray003">
+          <Value name="Name" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray003:Name;FindIndexXmlStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:InputTray;dd:InputBin;Tray3" drvPrinterEvent="true"/>
+          <Value name="Installed" accessType="Get" type="BIDI_BOOL" queryKey="\Printer.Layout.InputBins.Tray003:Installed;TagAnyContainsBool;/DevMgmt/MediaHandlingDyn.xml;dd:InputBin;Tray3" drvPrinterEvent="true"/>
+          <Value name="MediaType" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray003:MediaType;FindIndexXmlConvertStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:InputTray;dd:MediaType;Tray3;light;stationery-lightweight" drvPrinterEvent="true"/>
+          <Value name="MediaSize" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray003:MediaSize;FindIndexXmlStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:InputTray;dd:MediaSizeName;Tray3" drvPrinterEvent="true"/>
+          <Value name="FeedDirection" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray003:FeedDirection;FindIndexXmlStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:InputTray;dd:PageOrientation;Tray3" drvPrinterEvent="true"/>
+        </Property>
+        
+        <Property name="Tray005">
+          <Value name="Name" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray005:Name;FindIndexXmlStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:InputTray;dd:InputBin;Tray4" drvPrinterEvent="true"/>
+          <Value name="Installed" accessType="Get" type="BIDI_BOOL" queryKey="\Printer.Layout.InputBins.Tray005:Installed;TagAnyContainsBool;/DevMgmt/MediaHandlingDyn.xml;dd:InputBin;Tray4" drvPrinterEvent="true"/>
+          <Value name="MediaType" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray005:MediaType;FindIndexXmlConvertStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:InputTray;dd:MediaType;Tray4;light;stationery-lightweight" drvPrinterEvent="true"/>
+          <Value name="MediaSize" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray005:MediaSize;FindIndexXmlStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:InputTray;dd:MediaSizeName;Tray4" drvPrinterEvent="true"/>
+          <Value name="FeedDirection" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray005:FeedDirection;FindIndexXmlStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:InputTray;dd:PageOrientation;Tray4" drvPrinterEvent="true"/>
+        </Property>
+        <Property name="Tray006">
+          <Value name="Name" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray006:Name;FindIndexXmlStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:InputTray;dd:InputBin;Tray5" drvPrinterEvent="true"/>
+          <Value name="Installed" accessType="Get" type="BIDI_BOOL" queryKey="\Printer.Layout.InputBins.Tray006:Installed;TagAnyContainsBool;/DevMgmt/MediaHandlingDyn.xml;dd:InputBin;Tray5" drvPrinterEvent="true"/>
+          <Value name="MediaType" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray006:MediaType;FindIndexXmlConvertStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:InputTray;dd:MediaType;Tray5;;light;stationery-lightweight" drvPrinterEvent="true"/>
+          <Value name="MediaSize" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray006:MediaSize;FindIndexXmlStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:InputTray;dd:MediaSizeName;Tray5" drvPrinterEvent="true"/>
+          <Value name="FeedDirection" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray006:FeedDirection;FindIndexXmlStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:InputTray;dd:PageOrientation;Tray5" drvPrinterEvent="true"/>
+        </Property>
+        <Property name="Tray007">
+          <Value name="Name" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray007:Name;FindIndexXmlStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:InputTray;dd:InputBin;Tray6" drvPrinterEvent="true"/>
+          <Value name="Installed" accessType="Get" type="BIDI_BOOL" queryKey="\Printer.Layout.InputBins.Tray007:Installed;TagAnyContainsBool;/DevMgmt/MediaHandlingDyn.xml;dd:InputBin;Tray6" drvPrinterEvent="true"/>
+          <Value name="MediaType" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray007:MediaType;FindIndexXmlConvertStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:InputTray;dd:MediaType;Tray6;light;stationery-lightweight" drvPrinterEvent="true"/>
+          <Value name="MediaSize" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray007:MediaSize;FindIndexXmlStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:InputTray;dd:MediaSizeName;Tray6" drvPrinterEvent="true"/>
+          <Value name="FeedDirection" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray007:FeedDirection;FindIndexXmlStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:InputTray;dd:PageOrientation;Tray6" drvPrinterEvent="true"/>
+        </Property>
+        <Property name="Tray008">
+          <Value name="Name" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray008:Name;FindIndexXmlStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:InputTray;dd:InputBin;Tray7" drvPrinterEvent="true"/>
+          <Value name="Installed" accessType="Get" type="BIDI_BOOL" queryKey="\Printer.Layout.InputBins.Tray008:Installed;TagAnyContainsBool;/DevMgmt/MediaHandlingDyn.xml;dd:InputBin;Tray7" drvPrinterEvent="true"/>
+          <Value name="MediaType" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray008:MediaType;FindIndexXmlConvertStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:InputTray;dd:MediaType;Tray7;light;stationery-lightweight" drvPrinterEvent="true"/>
+          <Value name="MediaSize" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray008:MediaSize;FindIndexXmlStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:InputTray;dd:MediaSizeName;Tray7" drvPrinterEvent="true"/>
+          <Value name="FeedDirection" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray008:FeedDirection;FindIndexXmlStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:InputTray;dd:PageOrientation;Tray7" drvPrinterEvent="true"/>
+        </Property>
+        <Property name="Tray009">
+         <Value name="Name" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray009:Name;FindIndexXmlStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:InputTray;dd:InputBin;Tray8" drvPrinterEvent="true"/>
+          <Value name="Installed" accessType="Get" type="BIDI_BOOL" queryKey="\Printer.Layout.InputBins.Tray009:Installed;TagAnyContainsBool;/DevMgmt/MediaHandlingDyn.xml;dd:InputBin;Tray8" drvPrinterEvent="true"/>
+          <Value name="MediaType" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray009:MediaType;FindIndexXmlConvertStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:InputTray;dd:MediaType;Tray8;light;stationery-lightweight" drvPrinterEvent="true"/>
+          <Value name="MediaSize" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray009:MediaSize;FindIndexXmlStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:InputTray;dd:MediaSizeName;Tray8" drvPrinterEvent="true"/>
+          <Value name="FeedDirection" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Layout.InputBins.Tray009:FeedDirection;FindIndexXmlStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:InputTray;dd:PageOrientation;Tray8" drvPrinterEvent="true"/>
+        </Property>
+        
+        <Property name="EnvelopeFeeder">
+          <Value name="Installed" accessType="Get" type="BIDI_BOOL" queryKey="\Printer.Layout.InputBins.EnvelopeFeeder:Installed;TagAnyContainsBool;/DevMgmt/MediaHandlingDyn.xml;dd:InputBin;EnvelopeFeeder" drvPrinterEvent="true"/>
+        </Property> 
+      </Property>
+    </Property>
+
+
+    <Property name="Finishing">
+      <Property name="OutputBins">
+        <Property name="Bin1">
+          <Value name="Name" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Finishing.OutputBins.Bin1:Name;FindIndexXmlStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:OutputBin;dd:HPOutputBin;OutputBin1" drvPrinterEvent="true"/>
+          <Value name="Installed" accessType="Get" type="BIDI_BOOL" queryKey="\Printer.Finishing.OutputBins.Bin1:Installed;TagAnyContainsBool;/DevMgmt/MediaHandlingDyn.xml;dd:HPOutputBin;OutputBin1" drvPrinterEvent="true"/>
+        </Property>
+        <Property name="Bin2">
+          <Value name="Name" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Finishing.OutputBins.Bin2:Name;FindIndexXmlStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:OutputBin;dd:HPOutputBin;OutputBin2" drvPrinterEvent="true"/>
+          <Value name="Installed" accessType="Get" type="BIDI_BOOL" queryKey="\Printer.Finishing.OutputBins.Bin2:Installed;TagAnyContainsBool;/DevMgmt/MediaHandlingDyn.xml;dd:HPOutputBin;OutputBin2" drvPrinterEvent="true"/>
+        </Property>
+        <Property name="Bin3">
+          <Value name="Name" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Finishing.OutputBins.Bin3:Name;FindIndexXmlStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:OutputBin;dd:HPOutputBin;OutputBin3" drvPrinterEvent="true"/>
+          <Value name="Installed" accessType="Get" type="BIDI_BOOL" queryKey="\Printer.Finishing.OutputBins.Bin3:Installed;TagAnyContainsBool;/DevMgmt/MediaHandlingDyn.xml;dd:HPOutputBin;OutputBin3" drvPrinterEvent="true"/>
+        </Property>
+        <Property name="Bin4">
+          <Value name="Name" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Finishing.OutputBins.Bin4:Name;FindIndexXmlStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:OutputBin;dd:HPOutputBin;OutputBin4" drvPrinterEvent="true"/>
+          <Value name="Installed" accessType="Get" type="BIDI_BOOL" queryKey="\Printer.Finishing.OutputBins.Bin4:Installed;TagAnyContainsBool;/DevMgmt/MediaHandlingDyn.xml;dd:HPOutputBin;OutputBin4" drvPrinterEvent="true"/>
+        </Property>
+        <Property name="Bin5">
+          <Value name="Name" accessType="Get" type="BIDI_STRING" queryKey="\Printer.Finishing.OutputBins.Bin5:Name;FindIndexXmlStr;/DevMgmt/MediaHandlingDyn.xml;mhdyn:OutputBin;dd:HPOutputBin;OutputBin5" drvPrinterEvent="true"/>
+          <Value name="Installed" accessType="Get" type="BIDI_BOOL" queryKey="\Printer.Finishing.OutputBins.Bin5:Installed;TagAnyContainsBool;/DevMgmt/MediaHandlingDyn.xml;dd:HPOutputBin;OutputBin5" drvPrinterEvent="true"/>
+        </Property>
+      </Property>
+      <Property name="HolePunch">
+        <Value name="Installed" accessType="Get" type="BIDI_BOOL" queryKey="\Printer.Finishing.HolePunch:Installed;TagAnyContainsBool;/DevMgmt/MediaHandlingDyn.xml;dd:MediaHandlingDeviceFunctionType;Punch" drvPrinterEvent="true"/>
+      </Property>
+    </Property>
+
+  </Property>
+</bidi:Schema>
